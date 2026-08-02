@@ -1,0 +1,18 @@
+{
+  "family": "farahn-store-web",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "256",
+  "memory": "512",
+  "executionRoleArn": "arn:aws:iam::REPLACE_ACCOUNT_ID:role/ecsTaskExecutionRole",
+  "containerDefinitions": [
+    {
+      "name": "farahn-store-web",
+      "image": "REPLACE_ACCOUNT_ID.dkr.ecr.REPLACE_REGION.amazonaws.com/farahn-store-web:latest",
+      "essential": true,
+      "portMappings": [{"containerPort": 80, "hostPort": 80, "protocol": "tcp"}],
+      "healthCheck": {"command": ["CMD-SHELL", "wget -q -O - http://127.0.0.1/health || exit 1"], "interval": 30, "timeout": 5, "retries": 3, "startPeriod": 15},
+      "logConfiguration": {"logDriver": "awslogs", "options": {"awslogs-group": "/ecs/farahn-store-web", "awslogs-region": "REPLACE_REGION", "awslogs-stream-prefix": "ecs"}}
+    }
+  ]
+}

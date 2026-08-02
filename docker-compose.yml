@@ -1,0 +1,11 @@
+services:
+  farahn-store-web:
+    build:
+      context: .
+      args:
+        WHATSAPP_NUMBER: ${WHATSAPP_NUMBER:-50400000000}
+    image: farahn-store-web:local
+    container_name: farahn-store-web
+    ports:
+      - "8080:80"
+    restart: unless-stopped
