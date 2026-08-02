@@ -15,9 +15,12 @@ concurrency:
 
 env:
   AWS_REGION: ${{ vars.AWS_REGION || 'us-east-1' }}
+  AWS_DEPLOY_ROLE_ARN: ${{ vars.AWS_DEPLOY_ROLE_ARN || 'arn:aws:iam::269531437168:role/GitHubActionsFacturacionRole' }}
+  ECS_EXECUTION_ROLE_ARN: ${{ vars.ECS_EXECUTION_ROLE_ARN || 'arn:aws:iam::269531437168:role/facturacionTaskExecutionRole' }}
   ECR_REPOSITORY: farahn-store-web
   ECS_CLUSTER: facturacion-cluster
   ECS_SERVICE: farahn-store-web
+  SOURCE_ECS_SERVICE: ${{ vars.SOURCE_ECS_SERVICE || 'facturacion-service' }}
   TASK_FAMILY: farahn-store-web
   CONTAINER_NAME: farahn-store-web
   LOG_GROUP: /ecs/farahn-store-web
@@ -30,25 +33,23 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Validate GitHub configuration
+      - name: Validate deployment configuration
         shell: bash
-        env:
-          AWS_DEPLOY_ROLE_ARN: ${{ secrets.AWS_DEPLOY_ROLE_ARN }}
         run: |
           set -euo pipefail
-          if [[ -z "$AWS_DEPLOY_ROLE_ARN" ]]; then
-            echo "::error::Create the repository secret AWS_DEPLOY_ROLE_ARN with the IAM role ARN used by GitHub OIDC."
+          if [[ ! "$AWS_DEPLOY_ROLE_ARN" =~ ^arn:aws:iam::[0-9]{12}:role/.+ ]]; then
+            echo "::error::Set AWS_DEPLOY_ROLE_ARN to a valid IAM role ARN in repository Variables or edit the default value in deploy.yml."
             exit 1
           fi
 
       - name: Configure AWS credentials with OIDC
-        uses: aws-actions/configure-aws-credentials@v6.2.0
+        uses: aws-actions/configure-aws-credentials@v6
         with:
-          role-to-assume: ${{ secrets.AWS_DEPLOY_ROLE_ARN }}
+          role-to-assume: ${{ env.AWS_DEPLOY_ROLE_ARN }}
           role-session-name: GitHubActions-FARA
           aws-region: ${{ env.AWS_REGION }}
 
-      - name: Validate AWS identity and cluster
+      - name: Validate AWS identity and ECS cluster
         shell: bash
         run: |
           set -euo pipefail
@@ -72,11 +73,13 @@ jobs:
               --image-scanning-configuration scanOnPush=true \
               --image-tag-mutability MUTABLE >/dev/null
 
-          aws logs describe-log-groups \
+          LOG_GROUP_FOUND=$(aws logs describe-log-groups \
             --log-group-name-prefix "$LOG_GROUP" \
-            --query "logGroups[?logGroupName=='$LOG_GROUP'].logGroupName" \
-            --output text | grep -qx "$LOG_GROUP" || \
+            --query "logGroups[?logGroupName=='$LOG_GROUP'].logGroupName | [0]" \
+            --output text)
+          if [[ "$LOG_GROUP_FOUND" != "$LOG_GROUP" ]]; then
             aws logs create-log-group --log-group-name "$LOG_GROUP"
+          fi
 
       - name: Login to Amazon ECR
         id: ecr
@@ -93,10 +96,12 @@ jobs:
           set -euo pipefail
           NUMBER="${WHATSAPP_NUMBER:-50400000000}"
           IMAGE_URI="$REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
+
           docker build \
             --build-arg WHATSAPP_NUMBER="$NUMBER" \
             --tag "$IMAGE_URI" \
             --tag "$REGISTRY/$ECR_REPOSITORY:latest" .
+
           docker push "$IMAGE_URI"
           docker push "$REGISTRY/$ECR_REPOSITORY:latest"
           echo "uri=$IMAGE_URI" >> "$GITHUB_OUTPUT"
@@ -106,16 +111,13 @@ jobs:
         shell: bash
         env:
           IMAGE_URI: ${{ steps.image.outputs.uri }}
-          EXECUTION_ROLE_ARN: ${{ vars.ECS_EXECUTION_ROLE_ARN }}
         run: |
           set -euo pipefail
-          ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
-          ROLE_ARN="${EXECUTION_ROLE_ARN:-arn:aws:iam::$ACCOUNT_ID:role/ecsTaskExecutionRole}"
 
           jq \
             --arg image "$IMAGE_URI" \
             --arg region "$AWS_REGION" \
-            --arg role "$ROLE_ARN" \
+            --arg role "$ECS_EXECUTION_ROLE_ARN" \
             '.executionRoleArn=$role
              | .containerDefinitions[0].image=$image
              | .containerDefinitions[0].logConfiguration.options["awslogs-region"]=$region' \
@@ -125,6 +127,7 @@ jobs:
             --cli-input-json file://task-definition.rendered.json \
             --query 'taskDefinition.taskDefinitionArn' \
             --output text)
+
           echo "arn=$TASK_DEFINITION_ARN" >> "$GITHUB_OUTPUT"
 
       - name: Create or update ECS service
@@ -138,6 +141,7 @@ jobs:
           ECS_DESIRED_COUNT: ${{ vars.ECS_DESIRED_COUNT }}
         run: |
           set -euo pipefail
+
           SERVICE_STATUS=$(aws ecs describe-services \
             --cluster "$ECS_CLUSTER" \
             --services "$ECS_SERVICE" \
@@ -145,30 +149,81 @@ jobs:
             --output text 2>/dev/null || true)
 
           if [[ "$SERVICE_STATUS" == "ACTIVE" || "$SERVICE_STATUS" == "DRAINING" ]]; then
-            aws ecs update-service \
-              --cluster "$ECS_CLUSTER" \
-              --service "$ECS_SERVICE" \
-              --task-definition "$TASK_DEFINITION_ARN" \
-              --force-new-deployment >/dev/null
+            UPDATE_ARGS=(
+              aws ecs update-service
+              --cluster "$ECS_CLUSTER"
+              --service "$ECS_SERVICE"
+              --task-definition "$TASK_DEFINITION_ARN"
+              --force-new-deployment
+            )
+
+            if [[ -n "${ECS_TARGET_GROUP_ARN:-}" ]]; then
+              UPDATE_ARGS+=(
+                --load-balancers
+                "targetGroupArn=$ECS_TARGET_GROUP_ARN,containerName=$CONTAINER_NAME,containerPort=80"
+                --health-check-grace-period-seconds 60
+              )
+            fi
+
+            "${UPDATE_ARGS[@]}" >/dev/null
           else
-            : "${ECS_SUBNETS:?Create repository variable ECS_SUBNETS with comma-separated subnet IDs}"
-            : "${ECS_SECURITY_GROUPS:?Create repository variable ECS_SECURITY_GROUPS with comma-separated security group IDs}"
-            : "${ECS_TARGET_GROUP_ARN:?Create repository variable ECS_TARGET_GROUP_ARN with the ALB target group ARN}"
+            if [[ -z "${ECS_SUBNETS:-}" || -z "${ECS_SECURITY_GROUPS:-}" ]]; then
+              echo "Discovering network configuration from $SOURCE_ECS_SERVICE..."
+
+              SOURCE_STATUS=$(aws ecs describe-services \
+                --cluster "$ECS_CLUSTER" \
+                --services "$SOURCE_ECS_SERVICE" \
+                --query 'services[0].status' \
+                --output text 2>/dev/null || true)
+
+              if [[ "$SOURCE_STATUS" == "ACTIVE" || "$SOURCE_STATUS" == "DRAINING" ]]; then
+                DISCOVERED_SUBNETS=$(aws ecs describe-services \
+                  --cluster "$ECS_CLUSTER" \
+                  --services "$SOURCE_ECS_SERVICE" \
+                  --query 'services[0].networkConfiguration.awsvpcConfiguration.subnets' \
+                  --output text | tr '\t' ',')
+
+                DISCOVERED_SECURITY_GROUPS=$(aws ecs describe-services \
+                  --cluster "$ECS_CLUSTER" \
+                  --services "$SOURCE_ECS_SERVICE" \
+                  --query 'services[0].networkConfiguration.awsvpcConfiguration.securityGroups' \
+                  --output text | tr '\t' ',')
+
+                ECS_SUBNETS="${ECS_SUBNETS:-$DISCOVERED_SUBNETS}"
+                ECS_SECURITY_GROUPS="${ECS_SECURITY_GROUPS:-$DISCOVERED_SECURITY_GROUPS}"
+              fi
+            fi
+
+            : "${ECS_SUBNETS:?Set ECS_SUBNETS or ensure SOURCE_ECS_SERVICE exists with awsvpc networking}"
+            : "${ECS_SECURITY_GROUPS:?Set ECS_SECURITY_GROUPS or ensure SOURCE_ECS_SERVICE exists with awsvpc networking}"
 
             ASSIGN_PUBLIC_IP="${ECS_ASSIGN_PUBLIC_IP:-DISABLED}"
             DESIRED_COUNT="${ECS_DESIRED_COUNT:-1}"
+            NETWORK_CONFIGURATION="awsvpcConfiguration={subnets=[$ECS_SUBNETS],securityGroups=[$ECS_SECURITY_GROUPS],assignPublicIp=$ASSIGN_PUBLIC_IP}"
 
-            aws ecs create-service \
-              --cluster "$ECS_CLUSTER" \
-              --service-name "$ECS_SERVICE" \
-              --task-definition "$TASK_DEFINITION_ARN" \
-              --desired-count "$DESIRED_COUNT" \
-              --launch-type FARGATE \
-              --platform-version LATEST \
-              --network-configuration "awsvpcConfiguration={subnets=[$ECS_SUBNETS],securityGroups=[$ECS_SECURITY_GROUPS],assignPublicIp=$ASSIGN_PUBLIC_IP}" \
-              --load-balancers "targetGroupArn=$ECS_TARGET_GROUP_ARN,containerName=$CONTAINER_NAME,containerPort=80" \
-              --health-check-grace-period-seconds 60 \
-              --deployment-configuration 'maximumPercent=200,minimumHealthyPercent=100,deploymentCircuitBreaker={enable=true,rollback=true}' >/dev/null
+            CREATE_ARGS=(
+              aws ecs create-service
+              --cluster "$ECS_CLUSTER"
+              --service-name "$ECS_SERVICE"
+              --task-definition "$TASK_DEFINITION_ARN"
+              --desired-count "$DESIRED_COUNT"
+              --launch-type FARGATE
+              --platform-version LATEST
+              --network-configuration "$NETWORK_CONFIGURATION"
+              --deployment-configuration 'maximumPercent=200,minimumHealthyPercent=100,deploymentCircuitBreaker={enable=true,rollback=true}'
+            )
+
+            if [[ -n "${ECS_TARGET_GROUP_ARN:-}" ]]; then
+              CREATE_ARGS+=(
+                --load-balancers
+                "targetGroupArn=$ECS_TARGET_GROUP_ARN,containerName=$CONTAINER_NAME,containerPort=80"
+                --health-check-grace-period-seconds 60
+              )
+            else
+              echo "::warning::ECS_TARGET_GROUP_ARN is not configured. The service will run without an ALB association."
+            fi
+
+            "${CREATE_ARGS[@]}" >/dev/null
           fi
 
           aws ecs wait services-stable \
@@ -181,4 +236,4 @@ jobs:
           aws ecs describe-services \
             --cluster "$ECS_CLUSTER" \
             --services "$ECS_SERVICE" \
-            --query 'services[0].{service:serviceName,status:status,running:runningCount,desired:desiredCount,taskDefinition:taskDefinition}'
+            --query 'services[0].{service:serviceName,status:status,running:runningCount,desired:desiredCount,taskDefinition:taskDefinition,loadBalancers:loadBalancers}'
