@@ -98,16 +98,13 @@ jobs:
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           IMAGE_TAG: ${{ github.sha }}
-          WHATSAPP_NUMBER: ${{ secrets.WHATSAPP_NUMBER }}
         run: |
           set -euo pipefail
 
-          NUMBER="${WHATSAPP_NUMBER:-50400000000}"
           IMAGE_URI="$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
           LATEST_IMAGE_URI="$ECR_REGISTRY/$ECR_REPOSITORY:latest"
 
           docker build \
-            --build-arg WHATSAPP_NUMBER="$NUMBER" \
             --tag "$IMAGE_URI" \
             --tag "$LATEST_IMAGE_URI" \
             .
