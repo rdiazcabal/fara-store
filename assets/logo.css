@@ -1,0 +1,50 @@
+/* Official FARA wordmark from the approved brand reference. */
+.wordmark {
+  display: block;
+  width: 156px;
+  height: 60px;
+  overflow: hidden;
+  color: transparent;
+  text-indent: -9999px;
+  white-space: nowrap;
+  background-image: url("./fara-logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.header .wordmark {
+  justify-self: start;
+}
+
+.wordmark--footer {
+  width: 220px;
+  height: 86px;
+  justify-self: start;
+}
+
+.mobile-menu > .wordmark {
+  width: 190px;
+  height: 74px;
+  justify-self: start;
+}
+
+@media (max-width: 820px) {
+  .header .wordmark {
+    width: 136px;
+    height: 52px;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 540px) {
+  .header .wordmark {
+    width: 124px;
+    height: 48px;
+  }
+
+  .wordmark--footer {
+    width: 190px;
+    height: 74px;
+  }
+}
