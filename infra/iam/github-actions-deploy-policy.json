@@ -28,7 +28,7 @@
         "ecr:PutImageScanningConfiguration",
         "ecr:UploadLayerPart"
       ],
-      "Resource": "arn:aws:ecr:REPLACE_REGION:REPLACE_ACCOUNT_ID:repository/farahn-store-web"
+      "Resource": "arn:aws:ecr:us-east-1:269531437168:repository/farahn-store-web"
     },
     {
       "Sid": "DeployFaraEcsService",
@@ -53,10 +53,10 @@
       "Resource": "*"
     },
     {
-      "Sid": "PassEcsExecutionRole",
+      "Sid": "PassFacturacionExecutionRole",
       "Effect": "Allow",
       "Action": "iam:PassRole",
-      "Resource": "arn:aws:iam::REPLACE_ACCOUNT_ID:role/ecsTaskExecutionRole",
+      "Resource": "arn:aws:iam::269531437168:role/facturacionTaskExecutionRole",
       "Condition": {
         "StringEquals": {
           "iam:PassedToService": "ecs-tasks.amazonaws.com"
