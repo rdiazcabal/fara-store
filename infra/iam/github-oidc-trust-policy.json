@@ -10,7 +10,12 @@
       "Condition": {
         "StringEquals": {
           "token.actions.githubusercontent.com:aud": "sts.amazonaws.com",
-          "token.actions.githubusercontent.com:sub": "repo:rdiazcabal/fara-store:ref:refs/heads/main"
+          "token.actions.githubusercontent.com:sub": [
+            "repo:rdiazcabal/facturacion:ref:refs/heads/main",
+            "repo:rdiazcabal@40671887/facturacion@1313406596:ref:refs/heads/main",
+            "repo:rdiazcabal/fara-store:ref:refs/heads/main",
+            "repo:rdiazcabal@40671887/fara-store@1319891293:ref:refs/heads/main"
+          ]
         }
       }
     }
