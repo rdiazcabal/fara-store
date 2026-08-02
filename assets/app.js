@@ -1,7 +1,5 @@
 'use strict';
 
-const WHATSAPP_NUMBER = '50400000000'; // Reemplazar por el número real sin + ni espacios.
-
 const products = [
   { id: 1, brand: 'e.l.f.', name: 'Soft Glam Satin Foundation', category: 'Rostro', price: 395, oldPrice: 450, badge: 'Más vendido', palette: ['#e7c0a8', '#b77a5f'], shape: 'bottle' },
   { id: 2, brand: 'Maybelline', name: 'Super Stay Lumi-Matte', category: 'Rostro', price: 420, badge: 'Nuevo', palette: ['#f0c8ae', '#d59377'], shape: 'bottle' },
@@ -88,12 +86,6 @@ function changeQuantity(id, delta) {
 function openCart() { $('#cartOverlay').hidden = false; document.body.classList.add('no-scroll'); }
 function closeCart() { $('#cartOverlay').hidden = true; document.body.classList.remove('no-scroll'); }
 
-function checkout() {
-  const lines = state.cart.map((item) => `• ${item.quantity} × ${item.brand} ${item.name} — ${currency.format(item.price * item.quantity)}`);
-  const message = encodeURIComponent(`Hola FARA, deseo confirmar este pedido:\n\n${lines.join('\n')}\n\nSubtotal: ${currency.format(subtotal())}`);
-  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, '_blank', 'noopener,noreferrer');
-}
-
 renderCategories();
 renderProducts();
 renderCart();
@@ -129,7 +121,6 @@ $('#searchInput').addEventListener('input', (event) => { state.query = event.tar
 $('#cartOpen').addEventListener('click', openCart);
 $('#cartClose').addEventListener('click', closeCart);
 $('#cartOverlay').addEventListener('click', (event) => { if (event.target.id === 'cartOverlay') closeCart(); });
-$('#checkoutButton').addEventListener('click', checkout);
 
 $('#menuOpen').addEventListener('click', () => { $('#mobileMenu').hidden = false; document.body.classList.add('no-scroll'); });
 $('#menuClose').addEventListener('click', () => { $('#mobileMenu').hidden = true; document.body.classList.remove('no-scroll'); });
