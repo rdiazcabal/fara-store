@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="assets/styles.css">
   <link rel="stylesheet" href="assets/logo.css">
   <link rel="stylesheet" href="assets/product-images.css">
+  <link rel="stylesheet" href="assets/cart-ui.css">
   <title>FARA | Maquillaje al detalle y por mayor</title>
 </head>
 
@@ -34,8 +35,14 @@
     </nav>
     <div class="header-actions">
       <button class="icon-button" id="searchToggle" aria-label="Buscar"><span class="icon">⌕</span></button>
-      <button class="icon-button cart-button" id="cartOpen" aria-label="Abrir carrito"><span class="icon">□</span><span
-          class="cart-count" id="cartCount" hidden>0</span></button>
+      <button class="icon-button cart-button" id="cartOpen" aria-label="Abrir carrito">
+        <svg class="cart-svg" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L20.5 8H6.2"></path>
+          <circle cx="9.5" cy="19.5" r="1.2"></circle>
+          <circle cx="17" cy="19.5" r="1.2"></circle>
+        </svg>
+        <span class="cart-count" id="cartCount" hidden>0</span>
+      </button>
     </div>
   </header>
 
