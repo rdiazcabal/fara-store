@@ -1,22 +1,115 @@
 'use strict';
 
 const products = [
-  { id: 1, brand: 'e.l.f.', name: 'Soft Glam Satin Foundation', category: 'Rostro', price: 395, oldPrice: 450, badge: 'Más vendido', palette: ['#e7c0a8', '#b77a5f'], shape: 'bottle' },
-  { id: 2, brand: 'Maybelline', name: 'Super Stay Lumi-Matte', category: 'Rostro', price: 420, badge: 'Nuevo', palette: ['#f0c8ae', '#d59377'], shape: 'bottle' },
-  { id: 3, brand: 'Revlon', name: 'ColorStay Polvo Translúcido', category: 'Rostro', price: 310, palette: ['#f5eadc', '#c8a19c'], shape: 'compact' },
-  { id: 4, brand: 'L’Oréal Paris', name: 'Rouge Signature Lip Ink', category: 'Labios', price: 335, oldPrice: 375, palette: ['#b73555', '#62182d'], shape: 'lipstick' },
-  { id: 5, brand: 'e.l.f.', name: 'Bite-Size Eyeshadow Rose Water', category: 'Ojos', price: 195, badge: 'Favorito', palette: ['#d8b0ac', '#7d5b63'], shape: 'palette' },
-  { id: 6, brand: 'Maybelline', name: 'Lash Sensational Sky High', category: 'Ojos', price: 320, palette: ['#dfb2c8', '#1b1015'], shape: 'tube' },
-  { id: 7, brand: 'CeraVe', name: 'Hydrating Facial Cleanser', category: 'Cuidado', price: 390, palette: ['#dfeaf0', '#83aebf'], shape: 'bottle' },
-  { id: 8, brand: 'FARA Select', name: 'Velvet Glow Setting Powder', category: 'Rostro', price: 285, badge: 'Exclusivo', palette: ['#f3ece3', '#91766e'], shape: 'jar' }
+  {
+    id: 1,
+    brand: 'L’Oréal Paris',
+    name: 'True Match Super-Blendable Foundation',
+    category: 'Rostro',
+    price: 445,
+    oldPrice: 495,
+    badge: 'Más vendido',
+    image: 'assets/brands-curated-products.png',
+    imagePosition: '35% 50%',
+    imageScale: 2.15
+  },
+  {
+    id: 2,
+    brand: 'L’Oréal Paris',
+    name: 'Infallible Pro-Matte 24H',
+    category: 'Rostro',
+    price: 420,
+    badge: 'Nuevo',
+    image: 'assets/brands-curated-products.png',
+    imagePosition: '56% 48%',
+    imageScale: 2.1
+  },
+  {
+    id: 3,
+    brand: 'L’Oréal Paris',
+    name: 'Infallible Fresh Wear 32H',
+    category: 'Rostro',
+    price: 455,
+    image: 'assets/brands-curated-products.png',
+    imagePosition: '76% 49%',
+    imageScale: 2.15
+  },
+  {
+    id: 4,
+    brand: 'L’Oréal Paris',
+    name: 'True Match Super-Blendable Powder',
+    category: 'Rostro',
+    price: 335,
+    image: 'assets/brands-curated-products.png',
+    imagePosition: '8% 63%',
+    imageScale: 2.2
+  },
+  {
+    id: 5,
+    brand: 'L’Oréal Paris',
+    name: 'Color Riche Lipstick',
+    category: 'Labios',
+    price: 325,
+    oldPrice: 365,
+    badge: 'Favorito',
+    image: 'assets/brands-curated-products.png',
+    imagePosition: '93% 62%',
+    imageScale: 2.25
+  },
+  {
+    id: 6,
+    brand: 'L’Oréal Paris',
+    name: 'True Match Foundation 30 ml',
+    category: 'Rostro',
+    price: 445,
+    image: 'assets/brands-curated-products.png',
+    imagePosition: '32% 51%',
+    imageScale: 1.65
+  },
+  {
+    id: 7,
+    brand: 'L’Oréal Paris',
+    name: 'Infallible Foundation Duo',
+    category: 'Sets',
+    price: 795,
+    badge: 'Dúo',
+    image: 'assets/brands-curated-products.png',
+    imagePosition: '67% 50%',
+    imageScale: 1.42
+  },
+  {
+    id: 8,
+    brand: 'FARA Select',
+    name: 'L’Oréal Beauty Essentials Set',
+    category: 'Sets',
+    price: 1295,
+    badge: 'Exclusivo',
+    image: 'assets/Base-maquillaje-LOreal-2-1200x675.webp',
+    imagePosition: 'center',
+    imageScale: 1
+  }
 ];
 
-const categories = ['Todos', 'Rostro', 'Labios', 'Ojos', 'Cuidado'];
+const categories = ['Todos', 'Rostro', 'Labios', 'Sets'];
 const state = { category: 'Todos', query: '', cart: [], favorites: new Set() };
 const currency = new Intl.NumberFormat('es-HN', { style: 'currency', currency: 'HNL', minimumFractionDigits: 0 });
 const $ = (selector) => document.querySelector(selector);
 
 function productVisual(product) {
+  if (product.image) {
+    const fitClass = product.imageFit === 'contain' ? ' product-image-frame--contain' : '';
+    return `
+      <div class="product-image-frame${fitClass}">
+        <img
+          class="product-image"
+          src="${product.image}"
+          alt="${product.brand} ${product.name}"
+          loading="lazy"
+          style="--image-position:${product.imagePosition || 'center'};--image-scale:${product.imageScale || 1};"
+        >
+      </div>`;
+  }
+
   return `<div class="product-visual product-visual--${product.shape}" style="--tone-a:${product.palette[0]};--tone-b:${product.palette[1]}" aria-hidden="true"><div class="product-aura"></div><div class="product-object"><span class="product-brand-mark">F</span></div><div class="product-shadow"></div></div>`;
 }
 
