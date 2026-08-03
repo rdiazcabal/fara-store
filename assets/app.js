@@ -115,6 +115,14 @@ function productVisual(product) {
   return `<div class="product-visual product-visual--${product.shape}" style="--tone-a:${product.palette[0]};--tone-b:${product.palette[1]}" aria-hidden="true"><div class="product-aura"></div><div class="product-object"><span class="product-brand-mark">F</span></div><div class="product-shadow"></div></div>`;
 }
 
+function cartSvg(className = 'cart-empty-svg') {
+  return `<svg class="${className}" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L20.5 8H6.2"></path><circle cx="9.5" cy="19.5" r="1.2"></circle><circle cx="17" cy="19.5" r="1.2"></circle></svg>`;
+}
+
+function trashSvg() {
+  return '<svg class="cart-remove-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16"></path><path d="M9 7V4h6v3"></path><path d="M7 7l1 13h8l1-13"></path><path d="M10 11v5M14 11v5"></path></svg>';
+}
+
 function renderCategories() {
   $('#categories').innerHTML = categories.map((category) => `<button class="category-pill ${state.category === category ? 'is-active' : ''}" data-category="${category}">${category}</button>`).join('');
 }
@@ -178,13 +186,30 @@ function renderCart() {
   $('#cartCount').hidden = count === 0;
 
   if (state.cart.length === 0) {
-    $('#cartItems').innerHTML = `<div class="cart-empty"><span class="bag-icon">□</span><h3>Tu carrito está esperando.</h3><p>Agrega tus favoritos y vuelve cuando estés lista.</p><button class="button button--dark" id="emptyClose">Ver productos</button></div>`;
+    $('#cartItems').innerHTML = `<div class="cart-empty"><span class="bag-icon">${cartSvg()}</span><h3>Tu carrito está esperando.</h3><p>Agrega tus favoritos y vuelve cuando estés lista.</p><button class="button button--dark" id="emptyClose">Ver productos</button></div>`;
     $('#cartFooter').hidden = true;
     return;
   }
 
   $('#cartItems').innerHTML = state.cart.map((item) => `
-    <article class="cart-item"><div class="cart-item-visual">${productVisual(item)}</div><div class="cart-item-copy"><span>${item.brand}</span><h3>${item.name}</h3><strong>${currency.format(item.price)}</strong><div class="quantity-control"><button data-qty="${item.id}" data-delta="-1">−</button><span>${item.quantity}</span><button data-qty="${item.id}" data-delta="1">+</button></div></div></article>`).join('');
+    <article class="cart-item">
+      <div class="cart-item-visual">${productVisual(item)}</div>
+      <div class="cart-item-copy">
+        <span>${item.brand}</span>
+        <h3>${item.name}</h3>
+        <strong>${currency.format(item.price)}</strong>
+        <div class="cart-item-actions">
+          <div class="quantity-control">
+            <button data-qty="${item.id}" data-delta="-1" aria-label="Reducir cantidad de ${item.name}">−</button>
+            <span>${item.quantity}</span>
+            <button data-qty="${item.id}" data-delta="1" aria-label="Aumentar cantidad de ${item.name}">+</button>
+          </div>
+          <button class="cart-remove" type="button" data-remove="${item.id}" aria-label="Eliminar ${item.name} del carrito">
+            ${trashSvg()} Eliminar
+          </button>
+        </div>
+      </div>
+    </article>`).join('');
 
   $('#cartFooter').innerHTML = `
     <div><span>Subtotal</span><strong id="subtotal">${currency.format(subtotal())}</strong></div>
@@ -207,6 +232,11 @@ function changeQuantity(id, delta) {
   if (!item) return;
   item.quantity += delta;
   state.cart = state.cart.filter((entry) => entry.quantity > 0);
+  renderCart();
+}
+
+function removeFromCart(id) {
+  state.cart = state.cart.filter((item) => item.id !== id);
   renderCart();
 }
 
@@ -237,8 +267,11 @@ $('#productGrid').addEventListener('click', (event) => {
 });
 
 $('#cartItems').addEventListener('click', (event) => {
-  const button = event.target.closest('[data-qty]');
-  if (button) changeQuantity(Number(button.dataset.qty), Number(button.dataset.delta));
+  const quantityButton = event.target.closest('[data-qty]');
+  const removeButton = event.target.closest('[data-remove]');
+
+  if (quantityButton) changeQuantity(Number(quantityButton.dataset.qty), Number(quantityButton.dataset.delta));
+  if (removeButton) removeFromCart(Number(removeButton.dataset.remove));
   if (event.target.closest('#emptyClose')) closeCart();
 });
 
