@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F3ECE3">
+  <meta name="description" content="Catálogo de maquillaje FARA con precios al detalle y pedido por WhatsApp.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css?v=20260803-1600">
+  <link rel="stylesheet" href="assets/logo.css?v=20260803-1600">
+  <link rel="stylesheet" href="assets/product-images.css?v=20260803-1600">
+  <link rel="stylesheet" href="assets/cart-ui.css?v=20260803-1600">
+  <link rel="stylesheet" href="assets/products-page.css?v=20260803-1600">
+  <title>Productos | FARA</title>
+</head>
+
+<body class="products-page">
+  <div class="announcement">
+    <span>Envíos a toda Honduras</span><span class="announcement-dot"></span><span>Precios al detalle</span>
+  </div>
+
+  <header class="header products-header">
+    <button class="icon-button mobile-only" id="menuOpen" aria-label="Abrir menú"><span class="icon">☰</span></button>
+    <a class="wordmark" href="index.html" aria-label="FARA Inicio">FARA</a>
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+      <a class="is-current" href="productos.html">Productos</a>
+      <a href="index.html#mayoristas">Mayoristas</a>
+      <a href="index.html#marca">Nuestras marcas</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button cart-button" id="cartOpen" aria-label="Abrir carrito">
+        <svg class="cart-svg" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L20.5 8H6.2"></path>
+          <circle cx="9.5" cy="19.5" r="1.2"></circle>
+          <circle cx="17" cy="19.5" r="1.2"></circle>
+        </svg>
+        <span class="cart-count" id="cartCount" hidden>0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="products-hero">
+      <div class="products-hero-copy">
+        <span class="eyebrow">Catálogo al detalle</span>
+        <h1>Encuentra tu próximo favorito.</h1>
+        <p>Explora bases, polvos, labiales y sets seleccionados por FARA. Agrega tus productos al carrito y envía el pedido por WhatsApp.</p>
+        <div class="products-hero-points">
+          <span>✓ Precios en lempiras</span>
+          <span>✓ Atención personalizada</span>
+          <span>✓ Entrega nacional</span>
+        </div>
+      </div>
+      <div class="products-hero-image">
+        <img src="assets/Base-maquillaje-LOreal-2-1200x675.webp" alt="Colección de productos de maquillaje disponibles en FARA">
+      </div>
+    </section>
+
+    <section class="products-catalog" aria-labelledby="catalogTitle">
+      <div class="products-catalog-heading">
+        <div>
+          <span class="eyebrow">Compra al detalle</span>
+          <h2 id="catalogTitle">Todos los productos</h2>
+          <p id="resultCount">8 productos disponibles</p>
+        </div>
+        <div class="products-toolbar">
+          <label class="catalog-search">
+            <span class="sr-only">Buscar productos</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+            <input id="catalogSearch" type="search" autocomplete="off" placeholder="Buscar producto o marca">
+          </label>
+          <label class="catalog-sort">
+            <span>Ordenar</span>
+            <select id="catalogSort">
+              <option value="featured">Destacados</option>
+              <option value="price-asc">Precio: menor a mayor</option>
+              <option value="price-desc">Precio: mayor a menor</option>
+              <option value="name">Nombre A–Z</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <div class="catalog-category-row" id="catalogCategories" role="tablist" aria-label="Categorías de productos"></div>
+      <div class="retail-product-grid" id="retailProductGrid"></div>
+      <div class="products-empty" id="productsEmpty" hidden>
+        <h3>No encontramos productos</h3>
+        <p>Prueba otra búsqueda o selecciona una categoría diferente.</p>
+      </div>
+    </section>
+
+    <section class="retail-help">
+      <div>
+        <span class="eyebrow">¿Necesitas ayuda?</span>
+        <h2>Te ayudamos a elegir el producto adecuado.</h2>
+        <p>Envía tu carrito por WhatsApp y nuestro equipo confirmará disponibilidad, tonos, pago y entrega.</p>
+      </div>
+      <button class="button button--dark" id="helpCartOpen" type="button">Ver mi carrito <span>→</span></button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="wordmark wordmark--footer" href="index.html">FARA</a>
+    <div><strong>Compra</strong><a href="productos.html">Productos</a><a href="index.html#novedades">Novedades</a><a href="index.html#mayoristas">Mayoristas</a></div>
+    <div><strong>Ayuda</strong><a href="mailto:hola@farastore.com">Contacto</a><a href="#">Envíos</a><a href="#">Cambios</a></div>
+    <div><strong>Síguenos</strong><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">TikTok</a></div>
+    <p>© 2026 FARA. Maquillaje al detalle y por mayor.</p>
+  </footer>
+
+  <div class="overlay-panel mobile-menu" id="mobileMenu" hidden>
+    <button class="icon-button panel-close" id="menuClose" aria-label="Cerrar menú">×</button>
+    <a class="wordmark" href="index.html">FARA</a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="index.html#mayoristas">Mayoristas</a>
+      <a href="index.html#marca">Nuestras marcas</a>
+    </nav>
+  </div>
+
+  <div class="cart-overlay" id="cartOverlay" hidden>
+    <aside class="cart-drawer" aria-label="Carrito de compra">
+      <div class="cart-header">
+        <div><span class="eyebrow">Tu selección</span><h2>Carrito (<span id="cartTitleCount">0</span>)</h2></div>
+        <button class="icon-button" id="cartClose" aria-label="Cerrar carrito">×</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-footer" id="cartFooter" hidden></div>
+    </aside>
+  </div>
+
+  <script src="assets/products-page.js?v=20260803-1600" defer></script>
+</body>
+
+</html>
