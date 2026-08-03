@@ -1,5 +1,7 @@
 'use strict';
 
+const WHATSAPP_NUMBER = '50493609889';
+
 const products = [
   {
     id: 1,
@@ -141,6 +143,34 @@ function renderProducts() {
 function cartCount() { return state.cart.reduce((sum, item) => sum + item.quantity, 0); }
 function subtotal() { return state.cart.reduce((sum, item) => sum + item.price * item.quantity, 0); }
 
+function buildWhatsAppMessage() {
+  const productLines = state.cart.map((item, index) => {
+    const lineTotal = item.price * item.quantity;
+    return `${index + 1}. ${item.brand} - ${item.name}\n   Cantidad: ${item.quantity}\n   Total: ${currency.format(lineTotal)}`;
+  });
+
+  return [
+    '*Nuevo pedido desde FARA*',
+    '',
+    ...productLines,
+    '',
+    `*Total de productos:* ${cartCount()}`,
+    `*Subtotal:* ${currency.format(subtotal())}`,
+    '',
+    'Hola, deseo confirmar disponibilidad, forma de pago y entrega de este pedido.'
+  ].join('\n');
+}
+
+function sendCartToWhatsApp() {
+  if (state.cart.length === 0) return;
+
+  const message = encodeURIComponent(buildWhatsAppMessage());
+  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
+  const whatsappWindow = window.open(url, '_blank', 'noopener,noreferrer');
+
+  if (!whatsappWindow) window.location.href = url;
+}
+
 function renderCart() {
   const count = cartCount();
   $('#cartTitleCount').textContent = count;
@@ -155,7 +185,11 @@ function renderCart() {
 
   $('#cartItems').innerHTML = state.cart.map((item) => `
     <article class="cart-item"><div class="cart-item-visual">${productVisual(item)}</div><div class="cart-item-copy"><span>${item.brand}</span><h3>${item.name}</h3><strong>${currency.format(item.price)}</strong><div class="quantity-control"><button data-qty="${item.id}" data-delta="-1">−</button><span>${item.quantity}</span><button data-qty="${item.id}" data-delta="1">+</button></div></div></article>`).join('');
-  $('#subtotal').textContent = currency.format(subtotal());
+
+  $('#cartFooter').innerHTML = `
+    <div><span>Subtotal</span><strong id="subtotal">${currency.format(subtotal())}</strong></div>
+    <p>Al continuar se abrirá WhatsApp con el detalle completo de tu pedido para confirmar disponibilidad, pago y entrega.</p>
+    <button class="button button--dark button--full" id="whatsappCheckout" type="button">Enviar pedido por WhatsApp <span>→</span></button>`;
   $('#cartFooter').hidden = false;
 }
 
@@ -206,6 +240,10 @@ $('#cartItems').addEventListener('click', (event) => {
   const button = event.target.closest('[data-qty]');
   if (button) changeQuantity(Number(button.dataset.qty), Number(button.dataset.delta));
   if (event.target.closest('#emptyClose')) closeCart();
+});
+
+$('#cartFooter').addEventListener('click', (event) => {
+  if (event.target.closest('#whatsappCheckout')) sendCartToWhatsApp();
 });
 
 $('#searchToggle').addEventListener('click', () => { $('#searchBar').hidden = !$('#searchBar').hidden; if (!$('#searchBar').hidden) $('#searchInput').focus(); });
