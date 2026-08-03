@@ -1,0 +1,11 @@
+.editorial-image {
+  background-size: cover !important;
+  background-position: center top !important;
+  background-repeat: no-repeat !important;
+}
+
+.editorial-image .editorial-face,
+.editorial-image .editorial-brush,
+.editorial-image > span {
+  display: none !important;
+}
