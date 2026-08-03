@@ -1,6 +1,7 @@
 'use strict';
 
 const WHATSAPP_NUMBER = '50493609889';
+const CART_STORAGE_KEY = 'fara-cart-v1';
 
 const products = [
   {
@@ -93,9 +94,30 @@ const products = [
 ];
 
 const categories = ['Todos', 'Rostro', 'Labios', 'Sets'];
-const state = { category: 'Todos', query: '', cart: [], favorites: new Set() };
 const currency = new Intl.NumberFormat('es-HN', { style: 'currency', currency: 'HNL', minimumFractionDigits: 0 });
 const $ = (selector) => document.querySelector(selector);
+
+function loadCart() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(CART_STORAGE_KEY) || '[]');
+    if (!Array.isArray(saved)) return [];
+
+    return saved.map((entry) => {
+      const product = products.find((item) => item.id === Number(entry.id));
+      if (!product) return null;
+      return { ...product, quantity: Math.max(1, Number(entry.quantity) || 1) };
+    }).filter(Boolean);
+  } catch (error) {
+    console.warn('No se pudo cargar el carrito guardado.', error);
+    return [];
+  }
+}
+
+const state = { category: 'Todos', query: '', cart: loadCart(), favorites: new Set() };
+
+function saveCart() {
+  localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(state.cart.map((item) => ({ id: item.id, quantity: item.quantity }))));
+}
 
 function productVisual(product) {
   if (product.image) {
@@ -223,6 +245,7 @@ function addToCart(id) {
   const existing = state.cart.find((item) => item.id === id);
   if (existing) existing.quantity += 1;
   else state.cart.push({ ...product, quantity: 1 });
+  saveCart();
   renderCart();
   openCart();
 }
@@ -232,11 +255,13 @@ function changeQuantity(id, delta) {
   if (!item) return;
   item.quantity += delta;
   state.cart = state.cart.filter((entry) => entry.quantity > 0);
+  saveCart();
   renderCart();
 }
 
 function removeFromCart(id) {
   state.cart = state.cart.filter((item) => item.id !== id);
+  saveCart();
   renderCart();
 }
 
@@ -294,4 +319,10 @@ $('#newsletterForm').addEventListener('submit', (event) => {
   event.preventDefault();
   event.currentTarget.reset();
   $('#newsletterMessage').hidden = false;
+});
+
+window.addEventListener('storage', (event) => {
+  if (event.key !== CART_STORAGE_KEY) return;
+  state.cart = loadCart();
+  renderCart();
 });
