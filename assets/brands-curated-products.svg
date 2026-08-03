@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Selección curada de maquillaje disponible en FARA</title>
+  <desc id="desc">Composición editorial en tonos rosados con bases, polvo y labial inspirados en las líneas True Match e Infallible de L'Oréal Paris.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8dfd8"/><stop offset=".55" stop-color="#d7aaa4"/><stop offset="1" stop-color="#b9827d"/></linearGradient>
+    <linearGradient id="skin" x1="0" x2="1"><stop stop-color="#b87650"/><stop offset=".5" stop-color="#e3ad83"/><stop offset="1" stop-color="#9d5e3f"/></linearGradient>
+    <linearGradient id="glass" x1="0" x2="1"><stop stop-color="#ffffff" stop-opacity=".72"/><stop offset=".25" stop-color="#ffffff" stop-opacity=".18"/><stop offset=".55" stop-color="#f7d5bd" stop-opacity=".38"/><stop offset="1" stop-color="#ffffff" stop-opacity=".7"/></linearGradient>
+    <linearGradient id="black" x1="0" x2="1"><stop stop-color="#080708"/><stop offset=".48" stop-color="#49383c"/><stop offset="1" stop-color="#0b090a"/></linearGradient>
+    <linearGradient id="red" x1="0" x2="1"><stop stop-color="#760c22"/><stop offset=".5" stop-color="#c51f43"/><stop offset="1" stop-color="#6b0b1c"/></linearGradient>
+    <linearGradient id="silver" x1="0" x2="1"><stop stop-color="#8f8d8d"/><stop offset=".2" stop-color="#ffffff"/><stop offset=".48" stop-color="#aaa6a6"/><stop offset=".76" stop-color="#ffffff"/><stop offset="1" stop-color="#7f7b7b"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="25" stdDeviation="18" flood-color="#5d302b" flood-opacity=".28"/></filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="28"/></filter>
+  </defs>
+
+  <rect width="1200" height="900" rx="26" fill="url(#bg)"/>
+  <circle cx="650" cy="430" r="355" fill="#f3ece3" fill-opacity=".32" stroke="#fff" stroke-opacity=".45" stroke-width="2"/>
+  <path d="M-40 700C170 520 300 690 450 590C570 510 690 540 820 650C950 760 1070 720 1240 585V930H-40Z" fill="#f7eee7" fill-opacity=".83"/>
+  <path d="M-60 770C170 610 340 760 505 645C655 540 835 610 1245 825V925H-60Z" fill="#ead8cd" fill-opacity=".75"/>
+  <path d="M-70 250L450 -40M880 940L1270 555M110 865L1040 75" stroke="#fff" stroke-opacity=".42" stroke-width="2"/>
+  <ellipse cx="640" cy="770" rx="470" ry="55" fill="#6e3c38" opacity=".18" filter="url(#soft)"/>
+
+  <!-- Compact powder -->
+  <g transform="translate(75 470) rotate(-8 145 145)" filter="url(#shadow)">
+    <circle cx="145" cy="145" r="135" fill="#f7f1eb" stroke="#fff" stroke-opacity=".8" stroke-width="12"/>
+    <circle cx="145" cy="145" r="102" fill="#eadbd3" stroke="#9d817b" stroke-opacity=".42" stroke-width="2"/>
+    <text x="145" y="115" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" letter-spacing="3">L'ORÉAL</text>
+    <text x="145" y="141" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" letter-spacing="4">PARIS</text>
+    <text x="145" y="190" text-anchor="middle" font-family="Georgia,serif" font-size="38">true match</text>
+    <text x="145" y="220" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" letter-spacing="2">POWDER</text>
+  </g>
+
+  <!-- True Match glass bottle -->
+  <g transform="translate(350 205) rotate(-5 120 260)" filter="url(#shadow)">
+    <rect x="45" y="60" width="150" height="450" rx="25" fill="url(#skin)" stroke="#fff" stroke-opacity=".62" stroke-width="7"/>
+    <rect x="45" y="60" width="150" height="450" rx="25" fill="url(#glass)"/>
+    <rect x="62" y="0" width="116" height="82" rx="14" fill="url(#silver)"/>
+    <rect x="82" y="-28" width="78" height="38" rx="8" fill="url(#silver)"/>
+    <rect x="101" y="-38" width="40" height="12" rx="4" fill="#d6d4d4"/>
+    <text x="120" y="172" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" letter-spacing="1">L'ORÉAL</text>
+    <text x="120" y="194" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" letter-spacing="3">PARIS</text>
+    <text x="120" y="266" text-anchor="middle" font-family="Arial,sans-serif" font-size="39" fill="#fff">true</text>
+    <text x="120" y="306" text-anchor="middle" font-family="Arial,sans-serif" font-size="39" fill="#fff">match</text>
+    <text x="120" y="345" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" letter-spacing="1">SUPER-BLENDABLE</text>
+    <text x="120" y="365" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" letter-spacing="1">FOUNDATION</text>
+    <text x="120" y="475" text-anchor="middle" font-family="Arial,sans-serif" font-size="16">30 ml</text>
+  </g>
+
+  <!-- Infallible Pro-Matte tube -->
+  <g transform="translate(555 145)" filter="url(#shadow)">
+    <path d="M40 25Q130 0 220 25L205 515Q130 550 55 515Z" fill="#dca47e"/>
+    <path d="M40 25Q130 0 220 25L211 165H49Z" fill="#111"/>
+    <path d="M49 165H211L208 225H52Z" fill="#ba1738"/>
+    <rect x="58" y="480" width="144" height="93" rx="9" fill="url(#red)"/>
+    <text x="130" y="92" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="20" letter-spacing="2">L'ORÉAL</text>
+    <text x="130" y="117" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="11" letter-spacing="3">PARIS</text>
+    <text x="77" y="205" fill="#20191a" font-family="Arial,sans-serif" font-size="14">UP TO</text>
+    <text x="74" y="241" fill="#20191a" font-family="Arial,sans-serif" font-size="34" font-weight="700">24HR</text>
+    <text transform="translate(104 448) rotate(-90)" font-family="Arial,sans-serif" font-size="30" font-weight="700">INFALLIBLE</text>
+    <rect x="125" y="260" width="35" height="178" fill="#c52743"/>
+    <text transform="translate(151 430) rotate(-90)" fill="#fff" font-family="Arial,sans-serif" font-size="17" font-weight="700">PRO-MATTE</text>
+    <text x="171" y="285" font-family="Arial,sans-serif" font-size="28" font-weight="700">105.5</text>
+    <text x="174" y="308" font-family="Arial,sans-serif" font-size="9">LIGHT BEIGE</text>
+    <text x="130" y="462" text-anchor="middle" font-family="Arial,sans-serif" font-size="10">MATTE FINISH · OIL-FREE</text>
+  </g>
+
+  <!-- Fresh Wear bottle -->
+  <g transform="translate(805 245) rotate(3 95 240)" filter="url(#shadow)">
+    <rect x="20" y="110" width="150" height="390" rx="18" fill="#e3ad83" stroke="#fff" stroke-opacity=".5" stroke-width="7"/>
+    <rect x="20" y="110" width="150" height="390" rx="18" fill="url(#glass)"/>
+    <rect x="28" y="8" width="134" height="130" rx="17" fill="url(#black)"/>
+    <rect x="37" y="7" width="116" height="55" rx="13" fill="url(#red)"/>
+    <text x="95" y="31" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="10" font-weight="700">ALL-DAY</text>
+    <text x="95" y="46" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="10" font-weight="700">LUMINOUS</text>
+    <text x="95" y="174" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">L'ORÉAL</text>
+    <text x="95" y="194" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" letter-spacing="3">PARIS</text>
+    <text transform="translate(72 420) rotate(-90)" font-family="Arial,sans-serif" font-size="27" font-weight="700">INFALLIBLE</text>
+    <rect x="83" y="240" width="34" height="180" fill="#d13e60"/>
+    <text transform="translate(109 411) rotate(-90)" fill="#fff" font-family="Arial,sans-serif" font-size="16" font-weight="700">FRESH WEAR</text>
+    <text x="133" y="405" font-family="Arial,sans-serif" font-size="34" font-weight="700">32H</text>
+  </g>
+
+  <!-- Lipstick -->
+  <g transform="translate(1010 390) rotate(7 55 180)" filter="url(#shadow)">
+    <rect x="12" y="130" width="86" height="285" rx="10" fill="url(#black)"/>
+    <rect x="8" y="120" width="94" height="28" rx="5" fill="#ad8a4f"/>
+    <path d="M26 130V38Q27 7 55 0Q83 7 84 38V130Z" fill="url(#red)"/>
+    <ellipse cx="55" cy="23" rx="29" ry="18" fill="#c35b72"/>
+    <text x="55" y="138" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="10" letter-spacing="1">L'ORÉAL</text>
+  </g>
+
+  <text x="56" y="78" fill="#fff" font-family="Arial,sans-serif" font-size="13" letter-spacing="5">FARA · BEAUTY SELECTION</text>
+  <text x="56" y="105" fill="#fff" fill-opacity=".82" font-family="Arial,sans-serif" font-size="11" letter-spacing="3">MARCAS Y FÓRMULAS QUE AMAS</text>
+</svg>
