@@ -1,4 +1,6 @@
 .editorial-image {
+  background-color: #171313;
+  background-image: url("editorial-beauty.svg") !important;
   background-size: cover !important;
   background-position: center top !important;
   background-repeat: no-repeat !important;
