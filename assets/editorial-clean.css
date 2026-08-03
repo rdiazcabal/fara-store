@@ -1,13 +1,16 @@
 .editorial-image {
   background-color: #171313;
-  background-image: url("editorial-beauty.svg") !important;
+  background-image: url("editorial-beauty-clean.png") !important;
   background-size: cover !important;
   background-position: center top !important;
   background-repeat: no-repeat !important;
 }
 
+.editorial-image::before,
+.editorial-image::after,
 .editorial-image .editorial-face,
 .editorial-image .editorial-brush,
 .editorial-image > span {
+  content: none !important;
   display: none !important;
 }
