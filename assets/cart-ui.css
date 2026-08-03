@@ -1,0 +1,84 @@
+.cart-svg,
+.cart-empty-svg,
+.cart-remove-svg {
+  width: 22px;
+  height: 22px;
+  display: block;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.cart-button {
+  display: inline-grid;
+  place-items: center;
+}
+
+.cart-button .cart-svg {
+  width: 24px;
+  height: 24px;
+}
+
+.cart-empty .bag-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 18px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(145, 118, 110, .35);
+  border-radius: 50%;
+  color: #91766e;
+  background: #f3ece3;
+}
+
+.cart-empty .cart-empty-svg {
+  width: 34px;
+  height: 34px;
+}
+
+.cart-item-copy {
+  min-width: 0;
+}
+
+.cart-item-actions {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.cart-remove {
+  padding: 7px 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 0;
+  border-bottom: 1px solid rgba(145, 118, 110, .55);
+  background: transparent;
+  color: #7b625c;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.cart-remove:hover {
+  color: #000;
+  border-bottom-color: #000;
+}
+
+.cart-remove-svg {
+  width: 15px;
+  height: 15px;
+}
+
+@media (max-width: 540px) {
+  .cart-item-actions {
+    align-items: flex-start;
+  }
+}
