@@ -33,3 +33,9 @@
 .cart-item-visual .product-image-frame--contain .product-image {
   padding: 8px;
 }
+
+/* Corrige la orientación del ícono mostrado cuando el carrito está vacío. */
+.cart-empty .cart-empty-svg {
+  transform: rotate(180deg);
+  transform-origin: center;
+}
