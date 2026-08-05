@@ -29,3 +29,13 @@ if (document.querySelector('#retailProductGrid')) {
   renderCategories();
   renderProducts();
 }
+
+const productDetailStyles = document.createElement('link');
+productDetailStyles.rel = 'stylesheet';
+productDetailStyles.href = 'assets/product-detail.css?v=20260805-1523';
+document.head.appendChild(productDetailStyles);
+
+const productVariantsScript = document.createElement('script');
+productVariantsScript.src = 'assets/product-variants.js?v=20260805-1523';
+productVariantsScript.async = false;
+document.body.appendChild(productVariantsScript);
