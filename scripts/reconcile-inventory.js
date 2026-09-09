@@ -25,6 +25,7 @@ const HISTORIC_PRODUCTS = new Map([
 ].map(p=>[p.id,p]));
 const KNOWN_FAMILY_CORRECTIONS = new Set(['FARA00025600','FARA00026600']);
 const DATE_CORRUPTED = new Set(['FARA0000523','FARA0000534','FARA0000545','FARA0000556']);
+const VERIFIED_TONE_CORRECTIONS = require('../data/inventory-tone-corrections-20260909.json');
 function assert(ok, message) { if (!ok) throw new Error(message); }
 function clone(value) { return JSON.parse(JSON.stringify(value)); }
 function normalizeTone(value) {
@@ -43,8 +44,23 @@ function newProduct(id) {
   assert(meta, `Familia sin metadata verificada: ${id}`);
   return {id,brand:meta[0],name:meta[1],category:meta[2],presentation:meta[3],image:null,variants:[]};
 }
+function applyVerifiedCorrections(snapshot) {
+  const corrected=clone(snapshot);
+  if (!corrected.source || corrected.source.file!==VERIFIED_TONE_CORRECTIONS.source.file ||
+      corrected.source.receivedDate!==VERIFIED_TONE_CORRECTIONS.source.receivedDate || !Array.isArray(corrected.groups)) return corrected;
+  for(const correction of VERIFIED_TONE_CORRECTIONS.corrections) {
+    const group=corrected.groups.find(p=>p.id===correction.productId);
+    const row=group && group.rows.find(r=>r[0]===correction.row && r[1]===correction.sku);
+    if(row && row[2]===correction.originalTone) {
+      assert(row[3]===correction.price && row[4]===correction.stock,`La corrección verificada no coincide con precio o stock: ${correction.sku}`);
+      row[2]=correction.tone;
+    }
+  }
+  return corrected;
+}
 function reconcileInventory(baseline, snapshot) {
   const previous = core.prepareCatalog(baseline);
+  snapshot=applyVerifiedCorrections(snapshot);
   assert(snapshot.schemaVersion === 1 && Array.isArray(snapshot.groups), 'Plantilla no válida');
   const previousProducts = new Map(previous.products.map(p=>[p.id,p]));
   const oldVariants = new Map();
@@ -132,7 +148,7 @@ function reconcileInventory(baseline, snapshot) {
     }
     // Preserve known identities. The export has exchanged Laque/Matte labels and Excel has converted four shade strings to dates.
     let tone=selected.tone;
-    if (DATE_CORRUPTED.has(sku)) {
+    if (DATE_CORRUPTED.has(sku) && /^\d{5}$/.test(tone)) {
       if (old && old.tone && !/^\d{5}$/.test(old.tone)) tone=old.tone;
       else {hold(sku,'Excel convirtió la tonalidad en una fecha; falta el tono original.',candidates,old);continue;}
     }
