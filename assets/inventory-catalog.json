@@ -42,7 +42,7 @@
             "name": "Base Fit Me de Maybelline (Azul)",
             "category": "Bases",
             "presentation": "1 oz",
-            "image": null,
+            "image": "assets/products/Base Fit Me Azul.png",
             "variants": [
                 {
                     "sku": "FARA00006128",
@@ -94,7 +94,7 @@
             "name": "Base Fit Me de Maybelline (Morada)",
             "category": "Bases",
             "presentation": "1 oz",
-            "image": null,
+            "image": "assets/products/fit me morada.png",
             "variants": [
                 {
                     "sku": "FARA00006210",
@@ -110,7 +110,7 @@
             "name": "Base Halo Glow de e.l.f.",
             "category": "Bases",
             "presentation": "1 oz",
-            "image": null,
+            "image": "assets/products/Base Halo Glow de e.l.f..webp",
             "variants": [
                 {
                     "sku": "FARA00000105",
@@ -200,7 +200,7 @@
             "name": "Base Lifter Plump & Glow de Maybelline",
             "category": "Bases",
             "presentation": "1 oz",
-            "image": null,
+            "image": "assets/products/Base Lifter Plump & Glow de Maybelline.jpg",
             "variants": [
                 {
                     "sku": "FARA00009110",
@@ -234,7 +234,7 @@
             "name": "Base Lumi-Matte de Maybelline",
             "category": "Bases",
             "presentation": "1 oz",
-            "image": null,
+            "image": "assets/products/Base Lumi-Matte de Maybelline.jpg",
             "variants": [
                 {
                     "sku": "FARA00008129",
@@ -262,7 +262,7 @@
             "name": "Base Outlast Active de Covergirl",
             "category": "Bases",
             "presentation": "1 oz",
-            "image": null,
+            "image": "assets/products/Base Outlast Active de Covergirl.jpg",
             "variants": [
                 {
                     "sku": "FARA00012825",
@@ -278,7 +278,7 @@
             "name": "Base Skin Tint de Maybelline",
             "category": "Bases",
             "presentation": "1 oz",
-            "image": null,
+            "image": "assets/products/Base Skin Tint de Maybelline.jpg",
             "variants": [
                 {
                     "sku": "FARA00004110",
