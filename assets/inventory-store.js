@@ -8,7 +8,7 @@
   const core = window.FaraCatalog;
   const $ = (selector) => document.querySelector(selector);
   const money = (value) => `L ${new Intl.NumberFormat('es-HN', {minimumFractionDigits: 0, maximumFractionDigits: 2}).format(value)}`;
-  const escape = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({'&':'&amp;','<':'&gt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+  const escape = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
   const state = {catalog: null, category: 'Todos', query: '', sort: 'featured', cart: [], favorites: new Set(), selections: new Map(), detailId: null, previousFocus: null};
   const grid = $('#retailProductGrid') || $('#productGrid');
   const fullPage = !!$('#retailProductGrid');
