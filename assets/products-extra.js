@@ -18,7 +18,56 @@ const extraProducts = [
   { id: 23, brand: 'FARA Select', name: 'Starter Makeup Set', category: 'Sets', price: 1095, oldPrice: 1195, badge: 'Set especial', description: 'Selección básica para rostro, ojos y labios ideal para comenzar o renovar tu cosmetiquera.', details: ['4 productos', 'Precio especial'], image: 'assets/Base-maquillaje-LOreal-2-1200x675.webp', imagePosition: 'center', imageScale: 1 }
 ];
 
+// Registro compartido de fotografías reales. Las rutas deben coincidir exactamente
+// con los archivos de assets/products (incluidas mayúsculas y extensiones).
+// Para agregar una foto nueva, registra aquí el ID del producto y su archivo.
+// Los productos sin foto individual conservan su imagen anterior.
+const productImageManifest = Object.freeze({
+  1: 'assets/products/True Match Super-Blendable Foundation.png',
+  2: 'assets/products/Infallible Pro-Matte 24H.webp',
+  3: 'assets/products/Infallible Fresh Wear 32H.jpg',
+  9: 'assets/products/super stay Maybelline.jpg'
+});
+
+const escapeProductImageText = (value) => String(value ?? '').replace(/[&<>"']/g, (character) => ({
+  '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+})[character]);
+
+function productImagePlaceholder(product) {
+  return `<div class="product-image-placeholder" role="img" aria-label="Imagen no disponible para ${escapeProductImageText(product.name)}"><span>Imagen no disponible</span><strong>${escapeProductImageText(product.name)}</strong></div>`;
+}
+
+// Una sola implementación para inicio, catálogo, modal y carrito.
+// El tamaño y el recorte se controlan en product-images.css, no por producto.
+function renderSharedProductImage(product) {
+  const source = productImageManifest[product.id] || product.image;
+  if (!source) return `<div class="product-image-frame">${productImagePlaceholder(product)}</div>`;
+  const loading = Number(product.id) <= 4 ? 'eager' : 'lazy';
+  return `<div class="product-image-frame product-image-frame--contain"><img class="product-image" data-fara-product-image="${product.id}" src="${escapeProductImageText(encodeURI(source))}" alt="${escapeProductImageText(`${product.brand} ${product.name}`)}" loading="${loading}" decoding="async"></div>`;
+}
+
+// Si una ruta falla, mostrar un estado explícito en lugar de un recuadro vacío.
+// El listener funciona también para tarjetas que se crean después de filtrar.
+document.addEventListener('error', (event) => {
+  const image = event.target;
+  if (!(image instanceof HTMLImageElement) || !image.hasAttribute('data-fara-product-image')) return;
+  const frame = image.closest('.product-image-frame');
+  if (!frame) return;
+  const product = products.find((item) => item.id === Number(image.dataset.faraProductImage));
+  frame.innerHTML = productImagePlaceholder(product || { name: image.alt });
+}, true);
+
 products.push(...extraProducts);
+
+// Normaliza los datos antes de reconstruir el carrito y volver a renderizar.
+// Así la misma fotografía se utiliza también en los detalles y en los pedidos.
+products.forEach((product) => {
+  product.image = productImageManifest[product.id] || product.image;
+  product.imageFit = 'contain';
+  product.imagePosition = 'center';
+  product.imageScale = 1;
+});
+productVisual = renderSharedProductImage;
 state.cart = loadCart();
 renderCart();
 
