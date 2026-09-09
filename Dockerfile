@@ -1,8 +1,9 @@
 FROM node:22-alpine AS inventory-builder
 WORKDIR /src
 COPY assets/inventory-core.js assets/inventory-catalog.json assets/inventory-additions-20260909.json ./assets/
-COPY scripts/build-inventory.js ./scripts/
-RUN node scripts/build-inventory.js /tmp/inventory-catalog.json
+COPY data/inventory-snapshot-20260909.json ./data/
+COPY scripts/build-inventory.js scripts/reconcile-inventory.js ./scripts/
+RUN node scripts/reconcile-inventory.js /tmp/inventory-catalog.json
 
 FROM nginx:1.27-alpine
 COPY nginx.conf /etc/nginx/conf.d/default.conf
