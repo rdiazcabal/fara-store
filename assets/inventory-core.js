@@ -9,6 +9,23 @@
   function assert(condition, message) {
     if (!condition) throw new Error(message);
   }
+  function normalizeSearch(text) {
+    return String(text || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[\u0027\u2019`\u00b4.]/g, '').toLowerCase();
+  }
+  // An inventory family may belong to several shopping categories. Preserve
+  // its original label and expand known legacy mixed labels for filtering.
+  const categoryAliases = Object.freeze({
+    'bases y corrector': Object.freeze(['Bases', 'Correctores']),
+    'bases y correctores': Object.freeze(['Bases', 'Correctores'])
+  });
+  function productCategories(original) {
+    const categories = original.categories === undefined
+      ? (categoryAliases[normalizeSearch(original.category).trim()] || [original.category])
+      : original.categories;
+    assert(Array.isArray(categories) && categories.length > 0, 'Categorías de producto no válidas');
+    assert(categories.every((category) => typeof category === 'string' && category.trim()), 'Categoría de producto no válida');
+    return Object.freeze([...new Set(categories.map((category) => category.trim()))]);
+  }
   function prepareCatalog(raw) {
     assert(raw && raw.schemaVersion === 2 && Array.isArray(raw.products), 'Formato de catálogo no válido');
     const products = [];
@@ -20,6 +37,7 @@
       assert(typeof original.brand === 'string' && original.brand.trim(), 'Marca no válida');
       assert(typeof original.category === 'string' && original.category.trim(), 'Categoría no válida');
       assert(Array.isArray(original.variants) && original.variants.length, 'Producto sin variantes');
+      const categories = productCategories(original);
       const tones = new Set();
       const variants = original.variants.map((item) => {
         assert(item && typeof item.sku === 'string' && item.sku && !bySku.has(item.sku), 'SKU duplicado o inválido');
@@ -33,7 +51,7 @@
       });
       const product = Object.freeze({
         id: original.id, name: original.name, brand: original.brand,
-        category: original.category, presentation: original.presentation || '',
+        category: original.category, categories, presentation: original.presentation || '',
         image: original.image || null, variants: Object.freeze(variants),
         stock: variants.reduce((sum, item) => sum + item.stock, 0)
       });
@@ -43,7 +61,7 @@
     assert(products.length > 0, 'El catálogo está vacío');
     return Object.freeze({
       products: Object.freeze(products), byId, bySku,
-      categories: Object.freeze(['Todos', ...new Set(products.map((p) => p.category))]),
+      categories: Object.freeze(['Todos', ...new Set(products.flatMap((p) => p.categories))]),
       source: raw.source || {}, currency: raw.currency || 'HNL'
     });
   }
@@ -77,15 +95,12 @@
       return total;
     }, {quantity: 0, subtotal: 0});
   }
-  function normalizeSearch(text) {
-    return String(text || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[\u0027\u2019`\u00b4.]/g, '').toLowerCase();
-  }
   function filterProducts(catalog, options) {
     const query = normalizeSearch(options.query).trim();
     const filtered = catalog.products.filter((product) => {
-      if (options.category && options.category !== 'Todos' && product.category !== options.category) return false;
+      if (options.category && options.category !== 'Todos' && !product.categories.includes(options.category)) return false;
       if (!query) return true;
-      return normalizeSearch([product.name, product.brand, product.category, ...product.variants.flatMap((v) => [v.tone, v.sku])].join(' ')).includes(query);
+      return normalizeSearch([product.name, product.brand, product.category, ...product.categories, ...product.variants.flatMap((v) => [v.tone, v.sku])].join(' ')).includes(query);
     });
     const price = (product) => Math.min(...product.variants.map((v) => v.price));
     if (options.sort === 'price-asc') filtered.sort((a, b) => price(a) - price(b) || a.name.localeCompare(b.name, 'es'));
