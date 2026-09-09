@@ -7,9 +7,9 @@
   const WHATSAPP_NUMBER = '50493609889';
   const core = window.FaraCatalog;
   const $ = (selector) => document.querySelector(selector);
-  const money = (value) => `L ${new Intl.NumberFormat('es-HN', {minimumFractionDigits: 0, maximumFractionDigits: 2}).format(value)}`;
-  const escape = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
-  const state = {catalog: null, category: 'Todos', query: '', sort: 'featured', cart: [], favorites: new Set(), selections: new Map(), detailId: null, previousFocus: null};
+  const money = (value) => `L ${new Intl.NumberFormat('es-HN', { minimumFractionDigits: 0, maximumFractionDigits: 2 }).format(value)}`;
+  const escape = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
+  const state = { catalog: null, category: 'Todos', query: '', sort: 'featured', cart: [], favorites: new Set(), selections: new Map(), detailId: null, previousFocus: null };
   const grid = $('#retailProductGrid') || $('#productGrid');
   const fullPage = !!$('#retailProductGrid');
   if (!grid || !core) return;
@@ -87,8 +87,8 @@
       if (price) price.textContent = money(variant.price);
       if (stock) stock.textContent = variant.stock ? `Disponible · ${variant.stock} ${variant.stock === 1 ? 'unidad' : 'unidades'} al corte` : 'Agotado';
       if (skuLabel) skuLabel.textContent = `SKU: ${variant.sku}`;
-      if (add) {add.disabled = !variant.stock; add.textContent = variant.stock ? 'Agregar al carrito' : 'Agotado';}
-      card.querySelectorAll('[data-tone-select]').forEach((select) => {select.value = sku;});
+      if (add) { add.disabled = !variant.stock; add.textContent = variant.stock ? 'Agregar al carrito' : 'Agotado'; }
+      card.querySelectorAll('[data-tone-select]').forEach((select) => { select.value = sku; });
     });
     if (state.detailId === productId) updateDetailVariant(product, variant);
   }
@@ -104,7 +104,7 @@
   function changeQuantity(sku, delta) {
     const existing = state.cart.find((item) => item.sku === sku);
     const variant = state.catalog.bySku.get(sku);
-    if (delta > 0 && existing && variant && existing.quantity >= variant.stock) {announce('No hay más unidades reportadas de esta tonalidad.'); return;}
+    if (delta > 0 && existing && variant && existing.quantity >= variant.stock) { announce('No hay más unidades reportadas de esta tonalidad.'); return; }
     state.cart = core.changeCart(state.catalog, state.cart, sku, delta);
     saveCart(); renderCart();
   }
@@ -154,8 +154,8 @@
     $('#cartClose').focus();
   }
   function closeCart() { $('#cartOverlay').hidden = true; syncScroll(); }
-  function openMenu() {closeCart(); closeDetail(false); $('#mobileMenu').hidden = false; syncScroll(); $('#menuClose').focus();}
-  function closeMenu() {if ($('#mobileMenu')) $('#mobileMenu').hidden = true; syncScroll();}
+  function openMenu() { closeCart(); closeDetail(false); $('#mobileMenu').hidden = false; syncScroll(); $('#menuClose').focus(); }
+  function closeMenu() { if ($('#mobileMenu')) $('#mobileMenu').hidden = true; syncScroll(); }
   function ensureDetail() {
     if ($('#productDetailModal')) return;
     document.body.insertAdjacentHTML('beforeend', `<div class="product-detail-overlay" id="productDetailModal" hidden><section class="product-detail-modal" role="dialog" aria-modal="true" aria-labelledby="productDetailTitle"><button class="product-detail-close" id="productDetailClose" type="button" aria-label="Cerrar detalle">×</button><div class="product-detail-image" id="productDetailImage"></div><div class="product-detail-copy"><span class="eyebrow" id="productDetailBrand"></span><h2 id="productDetailTitle"></h2><p id="productDetailDescription"></p><div class="product-detail-meta" id="productDetailMeta"></div><div class="product-detail-price" id="productDetailPrice"></div><label class="tone-selector tone-selector--detail"><span>Selecciona la tonalidad</span><select id="productDetailTone"></select></label><p class="inventory-sku" id="productDetailSku"></p><p class="inventory-stock" id="productDetailStock"></p><button class="button button--dark button--full" id="productDetailAdd" type="button">Agregar al carrito <span>→</span></button></div></section></div>`);
@@ -192,9 +192,9 @@
     const target = event.target;
     if (!state.catalog && !target.closest('#inventoryRetry, #menuOpen, #menuClose, #mobileMenu nav a')) return;
     const detail = target.closest('[data-detail]');
-    if (detail) {openDetail(detail.dataset.detail); return;}
+    if (detail) { openDetail(detail.dataset.detail); return; }
     const category = target.closest('[data-category]');
-    if (category) {state.category = category.dataset.category; renderCategories(); renderProducts(); return;}
+    if (category) { state.category = category.dataset.category; renderCategories(); renderProducts(); return; }
     const favorite = target.closest('[data-favorite]');
     if (favorite) {
       const id = favorite.dataset.favorite;
@@ -202,25 +202,25 @@
       writeStorage(FAVORITES_KEY, [...state.favorites]); renderProducts(); return;
     }
     const add = target.closest('[data-add]');
-    if (add) {const product = state.catalog.byId.get(add.dataset.add); if (product) addToCart(selectedVariant(product).sku); return;}
+    if (add) { const product = state.catalog.byId.get(add.dataset.add); if (product) addToCart(selectedVariant(product).sku); return; }
     const quantity = target.closest('[data-qty]');
-    if (quantity) {changeQuantity(quantity.dataset.qty, Number(quantity.dataset.delta)); return;}
+    if (quantity) { changeQuantity(quantity.dataset.qty, Number(quantity.dataset.delta)); return; }
     const remove = target.closest('[data-remove]');
-    if (remove) {removeItem(remove.dataset.remove); return;}
-    if (target.closest('#cartOpen, #helpCartOpen')) {openCart(); return;}
-    if (target.closest('#cartClose, #emptyClose')) {closeCart(); return;}
-    if (target.closest('#whatsappCheckout')) {sendCart(); return;}
-    if (target.closest('#productDetailClose')) {closeDetail(); return;}
+    if (remove) { removeItem(remove.dataset.remove); return; }
+    if (target.closest('#cartOpen, #helpCartOpen')) { openCart(); return; }
+    if (target.closest('#cartClose, #emptyClose')) { closeCart(); return; }
+    if (target.closest('#whatsappCheckout')) { sendCart(); return; }
+    if (target.closest('#productDetailClose')) { closeDetail(); return; }
     if (target.closest('#productDetailAdd')) {
       const product = state.catalog.byId.get(state.detailId);
       if (product) addToCart(selectedVariant(product).sku);
       return;
     }
-    if (target.closest('#menuOpen')) {openMenu(); return;}
-    if (target.closest('#menuClose')) {closeMenu(); return;}
-    if (target.closest('#searchToggle')) {const bar = $('#searchBar'); bar.hidden = !bar.hidden; if (!bar.hidden) $('#searchInput').focus(); return;}
-    if (target.closest('#searchClose')) {state.query = ''; $('#searchInput').value = ''; $('#searchBar').hidden = true; renderProducts(); return;}
-    if (target.closest('#inventoryRetry')) {loadCatalog(); return;}
+    if (target.closest('#menuOpen')) { openMenu(); return; }
+    if (target.closest('#menuClose')) { closeMenu(); return; }
+    if (target.closest('#searchToggle')) { const bar = $('#searchBar'); bar.hidden = !bar.hidden; if (!bar.hidden) $('#searchInput').focus(); return; }
+    if (target.closest('#searchClose')) { state.query = ''; $('#searchInput').value = ''; $('#searchBar').hidden = true; renderProducts(); return; }
+    if (target.closest('#inventoryRetry')) { loadCatalog(); return; }
     if (target.id === 'cartOverlay') closeCart();
     if (target.id === 'productDetailModal') closeDetail();
     if (target.closest('#mobileMenu nav a')) closeMenu();
@@ -228,43 +228,43 @@
   function onChange(event) {
     if (!state.catalog) return;
     const target = event.target;
-    if (target.matches('[data-tone-select]')) {updateSelection(target.dataset.toneSelect, target.value); return;}
-    if (target.id === 'productDetailTone') {if (state.detailId) updateSelection(state.detailId, target.value); return;}
-    if (target.id === 'catalogSort') {state.sort = target.value; renderProducts();}
+    if (target.matches('[data-tone-select]')) { updateSelection(target.dataset.toneSelect, target.value); return; }
+    if (target.id === 'productDetailTone') { if (state.detailId) updateSelection(state.detailId, target.value); return; }
+    if (target.id === 'catalogSort') { state.sort = target.value; renderProducts(); }
   }
   document.addEventListener('error', (event) => {
     const img = event.target;
     if (!(img instanceof HTMLImageElement) || !img.hasAttribute('data-inventory-image')) return;
     const frame = img.closest('.product-image-frame');
     const product = state.catalog?.byId.get(img.dataset.inventoryImage);
-    if (frame && product) {frame.innerHTML = imagePlaceholder(product);}
+    if (frame && product) { frame.innerHTML = imagePlaceholder(product); }
   }, true);
   document.addEventListener('click', onClick);
   document.addEventListener('change', onChange);
   document.addEventListener('input', (event) => {
-    if (state.catalog && event.target.matches('#catalogSearch, #searchInput')) {state.query = event.target.value; renderProducts();}
+    if (state.catalog && event.target.matches('#catalogSearch, #searchInput')) { state.query = event.target.value; renderProducts(); }
   });
   document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') {closeDetail(); closeCart(); closeMenu(); return;}
+    if (event.key === 'Escape') { closeDetail(); closeCart(); closeMenu(); return; }
     const modal = $('#productDetailModal');
     if (event.key !== 'Tab' || !modal || modal.hidden) return;
     const focusable = [...modal.querySelectorAll('button:not([disabled]), select:not([disabled])')];
     if (!focusable.length) return;
-    if (event.shiftKey && document.activeElement === focusable[0]) {event.preventDefault(); focusable[focusable.length - 1].focus();}
-    else if (!event.shiftKey && document.activeElement === focusable[focusable.length - 1]) {event.preventDefault(); focusable[0].focus();}
+    if (event.shiftKey && document.activeElement === focusable[0]) { event.preventDefault(); focusable[focusable.length - 1].focus(); }
+    else if (!event.shiftKey && document.activeElement === focusable[focusable.length - 1]) { event.preventDefault(); focusable[0].focus(); }
   });
   window.addEventListener('storage', (event) => {
-    if (event.key === CART_KEY && state.catalog) {state.cart = core.sanitizeCart(state.catalog, readStorage(CART_KEY, [])); renderCart();}
+    if (event.key === CART_KEY && state.catalog) { state.cart = core.sanitizeCart(state.catalog, readStorage(CART_KEY, [])); renderCart(); }
   });
   const newsletter = $('#newsletterForm');
-  if (newsletter) newsletter.addEventListener('submit', (event) => {event.preventDefault(); newsletter.reset(); $('#newsletterMessage').hidden = false;});
+  if (newsletter) newsletter.addEventListener('submit', (event) => { event.preventDefault(); newsletter.reset(); $('#newsletterMessage').hidden = false; });
 
   async function loadCatalog() {
     grid.innerHTML = '<p class="inventory-loading" role="status">Cargando inventario de FARA…</p>';
     $('#cartOpen').disabled = true;
     if ($('#helpCartOpen')) $('#helpCartOpen').disabled = true;
     try {
-      const response = await fetch(`assets/inventory-catalog.json?v=${VERSION}`, {cache: 'no-store'});
+      const response = await fetch(`assets/inventory-catalog.json?v=${VERSION}`, { cache: 'no-store' });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       state.catalog = core.prepareCatalog(await response.json());
       state.cart = core.sanitizeCart(state.catalog, readStorage(CART_KEY, []));
@@ -275,7 +275,7 @@
       if ($('#helpCartOpen')) $('#helpCartOpen').disabled = false;
       renderCategories(); renderProducts(); renderCart();
       const notice = $('#inventoryNotice');
-      if (notice) notice.textContent = 'Inventario al 8 de septiembre de 2026. Los precios son al detalle y las existencias se confirman antes de completar el pedido.';
+      if (notice) notice.textContent = 'FARA tiene precios de detalle y existencias confirmadas al momento de finalizar el pedido.';
       announce('Catálogo disponible.');
     } catch (error) {
       console.error('No se pudo cargar el catálogo de FARA.', error);
