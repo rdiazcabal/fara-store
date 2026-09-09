@@ -4,7 +4,7 @@ on:
     branches:
       - refactor/unify-inventory
     paths:
-      - scripts/migrate-unified-inventory.js
+      - scripts/finish-unification.js
       - .github/workflows/inventory-unification.yml
 permissions:
   contents: write
@@ -18,15 +18,19 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Generate and verify canonical inventory
+      - name: Switch all inventory consumers to the canonical file
         run: |
-          sed -i 's/allProducts.length===50/allProducts.length===51/' scripts/migrate-unified-inventory.js
-          node scripts/migrate-unified-inventory.js
-      - name: Commit canonical data to migration branch
+          node --check scripts/finish-unification.js
+          node scripts/finish-unification.js
+          node --check assets/inventory-document.js
+          node --check scripts/inventory.js
+          node --test tests/*.test.js
+          node scripts/inventory.js validate
+      - name: Commit the verified refactor
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add assets/inventory.json
+          git add -A
           git diff --cached --quiet && exit 0
-          git commit -m 'data: consolidate all inventory and archive records'
+          git commit -m 'refactor: use one canonical inventory JSON throughout FARA'
           git push origin HEAD:refactor/unify-inventory
