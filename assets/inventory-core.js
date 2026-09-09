@@ -78,7 +78,7 @@
     }, {quantity: 0, subtotal: 0});
   }
   function normalizeSearch(text) {
-    return String(text || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    return String(text || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[\u0027\u2019`\u00b4.]/g, '').toLowerCase();
   }
   function filterProducts(catalog, options) {
     const query = normalizeSearch(options.query).trim();
