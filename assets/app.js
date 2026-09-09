@@ -42,7 +42,7 @@ const products = [
     name: 'True Match Super-Blendable Powder',
     category: 'Rostro',
     price: 480,
-    image: 'assets/brands-curated-products.png',
+    image: 'assets/products/True Match Super-Blendable Powder.png',
     imagePosition: '8% 63%',
     imageScale: 2.2
   },
