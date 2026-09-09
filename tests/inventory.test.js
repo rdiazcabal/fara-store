@@ -10,15 +10,22 @@ const catalog = core.prepareCatalog(raw);
 const variants = catalog.products.flatMap((p) => p.variants);
 const digest = crypto.createHash('sha256').update(JSON.stringify(variants.map((v) => [v.sku, v.tone, v.price, v.stock]).sort((a,b) => a[0].localeCompare(b[0])))).digest('hex');
 
-test('The exact retail inventory is published, with no demo products', () => {
-  assert.equal(catalog.products.length, 28);
-  assert.equal(variants.length, 80);
-  assert.equal(catalog.bySku.size, 80);
-  assert.equal(variants.reduce((sum,v) => sum+v.stock,0),127);
-  assert.equal(variants.reduce((sum,v) => sum+v.stock*v.price,0),57130);
+test('The approved retail inventory is published, with no demo products', () => {
+  assert.equal(catalog.products.length, 27);
+  assert.equal(variants.length, 79);
+  assert.equal(catalog.bySku.size, 79);
+  assert.equal(variants.reduce((sum,v) => sum+v.stock,0),126);
+  assert.equal(variants.reduce((sum,v) => sum+v.stock*v.price,0),56650);
   assert.deepEqual([...new Set(variants.map((v) => v.price))].sort((a,b)=>a-b),[350,360,420,480,500]);
   assert.equal(raw.source.cutoff,'2026-09-08T22:46:19-06:00');
-  assert.equal(digest,'ab4f49fa25dc0e2ee9114cfb388e51e58bd47e7395f89852e20e5229f4b2a0d7');
+  assert.equal(digest,'47104afa509aa51a1f609d47b33cd20313327f1faaaeb891bad0dee69c6ebbe0');
+});
+test('Discontinued Advanced Radiance is removed without removing other Covergirl products', () => {
+  assert.equal(catalog.byId.has('base-advanced-radiance-de-covergirl'),false);
+  assert.equal(catalog.bySku.has('FARA00013120'),false);
+  assert.equal(core.filterProducts(catalog,{query:'Advanced Radiance'}).length,0);
+  assert.ok(catalog.byId.has('base-outlast-active-de-covergirl'));
+  assert.deepEqual(core.sanitizeCart(catalog,[{sku:'FARA00013120',quantity:1},{sku:'FARA00020205',quantity:1}]),[{sku:'FARA00020205',quantity:1}]);
 });
 test('No internal cost, wholesale, warehouse or expiration fields are published', () => {
   const text=JSON.stringify(raw);
@@ -44,8 +51,8 @@ test('Cart quantities are limited by SKU; distinct tones stay separate', () => {
   assert.equal(core.totals(catalog,cart).quantity,4);
 });
 test('Legacy demo IDs, removed SKUs and invalid quantities cannot enter orders', () => {
-  const cart=core.sanitizeCart(catalog,[{id:1,tone:'Porcelain',quantity:2},{sku:'UNKNOWN',quantity:2},{sku:'FARA00013120',quantity:50},{sku:'FARA00013120',quantity:-3}]);
-  assert.deepEqual(cart,[{sku:'FARA00013120',quantity:1}]);
+  const cart=core.sanitizeCart(catalog,[{id:1,tone:'Porcelain',quantity:2},{sku:'UNKNOWN',quantity:2},{sku:'FARA00013120',quantity:50},{sku:'FARA00020205',quantity:50},{sku:'FARA00020205',quantity:-3}]);
+  assert.deepEqual(cart,[{sku:'FARA00020205',quantity:1}]);
 });
 test('Search finds source SKU, accents and shades; filters and sorting work', () => {
   assert.equal(core.filterProducts(catalog,{query:'FARA0000TANN'}).length,1);
@@ -68,4 +75,9 @@ test('Every configured photo exists in the approved repository image manifest', 
   const approved=new Set(['assets/products/Infallible Fresh Wear 32H.jpg','assets/products/Infallible Pro-Matte 24H.webp','assets/products/True Match Super-Blendable Foundation.png','assets/products/True Match Super-Blendable Powder.png']);
   for(const product of catalog.products) if(product.image) assert.ok(approved.has(product.image),product.image);
   assert.equal(catalog.products.filter((p)=>p.image).length,4);
+});
+test('Customer-facing SKU and exact-stock metadata remain hidden without changing cart limits', () => {
+  const css=fs.readFileSync(path.join(__dirname,'../assets/inventory-store.css'),'utf8');
+  assert.match(css,/\.inventory-sku\s*,\s*\.inventory-stock\s*,\s*#productDetailSku\s*,\s*#productDetailStock\s*\{\s*display:\s*none\s*!important;/);
+  assert.equal(core.changeCart(catalog,[],'FARA00020205',5)[0].quantity,1);
 });
