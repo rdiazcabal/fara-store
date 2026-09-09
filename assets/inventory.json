@@ -1366,7 +1366,7 @@
       "brand": "L’Oréal Paris",
       "category": "Labiales",
       "presentation": "0.16 oz",
-      "image": null,
+      "image": "assets/products/Labial Infallible Laque Resistance de L’Oréal.webp",
       "variants": [
         {
           "sku": "FARA00025600",
@@ -1443,7 +1443,7 @@
       "brand": "Rimmel London",
       "category": "Bronceadores",
       "presentation": "1 oz",
-      "image": null,
+      "image": "assets/products/Bronceador Natural Bronzer de Rimmel London.webp",
       "variants": [
         {
           "sku": "FARA00019022",
@@ -1463,7 +1463,7 @@
       "brand": "Maybelline",
       "category": "Polvos compactos",
       "presentation": "1 oz",
-      "image": null,
+      "image": "assets/products/Polvo compacto Fit Me de Maybelline.webp",
       "variants": [
         {
           "sku": "FARA00016100",
@@ -1523,7 +1523,7 @@
       "brand": "L’Oréal Paris",
       "category": "Polvos compactos",
       "presentation": "1 oz",
-      "image": null,
+      "image": "assets/products/Polvo compacto Infallible Fresh Wear de L’Oréal.jpg",
       "variants": [
         {
           "sku": "FARA00014005",
@@ -1563,7 +1563,7 @@
       "brand": "e.l.f.",
       "category": "Polvos compactos",
       "presentation": "1 oz",
-      "image": null,
+      "image": "assets/products/Polvo compacto Prime & Stay Finishing de e.l.f..jpg",
       "variants": [
         {
           "sku": "FARA00001800",
@@ -1583,7 +1583,7 @@
       "brand": "Maybelline",
       "category": "Polvos compactos",
       "presentation": "1 oz",
-      "image": null,
+      "image": "assets/products/Polvo compacto Superstay 24H de Maybelline.webp",
       "variants": [
         {
           "sku": "FARA00015102",
