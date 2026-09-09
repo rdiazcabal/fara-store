@@ -91,7 +91,7 @@ test('Batch updates reject collisions, invalid stocks and unsupported statuses a
   assert.throws(()=>applyUpdates(data,{changes:[{sku:'FARA0000534',tone:'2-3'}]}),/Tono activo duplicado/);
   assert.throws(()=>api.inspectInventory({...data,products:[...data.products,data.products[0]]}),/ID de producto duplicado/);
   assert.throws(()=>api.inspectInventory({...data,schemaVersion:2}),/Formato único/);
-  assert.throws(()=>api.inspectInventory({...data,products:data.products.map(p=>({...p,variants:p.variants.map(v=>v.sku==='FARA00004118'?{...v,status:'active'}:v)}))}),/Tono activo duplicado/);
+  assert.throws(()=>api.inspectInventory({...data,products:data.products.map(p=>({...p,variants:p.variants.map(v=>v.sku==='FARA00004118'?{...v,status:'active',stock:1}:v)}))}),/Tono activo duplicado/);
 });
 
 test('Every configured product photo exists and no internal commercial fields are published',()=>{

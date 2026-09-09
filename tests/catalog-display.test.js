@@ -22,12 +22,13 @@ test('Cards show presentation without a count of shades', () => {
 });
 
 test('Both pages load the same fresh storefront version', () => {
-  const version = '20260909-clean1';
+  const version = '20260909-unified1';
   assert.ok(read('index.html').includes(`assets/app.js?v=${version}`));
   assert.ok(read('productos.html').includes(`assets/products-page.js?v=${version}`));
   for (const file of ['assets/app.js', 'assets/products-page.js']) {
     assert.ok(read(file).includes(`assets/inventory-loader.js?v=${version}`));
   }
   assert.ok(read('assets/inventory-loader.js').includes(`const version = '${version}'`));
+  assert.match(read('assets/inventory-loader.js'), /load\('inventory-document\.js'\)/);
   assert.match(read('assets/inventory-loader.js'), /load\('inventory-store\.js'\)/);
 });
