@@ -4,7 +4,7 @@
 (() => {
   if (window.__faraInventoryBootstrapped) return;
   window.__faraInventoryBootstrapped = true;
-  const version = '20260909-clean1';
+  const version = '20260909-unified1';
   const addStyle = (file) => {
     const link = document.createElement('link');
     link.rel = 'stylesheet';
@@ -39,7 +39,7 @@
     script.onerror = reject;
     document.body.appendChild(script);
   });
-  load('inventory-core.js').then(() => load('inventory-store.js')).catch(() => {
+  load('inventory-core.js').then(() => load('inventory-document.js')).then(() => load('inventory-store.js')).catch(() => {
     grid.innerHTML = '<div class="products-empty"><h3>No pudimos cargar el catálogo</h3><p>Recarga la página para intentarlo de nuevo.</p></div>';
   });
 })();

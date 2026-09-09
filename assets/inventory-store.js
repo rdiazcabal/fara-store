@@ -1,11 +1,11 @@
 'use strict';
 
 (() => {
-  const VERSION = '20260908-inventory1';
+  const VERSION = '20260909-unified1';
   const CART_KEY = 'fara-cart-v2';
   const FAVORITES_KEY = 'fara-favorites-v2';
   const WHATSAPP_NUMBER = '50493609889';
-  const core = window.FaraCatalog;
+  const core = window.FaraInventory;
   const $ = (selector) => document.querySelector(selector);
   const money = (value) => `L ${new Intl.NumberFormat('es-HN', { minimumFractionDigits: 0, maximumFractionDigits: 2 }).format(value)}`;
   const escape = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
@@ -264,7 +264,7 @@
     $('#cartOpen').disabled = true;
     if ($('#helpCartOpen')) $('#helpCartOpen').disabled = true;
     try {
-      const response = await fetch(`assets/inventory-catalog.json?v=${VERSION}`, { cache: 'no-store' });
+      const response = await fetch(`assets/inventory.json?v=${VERSION}`, { cache: 'no-store' });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       state.catalog = core.prepareCatalog(await response.json());
       state.cart = core.sanitizeCart(state.catalog, readStorage(CART_KEY, []));
