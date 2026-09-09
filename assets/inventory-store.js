@@ -48,7 +48,7 @@
     return `<button type="button" class="product-image-open" data-detail="${escape(product.id)}" aria-label="Ver detalle de ${escape(product.name)}">${imageMarkup(product, loading)}</button>`;
   }
   function toneSelector(product, variant, compact = false) {
-    return `<label class="tone-selector${compact ? ' tone-selector--compact' : ''}"><span>Tonalidad</span><select data-tone-select="${escape(product.id)}" aria-label="Tonalidad para ${escape(product.name)}">${product.variants.map((v) => `<option value="${escape(v.sku)}" ${v.sku === variant.sku ? 'selected' : ''} ${v.stock ? '' : 'disabled'}>${escape(v.tone)} · ${v.stock ? `${v.stock} disp.` : 'Agotado'}</option>`).join('')}</select></label>`;
+    return `<label class="tone-selector${compact ? ' tone-selector--compact' : ''}"><span>Tonalidad</span><select data-tone-select="${escape(product.id)}" aria-label="Tonalidad para ${escape(product.name)}">${product.variants.map((v) => `<option value="${escape(v.sku)}" ${v.sku === variant.sku ? 'selected' : ''} ${v.stock ? '' : 'disabled'}>${escape(v.tone)}</option>`).join('')}</select></label>`;
   }
   function cardMarkup(product, index) {
     const variant = selectedVariant(product);
@@ -180,7 +180,7 @@
     $('#productDetailTitle').textContent = product.name;
     $('#productDetailDescription').textContent = 'Producto registrado en el inventario de FARA. Selecciona la tonalidad y confirma disponibilidad antes de completar tu pedido.';
     $('#productDetailMeta').innerHTML = [product.category, product.presentation].filter(Boolean).map((text) => `<span>${escape(text)}</span>`).join('');
-    $('#productDetailTone').innerHTML = product.variants.map((v) => `<option value="${escape(v.sku)}" ${v.stock ? '' : 'disabled'}>${escape(v.tone)} · ${v.stock ? `${v.stock} disp.` : 'Agotado'}</option>`).join('');
+    $('#productDetailTone').innerHTML = product.variants.map((v) => `<option value="${escape(v.sku)}" ${v.stock ? '' : 'disabled'}>${escape(v.tone)}</option>`).join('');
     updateDetailVariant(product, selectedVariant(product));
     $('#productDetailModal').hidden = false; syncScroll(); $('#productDetailClose').focus();
   }
