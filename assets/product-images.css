@@ -1,3 +1,4 @@
+/* Shared product imagery: show the entire source in every storefront view. */
 .product-image-frame {
   position: relative;
   width: 100%;
@@ -7,34 +8,83 @@
 }
 
 .product-image {
+  display: block;
   width: 100%;
   height: 100%;
-  display: block;
-  object-fit: cover;
-  object-position: var(--image-position, center);
-  transform: scale(var(--image-scale, 1));
-  transition: transform .35s ease;
+  max-width: 100%;
+  box-sizing: border-box;
+  object-fit: contain;
+  object-position: center;
+  padding: 18px;
+  background: #fff;
+  transform: none;
+  transition: none;
 }
 
-.product-media:hover .product-image {
-  transform: scale(calc(var(--image-scale, 1) + .05));
-}
-
+/* Override the old per-product zoom and the catalog hover transform. */
+.product-media:hover .product-image,
+.retail-card:hover .product-image,
 .product-image-frame--contain .product-image {
   object-fit: contain;
-  padding: 24px;
-  background: #fff;
+  object-position: center;
+  transform: none;
 }
 
 .cart-item-visual .product-image-frame {
   min-height: 100%;
 }
 
-.cart-item-visual .product-image-frame--contain .product-image {
+.cart-item-visual .product-image {
   padding: 8px;
 }
 
-/* Corrige la orientación del ícono mostrado cuando el carrito está vacío. */
+.product-detail-image .product-image {
+  padding: 24px;
+}
+
+.product-image-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 120px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 24px;
+  background: #f8f4f1;
+  color: #91766e;
+  text-align: center;
+}
+
+.product-image-placeholder span {
+  font-size: 10px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.product-image-placeholder strong {
+  max-width: 100%;
+  font: 500 18px/1.2 'Cormorant Garamond', Georgia, serif;
+  overflow-wrap: anywhere;
+}
+
+.cart-item-visual .product-image-placeholder {
+  min-height: 0;
+  padding: 8px;
+  gap: 4px;
+}
+
+.cart-item-visual .product-image-placeholder span {
+  font-size: 7px;
+}
+
+.cart-item-visual .product-image-placeholder strong {
+  font-size: 12px;
+}
+
+/* Keep the empty-cart icon orientation. */
 .cart-empty .cart-empty-svg {
   transform: rotate(180deg);
   transform-origin: center;
