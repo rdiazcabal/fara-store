@@ -1,0 +1,126 @@
+/* Inventory storefront: preserve the existing FARA layout and visual identity. */
+.product-image-open {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+}
+.product-image-open:focus-visible, .inventory-title-button:focus-visible {
+  outline: 2px solid #91766e;
+  outline-offset: -3px;
+}
+.product-image-open .product-image-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.product-image-frame--contain .product-image,
+.product-media:hover .product-image,
+.retail-card:hover .product-image,
+.product-image-open:hover .product-image {
+  transform: none !important;
+  object-fit: contain;
+  object-position: center;
+}
+.product-image-frame--contain .product-image {
+  width: 100%;
+  height: 100%;
+  padding: clamp(12px, 2vw, 25px);
+  background: #fff;
+}
+.product-detail-image .product-image-frame--contain .product-image {
+  padding: 24px;
+}
+.cart-item-visual .product-image-frame--contain .product-image {
+  padding: 5px;
+}
+.product-image-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 120px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  background: #f8f4f1;
+  color: #91766e;
+}
+.product-image-placeholder > span {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 38px;
+  letter-spacing: .08em;
+}
+.product-image-placeholder strong {
+  max-width: 260px;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(19px, 2vw, 27px);
+  font-weight: 500;
+  line-height: 1.1;
+  color: #5b4a45;
+}
+.product-image-placeholder small {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.cart-item-visual .product-image-placeholder {min-height: 100%; padding: 6px; gap: 4px;}
+.cart-item-visual .product-image-placeholder > span {font-size: 16px;}
+.cart-item-visual .product-image-placeholder strong {font-size: 11px;}
+.cart-item-visual .product-image-placeholder small {font-size: 7px;}
+.inventory-title-button {
+  display: inline;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+}
+.inventory-title-button:hover {color: #91766e;}
+.inventory-sku {margin: 8px 0 10px; font-size: 10px; color: #8a7b76; overflow-wrap: anywhere;}
+.inventory-stock {margin: 10px 0; font-size: 10px; color: #54705b; line-height: 1.5;}
+.retail-card .inventory-stock {margin: auto 0 10px;}
+.inventory-notice {margin: 18px 0 24px; color: #746965; font-size: 11px; line-height: 1.7;}
+.inventory-loading {grid-column: 1 / -1; text-align: center; padding: 90px 15px; color: #746965; font-size: 13px;}
+.inventory-status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.favorite-button {z-index: 5;}
+.retail-card-media .favorite-button {position: absolute; top: 10px; right: 10px;}
+.retail-card-media .product-image-open, .product-media .product-image-open {z-index: 1;}
+.product-media .quick-add {z-index: 4;}
+.retail-card-body .tone-selector {margin: 8px 0 6px;}
+.product-info .tone-selector {margin-top: 12px;}
+.retail-card-body .retail-add {margin-top: 8px;}
+.retail-add:disabled, .quick-add:disabled, #productDetailAdd:disabled,
+.quantity-control button:disabled {opacity: .45; cursor: not-allowed;}
+.product-detail-image .product-image-frame {height: 100%; min-height: 570px;}
+.product-detail-copy .inventory-stock {margin: 12px 0 18px;}
+#productDetailPrice {margin-bottom: 12px;}
+#productDetailTone {margin-bottom: 4px;}
+.cart-item-visual {overflow: hidden;}
+.cart-item-visual .product-image-frame {height: 100%;}
+.cart-item-copy .inventory-sku {margin: 4px 0 8px;}
+@media (max-width: 760px) {
+  .product-detail-image .product-image-frame {height: 320px; min-height: 320px;}
+  .product-image-frame--contain .product-image {padding: 14px;}
+}
