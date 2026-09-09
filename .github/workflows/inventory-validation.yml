@@ -1,16 +1,13 @@
 name: Validate FARA Inventory
-
 on:
   pull_request:
     paths:
-      - 'assets/inventory-*.js'
-      - 'assets/inventory-catalog.json'
-      - 'assets/inventory-additions-20260909.json'
+      - 'assets/inventory*'
       - 'assets/app.js'
       - 'assets/products-page.js'
-      - 'data/inventory-*.json'
-      - 'scripts/*.js'
+      - 'scripts/inventory.js'
       - 'Dockerfile'
+      - 'nginx.conf'
       - 'index.html'
       - 'productos.html'
       - 'tests/*.test.js'
@@ -18,22 +15,18 @@ on:
   push:
     branches: [main]
     paths:
-      - 'assets/inventory-*.js'
-      - 'assets/inventory-catalog.json'
-      - 'assets/inventory-additions-20260909.json'
+      - 'assets/inventory*'
       - 'assets/app.js'
       - 'assets/products-page.js'
-      - 'data/inventory-*.json'
-      - 'scripts/*.js'
+      - 'scripts/inventory.js'
       - 'Dockerfile'
+      - 'nginx.conf'
       - 'index.html'
       - 'productos.html'
       - 'tests/*.test.js'
       - '.github/workflows/inventory-validation.yml'
-
 permissions:
   contents: read
-
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -42,18 +35,15 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Validate catalog, SKUs, prices and cart
+      - name: Validate canonical inventory and storefront
         run: |
+          node --check assets/inventory-core.js
+          node --check assets/inventory-document.js
           node --check assets/inventory-store.js
-          node --check scripts/build-inventory.js
-          node --check scripts/reconcile-inventory.js
+          node --check scripts/inventory.js
           node --test tests/*.test.js
-          mkdir -p /tmp/fara-inventory-preview
-          node scripts/reconcile-inventory.js /tmp/fara-inventory-preview/inventory-catalog.json /tmp/fara-inventory-preview
-      - name: Save reconciliation preview
-        if: success()
-        uses: actions/upload-artifact@v4
-        with:
-          name: fara-inventory-preview
-          path: /tmp/fara-inventory-preview/
-          retention-days: 3
+          node scripts/inventory.js validate
+      - name: Verify production image contains only the canonical inventory
+        run: |
+          docker build -t fara-inventory-validation .
+          docker run --rm --entrypoint sh fara-inventory-validation -c 'nginx -t && test "$(find /usr/share/nginx/html -type f -name "*.json" | wc -l)" -eq 1 && test -f /usr/share/nginx/html/assets/inventory.json && test ! -e /usr/share/nginx/html/assets/inventory-catalog.json'
