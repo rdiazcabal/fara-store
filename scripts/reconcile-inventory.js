@@ -30,8 +30,15 @@ function clone(value) { return JSON.parse(JSON.stringify(value)); }
 function normalizeTone(value) {
   return String(value).normalize('NFKC').trim().replace(/\s+/g,' ').toLocaleLowerCase('es');
 }
+function productMetadata(product) {
+  return {
+    id:product.id, name:product.name, brand:product.brand,
+    category:product.category, presentation:product.presentation || '',
+    image:product.image || null, variants:[]
+  };
+}
 function newProduct(id) {
-  if (HISTORIC_PRODUCTS.has(id)) return {...clone(HISTORIC_PRODUCTS.get(id)),variants:[]};
+  if (HISTORIC_PRODUCTS.has(id)) return productMetadata(HISTORIC_PRODUCTS.get(id));
   const meta = NEW_PRODUCTS[id];
   assert(meta, `Familia sin metadata verificada: ${id}`);
   return {id,brand:meta[0],name:meta[1],category:meta[2],presentation:meta[3],image:null,variants:[]};
@@ -69,7 +76,7 @@ function reconcileInventory(baseline, snapshot) {
   const resolved = new Set();
   const getProduct = (id) => {
     if (!active.has(id)) active.set(id, previousProducts.has(id) ?
-      {...clone(previousProducts.get(id)),variants:[]} : newProduct(id));
+      productMetadata(previousProducts.get(id)) : newProduct(id));
     return active.get(id);
   };
   function saveArchive(v,reason,sourceRows=[],detail=null) {
@@ -154,7 +161,7 @@ function reconcileInventory(baseline, snapshot) {
   const checked=core.prepareCatalog(result);
   const archived=[...archive.values()];
   const archiveData={schemaVersion:1,source:result.source,products:[...new Set(archived.map(v=>v.productId))].map(id=>({
-    product:clone(previousProducts.get(id)||newProduct(id)),
+    product:productMetadata(previousProducts.get(id)||newProduct(id)),
     variants:archived.filter(v=>v.productId===id)
   }))};
   const stats={
