@@ -4,7 +4,7 @@
 (() => {
   if (window.__faraInventoryBootstrapped) return;
   window.__faraInventoryBootstrapped = true;
-  const version = '20260908-tones1';
+  const version = '20260908-catalog2';
   const addStyle = (file) => {
     const link = document.createElement('link');
     link.rel = 'stylesheet';
