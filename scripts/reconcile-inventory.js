@@ -19,6 +19,10 @@ const NEW_PRODUCTS = {
   'base-outlast-active-de-covergirl': ['Covergirl','Base Outlast Active de Covergirl','Bases','1 oz'],
   'base-superstay-de-maybelline': ['Maybelline','Base Superstay de Maybelline','Bases','1 oz']
 };
+const HISTORIC_PRODUCTS = new Map([
+  ...require('../assets/inventory-catalog.json').products,
+  ...require('../assets/inventory-additions-20260909.json').products
+].map(p=>[p.id,p]));
 const KNOWN_FAMILY_CORRECTIONS = new Set(['FARA00025600','FARA00026600']);
 const DATE_CORRUPTED = new Set(['FARA0000523','FARA0000534','FARA0000545','FARA0000556']);
 function assert(ok, message) { if (!ok) throw new Error(message); }
@@ -27,6 +31,7 @@ function normalizeTone(value) {
   return String(value).normalize('NFKC').trim().replace(/\s+/g,' ').toLocaleLowerCase('es');
 }
 function newProduct(id) {
+  if (HISTORIC_PRODUCTS.has(id)) return {...clone(HISTORIC_PRODUCTS.get(id)),variants:[]};
   const meta = NEW_PRODUCTS[id];
   assert(meta, `Familia sin metadata verificada: ${id}`);
   return {id,brand:meta[0],name:meta[1],category:meta[2],presentation:meta[3],image:null,variants:[]};
@@ -43,7 +48,7 @@ function reconcileInventory(baseline, snapshot) {
   const sourceRows = new Set();
   for (const group of snapshot.groups) {
     assert(group && typeof group.id === 'string' && Array.isArray(group.rows), 'Familia inválida');
-    assert(previousProducts.has(group.id) || NEW_PRODUCTS[group.id] || WITHDRAWN.has(group.id), `Familia desconocida: ${group.id}`);
+    assert(previousProducts.has(group.id) || HISTORIC_PRODUCTS.has(group.id) || NEW_PRODUCTS[group.id], `Familia desconocida: ${group.id}`);
     for (const record of group.rows) {
       const [row,sku,tone,price,stock] = record;
       assert(Number.isSafeInteger(row) && row > 1 && !sourceRows.has(row), `Fila duplicada: ${row}`);
