@@ -58,7 +58,7 @@
     const price = `<strong data-price>${money(variant.price)}</strong>`;
     const button = `<button class="${fullPage ? 'retail-add' : 'quick-add'}" type="button" data-add="${escape(product.id)}" ${variant.stock ? '' : 'disabled'}>${variant.stock ? 'Agregar al carrito' : 'Agotado'}</button>`;
     const media = `<div class="${fullPage ? 'retail-card-media' : 'product-media'}">${imageButton(product, index < 4 ? 'eager' : 'lazy')}${favorite}${fullPage ? '' : button}</div>`;
-    if (fullPage) return `<article class="retail-card" data-product-id="${escape(product.id)}">${media}<div class="retail-card-body"><span class="retail-brand">${escape(product.brand)}</span><h3><button type="button" class="inventory-title-button" data-detail="${escape(product.id)}">${escape(product.name)}</button></h3><p class="retail-description">${escape(product.presentation || 'Presentación por confirmar')} · ${product.variants.length} ${product.variants.length === 1 ? 'tonalidad' : 'tonalidades'}</p>${toneSelector(product, variant)}<p class="inventory-sku" data-sku>SKU: ${escape(variant.sku)}</p>${stock}<div class="retail-price-row">${price}</div>${button}</div></article>`;
+    if (fullPage) return `<article class="retail-card" data-product-id="${escape(product.id)}">${media}<div class="retail-card-body"><span class="retail-brand">${escape(product.brand)}</span><h3><button type="button" class="inventory-title-button" data-detail="${escape(product.id)}">${escape(product.name)}</button></h3><p class="retail-description">${escape(product.presentation || 'Presentación por confirmar')}</p>${toneSelector(product, variant)}<p class="inventory-sku" data-sku>SKU: ${escape(variant.sku)}</p>${stock}<div class="retail-price-row">${price}</div>${button}</div></article>`;
     return `<article class="product-card" data-product-id="${escape(product.id)}">${media}<div class="product-info"><span>${escape(product.brand)}</span><h3><button type="button" class="inventory-title-button" data-detail="${escape(product.id)}">${escape(product.name)}</button></h3><div class="price-row">${price}</div>${toneSelector(product, variant, true)}<p class="inventory-sku" data-sku>SKU: ${escape(variant.sku)}</p>${stock}</div></article>`;
   }
   function renderCategories() {
@@ -70,8 +70,6 @@
     const filtered = core.filterProducts(state.catalog, state);
     const visible = fullPage ? filtered : filtered.slice(0, 8);
     grid.innerHTML = visible.map(cardMarkup).join('');
-    const count = $('#resultCount');
-    if (count) count.textContent = `${filtered.length} ${filtered.length === 1 ? 'producto disponible' : 'productos disponibles'} · ${state.catalog.bySku.size} referencias en inventario`;
     const empty = $('#productsEmpty') || $('#emptyState');
     if (empty) empty.hidden = filtered.length !== 0;
   }

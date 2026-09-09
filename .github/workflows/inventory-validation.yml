@@ -5,14 +5,22 @@ on:
     paths:
       - 'assets/inventory-*.js'
       - 'assets/inventory-catalog.json'
-      - 'tests/inventory.test.js'
+      - 'assets/app.js'
+      - 'assets/products-page.js'
+      - 'index.html'
+      - 'productos.html'
+      - 'tests/*.test.js'
       - '.github/workflows/inventory-validation.yml'
   push:
     branches: [main]
     paths:
       - 'assets/inventory-*.js'
       - 'assets/inventory-catalog.json'
-      - 'tests/inventory.test.js'
+      - 'assets/app.js'
+      - 'assets/products-page.js'
+      - 'index.html'
+      - 'productos.html'
+      - 'tests/*.test.js'
       - '.github/workflows/inventory-validation.yml'
 
 permissions:
@@ -27,4 +35,6 @@ jobs:
         with:
           node-version: '22'
       - name: Validate catalog, SKUs, prices and cart
-        run: node --test tests/inventory.test.js
+        run: |
+          node --check assets/inventory-store.js
+          node --test tests/*.test.js
