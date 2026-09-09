@@ -71,10 +71,14 @@ test('Malformed data and duplicate SKUs fail closed', () => {
   negative.products[0].variants[0].stock=-1;
   assert.throws(()=>core.prepareCatalog(negative),/Existencia no válida/);
 });
-test('Every configured photo exists in the approved repository image manifest', () => {
-  const approved=new Set(['assets/products/Infallible Fresh Wear 32H.jpg','assets/products/Infallible Pro-Matte 24H.webp','assets/products/True Match Super-Blendable Foundation.png','assets/products/True Match Super-Blendable Powder.png']);
-  for(const product of catalog.products) if(product.image) assert.ok(approved.has(product.image),product.image);
-  assert.equal(catalog.products.filter((p)=>p.image).length,4);
+test('Every configured product photo exists in the repository', () => {
+  for (const product of catalog.products) {
+    if (!product.image) continue;
+    assert.ok(product.image.startsWith('assets/products/'),product.image);
+    const imagePath=path.resolve(__dirname,'..',product.image);
+    assert.ok(fs.existsSync(imagePath),product.image);
+    assert.ok(fs.statSync(imagePath).isFile(),product.image);
+  }
 });
 test('Customer-facing SKU and exact-stock metadata remain hidden without changing cart limits', () => {
   const css=fs.readFileSync(path.join(__dirname,'../assets/inventory-store.css'),'utf8');
