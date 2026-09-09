@@ -21,9 +21,9 @@
   transition: none;
 }
 
-/* Override the old per-product zoom and the catalog hover transform. */
-.product-media:hover .product-image,
-.retail-card:hover .product-image,
+/* Override the old per-product zoom, including the later catalog stylesheet. */
+.product-media:hover .product-image-frame--contain .product-image,
+.retail-card:hover .product-image-frame--contain .product-image,
 .product-image-frame--contain .product-image {
   object-fit: contain;
   object-position: center;
