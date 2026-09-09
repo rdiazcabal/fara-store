@@ -7,12 +7,11 @@ const products = [
   {
     id: 1,
     brand: 'L’Oréal Paris',
-    name: 'True Match Super-Blendable Foundation',
+    name: 'Serum True Match Super-Blendable Foundation',
     category: 'Rostro',
-    price: 445,
-    oldPrice: 495,
+    price: 480,
     badge: 'Más vendido',
-    image: 'assets/products/True Match Super-Blendable Foundation.png',
+    image: 'assets/products/serum True Match Super-Blendable Foundation.jpg',
     imagePosition: '35% 50%',
     imageScale: 2.15
   },
@@ -21,7 +20,7 @@ const products = [
     brand: 'L’Oréal Paris',
     name: 'Infallible Pro-Matte 24H',
     category: 'Rostro',
-    price: 420,
+    price: 480,
     badge: 'Nuevo',
     image: 'assets/products/Infallible Pro-Matte 24H.webp',
     imagePosition: '56% 48%',
@@ -32,7 +31,7 @@ const products = [
     brand: 'L’Oréal Paris',
     name: 'Infallible Fresh Wear 32H',
     category: 'Rostro',
-    price: 455,
+    price: 480,
     image: 'assets/products/Infallible Fresh Wear 32H.jpg',
     imagePosition: '76% 49%',
     imageScale: 2.15
@@ -42,7 +41,7 @@ const products = [
     brand: 'L’Oréal Paris',
     name: 'True Match Super-Blendable Powder',
     category: 'Rostro',
-    price: 335,
+    price: 480,
     image: 'assets/brands-curated-products.png',
     imagePosition: '8% 63%',
     imageScale: 2.2

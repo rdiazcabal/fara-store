@@ -7,14 +7,13 @@ const products = [
   {
     id: 1,
     brand: 'L’Oréal Paris',
-    name: 'True Match Super-Blendable Foundation',
+    name: 'Serum True Match Super-Blendable Foundation',
     category: 'Rostro',
-    price: 445,
-    oldPrice: 495,
+    price: 480,
     badge: 'Más vendido',
     description: 'Base de cobertura media modulable que ayuda a unificar el tono con un acabado natural.',
     details: ['30 ml', 'Acabado natural'],
-    image: 'assets/brands-curated-products.png',
+    image: 'assets/products/serum True Match Super-Blendable Foundation.jpg',
     imagePosition: '35% 50%',
     imageScale: 2.15
   },
