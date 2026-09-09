@@ -1,0 +1,30 @@
+name: One-time inventory consolidation
+on:
+  push:
+    branches:
+      - refactor/unify-inventory
+    paths:
+      - scripts/migrate-unified-inventory.js
+      - .github/workflows/inventory-unification.yml
+permissions:
+  contents: write
+jobs:
+  consolidate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Generate and verify canonical inventory
+        run: node scripts/migrate-unified-inventory.js
+      - name: Commit canonical data to migration branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/inventory.json
+          git diff --cached --quiet && exit 0
+          git commit -m 'data: consolidate all inventory and archive records'
+          git push origin HEAD:refactor/unify-inventory
