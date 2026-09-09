@@ -4,28 +4,30 @@ on:
   pull_request:
     paths:
       - 'assets/inventory-*.js'
-      - 'assets/inventory-*.json'
+      - 'assets/inventory-catalog.json'
+      - 'assets/inventory-additions-20260909.json'
       - 'assets/app.js'
       - 'assets/products-page.js'
+      - 'data/inventory-*.json'
+      - 'scripts/*.js'
+      - 'Dockerfile'
       - 'index.html'
       - 'productos.html'
-      - 'scripts/build-inventory.js'
-      - 'data/inventory-review-*.json'
-      - 'Dockerfile'
       - 'tests/*.test.js'
       - '.github/workflows/inventory-validation.yml'
   push:
     branches: [main]
     paths:
       - 'assets/inventory-*.js'
-      - 'assets/inventory-*.json'
+      - 'assets/inventory-catalog.json'
+      - 'assets/inventory-additions-20260909.json'
       - 'assets/app.js'
       - 'assets/products-page.js'
+      - 'data/inventory-*.json'
+      - 'scripts/*.js'
+      - 'Dockerfile'
       - 'index.html'
       - 'productos.html'
-      - 'scripts/build-inventory.js'
-      - 'data/inventory-review-*.json'
-      - 'Dockerfile'
       - 'tests/*.test.js'
       - '.github/workflows/inventory-validation.yml'
 
@@ -44,5 +46,14 @@ jobs:
         run: |
           node --check assets/inventory-store.js
           node --check scripts/build-inventory.js
+          node --check scripts/reconcile-inventory.js
           node --test tests/*.test.js
-          node scripts/build-inventory.js /tmp/fara-inventory-catalog.json
+          mkdir -p /tmp/fara-inventory-preview
+          node scripts/reconcile-inventory.js /tmp/fara-inventory-preview/inventory-catalog.json /tmp/fara-inventory-preview
+      - name: Save reconciliation preview
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fara-inventory-preview
+          path: /tmp/fara-inventory-preview/
+          retention-days: 3
