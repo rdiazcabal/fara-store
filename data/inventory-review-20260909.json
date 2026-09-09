@@ -1,0 +1,14 @@
+{
+  "source": "inventario-avanzado-20260909-001805.xlsx",
+  "cutoff": "2026-09-09T00:18:05-06:00",
+  "existingSkuCount": 79,
+  "newSkuCount": 75,
+  "readySkuCount": 72,
+  "pendingSkuCount": 3,
+  "excludedSkus": ["FARA00013120"],
+  "pending": [
+    {"sku":"FARA00027010","product":"Labial superstay matte ink de Maybelline","tone":null,"price":350,"reportedStock":2,"reason":"Tonalidad no informada en el Excel; pendiente de identificación."},
+    {"sku":"FARA00039000","product":"Mascara en gel para cejas super lock de Maybelline","tone":null,"price":350,"reportedStock":1,"reason":"Tonalidad no informada en el Excel; pendiente de identificación."},
+    {"sku":"FARA00044002","product":"Starface parches para el acne","tone":null,"price":450,"reportedStock":1,"reason":"Tonalidad no informada en el Excel; pendiente de identificación."}
+  ]
+}

@@ -4,22 +4,28 @@ on:
   pull_request:
     paths:
       - 'assets/inventory-*.js'
-      - 'assets/inventory-catalog.json'
+      - 'assets/inventory-*.json'
       - 'assets/app.js'
       - 'assets/products-page.js'
       - 'index.html'
       - 'productos.html'
+      - 'scripts/build-inventory.js'
+      - 'data/inventory-review-*.json'
+      - 'Dockerfile'
       - 'tests/*.test.js'
       - '.github/workflows/inventory-validation.yml'
   push:
     branches: [main]
     paths:
       - 'assets/inventory-*.js'
-      - 'assets/inventory-catalog.json'
+      - 'assets/inventory-*.json'
       - 'assets/app.js'
       - 'assets/products-page.js'
       - 'index.html'
       - 'productos.html'
+      - 'scripts/build-inventory.js'
+      - 'data/inventory-review-*.json'
+      - 'Dockerfile'
       - 'tests/*.test.js'
       - '.github/workflows/inventory-validation.yml'
 
@@ -37,4 +43,6 @@ jobs:
       - name: Validate catalog, SKUs, prices and cart
         run: |
           node --check assets/inventory-store.js
+          node --check scripts/build-inventory.js
           node --test tests/*.test.js
+          node scripts/build-inventory.js /tmp/fara-inventory-catalog.json
