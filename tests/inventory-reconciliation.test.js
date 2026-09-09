@@ -50,6 +50,31 @@ test('Retail price and stock are updated from the new snapshot, and zero stock i
   }
   assert.ok(result.archive.products.some(p=>p.product.image==='assets/products/Base Superstay de Maybelline.webp'));
 });
+test('Verified True Match corrections become purchasable without changing the other pending references',()=>{
+  const corrections=read('data/inventory-tone-corrections-20260909.json');
+  assert.equal(corrections.corrections.length,3);
+  const originalSource=JSON.stringify(source);
+  for(const correction of corrections.corrections) {
+    const {row,sku,productId,originalTone,tone,price,stock}=correction;
+    const sourceRow=source.groups.find(p=>p.id===productId).rows.find(r=>r[0]===row);
+    assert.deepEqual(sourceRow,[row,sku,originalTone,price,stock]);
+    const variant=catalog.bySku.get(sku);
+    assert.deepEqual([variant.productId,variant.tone,variant.price,variant.stock],[productId,tone,price,stock]);
+    assert.equal(byArchive.has(sku),false);
+    assert.equal(result.report.review.some(r=>r.sku===sku),false);
+    assert.deepEqual(core.changeCart(catalog,[],sku,100),[{sku,quantity:stock}]);
+  }
+  assert.equal(JSON.stringify(source),originalSource);
+  assert.equal(catalog.bySku.size,213);
+  assert.equal(catalog.products.reduce((n,p)=>n+p.stock,0),397);
+  assert.equal(result.report.stats.archived,15);
+  assert.equal(result.report.stats.review,9);
+  const uncorrected=structuredClone(source);
+  uncorrected.groups.find(p=>p.id==='base-true-match-de-loreal').rows.find(r=>r[0]===34)[2]='46999';
+  const held=reconcileInventory(baseline,uncorrected);
+  assert.equal(core.prepareCatalog(held.catalog).bySku.has('FARA0000523'),false);
+  assert.equal(held.archive.products.flatMap(p=>p.variants).find(v=>v.sku==='FARA0000523').status,'review');
+});
 test('Newly identified shades become purchasable while malformed shades remain pending',()=>{
   for(const [sku,tone] of [['FARA00027010','10'],['FARA00039000','0'],['FARA00044002','Azul']]) {
     assert.equal(catalog.bySku.get(sku).tone,tone);
@@ -57,10 +82,8 @@ test('Newly identified shades become purchasable while malformed shades remain p
   assert.equal(catalog.bySku.get('FARA0000556').tone,'5-6');
   assert.equal(catalog.bySku.get('FARA0000556').stock,8);
   assert.equal(catalog.bySku.get('FARA000054555').tone,'4.5-5.5');
-  for(const sku of ['FARA0000523','FARA0000534','FARA0000545','FARA00004118']) {
-    assert.equal(catalog.bySku.has(sku),false);
-    assert.equal(byArchive.get(sku).status,'review');
-  }
+  assert.equal(catalog.bySku.has('FARA00004118'),false);
+  assert.equal(byArchive.get('FARA00004118').status,'review');
   assert.equal(catalog.bySku.get('FARA00004112').tone,'112');
   assert.ok(catalog.products.every(p=>p.variants.every(v=>!/^46\d{3}$/.test(v.tone))));
 });

@@ -15,8 +15,8 @@ test('Permanent archive exactly matches the current reconciliation', () => {
   assert.deepEqual(committed,result.archive);
   const active = core.prepareCatalog(result.catalog);
   const archived = committed.products.flatMap(p=>p.variants);
-  assert.equal(archived.length,18);
-  assert.equal(new Set(archived.map(v=>v.sku)).size,18);
+  assert.equal(archived.length,15);
+  assert.equal(new Set(archived.map(v=>v.sku)).size,15);
   for(const item of archived) {
     assert.equal(active.bySku.has(item.sku),false);
     assert.ok(['withdrawn','out_of_stock','review','absent_from_snapshot'].includes(item.status));
