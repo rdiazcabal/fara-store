@@ -3,7 +3,7 @@
 // The previous demo products remain available in Git history, not in the storefront.
 (() => {
   const script = document.createElement('script');
-  script.src = 'assets/inventory-loader.js?v=20260908-catalog2';
+  script.src = 'assets/inventory-loader.js?v=20260909-clean1';
   script.async = false;
   document.body.appendChild(script);
 })();
