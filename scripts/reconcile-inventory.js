@@ -15,8 +15,11 @@ const NEW_PRODUCTS = {
   'fijador-power-grip-dewy-setting-spray-de-elf': ['e.l.f.','Fijador Power Grip Dewy Setting Spray de e.l.f.','Fijadores','2.7 oz'],
   'set-cuatro-polvos-sueltos-halo-glow-de-elf': ['e.l.f.','Set de cuatro polvos sueltos Halo Glow de e.l.f.','Polvos sueltos','0.35 oz'],
   'paleta-contorno-y-blush': ['e.l.f.','Paleta de contorno y blush','Paletas','0.47 oz'],
-  'base-advanced-radiance-de-covergirl': ['Covergirl','Base Advanced Radiance de Covergirl','Bases','1 oz']
+  'base-advanced-radiance-de-covergirl': ['Covergirl','Base Advanced Radiance de Covergirl','Bases','1 oz'],
+  'base-outlast-active-de-covergirl': ['Covergirl','Base Outlast Active de Covergirl','Bases','1 oz'],
+  'base-superstay-de-maybelline': ['Maybelline','Base Superstay de Maybelline','Bases','1 oz']
 };
+const KNOWN_FAMILY_CORRECTIONS = new Set(['FARA00025600','FARA00026600']);
 const DATE_CORRUPTED = new Set(['FARA0000523','FARA0000534','FARA0000545','FARA0000556']);
 function assert(ok, message) { if (!ok) throw new Error(message); }
 function clone(value) { return JSON.parse(JSON.stringify(value)); }
@@ -40,7 +43,7 @@ function reconcileInventory(baseline, snapshot) {
   const sourceRows = new Set();
   for (const group of snapshot.groups) {
     assert(group && typeof group.id === 'string' && Array.isArray(group.rows), 'Familia inválida');
-    assert(previousProducts.has(group.id) || NEW_PRODUCTS[group.id], `Familia desconocida: ${group.id}`);
+    assert(previousProducts.has(group.id) || NEW_PRODUCTS[group.id] || WITHDRAWN.has(group.id), `Familia desconocida: ${group.id}`);
     for (const record of group.rows) {
       const [row,sku,tone,price,stock] = record;
       assert(Number.isSafeInteger(row) && row > 1 && !sourceRows.has(row), `Fila duplicada: ${row}`);
@@ -79,7 +82,8 @@ function reconcileInventory(baseline, snapshot) {
     const withdrawn = candidates.every(c=>WITHDRAWN.has(c.productId)) ||
       (old && WITHDRAWN.has(old.productId));
     if (withdrawn) {
-      saveArchive(old || {...candidates[0]},'withdrawn',candidates.map(c=>c.row));
+      const selected=candidates.find(c=>old && c.productId===old.productId)||candidates[0];
+      saveArchive(old ? {...old,price:selected.price,stock:selected.stock} : {...selected},'withdrawn',candidates.map(c=>c.row));
       resolved.add(sku);
       continue;
     }
@@ -88,7 +92,10 @@ function reconcileInventory(baseline, snapshot) {
     if (old) {
       const same = candidates.filter(c=>c.productId===old.productId);
       if (same.length) selected=same[0];
-      else {
+      else if(KNOWN_FAMILY_CORRECTIONS.has(sku)) {
+        selected={...candidates[0],productId:old.productId};
+        review.push({sku,reason:'La plantilla intercambia Matte y Laque; se conserva la fórmula ya confirmada por FARA.',candidates:clone(candidates),resolution:old.productId});
+      } else {
         hold(sku,'El SKU pertenece a otra familia en el catálogo anterior; requiere corrección del inventario.',candidates,old);
         continue;
       }
