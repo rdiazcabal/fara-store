@@ -1,0 +1,30 @@
+name: Validate FARA Inventory
+
+on:
+  pull_request:
+    paths:
+      - 'assets/inventory-*.js'
+      - 'assets/inventory-catalog.json'
+      - 'tests/inventory.test.js'
+      - '.github/workflows/inventory-validation.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'assets/inventory-*.js'
+      - 'assets/inventory-catalog.json'
+      - 'tests/inventory.test.js'
+      - '.github/workflows/inventory-validation.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate catalog, SKUs, prices and cart
+        run: node --test tests/inventory.test.js
