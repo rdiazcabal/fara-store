@@ -76,9 +76,8 @@ if (document.querySelector('#retailProductGrid')) {
     if (!categories.includes(category)) categories.push(category);
   });
   renderCategories();
+  renderProducts();
 }
-// Actualiza ambas vistas con el mismo componente de imágenes.
-renderProducts();
 
 const productDetailStyles = document.createElement('link');
 productDetailStyles.rel = 'stylesheet';
