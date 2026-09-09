@@ -312,7 +312,7 @@
             "name": "Base Soft Glam de e.l.f.",
             "category": "Bases",
             "presentation": "1 oz",
-            "image": null,
+            "image": "assets/products/Base Soft Glam de e.l.f..webp",
             "variants": [
                 {
                     "sku": "FARA00001111",
@@ -340,7 +340,7 @@
             "name": "Base Superstay de Maybelline",
             "category": "Bases",
             "presentation": "1 oz",
-            "image": null,
+            "image": "assets/products/Base Superstay de Maybelline.webp",
             "variants": [
                 {
                     "sku": "FARA00007120",
@@ -396,7 +396,7 @@
             "name": "Corrector Camo Color Corrector de e.l.f.",
             "category": "Correctores",
             "presentation": "0.09 oz",
-            "image": null,
+            "image": "assets/products/Corrector Camo Color Corrector de e.l.f..webp",
             "variants": [
                 {
                     "sku": "FARA00002300",
@@ -412,7 +412,7 @@
             "name": "Corrector Camo Concealer 16H de e.l.f.",
             "category": "Correctores",
             "presentation": "0.2 oz",
-            "image": null,
+            "image": "assets/products/Corrector Camo Concealer 16H de e.l.f..webp",
             "variants": [
                 {
                     "sku": "FARA0000TANN",
@@ -428,7 +428,7 @@
             "name": "Corrector Infallible Full Wear 24H de L’Oréal",
             "category": "Correctores",
             "presentation": "0.33 oz",
-            "image": null,
+            "image": "assets/products/Corrector Infallible Full Wear 24H de L’Oréal.webp",
             "variants": [
                 {
                     "sku": "FARA00021325",
@@ -474,7 +474,7 @@
             "name": "Corrector Instant Age Rewind Eraser de Maybelline",
             "category": "Correctores",
             "presentation": "0.2 oz",
-            "image": null,
+            "image": "assets/products/Corrector Instant Age Rewind Eraser de Maybelline.jpg",
             "variants": [
                 {
                     "sku": "FARA00029095",
@@ -502,7 +502,7 @@
             "name": "Corrector Superstay 30H de Maybelline",
             "category": "Correctores",
             "presentation": "0.33 oz",
-            "image": null,
+            "image": "assets/products/Corrector Superstay 30H de Maybelline.jpg",
             "variants": [
                 {
                     "sku": "FARA00002245",
@@ -518,7 +518,7 @@
             "name": "Labial Infallible Matte Resistance de L’Oréal",
             "category": "Labiales",
             "presentation": "0.16 oz",
-            "image": null,
+            "image": "assets/products/Labial Infallible Matte Resistance de L’Oréal.jpg",
             "variants": [
                 {
                     "sku": "FARA00025100",
