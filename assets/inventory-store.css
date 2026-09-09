@@ -91,6 +91,12 @@
 .inventory-sku {margin: 8px 0 10px; font-size: 10px; color: #8a7b76; overflow-wrap: anywhere;}
 .inventory-stock {margin: 10px 0; font-size: 10px; color: #54705b; line-height: 1.5;}
 .retail-card .inventory-stock {margin: auto 0 10px;}
+/* Customer-facing cards, detail and cart do not expose inventory metadata.
+   SKU mapping, disabled shades and stock limits remain active in JavaScript. */
+.inventory-sku,
+.inventory-stock,
+#productDetailSku,
+#productDetailStock {display: none !important;}
 .inventory-notice {margin: 18px 0 24px; color: #746965; font-size: 11px; line-height: 1.7;}
 .inventory-loading {grid-column: 1 / -1; text-align: center; padding: 90px 15px; color: #746965; font-size: 13px;}
 .inventory-status {
