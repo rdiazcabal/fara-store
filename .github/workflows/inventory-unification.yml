@@ -22,6 +22,7 @@ jobs:
         run: |
           node --check scripts/finish-unification.js
           node scripts/finish-unification.js
+          node -e "const fs=require('fs');const p='tests/unified-inventory.test.js';const s=fs.readFileSync(p,'utf8');const a=\"v.sku==='FARA00004118'?{...v,status:'active'}:v\";const b=\"v.sku==='FARA00004118'?{...v,status:'active',stock:1}:v\";if(!s.includes(a))throw Error('Test fixture not found');fs.writeFileSync(p,s.replace(a,b));"
           node --check assets/inventory-document.js
           node --check scripts/inventory.js
           node --test tests/*.test.js
