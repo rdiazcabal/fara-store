@@ -12,7 +12,7 @@ const products = [
     price: 445,
     oldPrice: 495,
     badge: 'Más vendido',
-    image: 'assets/brands-curated-products.png',
+    image: 'assets/products/True Match Super-Blendable Foundation.png',
     imagePosition: '35% 50%',
     imageScale: 2.15
   },
@@ -23,7 +23,7 @@ const products = [
     category: 'Rostro',
     price: 420,
     badge: 'Nuevo',
-    image: 'assets/brands-curated-products.png',
+    image: 'assets/products/Infallible Pro-Matte 24H.webp',
     imagePosition: '56% 48%',
     imageScale: 2.1
   },
@@ -33,7 +33,7 @@ const products = [
     name: 'Infallible Fresh Wear 32H',
     category: 'Rostro',
     price: 455,
-    image: 'assets/brands-curated-products.png',
+    image: 'assets/products/Infallible Fresh Wear 32H.jpg',
     imagePosition: '76% 49%',
     imageScale: 2.15
   },
