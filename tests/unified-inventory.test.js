@@ -15,8 +15,8 @@ const variant=sku=>all.get(sku);
 
 test('One canonical document preserves the complete inventory and archived families',()=>{
   assert.equal(data.schemaVersion,3);
-  assert.deepEqual([inspection.stats.products,inspection.stats.skus,inspection.stats.activeProducts,inspection.stats.activeSkus,inspection.stats.activeUnits,inspection.stats.archivedSkus],[51,228,47,213,397,15]);
-  assert.equal(new Set(data.products.flatMap(p=>p.variants.map(v=>v.sku))).size,228);
+  assert.deepEqual([inspection.stats.products,inspection.stats.skus,inspection.stats.activeProducts,inspection.stats.activeSkus,inspection.stats.activeUnits,inspection.stats.archivedSkus],[62,304,58,282,493,22]);
+  assert.equal(new Set(data.products.flatMap(p=>p.variants.map(v=>v.sku))).size,304);
   assert.ok(data.products.every(p=>p.variants.length>0));
   assert.equal(data.source.legacyCommit,'ec0bf355098e4104ad33cc0738670579175bd11a');
   assert.equal(data.audit.corrections.length,3);
@@ -37,6 +37,14 @@ test('Verified True Match corrections and the remaining pending SKUs are preserv
   assert.equal(catalog.bySku.get('FARA00004112').tone,'112');
   assert.equal(catalog.bySku.get('FARA00006210').productId,'base-fit-me-de-maybelline-morada');
   assert.equal(variant('FARA00006120').sourceRows.length,2);
+});
+
+test('Latest add-missing import preserves new references without touching old ones',()=>{
+  for(const sku of ['FARA00056000','FARA00056001','FARA00054015','FARA00061017','FARA00063001','FARA00064001']) assert.ok(catalog.bySku.has(sku),sku);
+  for(const sku of ['FARA00048118','FARA00048125','FARA00048210','FARA00048225','FARA00050001','FARA00050002','FARA00053001']) {
+    assert.equal(variant(sku).status,'review');
+    assert.equal(catalog.bySku.has(sku),false);
+  }
 });
 
 test('Withdrawn foundations, zero stock and absent references remain archived',()=>{
