@@ -22,7 +22,7 @@ test('Cards show presentation without a count of shades', () => {
 });
 
 test('Both pages load the same fresh storefront version', () => {
-  const version = '20260909-unified1';
+  const version = '20260910-descriptions1';
   assert.ok(read('index.html').includes(`assets/app.js?v=${version}`));
   assert.ok(read('productos.html').includes(`assets/products-page.js?v=${version}`));
   for (const file of ['assets/app.js', 'assets/products-page.js']) {
@@ -31,4 +31,14 @@ test('Both pages load the same fresh storefront version', () => {
   assert.ok(read('assets/inventory-loader.js').includes(`const version = '${version}'`));
   assert.match(read('assets/inventory-loader.js'), /load\('inventory-document\.js'\)/);
   assert.match(read('assets/inventory-loader.js'), /load\('inventory-store\.js'\)/);
+});
+
+
+test('Product detail uses the description stored on each product', () => {
+  const store = read('assets/inventory-store.js');
+  const data = JSON.parse(read('assets/inventory.json'));
+  assert.ok(data.products.every((product) => typeof product.description === 'string' && product.description.trim().length >= 80));
+  assert.equal(new Set(data.products.map((product) => product.description)).size, data.products.length);
+  assert.match(store, /productDetailDescription'\)\.textContent = product\.description/);
+  assert.doesNotMatch(store, /Producto registrado en el inventario de FARA/);
 });

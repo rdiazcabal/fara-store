@@ -44,6 +44,7 @@ test('Category filters cover every active family without duplicating cards', () 
 test('Explicit multiple categories work for future families without changing SKU identity', () => {
   const raw = {schemaVersion:2, currency:'HNL', products:[{
     id:'test-mixed', name:'Producto de prueba', brand:'FARA', category:'Paletas',
+    description:'Descripción de prueba para validar el catálogo.',
     categories:['Paletas','Rubores'], variants:[{sku:'FARATEST001',tone:'Único',price:100,stock:2}]
   }]};
   const prepared = core.prepareCatalog(raw);

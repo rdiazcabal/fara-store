@@ -1,7 +1,7 @@
 'use strict';
 
 (() => {
-  const VERSION = '20260909-unified1';
+  const VERSION = '20260910-descriptions1';
   const CART_KEY = 'fara-cart-v2';
   const FAVORITES_KEY = 'fara-favorites-v2';
   const WHATSAPP_NUMBER = '50493609889';
@@ -176,7 +176,7 @@
     $('#productDetailImage').innerHTML = imageMarkup(product, 'eager');
     $('#productDetailBrand').textContent = product.brand;
     $('#productDetailTitle').textContent = product.name;
-    $('#productDetailDescription').textContent = 'Producto registrado en el inventario de FARA. Selecciona la tonalidad y confirma disponibilidad antes de completar tu pedido.';
+    $('#productDetailDescription').textContent = product.description;
     $('#productDetailMeta').innerHTML = [product.category, product.presentation].filter(Boolean).map((text) => `<span>${escape(text)}</span>`).join('');
     $('#productDetailTone').innerHTML = product.variants.map((v) => `<option value="${escape(v.sku)}" ${v.stock ? '' : 'disabled'}>${escape(v.tone)}</option>`).join('');
     updateDetailVariant(product, selectedVariant(product));
