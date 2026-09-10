@@ -110,20 +110,49 @@
     actions.prepend(group);
   }
 
-  function showFullBrandImage() {
-    const image = document.querySelector('.brand-story img');
-    if (!image) return;
-    image.style.maxHeight = 'none';
-    image.style.height = 'auto';
-    image.style.objectFit = 'contain';
-    image.style.objectPosition = 'center';
+  function fixBrandStoryImages() {
+    const story = document.querySelector('.brand-story');
+    if (!story) return;
+
+    const monogram = story.querySelector('.brand-monogram');
+    const monogramImage = monogram ? monogram.querySelector('img') : null;
+    const brandImage = Array.from(story.children).find((element) => element.tagName === 'IMG');
+
+    if (monogram) {
+      monogram.style.overflow = 'hidden';
+      monogram.style.border = '0';
+      monogram.style.boxShadow = 'none';
+      monogram.style.background = '#000';
+    }
+
+    if (monogramImage) {
+      monogramImage.style.width = '106%';
+      monogramImage.style.height = '106%';
+      monogramImage.style.maxWidth = 'none';
+      monogramImage.style.maxHeight = 'none';
+      monogramImage.style.objectFit = 'cover';
+      monogramImage.style.objectPosition = 'center';
+      monogramImage.style.border = '0';
+      monogramImage.style.boxShadow = 'none';
+      monogramImage.style.transform = 'scale(1.03)';
+    }
+
+    if (brandImage) {
+      brandImage.style.width = '100%';
+      brandImage.style.height = 'auto';
+      brandImage.style.maxHeight = 'none';
+      brandImage.style.objectFit = 'contain';
+      brandImage.style.objectPosition = 'center';
+      brandImage.style.border = '0';
+      brandImage.style.boxShadow = 'none';
+    }
   }
 
   function enhanceStorefront() {
     ensureSocialStyles();
     decorateSocialLinks();
     addHeaderSocialLinks();
-    showFullBrandImage();
+    fixBrandStoryImages();
   }
 
   if (document.readyState === 'loading') {
