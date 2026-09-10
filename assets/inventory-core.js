@@ -26,6 +26,17 @@
     assert(categories.every((category) => typeof category === 'string' && category.trim()), 'Categoría de producto no válida');
     return Object.freeze([...new Set(categories.map((category) => category.trim()))]);
   }
+  function orderCategories(categories) {
+    const unique = [...new Set(categories)];
+    const isBases = (category) => normalizeSearch(category).trim() === 'bases';
+    const isLoosePowder = (category) => normalizeSearch(category).trim() === 'polvos sueltos';
+    return Object.freeze([
+      'Todos',
+      ...unique.filter(isBases),
+      ...unique.filter((category) => !isBases(category) && !isLoosePowder(category)),
+      ...unique.filter(isLoosePowder)
+    ]);
+  }
   function prepareCatalog(raw) {
     assert(raw && raw.schemaVersion === 2 && Array.isArray(raw.products), 'Formato de catálogo no válido');
     const products = [];
@@ -62,7 +73,7 @@
     assert(products.length > 0, 'El catálogo está vacío');
     return Object.freeze({
       products: Object.freeze(products), byId, bySku,
-      categories: Object.freeze(['Todos', ...new Set(products.flatMap((p) => p.categories))]),
+      categories: orderCategories(products.flatMap((p) => p.categories)),
       source: raw.source || {}, currency: raw.currency || 'HNL'
     });
   }
