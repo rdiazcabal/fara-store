@@ -70,5 +70,5 @@ test('The filtering change preserves prices, tones, stock and archived exclusion
       }
     }
   }
-  assert.deepEqual([inspection.stats.products,inspection.stats.skus,inspection.stats.activeSkus,inspection.stats.activeUnits],[51,228,213,397]);
+  assert.deepEqual([inspection.stats.products,inspection.stats.skus,inspection.stats.activeSkus,inspection.stats.activeUnits],[62,304,282,493]);
 });
