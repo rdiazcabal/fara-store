@@ -242,6 +242,70 @@
           "sourceRows": [
             77
           ]
+        },
+        {
+          "sku": "FARA00048118",
+          "tone": "118",
+          "price": 490,
+          "stock": 1,
+          "status": "review",
+          "sourceRows": [
+            75
+          ],
+          "reason": "SKU nuevo del inventario recibido, pero la tonalidad ya existe activa en esta familia con otro SKU. Requiere confirmar cuál referencia debe quedar vigente."
+        },
+        {
+          "sku": "FARA00048120",
+          "tone": "120",
+          "price": 490,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            76
+          ]
+        },
+        {
+          "sku": "FARA00048125",
+          "tone": "125",
+          "price": 490,
+          "stock": 1,
+          "status": "review",
+          "sourceRows": [
+            77
+          ],
+          "reason": "SKU nuevo del inventario recibido, pero la tonalidad ya existe activa en esta familia con otro SKU. Requiere confirmar cuál referencia debe quedar vigente."
+        },
+        {
+          "sku": "FARA00048210",
+          "tone": "210",
+          "price": 490,
+          "stock": 2,
+          "status": "review",
+          "sourceRows": [
+            78
+          ],
+          "reason": "SKU nuevo del inventario recibido, pero la tonalidad ya existe activa en esta familia con otro SKU. Requiere confirmar cuál referencia debe quedar vigente."
+        },
+        {
+          "sku": "FARA00048220",
+          "tone": "220",
+          "price": 490,
+          "stock": 2,
+          "status": "active",
+          "sourceRows": [
+            79
+          ]
+        },
+        {
+          "sku": "FARA00048225",
+          "tone": "225",
+          "price": 490,
+          "stock": 1,
+          "status": "review",
+          "sourceRows": [
+            80
+          ],
+          "reason": "SKU nuevo del inventario recibido, pero la tonalidad ya existe activa en esta familia con otro SKU. Requiere confirmar cuál referencia debe quedar vigente."
         }
       ]
     },
@@ -1210,6 +1274,46 @@
           "sourceRows": [
             141
           ]
+        },
+        {
+          "sku": "FARA00021355",
+          "tone": "355",
+          "price": 360,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            147
+          ]
+        },
+        {
+          "sku": "FARA00021365",
+          "tone": "365",
+          "price": 360,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            149
+          ]
+        },
+        {
+          "sku": "FARA00021380",
+          "tone": "380",
+          "price": 360,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            152
+          ]
+        },
+        {
+          "sku": "FARA00021395",
+          "tone": "395",
+          "price": 360,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            153
+          ]
         }
       ]
     },
@@ -1357,6 +1461,66 @@
           "price": 350,
           "stock": 3,
           "status": "active"
+        },
+        {
+          "sku": "FARA00025120",
+          "tone": "120",
+          "price": 350,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            175
+          ]
+        },
+        {
+          "sku": "FARA00025230",
+          "tone": "230",
+          "price": 350,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            176
+          ]
+        },
+        {
+          "sku": "FARA00025500",
+          "tone": "500",
+          "price": 350,
+          "stock": 2,
+          "status": "active",
+          "sourceRows": [
+            179
+          ]
+        },
+        {
+          "sku": "FARA00025650",
+          "tone": "650",
+          "price": 350,
+          "stock": 2,
+          "status": "active",
+          "sourceRows": [
+            184
+          ]
+        },
+        {
+          "sku": "FARA00025660",
+          "tone": "660",
+          "price": 350,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            186
+          ]
+        },
+        {
+          "sku": "FARA00025665",
+          "tone": "665",
+          "price": 350,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            187
+          ]
         }
       ]
     },
@@ -1433,6 +1597,36 @@
           "status": "active",
           "sourceRows": [
             161
+          ]
+        },
+        {
+          "sku": "FARA00026215",
+          "tone": "215",
+          "price": 350,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            188
+          ]
+        },
+        {
+          "sku": "FARA00026601",
+          "tone": "601",
+          "price": 350,
+          "stock": 2,
+          "status": "active",
+          "sourceRows": [
+            196
+          ]
+        },
+        {
+          "sku": "FARA00026635",
+          "tone": "635",
+          "price": 350,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            197
           ]
         }
       ]
@@ -1513,6 +1707,76 @@
           "status": "active",
           "sourceRows": [
             132
+          ]
+        },
+        {
+          "sku": "FARA00016112",
+          "tone": "112",
+          "price": 490,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            131
+          ]
+        },
+        {
+          "sku": "FARA00016122",
+          "tone": "122",
+          "price": 490,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            133
+          ]
+        },
+        {
+          "sku": "FARA00016130",
+          "tone": "130",
+          "price": 490,
+          "stock": 2,
+          "status": "active",
+          "sourceRows": [
+            134
+          ]
+        },
+        {
+          "sku": "FARA00016222",
+          "tone": "222",
+          "price": 490,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            135
+          ]
+        },
+        {
+          "sku": "FARA00016320",
+          "tone": "320",
+          "price": 490,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            139
+          ]
+        },
+        {
+          "sku": "FARA00016330",
+          "tone": "330",
+          "price": 490,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            140
+          ]
+        },
+        {
+          "sku": "FARA00016332",
+          "tone": "332",
+          "price": 490,
+          "stock": 2,
+          "status": "active",
+          "sourceRows": [
+            141
           ]
         }
       ]
@@ -1753,6 +2017,46 @@
           "status": "active",
           "sourceRows": [
             211
+          ]
+        },
+        {
+          "sku": "FARA00035004",
+          "tone": "Berry well",
+          "price": 360,
+          "stock": 3,
+          "status": "active",
+          "sourceRows": [
+            265
+          ]
+        },
+        {
+          "sku": "FARA00035005",
+          "tone": "Coopper etiquette",
+          "price": 360,
+          "stock": 2,
+          "status": "active",
+          "sourceRows": [
+            266
+          ]
+        },
+        {
+          "sku": "FARA00035006",
+          "tone": "Dusty rose",
+          "price": 360,
+          "stock": 2,
+          "status": "active",
+          "sourceRows": [
+            267
+          ]
+        },
+        {
+          "sku": "FARA00035007",
+          "tone": "Pinky promise",
+          "price": 360,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            268
           ]
         }
       ]
@@ -2054,6 +2358,76 @@
           "sourceRows": [
             178
           ]
+        },
+        {
+          "sku": "FARA00027005",
+          "tone": "5",
+          "price": 350,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            198
+          ]
+        },
+        {
+          "sku": "FARA00027020",
+          "tone": "20",
+          "price": 350,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            201
+          ]
+        },
+        {
+          "sku": "FARA00027050",
+          "tone": "50",
+          "price": 350,
+          "stock": 2,
+          "status": "active",
+          "sourceRows": [
+            202
+          ]
+        },
+        {
+          "sku": "FARA00027155",
+          "tone": "155",
+          "price": 350,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            210
+          ]
+        },
+        {
+          "sku": "FARA00027505",
+          "tone": "505",
+          "price": 350,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            216
+          ]
+        },
+        {
+          "sku": "FARA00027510",
+          "tone": "510",
+          "price": 350,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            217
+          ]
+        },
+        {
+          "sku": "FARA00027515",
+          "tone": "515",
+          "price": 350,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            218
+          ]
         }
       ]
     },
@@ -2174,6 +2548,36 @@
           "sourceRows": [
             196
           ]
+        },
+        {
+          "sku": "FARA00030060",
+          "tone": "60",
+          "price": 350,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            240
+          ]
+        },
+        {
+          "sku": "FARA000300100",
+          "tone": "100",
+          "price": 350,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            243
+          ]
+        },
+        {
+          "sku": "FARA00030130",
+          "tone": "130",
+          "price": 350,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            247
+          ]
         }
       ]
     },
@@ -2253,6 +2657,66 @@
           "status": "active",
           "sourceRows": [
             185
+          ]
+        },
+        {
+          "sku": "FARA00028010",
+          "tone": "10",
+          "price": 350,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            221
+          ]
+        },
+        {
+          "sku": "FARA00028015",
+          "tone": "15",
+          "price": 350,
+          "stock": 2,
+          "status": "active",
+          "sourceRows": [
+            222
+          ]
+        },
+        {
+          "sku": "FARA00028030",
+          "tone": "30",
+          "price": 350,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            225
+          ]
+        },
+        {
+          "sku": "FARA00028035",
+          "tone": "35",
+          "price": 350,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            226
+          ]
+        },
+        {
+          "sku": "FARA00028040",
+          "tone": "40",
+          "price": 350,
+          "stock": 2,
+          "status": "active",
+          "sourceRows": [
+            227
+          ]
+        },
+        {
+          "sku": "FARA00028100",
+          "tone": "100",
+          "price": 350,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            230
           ]
         }
       ]
@@ -2484,6 +2948,17 @@
           "sourceRows": [
             230
           ]
+        },
+        {
+          "sku": "FARA00050001",
+          "tone": "Transparent verde",
+          "price": 490,
+          "stock": 5,
+          "status": "review",
+          "sourceRows": [
+            293
+          ],
+          "reason": "SKU nuevo del inventario recibido, pero la tonalidad ya existe activa en esta familia con otro SKU. Requiere confirmar cuál referencia debe quedar vigente."
         }
       ]
     },
@@ -2704,6 +3179,17 @@
           "sourceRows": [
             232
           ]
+        },
+        {
+          "sku": "FARA00050002",
+          "tone": "Transparent naranja",
+          "price": 490,
+          "stock": 1,
+          "status": "review",
+          "sourceRows": [
+            294
+          ],
+          "reason": "SKU nuevo del inventario recibido, pero la tonalidad ya existe activa en esta familia con otro SKU. Requiere confirmar cuál referencia debe quedar vigente."
         }
       ]
     },
@@ -2774,6 +3260,17 @@
           "sourceRows": [
             236
           ]
+        },
+        {
+          "sku": "FARA00053001",
+          "tone": "4 Colores rosa y café",
+          "price": 490,
+          "stock": 4,
+          "status": "review",
+          "sourceRows": [
+            298
+          ],
+          "reason": "SKU nuevo del inventario recibido, pero la tonalidad ya existe activa en esta familia con otro SKU. Requiere confirmar cuál referencia debe quedar vigente."
         }
       ]
     },
@@ -2793,6 +3290,386 @@
           "status": "withdrawn",
           "sourceRows": [
             113
+          ]
+        }
+      ]
+    },
+    {
+      "id": "polvo-suelto-set-it-bright-de-e-l-f",
+      "name": "Polvo suelto set it bright de E.L.F.",
+      "brand": "E.l.f.",
+      "category": "Polvos Sueltos",
+      "presentation": "0.37 oz",
+      "image": null,
+      "variants": [
+        {
+          "sku": "FARA00056000",
+          "tone": "Fair",
+          "price": 480,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            4
+          ]
+        },
+        {
+          "sku": "FARA00056001",
+          "tone": "Light medium",
+          "price": 480,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "corrector-lifter-glow-de-maybelline",
+      "name": "Corrector lifter glow de Maybelline",
+      "brand": "Maybelline",
+      "category": "Correctores",
+      "presentation": "0.33 oz",
+      "image": null,
+      "variants": [
+        {
+          "sku": "FARA00054015",
+          "tone": "15",
+          "price": 360,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            158
+          ]
+        },
+        {
+          "sku": "FARA00054020",
+          "tone": "20",
+          "price": 360,
+          "stock": 2,
+          "status": "active",
+          "sourceRows": [
+            159
+          ]
+        },
+        {
+          "sku": "FARA00054025",
+          "tone": "25",
+          "price": 360,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            160
+          ]
+        },
+        {
+          "sku": "FARA00054030",
+          "tone": "30",
+          "price": 360,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            161
+          ]
+        },
+        {
+          "sku": "FARA00054035",
+          "tone": "35",
+          "price": 360,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            162
+          ]
+        },
+        {
+          "sku": "FARA00054050",
+          "tone": "50",
+          "price": 360,
+          "stock": 2,
+          "status": "active",
+          "sourceRows": [
+            163
+          ]
+        },
+        {
+          "sku": "FARA00054055",
+          "tone": "55",
+          "price": 360,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            164
+          ]
+        },
+        {
+          "sku": "FARA00054060",
+          "tone": "60",
+          "price": 360,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            165
+          ]
+        }
+      ]
+    },
+    {
+      "id": "corrector-soft-glam-de-elf",
+      "name": "Corrector soft glam de e.f.l.",
+      "brand": "E.l.f.",
+      "category": "Correctores",
+      "presentation": "0.21 oz",
+      "image": null,
+      "variants": [
+        {
+          "sku": "FARA00049013",
+          "tone": "13",
+          "price": 360,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            166
+          ]
+        },
+        {
+          "sku": "FARA00049020",
+          "tone": "20",
+          "price": 360,
+          "stock": 2,
+          "status": "active",
+          "sourceRows": [
+            167
+          ]
+        },
+        {
+          "sku": "FARA00049021",
+          "tone": "21",
+          "price": 360,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            168
+          ]
+        },
+        {
+          "sku": "FARA00049023",
+          "tone": "23",
+          "price": 360,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            169
+          ]
+        },
+        {
+          "sku": "FARA00049025",
+          "tone": "25",
+          "price": 360,
+          "stock": 2,
+          "status": "active",
+          "sourceRows": [
+            170
+          ]
+        },
+        {
+          "sku": "FARA00049030",
+          "tone": "30",
+          "price": 360,
+          "stock": 2,
+          "status": "active",
+          "sourceRows": [
+            171
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lipstick-blind-date-satin-de-maybelline",
+      "name": "Lipstick blind date satin de Maybelline",
+      "brand": "Maybelline",
+      "category": "Labiales",
+      "presentation": "0.18 oz",
+      "image": null,
+      "variants": [
+        {
+          "sku": "FARA00055107",
+          "tone": "107",
+          "price": 350,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            252
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lipstick-avenue-matte-de-maybelline",
+      "name": "Lipstick Avenue matte de Maybelline",
+      "brand": "Maybelline",
+      "category": "Labiales",
+      "presentation": "0.18 oz",
+      "image": null,
+      "variants": [
+        {
+          "sku": "FARA00055007",
+          "tone": "7",
+          "price": 350,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            253
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rubor-en-polvo-baked-blush-de-milani",
+      "name": "Rubor en polvo baked blush de Milani",
+      "brand": "Milani",
+      "category": "Rubores",
+      "presentation": "0.12 oz",
+      "image": null,
+      "variants": [
+        {
+          "sku": "FARA00061017",
+          "tone": "17",
+          "price": 360,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            269
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rubor-en-polvo-buttermelt-blush-de-nyx",
+      "name": "Rubor en polvo buttermelt blush de NYX",
+      "brand": "NYX",
+      "category": "Rubores",
+      "presentation": "0.17 oz",
+      "image": null,
+      "variants": [
+        {
+          "sku": "FARA00062004",
+          "tone": "BMBL01",
+          "price": 400,
+          "stock": 2,
+          "status": "active",
+          "sourceRows": [
+            270
+          ]
+        },
+        {
+          "sku": "FARA00062001",
+          "tone": "BMBL04",
+          "price": 400,
+          "stock": 2,
+          "status": "active",
+          "sourceRows": [
+            271
+          ]
+        },
+        {
+          "sku": "FARA00062008",
+          "tone": "BMBL08",
+          "price": 400,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            272
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mascara-de-pestanas-lash-sensational-body-de-maybelline",
+      "name": "Mascara de pestañas lash sensational body de Maybelline",
+      "brand": "Maybelline",
+      "category": "Máscaras de pestañas",
+      "presentation": "0.27 oz",
+      "image": null,
+      "variants": [
+        {
+          "sku": "FARA00060901",
+          "tone": "901",
+          "price": 350,
+          "stock": 2,
+          "status": "active",
+          "sourceRows": [
+            287
+          ]
+        },
+        {
+          "sku": "FARA00060903",
+          "tone": "903",
+          "price": 350,
+          "stock": 2,
+          "status": "active",
+          "sourceRows": [
+            288
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fijador-elf-power-grip-dewy-setting-spray",
+      "name": "Fijador ELF Power Grip Dewy Setting Spray",
+      "brand": "E.l.f.",
+      "category": "Fijadores",
+      "presentation": "2.7 oz",
+      "image": null,
+      "variants": [
+        {
+          "sku": "FARA00051001",
+          "tone": "Verde",
+          "price": 490,
+          "stock": 2,
+          "status": "active",
+          "sourceRows": [
+            297
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mascara-de-pestanas-de-prosa",
+      "name": "Mascara de pestañas de Prosa",
+      "brand": "Prosa",
+      "category": "Máscaras de pestañas",
+      "presentation": "13 g",
+      "image": null,
+      "variants": [
+        {
+          "sku": "FARA00063001",
+          "tone": "Negro",
+          "price": 130,
+          "stock": 3,
+          "status": "active",
+          "sourceRows": [
+            299
+          ]
+        }
+      ]
+    },
+    {
+      "id": "encrespadoras-de-pestanas",
+      "name": "Encrespadoras de pestañas",
+      "brand": "Stay",
+      "category": "Accesorios",
+      "presentation": "mediana",
+      "image": null,
+      "variants": [
+        {
+          "sku": "FARA00064001",
+          "tone": "Plateada",
+          "price": 80,
+          "stock": 3,
+          "status": "active",
+          "sourceRows": [
+            300
           ]
         }
       ]
@@ -3032,6 +3909,863 @@
       "data/inventory-snapshot-20260909.json",
       "data/inventory-tone-corrections-20260909.json",
       "data/inventory-archive-20260909.json"
+    ],
+    "events": [
+      {
+        "at": "2026-09-10T02:41:49.678Z",
+        "source": {
+          "file": "Pasted markdown.md",
+          "receivedDate": "2026-09-09",
+          "mode": "add-missing-only"
+        },
+        "summary": {
+          "added": 76,
+          "active": 69,
+          "outOfStock": 0,
+          "review": 7,
+          "newFamilies": 11,
+          "skippedIncomplete": 1,
+          "skippedWithdrawn": 0
+        },
+        "changes": [
+          {
+            "sku": "FARA00056000",
+            "before": null,
+            "after": {
+              "tone": "Fair",
+              "price": 480,
+              "stock": 1,
+              "status": "active",
+              "productId": "polvo-suelto-set-it-bright-de-e-l-f"
+            }
+          },
+          {
+            "sku": "FARA00056001",
+            "before": null,
+            "after": {
+              "tone": "Light medium",
+              "price": 480,
+              "stock": 1,
+              "status": "active",
+              "productId": "polvo-suelto-set-it-bright-de-e-l-f"
+            }
+          },
+          {
+            "sku": "FARA00048118",
+            "before": null,
+            "after": {
+              "tone": "118",
+              "price": 490,
+              "stock": 1,
+              "status": "review",
+              "productId": "base-fit-me-de-maybelline-morada"
+            }
+          },
+          {
+            "sku": "FARA00048120",
+            "before": null,
+            "after": {
+              "tone": "120",
+              "price": 490,
+              "stock": 1,
+              "status": "active",
+              "productId": "base-fit-me-de-maybelline-morada"
+            }
+          },
+          {
+            "sku": "FARA00048125",
+            "before": null,
+            "after": {
+              "tone": "125",
+              "price": 490,
+              "stock": 1,
+              "status": "review",
+              "productId": "base-fit-me-de-maybelline-morada"
+            }
+          },
+          {
+            "sku": "FARA00048210",
+            "before": null,
+            "after": {
+              "tone": "210",
+              "price": 490,
+              "stock": 2,
+              "status": "review",
+              "productId": "base-fit-me-de-maybelline-morada"
+            }
+          },
+          {
+            "sku": "FARA00048220",
+            "before": null,
+            "after": {
+              "tone": "220",
+              "price": 490,
+              "stock": 2,
+              "status": "active",
+              "productId": "base-fit-me-de-maybelline-morada"
+            }
+          },
+          {
+            "sku": "FARA00048225",
+            "before": null,
+            "after": {
+              "tone": "225",
+              "price": 490,
+              "stock": 1,
+              "status": "review",
+              "productId": "base-fit-me-de-maybelline-morada"
+            }
+          },
+          {
+            "sku": "FARA00016112",
+            "before": null,
+            "after": {
+              "tone": "112",
+              "price": 490,
+              "stock": 1,
+              "status": "active",
+              "productId": "polvo-compacto-fit-me-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00016122",
+            "before": null,
+            "after": {
+              "tone": "122",
+              "price": 490,
+              "stock": 1,
+              "status": "active",
+              "productId": "polvo-compacto-fit-me-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00016130",
+            "before": null,
+            "after": {
+              "tone": "130",
+              "price": 490,
+              "stock": 2,
+              "status": "active",
+              "productId": "polvo-compacto-fit-me-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00016222",
+            "before": null,
+            "after": {
+              "tone": "222",
+              "price": 490,
+              "stock": 1,
+              "status": "active",
+              "productId": "polvo-compacto-fit-me-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00016320",
+            "before": null,
+            "after": {
+              "tone": "320",
+              "price": 490,
+              "stock": 1,
+              "status": "active",
+              "productId": "polvo-compacto-fit-me-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00016330",
+            "before": null,
+            "after": {
+              "tone": "330",
+              "price": 490,
+              "stock": 1,
+              "status": "active",
+              "productId": "polvo-compacto-fit-me-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00016332",
+            "before": null,
+            "after": {
+              "tone": "332",
+              "price": 490,
+              "stock": 2,
+              "status": "active",
+              "productId": "polvo-compacto-fit-me-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00021355",
+            "before": null,
+            "after": {
+              "tone": "355",
+              "price": 360,
+              "stock": 1,
+              "status": "active",
+              "productId": "corrector-infallible-full-wear-24h-de-loreal"
+            }
+          },
+          {
+            "sku": "FARA00021365",
+            "before": null,
+            "after": {
+              "tone": "365",
+              "price": 360,
+              "stock": 1,
+              "status": "active",
+              "productId": "corrector-infallible-full-wear-24h-de-loreal"
+            }
+          },
+          {
+            "sku": "FARA00021380",
+            "before": null,
+            "after": {
+              "tone": "380",
+              "price": 360,
+              "stock": 1,
+              "status": "active",
+              "productId": "corrector-infallible-full-wear-24h-de-loreal"
+            }
+          },
+          {
+            "sku": "FARA00021395",
+            "before": null,
+            "after": {
+              "tone": "395",
+              "price": 360,
+              "stock": 1,
+              "status": "active",
+              "productId": "corrector-infallible-full-wear-24h-de-loreal"
+            }
+          },
+          {
+            "sku": "FARA00054015",
+            "before": null,
+            "after": {
+              "tone": "15",
+              "price": 360,
+              "stock": 1,
+              "status": "active",
+              "productId": "corrector-lifter-glow-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00054020",
+            "before": null,
+            "after": {
+              "tone": "20",
+              "price": 360,
+              "stock": 2,
+              "status": "active",
+              "productId": "corrector-lifter-glow-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00054025",
+            "before": null,
+            "after": {
+              "tone": "25",
+              "price": 360,
+              "stock": 1,
+              "status": "active",
+              "productId": "corrector-lifter-glow-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00054030",
+            "before": null,
+            "after": {
+              "tone": "30",
+              "price": 360,
+              "stock": 1,
+              "status": "active",
+              "productId": "corrector-lifter-glow-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00054035",
+            "before": null,
+            "after": {
+              "tone": "35",
+              "price": 360,
+              "stock": 1,
+              "status": "active",
+              "productId": "corrector-lifter-glow-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00054050",
+            "before": null,
+            "after": {
+              "tone": "50",
+              "price": 360,
+              "stock": 2,
+              "status": "active",
+              "productId": "corrector-lifter-glow-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00054055",
+            "before": null,
+            "after": {
+              "tone": "55",
+              "price": 360,
+              "stock": 1,
+              "status": "active",
+              "productId": "corrector-lifter-glow-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00054060",
+            "before": null,
+            "after": {
+              "tone": "60",
+              "price": 360,
+              "stock": 1,
+              "status": "active",
+              "productId": "corrector-lifter-glow-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00049013",
+            "before": null,
+            "after": {
+              "tone": "13",
+              "price": 360,
+              "stock": 1,
+              "status": "active",
+              "productId": "corrector-soft-glam-de-elf"
+            }
+          },
+          {
+            "sku": "FARA00049020",
+            "before": null,
+            "after": {
+              "tone": "20",
+              "price": 360,
+              "stock": 2,
+              "status": "active",
+              "productId": "corrector-soft-glam-de-elf"
+            }
+          },
+          {
+            "sku": "FARA00049021",
+            "before": null,
+            "after": {
+              "tone": "21",
+              "price": 360,
+              "stock": 1,
+              "status": "active",
+              "productId": "corrector-soft-glam-de-elf"
+            }
+          },
+          {
+            "sku": "FARA00049023",
+            "before": null,
+            "after": {
+              "tone": "23",
+              "price": 360,
+              "stock": 1,
+              "status": "active",
+              "productId": "corrector-soft-glam-de-elf"
+            }
+          },
+          {
+            "sku": "FARA00049025",
+            "before": null,
+            "after": {
+              "tone": "25",
+              "price": 360,
+              "stock": 2,
+              "status": "active",
+              "productId": "corrector-soft-glam-de-elf"
+            }
+          },
+          {
+            "sku": "FARA00049030",
+            "before": null,
+            "after": {
+              "tone": "30",
+              "price": 360,
+              "stock": 2,
+              "status": "active",
+              "productId": "corrector-soft-glam-de-elf"
+            }
+          },
+          {
+            "sku": "FARA00025120",
+            "before": null,
+            "after": {
+              "tone": "120",
+              "price": 350,
+              "stock": 1,
+              "status": "active",
+              "productId": "labial-infallible-matte-resistance-de-loreal"
+            }
+          },
+          {
+            "sku": "FARA00025230",
+            "before": null,
+            "after": {
+              "tone": "230",
+              "price": 350,
+              "stock": 1,
+              "status": "active",
+              "productId": "labial-infallible-matte-resistance-de-loreal"
+            }
+          },
+          {
+            "sku": "FARA00025500",
+            "before": null,
+            "after": {
+              "tone": "500",
+              "price": 350,
+              "stock": 2,
+              "status": "active",
+              "productId": "labial-infallible-matte-resistance-de-loreal"
+            }
+          },
+          {
+            "sku": "FARA00025650",
+            "before": null,
+            "after": {
+              "tone": "650",
+              "price": 350,
+              "stock": 2,
+              "status": "active",
+              "productId": "labial-infallible-matte-resistance-de-loreal"
+            }
+          },
+          {
+            "sku": "FARA00025660",
+            "before": null,
+            "after": {
+              "tone": "660",
+              "price": 350,
+              "stock": 1,
+              "status": "active",
+              "productId": "labial-infallible-matte-resistance-de-loreal"
+            }
+          },
+          {
+            "sku": "FARA00025665",
+            "before": null,
+            "after": {
+              "tone": "665",
+              "price": 350,
+              "stock": 1,
+              "status": "active",
+              "productId": "labial-infallible-matte-resistance-de-loreal"
+            }
+          },
+          {
+            "sku": "FARA00026215",
+            "before": null,
+            "after": {
+              "tone": "215",
+              "price": 350,
+              "stock": 1,
+              "status": "active",
+              "productId": "labial-infallible-laque-resistance-de-loreal"
+            }
+          },
+          {
+            "sku": "FARA00026601",
+            "before": null,
+            "after": {
+              "tone": "601",
+              "price": 350,
+              "stock": 2,
+              "status": "active",
+              "productId": "labial-infallible-laque-resistance-de-loreal"
+            }
+          },
+          {
+            "sku": "FARA00026635",
+            "before": null,
+            "after": {
+              "tone": "635",
+              "price": 350,
+              "stock": 1,
+              "status": "active",
+              "productId": "labial-infallible-laque-resistance-de-loreal"
+            }
+          },
+          {
+            "sku": "FARA00027005",
+            "before": null,
+            "after": {
+              "tone": "5",
+              "price": 350,
+              "stock": 1,
+              "status": "active",
+              "productId": "labial-superstay-matte-ink-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00027020",
+            "before": null,
+            "after": {
+              "tone": "20",
+              "price": 350,
+              "stock": 1,
+              "status": "active",
+              "productId": "labial-superstay-matte-ink-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00027050",
+            "before": null,
+            "after": {
+              "tone": "50",
+              "price": 350,
+              "stock": 2,
+              "status": "active",
+              "productId": "labial-superstay-matte-ink-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00027155",
+            "before": null,
+            "after": {
+              "tone": "155",
+              "price": 350,
+              "stock": 1,
+              "status": "active",
+              "productId": "labial-superstay-matte-ink-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00027505",
+            "before": null,
+            "after": {
+              "tone": "505",
+              "price": 350,
+              "stock": 1,
+              "status": "active",
+              "productId": "labial-superstay-matte-ink-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00027510",
+            "before": null,
+            "after": {
+              "tone": "510",
+              "price": 350,
+              "stock": 1,
+              "status": "active",
+              "productId": "labial-superstay-matte-ink-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00027515",
+            "before": null,
+            "after": {
+              "tone": "515",
+              "price": 350,
+              "stock": 1,
+              "status": "active",
+              "productId": "labial-superstay-matte-ink-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00028010",
+            "before": null,
+            "after": {
+              "tone": "10",
+              "price": 350,
+              "stock": 1,
+              "status": "active",
+              "productId": "labial-superstay-vinyl-ink-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00028015",
+            "before": null,
+            "after": {
+              "tone": "15",
+              "price": 350,
+              "stock": 2,
+              "status": "active",
+              "productId": "labial-superstay-vinyl-ink-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00028030",
+            "before": null,
+            "after": {
+              "tone": "30",
+              "price": 350,
+              "stock": 1,
+              "status": "active",
+              "productId": "labial-superstay-vinyl-ink-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00028035",
+            "before": null,
+            "after": {
+              "tone": "35",
+              "price": 350,
+              "stock": 1,
+              "status": "active",
+              "productId": "labial-superstay-vinyl-ink-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00028040",
+            "before": null,
+            "after": {
+              "tone": "40",
+              "price": 350,
+              "stock": 2,
+              "status": "active",
+              "productId": "labial-superstay-vinyl-ink-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00028100",
+            "before": null,
+            "after": {
+              "tone": "100",
+              "price": 350,
+              "stock": 1,
+              "status": "active",
+              "productId": "labial-superstay-vinyl-ink-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00030060",
+            "before": null,
+            "after": {
+              "tone": "60",
+              "price": 350,
+              "stock": 1,
+              "status": "active",
+              "productId": "labial-superstay-teddy-tint-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA000300100",
+            "before": null,
+            "after": {
+              "tone": "100",
+              "price": 350,
+              "stock": 1,
+              "status": "active",
+              "productId": "labial-superstay-teddy-tint-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00030130",
+            "before": null,
+            "after": {
+              "tone": "130",
+              "price": 350,
+              "stock": 1,
+              "status": "active",
+              "productId": "labial-superstay-teddy-tint-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00055107",
+            "before": null,
+            "after": {
+              "tone": "107",
+              "price": 350,
+              "stock": 1,
+              "status": "active",
+              "productId": "lipstick-blind-date-satin-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00055007",
+            "before": null,
+            "after": {
+              "tone": "7",
+              "price": 350,
+              "stock": 1,
+              "status": "active",
+              "productId": "lipstick-avenue-matte-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00035004",
+            "before": null,
+            "after": {
+              "tone": "Berry well",
+              "price": 360,
+              "stock": 3,
+              "status": "active",
+              "productId": "rubor-camo-liquid-blush-de-elf"
+            }
+          },
+          {
+            "sku": "FARA00035005",
+            "before": null,
+            "after": {
+              "tone": "Coopper etiquette",
+              "price": 360,
+              "stock": 2,
+              "status": "active",
+              "productId": "rubor-camo-liquid-blush-de-elf"
+            }
+          },
+          {
+            "sku": "FARA00035006",
+            "before": null,
+            "after": {
+              "tone": "Dusty rose",
+              "price": 360,
+              "stock": 2,
+              "status": "active",
+              "productId": "rubor-camo-liquid-blush-de-elf"
+            }
+          },
+          {
+            "sku": "FARA00035007",
+            "before": null,
+            "after": {
+              "tone": "Pinky promise",
+              "price": 360,
+              "stock": 1,
+              "status": "active",
+              "productId": "rubor-camo-liquid-blush-de-elf"
+            }
+          },
+          {
+            "sku": "FARA00061017",
+            "before": null,
+            "after": {
+              "tone": "17",
+              "price": 360,
+              "stock": 1,
+              "status": "active",
+              "productId": "rubor-en-polvo-baked-blush-de-milani"
+            }
+          },
+          {
+            "sku": "FARA00062004",
+            "before": null,
+            "after": {
+              "tone": "BMBL01",
+              "price": 400,
+              "stock": 2,
+              "status": "active",
+              "productId": "rubor-en-polvo-buttermelt-blush-de-nyx"
+            }
+          },
+          {
+            "sku": "FARA00062001",
+            "before": null,
+            "after": {
+              "tone": "BMBL04",
+              "price": 400,
+              "stock": 2,
+              "status": "active",
+              "productId": "rubor-en-polvo-buttermelt-blush-de-nyx"
+            }
+          },
+          {
+            "sku": "FARA00062008",
+            "before": null,
+            "after": {
+              "tone": "BMBL08",
+              "price": 400,
+              "stock": 1,
+              "status": "active",
+              "productId": "rubor-en-polvo-buttermelt-blush-de-nyx"
+            }
+          },
+          {
+            "sku": "FARA00060901",
+            "before": null,
+            "after": {
+              "tone": "901",
+              "price": 350,
+              "stock": 2,
+              "status": "active",
+              "productId": "mascara-de-pestanas-lash-sensational-body-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00060903",
+            "before": null,
+            "after": {
+              "tone": "903",
+              "price": 350,
+              "stock": 2,
+              "status": "active",
+              "productId": "mascara-de-pestanas-lash-sensational-body-de-maybelline"
+            }
+          },
+          {
+            "sku": "FARA00050001",
+            "before": null,
+            "after": {
+              "tone": "Transparent verde",
+              "price": 490,
+              "stock": 5,
+              "status": "review",
+              "productId": "primer-power-grip-verde-de-elf"
+            }
+          },
+          {
+            "sku": "FARA00050002",
+            "before": null,
+            "after": {
+              "tone": "Transparent naranja",
+              "price": 490,
+              "stock": 1,
+              "status": "review",
+              "productId": "primer-power-grip-naranja-de-elf"
+            }
+          },
+          {
+            "sku": "FARA00051001",
+            "before": null,
+            "after": {
+              "tone": "Verde",
+              "price": 490,
+              "stock": 2,
+              "status": "active",
+              "productId": "fijador-elf-power-grip-dewy-setting-spray"
+            }
+          },
+          {
+            "sku": "FARA00053001",
+            "before": null,
+            "after": {
+              "tone": "4 Colores rosa y café",
+              "price": 490,
+              "stock": 4,
+              "status": "review",
+              "productId": "paleta-contorno-y-blush"
+            }
+          },
+          {
+            "sku": "FARA00063001",
+            "before": null,
+            "after": {
+              "tone": "Negro",
+              "price": 130,
+              "stock": 3,
+              "status": "active",
+              "productId": "mascara-de-pestanas-de-prosa"
+            }
+          },
+          {
+            "sku": "FARA00064001",
+            "before": null,
+            "after": {
+              "tone": "Plateada",
+              "price": 80,
+              "stock": 3,
+              "status": "active",
+              "productId": "encrespadoras-de-pestanas"
+            }
+          }
+        ]
+      }
     ]
   }
 }
