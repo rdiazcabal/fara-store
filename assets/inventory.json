@@ -30,31 +30,6 @@
             "description": "Polvo facial suelto Airspun de Coty es un polvo de maquillaje para complementar y dar el toque final a tu rutina de rostro. Elige la tonalidad disponible que mejor acompañe tu maquillaje."
         },
         {
-            "id": "polvo-suelto-set-it-bright-de-e-l-f",
-            "name": "Polvo suelto Set It Bright de e.l.f.",
-            "brand": "e.l.f.",
-            "category": "Polvos sueltos",
-            "presentation": "0.37 oz",
-            "image": "assets/products/Set de cuatro polvos sueltos Halo Glow de e.l.f..avif",
-            "variants": [
-                {
-                    "sku": "FARA00056000",
-                    "tone": "Fair",
-                    "price": 480,
-                    "stock": 1,
-                    "status": "active"
-                },
-                {
-                    "sku": "FARA00056001",
-                    "tone": "Light medium",
-                    "price": 480,
-                    "stock": 1,
-                    "status": "active"
-                }
-            ],
-            "description": "Polvo suelto Set It Bright de e.l.f. es un polvo de maquillaje para complementar y dar el toque final a tu rutina de rostro. Elige la tonalidad disponible que mejor acompañe tu maquillaje."
-        },
-        {
             "id": "base-infallible-fresh-wear-de-loreal",
             "name": "Base Infallible Fresh Wear de L’Oréal",
             "brand": "L’Oréal Paris",
@@ -2816,6 +2791,31 @@
                 }
             ],
             "description": "Set histórico de cuatro polvos sueltos Halo Glow de e.l.f.; actualmente no aparece en el inventario recibido y no está disponible para compra."
+        },
+        {
+            "id": "polvo-suelto-set-it-bright-de-e-l-f",
+            "name": "Polvo suelto Set It Bright de e.l.f.",
+            "brand": "e.l.f.",
+            "category": "Polvos sueltos",
+            "presentation": "0.37 oz",
+            "image": "assets/products/Set de cuatro polvos sueltos Halo Glow de e.l.f..avif",
+            "variants": [
+                {
+                    "sku": "FARA00056000",
+                    "tone": "Fair",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00056001",
+                    "tone": "Light medium",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Polvo suelto Set It Bright de e.l.f. es un polvo de maquillaje para complementar y dar el toque final a tu rutina de rostro. Elige la tonalidad disponible que mejor acompañe tu maquillaje."
         }
     ]
 }
