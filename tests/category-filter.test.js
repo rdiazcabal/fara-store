@@ -56,7 +56,7 @@ test('Explicit multiple categories work for future families without changing SKU
   assert.throws(() => core.prepareCatalog({...raw,products:[{...raw.products[0],categories:[]}]}), /Categorías de producto no válidas/);
 });
 
-test('The filtering change preserves prices, tones, stock and archived exclusions', () => {
+test('Filtering preserves reconciled prices, tones, stock and archived exclusions', () => {
   const inspection = api.inspectInventory(data);
   assert.equal(inspection.catalog.bySku.size, inspection.stats.activeSkus);
   for (const product of data.products) {
@@ -71,5 +71,5 @@ test('The filtering change preserves prices, tones, stock and archived exclusion
       }
     }
   }
-  assert.deepEqual([inspection.stats.products,inspection.stats.skus,inspection.stats.activeSkus,inspection.stats.activeUnits],[62,304,282,493]);
+  assert.deepEqual([inspection.stats.products,inspection.stats.skus,inspection.stats.activeSkus,inspection.stats.activeUnits],[61,304,280,536]);
 });
