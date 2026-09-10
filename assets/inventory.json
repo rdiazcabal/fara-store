@@ -2938,7 +2938,7 @@
       "brand": "Maybelline",
       "category": "Cejas",
       "presentation": "0.23 oz",
-      "image": null,
+      "image": "assets/products/Gel de cejas Super Lock de Maybelline.webp",
       "variants": [
         {
           "sku": "FARA00039000",
@@ -2979,7 +2979,7 @@
       "brand": "e.l.f.",
       "category": "Prebases",
       "presentation": "0.811 oz",
-      "image": null,
+      "image": "assets/products/Primer Power Grip de e.l.f. (Verde).jpg",
       "variants": [
         {
           "sku": "FARA00045001",
@@ -3011,7 +3011,7 @@
       "brand": "Starface",
       "category": "Cuidado facial",
       "presentation": "8 unidades",
-      "image": null,
+      "image": "assets/products/Parches para el acné Starface.webp",
       "variants": [
         {
           "sku": "FARA00044001",
@@ -3062,7 +3062,7 @@
       "brand": "e.l.f.",
       "category": "Tintas",
       "presentation": "0.22 oz",
-      "image": null,
+      "image": "assets/products/Tinta Sheer For It Blush Tint de e.l.f..jpg",
       "variants": [
         {
           "sku": "FARA00032001",
@@ -3214,7 +3214,7 @@
       "name": "Primer Power Grip de e.l.f. (Naranja)",
       "category": "Prebases",
       "presentation": "0.811 oz",
-      "image": null,
+      "image": "assets/products/Primer Power Grip de e.l.f. (Naranja).avif",
       "variants": [
         {
           "sku": "FARA00045002",
@@ -3246,7 +3246,7 @@
       "name": "Fijador Power Grip Dewy Setting Spray de e.l.f.",
       "category": "Fijadores",
       "presentation": "2.7 oz",
-      "image": null,
+      "image": "assets/products/Fijador Power Grip Dewy Setting Spray de e.l.f..webp",
       "variants": [
         {
           "sku": "FARA00047001",
@@ -3267,7 +3267,7 @@
       "name": "Set de cuatro polvos sueltos Halo Glow de e.l.f.",
       "category": "Polvos sueltos",
       "presentation": "0.35 oz",
-      "image": null,
+      "image": "assets/products/Set de cuatro polvos sueltos Halo Glow de e.l.f..avif",
       "variants": [
         {
           "sku": "FARA00048001",
@@ -3298,7 +3298,7 @@
       "name": "Paleta de contorno y blush",
       "category": "Paletas",
       "presentation": "0.47 oz",
-      "image": null,
+      "image": "assets/products/Paleta de contorno y blush.jpg",
       "variants": [
         {
           "sku": "FARA00049001",
