@@ -2229,7 +2229,7 @@
       "brand": "Maybelline",
       "category": "Labiales",
       "presentation": "0.17 oz",
-      "image": null,
+      "image": "assets/products/Labial Superstay Matte Ink de Maybelline.jpg",
       "variants": [
         {
           "sku": "FARA00027010",
@@ -2470,7 +2470,7 @@
       "brand": "Maybelline",
       "category": "Labiales",
       "presentation": "0.14 oz",
-      "image": null,
+      "image": "assets/products/Labial Superstay Teddy Tint de Maybelline.webp",
       "variants": [
         {
           "sku": "FARA00030010",
@@ -2621,7 +2621,7 @@
       "brand": "Maybelline",
       "category": "Labiales",
       "presentation": "0.14 oz",
-      "image": null,
+      "image": "assets/products/Labial Superstay Vinyl Ink de Maybelline.jpg",
       "variants": [
         {
           "sku": "FARA00028020",
@@ -2762,7 +2762,7 @@
       "brand": "NYX",
       "category": "Cejas",
       "presentation": "0.002 oz",
-      "image": null,
+      "image": "assets/products/Lápiz de cejas Blade & Shade de NYX.webp",
       "variants": [
         {
           "sku": "FARA00037P07",
@@ -2813,7 +2813,7 @@
       "brand": "NYX",
       "category": "Cejas",
       "presentation": "0.06 oz",
-      "image": null,
+      "image": "assets/products/Gel de cejas Zero to Brow de NYX.jpg",
       "variants": [
         {
           "sku": "FARA00036G04",
@@ -2844,7 +2844,7 @@
       "brand": "Maybelline",
       "category": "Máscaras de pestañas",
       "presentation": "0.22 oz",
-      "image": null,
+      "image": "assets/products/Máscara Define-A-Lash de Maybelline.jpg",
       "variants": [
         {
           "sku": "FARA00042811",
@@ -2865,7 +2865,7 @@
       "brand": "Maybelline",
       "category": "Máscaras de pestañas",
       "presentation": "0.27 oz",
-      "image": null,
+      "image": "assets/products/Máscara The Colossal de Maybelline.jpg",
       "variants": [
         {
           "sku": "FARA00043241",
@@ -2886,7 +2886,7 @@
       "brand": "Maybelline",
       "category": "Máscaras de pestañas",
       "presentation": "0.25 oz",
-      "image": null,
+      "image": "assets/products/Máscara The Falsies de Maybelline.webp",
       "variants": [
         {
           "sku": "FARA00041291",
@@ -2907,7 +2907,7 @@
       "brand": "L’Oréal Paris",
       "category": "Máscaras de pestañas",
       "presentation": "0.32 oz",
-      "image": null,
+      "image": "assets/products/Máscara Voluminous Million Lashes de L’Oréal.avif",
       "variants": [
         {
           "sku": "FARA00040630",
