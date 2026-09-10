@@ -121,5 +121,17 @@ patch('assets/app.js', "  script.src = 'assets/inventory-loader.js?v=20260909-un
 patch('assets/products-page.js', "  script.src = 'assets/inventory-loader.js?v=20260909-unified1';", `  script.src = 'assets/inventory-loader.js?v=${VERSION}';`);
 patch('index.html', 'assets/app.js?v=20260909-unified1', `assets/app.js?v=${VERSION}`);
 patch('productos.html', 'assets/products-page.js?v=20260909-unified1', `assets/products-page.js?v=${VERSION}`);
+patch('tests/catalog-display.test.js', "  const version = '20260909-unified1';", `  const version = '${VERSION}';`);
+patch(
+  'tests/category-filter.test.js',
+  "    id:'test-mixed', name:'Producto de prueba', brand:'FARA', category:'Paletas',\n    categories:['Paletas','Rubores'], variants:[{sku:'FARATEST001',tone:'Único',price:100,stock:2}]",
+  "    id:'test-mixed', name:'Producto de prueba', brand:'FARA', category:'Paletas',\n    description:'Descripción de prueba para validar el catálogo.',\n    categories:['Paletas','Rubores'], variants:[{sku:'FARATEST001',tone:'Único',price:100,stock:2}]"
+);
+
+const catalogDisplay = 'tests/catalog-display.test.js';
+const catalogSource = fs.readFileSync(catalogDisplay, 'utf8');
+if (!catalogSource.includes('Product detail uses the description stored on each product')) {
+  fs.appendFileSync(catalogDisplay, `\n\ntest('Product detail uses the description stored on each product', () => {\n  const store = read('assets/inventory-store.js');\n  const data = JSON.parse(read('assets/inventory.json'));\n  assert.ok(data.products.every((product) => typeof product.description === 'string' && product.description.trim().length >= 80));\n  assert.equal(new Set(data.products.map((product) => product.description)).size, data.products.length);\n  assert.match(store, /productDetailDescription'\\)\\.textContent = product\\.description/);\n  assert.doesNotMatch(store, /Producto registrado en el inventario de FARA/);\n});\n`);
+}
 
 console.log(JSON.stringify({products: inventory.products.length, descriptions: inventory.products.filter(p => p.description).length, version: VERSION}, null, 2));
