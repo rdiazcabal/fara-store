@@ -26,9 +26,23 @@
     });
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', decorateSocialLinks, {once: true});
-  } else {
+  function showFullBrandImage() {
+    const image = document.querySelector('.brand-story img');
+    if (!image) return;
+    image.style.maxHeight = 'none';
+    image.style.height = 'auto';
+    image.style.objectFit = 'contain';
+    image.style.objectPosition = 'center';
+  }
+
+  function enhanceStorefront() {
     decorateSocialLinks();
+    showFullBrandImage();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', enhanceStorefront, {once: true});
+  } else {
+    enhanceStorefront();
   }
 })();
