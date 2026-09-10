@@ -21,6 +21,7 @@
       assert(product && typeof product.id === 'string' && product.id && !ids.has(product.id), 'ID de producto duplicado o inválido');
       ids.add(product.id);
       for (const field of ['name', 'brand', 'category']) assert(typeof product[field] === 'string' && product[field].trim(), `Campo ${field} inválido en ${product.id}`);
+      assert(typeof product.description === 'string' && product.description.trim(), `Descripción inválida en ${product.id}`);
       assert(Array.isArray(product.variants) && product.variants.length > 0, `Producto sin referencias: ${product.id}`);
       const tones = new Set();
       const active = [];

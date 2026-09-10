@@ -36,6 +36,7 @@
       assert(typeof original.name === 'string' && original.name.trim(), 'Nombre de producto no válido');
       assert(typeof original.brand === 'string' && original.brand.trim(), 'Marca no válida');
       assert(typeof original.category === 'string' && original.category.trim(), 'Categoría no válida');
+      assert(typeof original.description === 'string' && original.description.trim(), 'Descripción no válida');
       assert(Array.isArray(original.variants) && original.variants.length, 'Producto sin variantes');
       const categories = productCategories(original);
       const tones = new Set();
@@ -52,7 +53,7 @@
       const product = Object.freeze({
         id: original.id, name: original.name, brand: original.brand,
         category: original.category, categories, presentation: original.presentation || '',
-        image: original.image || null, variants: Object.freeze(variants),
+        description: original.description, image: original.image || null, variants: Object.freeze(variants),
         stock: variants.reduce((sum, item) => sum + item.stock, 0)
       });
       byId.set(product.id, product);
@@ -100,7 +101,7 @@
     const filtered = catalog.products.filter((product) => {
       if (options.category && options.category !== 'Todos' && !product.categories.includes(options.category)) return false;
       if (!query) return true;
-      return normalizeSearch([product.name, product.brand, product.category, ...product.categories, ...product.variants.flatMap((v) => [v.tone, v.sku])].join(' ')).includes(query);
+      return normalizeSearch([product.name, product.brand, product.category, product.description, ...product.categories, ...product.variants.flatMap((v) => [v.tone, v.sku])].join(' ')).includes(query);
     });
     const price = (product) => Math.min(...product.variants.map((v) => v.price));
     if (options.sort === 'price-asc') filtered.sort((a, b) => price(a) - price(b) || a.name.localeCompare(b.name, 'es'));

@@ -4,7 +4,7 @@
 (() => {
   if (window.__faraInventoryBootstrapped) return;
   window.__faraInventoryBootstrapped = true;
-  const version = '20260909-unified1';
+  const version = '20260910-descriptions1';
   const addStyle = (file) => {
     const link = document.createElement('link');
     link.rel = 'stylesheet';

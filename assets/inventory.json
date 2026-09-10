@@ -49,7 +49,8 @@
             111
           ]
         }
-      ]
+      ],
+      "description": "Base Camo CC Cream de e.l.f. es una opción de maquillaje para unificar visualmente el tono del rostro y complementar tu rutina diaria. Elige entre las tonalidades disponibles la que mejor se adapte a tu look."
     },
     {
       "id": "base-fit-me-de-maybelline-azul",
@@ -193,7 +194,8 @@
           ],
           "reason": "SKU compartido por varias familias con existencias positivas; no es posible identificar la fórmula."
         }
-      ]
+      ],
+      "description": "Base Fit Me de Maybelline (Azul) es una base de maquillaje para completar tu rutina de rostro y elegir el tono que mejor se adapte a tu preferencia. Revisa las tonalidades disponibles antes de agregarla al carrito."
     },
     {
       "id": "base-fit-me-de-maybelline-morada",
@@ -307,7 +309,8 @@
           ],
           "reason": "SKU nuevo del inventario recibido, pero la tonalidad ya existe activa en esta familia con otro SKU. Requiere confirmar cuál referencia debe quedar vigente."
         }
-      ]
+      ],
+      "description": "Base Fit Me de Maybelline (Morada) es una base de maquillaje para completar tu rutina de rostro y elegir el tono que mejor se adapte a tu preferencia. Revisa las tonalidades disponibles antes de agregarla al carrito."
     },
     {
       "id": "base-halo-glow-de-e-l-f",
@@ -347,7 +350,8 @@
             102
           ]
         }
-      ]
+      ],
+      "description": "Base Halo Glow de e.l.f. es una base de maquillaje pensada para completar tu rutina de rostro con un acabado de apariencia luminosa. Selecciona la tonalidad disponible que prefieras para tu look."
     },
     {
       "id": "base-infallible-fresh-wear-de-loreal",
@@ -497,7 +501,8 @@
             9
           ]
         }
-      ]
+      ],
+      "description": "Base Infallible Fresh Wear de L’Oréal es una base de maquillaje para completar tu rutina de rostro y elegir el tono que mejor se adapte a tu preferencia. Revisa las tonalidades disponibles antes de agregarla al carrito."
     },
     {
       "id": "base-infallible-pro-matte-de-loreal",
@@ -667,7 +672,8 @@
             32
           ]
         }
-      ]
+      ],
+      "description": "Base Infallible Pro-Matte de L’Oréal es una base de maquillaje para completar tu rutina de rostro con un acabado de apariencia mate. Elige entre las tonalidades disponibles la que mejor se adapte a tu look."
     },
     {
       "id": "base-lifter-plump-glow-de-maybelline",
@@ -747,7 +753,8 @@
             99
           ]
         }
-      ]
+      ],
+      "description": "Base Lifter Plump & Glow de Maybelline es una base de maquillaje para completar tu rutina de rostro y elegir el tono que mejor se adapte a tu preferencia. Revisa las tonalidades disponibles antes de agregarla al carrito."
     },
     {
       "id": "base-lumi-matte-de-maybelline",
@@ -874,7 +881,8 @@
           "stock": 1,
           "status": "absent_from_snapshot"
         }
-      ]
+      ],
+      "description": "Base Lumi-Matte de Maybelline es una base de maquillaje para completar tu rutina de rostro y elegir el tono que mejor se adapte a tu preferencia. Revisa las tonalidades disponibles antes de agregarla al carrito."
     },
     {
       "id": "base-outlast-active-de-covergirl",
@@ -894,7 +902,8 @@
             112
           ]
         }
-      ]
+      ],
+      "description": "Base Outlast Active de Covergirl es una base de maquillaje para completar tu rutina de rostro y elegir el tono que mejor se adapte a tu preferencia. Revisa las tonalidades disponibles antes de agregarla al carrito."
     },
     {
       "id": "base-skin-tint-de-maybelline",
@@ -975,7 +984,8 @@
             51
           ]
         }
-      ]
+      ],
+      "description": "Base Skin Tint de Maybelline es una base de maquillaje para completar tu rutina de rostro y elegir el tono que mejor se adapte a tu preferencia. Revisa las tonalidades disponibles antes de agregarla al carrito."
     },
     {
       "id": "base-soft-glam-de-e-l-f",
@@ -1045,7 +1055,8 @@
             108
           ]
         }
-      ]
+      ],
+      "description": "Base Soft Glam de e.l.f. es una base de maquillaje para completar tu rutina de rostro y elegir el tono que mejor se adapte a tu preferencia. Revisa las tonalidades disponibles antes de agregarla al carrito."
     },
     {
       "id": "base-superstay-de-maybelline",
@@ -1095,7 +1106,8 @@
             81
           ]
         }
-      ]
+      ],
+      "description": "Base Superstay de Maybelline es una base de maquillaje para completar tu rutina de rostro y elegir el tono que mejor se adapte a tu preferencia. Revisa las tonalidades disponibles antes de agregarla al carrito."
     },
     {
       "id": "base-true-match-de-loreal",
@@ -1165,7 +1177,8 @@
             38
           ]
         }
-      ]
+      ],
+      "description": "Base True Match de L’Oréal es una base de maquillaje para completar tu rutina de rostro y elegir el tono que mejor se adapte a tu preferencia. Revisa las tonalidades disponibles antes de agregarla al carrito."
     },
     {
       "id": "corrector-camo-color-corrector-de-e-l-f",
@@ -1185,7 +1198,8 @@
             146
           ]
         }
-      ]
+      ],
+      "description": "Corrector Camo Color Corrector de e.l.f. es un corrector para complementar tu maquillaje de rostro y trabajar zonas puntuales según el resultado que busques. Selecciona la tonalidad disponible que mejor se adapte a tu look."
     },
     {
       "id": "corrector-camo-concealer-16h-de-e-l-f",
@@ -1205,7 +1219,8 @@
             147
           ]
         }
-      ]
+      ],
+      "description": "Corrector Camo Concealer 16H de e.l.f. es un corrector para complementar tu maquillaje de rostro y trabajar zonas puntuales según el resultado que busques. Selecciona la tonalidad disponible que mejor se adapte a tu look."
     },
     {
       "id": "corrector-infallible-full-wear-24h-de-loreal",
@@ -1315,7 +1330,8 @@
             153
           ]
         }
-      ]
+      ],
+      "description": "Corrector Infallible Full Wear 24H de L’Oréal es un corrector para complementar tu maquillaje de rostro y trabajar zonas puntuales según el resultado que busques. Selecciona la tonalidad disponible que mejor se adapte a tu look."
     },
     {
       "id": "corrector-instant-age-rewind-eraser-de-maybelline",
@@ -1355,7 +1371,8 @@
             145
           ]
         }
-      ]
+      ],
+      "description": "Corrector Instant Age Rewind Eraser de Maybelline es un corrector para complementar tu maquillaje de rostro y trabajar zonas puntuales según el resultado que busques. Selecciona la tonalidad disponible que mejor se adapte a tu look."
     },
     {
       "id": "corrector-superstay-30h-de-maybelline",
@@ -1375,7 +1392,8 @@
             142
           ]
         }
-      ]
+      ],
+      "description": "Corrector Superstay 30H de Maybelline es un corrector para complementar tu maquillaje de rostro y trabajar zonas puntuales según el resultado que busques. Selecciona la tonalidad disponible que mejor se adapte a tu look."
     },
     {
       "id": "labial-infallible-matte-resistance-de-loreal",
@@ -1522,7 +1540,8 @@
             187
           ]
         }
-      ]
+      ],
+      "description": "Labial Infallible Matte Resistance de L’Oréal es un producto para labios pensado para aportar color con un acabado de apariencia mate. Selecciona entre las tonalidades disponibles tu favorita."
     },
     {
       "id": "labial-infallible-laque-resistance-de-loreal",
@@ -1629,7 +1648,8 @@
             197
           ]
         }
-      ]
+      ],
+      "description": "Labial Infallible Laque Resistance de L’Oréal es un producto para labios que aporta color y completa tu maquillaje. Explora las tonalidades disponibles y elige la que mejor combine con tu estilo."
     },
     {
       "id": "bronceador-natural-bronzer-de-rimmel-london",
@@ -1649,7 +1669,8 @@
             135
           ]
         }
-      ]
+      ],
+      "description": "Bronceador Natural Bronzer de Rimmel London es un bronceador para aportar calidez y definición visual al maquillaje del rostro. Úsalo como toque final y elige la tonalidad disponible que prefieras."
     },
     {
       "id": "polvo-compacto-fit-me-de-maybelline",
@@ -1779,7 +1800,8 @@
             141
           ]
         }
-      ]
+      ],
+      "description": "Polvo compacto Fit Me de Maybelline es un polvo de maquillaje ideal para completar y dar el toque final a tu rutina de rostro. Elige la tonalidad disponible que mejor acompañe tu maquillaje."
     },
     {
       "id": "polvo-compacto-infallible-fresh-wear-de-loreal",
@@ -1819,7 +1841,8 @@
             114
           ]
         }
-      ]
+      ],
+      "description": "Polvo compacto Infallible Fresh Wear de L’Oréal es un polvo de maquillaje ideal para completar y dar el toque final a tu rutina de rostro. Elige la tonalidad disponible que mejor acompañe tu maquillaje."
     },
     {
       "id": "polvo-compacto-prime-stay-finishing-de-e-l-f",
@@ -1839,7 +1862,8 @@
             134
           ]
         }
-      ]
+      ],
+      "description": "Polvo compacto Prime & Stay Finishing de e.l.f. es un polvo de maquillaje ideal para completar y dar el toque final a tu rutina de rostro. Elige la tonalidad disponible que mejor acompañe tu maquillaje."
     },
     {
       "id": "polvo-compacto-superstay-24h-de-maybelline",
@@ -1939,7 +1963,8 @@
             125
           ]
         }
-      ]
+      ],
+      "description": "Polvo compacto Superstay 24H de Maybelline es un polvo de maquillaje ideal para completar y dar el toque final a tu rutina de rostro. Elige la tonalidad disponible que mejor acompañe tu maquillaje."
     },
     {
       "id": "polvo-compacto-true-match-de-loreal",
@@ -1959,7 +1984,8 @@
             133
           ]
         }
-      ]
+      ],
+      "description": "Polvo compacto True Match de L’Oréal es un polvo de maquillaje ideal para completar y dar el toque final a tu rutina de rostro. Elige la tonalidad disponible que mejor acompañe tu maquillaje."
     },
     {
       "id": "polvo-facial-suelto-airspun-de-coty",
@@ -1979,7 +2005,8 @@
             2
           ]
         }
-      ]
+      ],
+      "description": "Polvo facial suelto Airspun de Coty es un polvo de maquillaje ideal para completar y dar el toque final a tu rutina de rostro. Elige la tonalidad disponible que mejor acompañe tu maquillaje."
     },
     {
       "id": "rubor-camo-liquid-blush-de-elf",
@@ -2059,7 +2086,8 @@
             268
           ]
         }
-      ]
+      ],
+      "description": "Rubor líquido Camo de e.l.f. es un rubor para aportar un toque de color a las mejillas y complementar tu maquillaje. Escoge entre las tonalidades disponibles la que mejor combine con tu look."
     },
     {
       "id": "rubor-halo-glow-de-elf",
@@ -2089,7 +2117,8 @@
             208
           ]
         }
-      ]
+      ],
+      "description": "Rubor líquido Halo Glow de e.l.f. es un rubor para aportar un toque de color a las mejillas y complementar tu maquillaje. Escoge entre las tonalidades disponibles la que mejor combine con tu look."
     },
     {
       "id": "fijador-make-it-last-matte-de-milani",
@@ -2109,7 +2138,8 @@
             231
           ]
         }
-      ]
+      ],
+      "description": "Fijador Make It Last Matte de Milani es un fijador en spray pensado como paso final de tu rutina de maquillaje. Úsalo para completar tu look y revisa la presentación disponible."
     },
     {
       "id": "labial-glossy-lip-stain-de-elf",
@@ -2139,7 +2169,8 @@
             206
           ]
         }
-      ]
+      ],
+      "description": "Labial Glossy Lip Satin de e.l.f. es un producto para labios que aporta color y un acabado de apariencia brillante. Elige la tonalidad disponible que mejor combine con tu estilo."
     },
     {
       "id": "labial-lifter-gloss-de-maybelline",
@@ -2189,7 +2220,8 @@
             200
           ]
         }
-      ]
+      ],
+      "description": "Labial Lifter Gloss de Maybelline es un producto para labios que aporta color y un acabado de apariencia brillante. Elige la tonalidad disponible que mejor combine con tu estilo."
     },
     {
       "id": "labial-superstay-matte-ink-de-maybelline",
@@ -2429,7 +2461,8 @@
             218
           ]
         }
-      ]
+      ],
+      "description": "Labial Superstay Matte Ink de Maybelline es un producto para labios pensado para aportar color con un acabado de apariencia mate. Selecciona entre las tonalidades disponibles tu favorita."
     },
     {
       "id": "labial-superstay-teddy-tint-de-maybelline",
@@ -2579,7 +2612,8 @@
             247
           ]
         }
-      ]
+      ],
+      "description": "Labial Superstay Teddy Tint de Maybelline es un producto para labios pensado para aportar color con un acabado de apariencia mate. Selecciona entre las tonalidades disponibles tu favorita."
     },
     {
       "id": "labial-superstay-vinyl-ink-de-maybelline",
@@ -2719,7 +2753,8 @@
             230
           ]
         }
-      ]
+      ],
+      "description": "Labial Superstay Vinyl Ink de Maybelline es un producto para labios que aporta color y completa tu maquillaje. Explora las tonalidades disponibles y elige la que mejor combine con tu estilo."
     },
     {
       "id": "lapiz-cejas-blade-and-shade-de-nyx",
@@ -2769,7 +2804,8 @@
             217
           ]
         }
-      ]
+      ],
+      "description": "Lápiz de cejas Blade & Shade de NYX es un producto para definir, peinar o complementar el maquillaje de las cejas. Elige la tonalidad disponible que mejor se adapte al resultado que buscas."
     },
     {
       "id": "gel-cejas-zero-to-brow-de-nyx",
@@ -2799,7 +2835,8 @@
             213
           ]
         }
-      ]
+      ],
+      "description": "Gel de cejas Zero to Brow de NYX es un producto para definir, peinar o complementar el maquillaje de las cejas. Elige la tonalidad disponible que mejor se adapte al resultado que buscas."
     },
     {
       "id": "mascara-define-a-lash-de-maybelline",
@@ -2819,7 +2856,8 @@
             224
           ]
         }
-      ]
+      ],
+      "description": "Máscara Define-A-Lash de Maybelline forma parte de la selección de maquillaje y cuidado personal disponible en FARA. Revisa su presentación y las opciones disponibles antes de agregarlo al carrito."
     },
     {
       "id": "mascara-the-colossal-de-maybelline",
@@ -2839,7 +2877,8 @@
             225
           ]
         }
-      ]
+      ],
+      "description": "Máscara The Colossal de Maybelline forma parte de la selección de maquillaje y cuidado personal disponible en FARA. Revisa su presentación y las opciones disponibles antes de agregarlo al carrito."
     },
     {
       "id": "mascara-the-falsies-de-maybelline",
@@ -2859,7 +2898,8 @@
             223
           ]
         }
-      ]
+      ],
+      "description": "Máscara The Falsies de Maybelline forma parte de la selección de maquillaje y cuidado personal disponible en FARA. Revisa su presentación y las opciones disponibles antes de agregarlo al carrito."
     },
     {
       "id": "mascara-voluminous-million-lashes-de-loreal",
@@ -2889,7 +2929,8 @@
             222
           ]
         }
-      ]
+      ],
+      "description": "Máscara Voluminous Million Lashes de L’Oréal forma parte de la selección de maquillaje y cuidado personal disponible en FARA. Revisa su presentación y las opciones disponibles antes de agregarlo al carrito."
     },
     {
       "id": "gel-cejas-super-lock-de-maybelline",
@@ -2929,7 +2970,8 @@
             220
           ]
         }
-      ]
+      ],
+      "description": "Gel de cejas Super Lock de Maybelline es un producto para definir, peinar o complementar el maquillaje de las cejas. Elige la tonalidad disponible que mejor se adapte al resultado que buscas."
     },
     {
       "id": "primer-power-grip-verde-de-elf",
@@ -2960,7 +3002,8 @@
           ],
           "reason": "SKU nuevo del inventario recibido, pero la tonalidad ya existe activa en esta familia con otro SKU. Requiere confirmar cuál referencia debe quedar vigente."
         }
-      ]
+      ],
+      "description": "Primer Power Grip de e.l.f. (Verde) es una base de maquillaje para completar tu rutina de rostro y elegir el tono que mejor se adapte a tu preferencia. Revisa las tonalidades disponibles antes de agregarla al carrito."
     },
     {
       "id": "parches-acne-starface",
@@ -3010,7 +3053,8 @@
             229
           ]
         }
-      ]
+      ],
+      "description": "Parches para el acné Starface son parches cosméticos para complementar tu rutina de cuidado facial. Revisa las opciones disponibles y elige el color o presentación que prefieras."
     },
     {
       "id": "tinta-sheer-for-it-blush-de-elf",
@@ -3060,7 +3104,8 @@
             204
           ]
         }
-      ]
+      ],
+      "description": "Tinta Sheer For It Blush Tint de e.l.f. es un rubor para aportar un toque de color a las mejillas y complementar tu maquillaje. Escoge entre las tonalidades disponibles la que mejor combine con tu look."
     },
     {
       "id": "base-y-corrector-skin-ink-de-loreal",
@@ -3160,7 +3205,8 @@
             47
           ]
         }
-      ]
+      ],
+      "description": "Base y corrector Skin Ink de L’Oréal combina en una misma línea productos para trabajar el maquillaje del rostro y zonas puntuales. Elige la tonalidad disponible que mejor se adapte a tu look."
     },
     {
       "id": "primer-power-grip-naranja-de-elf",
@@ -3191,7 +3237,8 @@
           ],
           "reason": "SKU nuevo del inventario recibido, pero la tonalidad ya existe activa en esta familia con otro SKU. Requiere confirmar cuál referencia debe quedar vigente."
         }
-      ]
+      ],
+      "description": "Primer Power Grip de e.l.f. (Naranja) es una base de maquillaje para completar tu rutina de rostro y elegir el tono que mejor se adapte a tu preferencia. Revisa las tonalidades disponibles antes de agregarla al carrito."
     },
     {
       "id": "fijador-power-grip-dewy-setting-spray-de-elf",
@@ -3211,7 +3258,8 @@
             233
           ]
         }
-      ]
+      ],
+      "description": "Fijador Power Grip Dewy Setting Spray de e.l.f. es un fijador en spray pensado como paso final de tu rutina de maquillaje. Úsalo para completar tu look y revisa la presentación disponible."
     },
     {
       "id": "set-cuatro-polvos-sueltos-halo-glow-de-elf",
@@ -3241,7 +3289,8 @@
             235
           ]
         }
-      ]
+      ],
+      "description": "Set de cuatro polvos sueltos Halo Glow de e.l.f. es un polvo de maquillaje ideal para completar y dar el toque final a tu rutina de rostro. Elige la tonalidad disponible que mejor acompañe tu maquillaje."
     },
     {
       "id": "paleta-contorno-y-blush",
@@ -3272,7 +3321,8 @@
           ],
           "reason": "SKU nuevo del inventario recibido, pero la tonalidad ya existe activa en esta familia con otro SKU. Requiere confirmar cuál referencia debe quedar vigente."
         }
-      ]
+      ],
+      "description": "Paleta de contorno y blush es un rubor para aportar un toque de color a las mejillas y complementar tu maquillaje. Escoge entre las tonalidades disponibles la que mejor combine con tu look."
     },
     {
       "id": "base-advanced-radiance-de-covergirl",
@@ -3292,7 +3342,8 @@
             113
           ]
         }
-      ]
+      ],
+      "description": "Base Advanced Radiance de Covergirl es una base de maquillaje para completar tu rutina de rostro y elegir el tono que mejor se adapte a tu preferencia. Revisa las tonalidades disponibles antes de agregarla al carrito."
     },
     {
       "id": "polvo-suelto-set-it-bright-de-e-l-f",
@@ -3322,7 +3373,8 @@
             5
           ]
         }
-      ]
+      ],
+      "description": "Polvo suelto set it bright de E.L.F. es un polvo de maquillaje ideal para completar y dar el toque final a tu rutina de rostro. Elige la tonalidad disponible que mejor acompañe tu maquillaje."
     },
     {
       "id": "corrector-lifter-glow-de-maybelline",
@@ -3412,7 +3464,8 @@
             165
           ]
         }
-      ]
+      ],
+      "description": "Corrector lifter glow de Maybelline es un corrector para complementar tu maquillaje de rostro y trabajar zonas puntuales según el resultado que busques. Selecciona la tonalidad disponible que mejor se adapte a tu look."
     },
     {
       "id": "corrector-soft-glam-de-elf",
@@ -3482,7 +3535,8 @@
             171
           ]
         }
-      ]
+      ],
+      "description": "Corrector soft glam de e.f.l. es un corrector para complementar tu maquillaje de rostro y trabajar zonas puntuales según el resultado que busques. Selecciona la tonalidad disponible que mejor se adapte a tu look."
     },
     {
       "id": "lipstick-blind-date-satin-de-maybelline",
@@ -3502,7 +3556,8 @@
             252
           ]
         }
-      ]
+      ],
+      "description": "Lipstick blind date satin de Maybelline es un producto para labios que aporta color y completa tu maquillaje. Explora las tonalidades disponibles y elige la que mejor combine con tu estilo."
     },
     {
       "id": "lipstick-avenue-matte-de-maybelline",
@@ -3522,7 +3577,8 @@
             253
           ]
         }
-      ]
+      ],
+      "description": "Lipstick Avenue matte de Maybelline es un producto para labios pensado para aportar color con un acabado de apariencia mate. Selecciona entre las tonalidades disponibles tu favorita."
     },
     {
       "id": "rubor-en-polvo-baked-blush-de-milani",
@@ -3542,7 +3598,8 @@
             269
           ]
         }
-      ]
+      ],
+      "description": "Rubor en polvo baked blush de Milani es un polvo de maquillaje ideal para completar y dar el toque final a tu rutina de rostro. Elige la tonalidad disponible que mejor acompañe tu maquillaje."
     },
     {
       "id": "rubor-en-polvo-buttermelt-blush-de-nyx",
@@ -3582,7 +3639,8 @@
             272
           ]
         }
-      ]
+      ],
+      "description": "Rubor en polvo buttermelt blush de NYX es un polvo de maquillaje ideal para completar y dar el toque final a tu rutina de rostro. Elige la tonalidad disponible que mejor acompañe tu maquillaje."
     },
     {
       "id": "mascara-de-pestanas-lash-sensational-body-de-maybelline",
@@ -3612,7 +3670,8 @@
             288
           ]
         }
-      ]
+      ],
+      "description": "Mascara de pestañas lash sensational body de Maybelline es una máscara para resaltar y definir visualmente las pestañas como parte de tu maquillaje de ojos. Selecciona la opción disponible que prefieras."
     },
     {
       "id": "fijador-elf-power-grip-dewy-setting-spray",
@@ -3632,7 +3691,8 @@
             297
           ]
         }
-      ]
+      ],
+      "description": "Fijador ELF Power Grip Dewy Setting Spray es un fijador en spray pensado como paso final de tu rutina de maquillaje. Úsalo para completar tu look y revisa la presentación disponible."
     },
     {
       "id": "mascara-de-pestanas-de-prosa",
@@ -3652,7 +3712,8 @@
             299
           ]
         }
-      ]
+      ],
+      "description": "Mascara de pestañas de Prosa es una máscara para resaltar y definir visualmente las pestañas como parte de tu maquillaje de ojos. Selecciona la opción disponible que prefieras."
     },
     {
       "id": "encrespadoras-de-pestanas",
@@ -3672,7 +3733,8 @@
             300
           ]
         }
-      ]
+      ],
+      "description": "Encrespadoras de pestañas es una herramienta de maquillaje para dar forma visual a las pestañas antes o después de completar tu rutina de ojos. Revisa la presentación disponible en FARA."
     }
   ],
   "audit": {
