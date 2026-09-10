@@ -7,6 +7,53 @@
     TikTok: '<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v10.2a4.2 4.2 0 1 1-3.1-4.1"></path><path d="M14 3c.5 2.4 2 3.8 4.5 4.2"></path></svg>'
   };
 
+  const socialUrls = {
+    Instagram: 'https://www.instagram.com/fara__hnd/',
+    Facebook: 'https://www.facebook.com/Fara.Honduras',
+    TikTok: '#'
+  };
+
+  function ensureSocialStyles() {
+    if (document.getElementById('fara-social-styles')) return;
+    const style = document.createElement('style');
+    style.id = 'fara-social-styles';
+    style.textContent = `
+      .header-socials {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        margin-right: 8px;
+        padding-right: 12px;
+        border-right: 1px solid var(--line);
+      }
+      .header-social-link {
+        width: 32px;
+        height: 32px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        color: var(--black);
+        transition: background .2s ease, color .2s ease, transform .2s ease;
+      }
+      .header-social-link:hover {
+        background: var(--beige);
+        color: var(--brown);
+        transform: translateY(-1px);
+      }
+      .header-social-link svg {
+        width: 16px;
+        height: 16px;
+        display: block;
+      }
+      @media (max-width: 900px) {
+        .header-socials {
+          display: none;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
   function decorateSocialLinks() {
     document.querySelectorAll('.footer > div').forEach((group) => {
       const heading = group.querySelector('strong');
@@ -17,6 +64,13 @@
         const icon = icons[name];
         if (!icon || link.dataset.socialIcon === 'true') return;
 
+        const url = socialUrls[name];
+        if (url && url !== '#') {
+          link.href = url;
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+        }
+
         link.dataset.socialIcon = 'true';
         link.style.display = 'inline-flex';
         link.style.alignItems = 'center';
@@ -24,6 +78,36 @@
         link.innerHTML = `${icon}<span>${name}</span>`;
       });
     });
+  }
+
+  function addHeaderSocialLinks() {
+    const actions = document.querySelector('.header-actions');
+    if (!actions || actions.querySelector('.header-socials')) return;
+
+    const group = document.createElement('div');
+    group.className = 'header-socials';
+    group.setAttribute('aria-label', 'Redes sociales de FARA');
+
+    ['Instagram', 'Facebook', 'TikTok'].forEach((name) => {
+      const link = document.createElement('a');
+      const url = socialUrls[name] || '#';
+      link.className = 'header-social-link';
+      link.href = url;
+      link.setAttribute('aria-label', name);
+      link.title = name;
+      link.innerHTML = icons[name];
+
+      if (url === '#') {
+        link.addEventListener('click', (event) => event.preventDefault());
+      } else {
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+      }
+
+      group.appendChild(link);
+    });
+
+    actions.prepend(group);
   }
 
   function showFullBrandImage() {
@@ -36,7 +120,9 @@
   }
 
   function enhanceStorefront() {
+    ensureSocialStyles();
     decorateSocialLinks();
+    addHeaderSocialLinks();
     showFullBrandImage();
   }
 
