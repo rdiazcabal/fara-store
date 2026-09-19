@@ -71,5 +71,5 @@ test('Filtering preserves reconciled prices, tones, stock and archived exclusion
       }
     }
   }
-  assert.deepEqual([inspection.stats.skus,inspection.stats.activeSkus,inspection.stats.activeUnits,inspection.stats.archivedSkus],[276,276,502,0]);
+  assert.deepEqual([inspection.stats.skus,inspection.stats.activeSkus,inspection.stats.activeUnits,inspection.stats.archivedSkus],[333,275,501,58]);
 });

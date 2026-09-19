@@ -39,6 +39,7 @@ test('Product detail uses the description stored on each product', () => {
   const data = JSON.parse(read('assets/inventory.json'));
   assert.ok(data.products.every((product) => typeof product.description === 'string' && product.description.trim().length >= 80));
   assert.equal(new Set(data.products.map((product) => product.description)).size, data.products.length);
+  assert.doesNotMatch(data.products.map((product) => product.description).join(' '), /forma parte del inventario actualizado|complementar tu rutina|Selecciona la tonalidad disponible|Revisa la presentación disponible/i);
   assert.match(store, /productDetailDescription'\)\.textContent = product\.description/);
   assert.doesNotMatch(store, /Producto registrado en el inventario de FARA/);
 });
