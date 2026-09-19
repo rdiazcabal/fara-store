@@ -1097,8 +1097,8 @@
           "sku": "FARA00012825",
           "tone": "825",
           "price": 480,
-          "stock": 1,
-          "status": "active"
+          "stock": 0,
+          "status": "out_of_stock"
         }
       ],
       "description": "Base Outlast Active de Covergirl es una base de larga duración diseñada para mantener el maquillaje uniforme durante jornadas activas y ofrecer un acabado resistente. Presentación: 1 oz."
