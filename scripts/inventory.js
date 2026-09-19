@@ -33,8 +33,11 @@ function applyUpdates(source, input) {
     const before = old ? clone(old.variant) : null;
     const variant = old ? old.variant : {sku:change.sku};
     for (const key of ['tone','price','stock','sourceRows','reason']) if (Object.hasOwn(change,key)) variant[key] = clone(change[key]);
-    if (Object.hasOwn(change,'status')) variant.status = change.status;
-    else if (!old || ['active','out_of_stock'].includes(before.status)) variant.status = variant.stock > 0 ? 'active' : 'out_of_stock';
+    if (Object.hasOwn(change,'status')) {
+      variant.status = change.status;
+      // A status-only out_of_stock update is enough: normalize stock to zero.
+      if (variant.status === 'out_of_stock') variant.stock = 0;
+    } else if (!old || ['active','out_of_stock'].includes(before.status)) variant.status = variant.stock > 0 ? 'active' : 'out_of_stock';
     // Review, withdrawn and absent references require an explicit status to reactivate.
     if (!old) {product.variants.push(variant); bySku.set(variant.sku,{product,variant});}
     changes.push({sku:change.sku,before,after:clone(variant)});

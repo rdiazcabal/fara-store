@@ -42,7 +42,9 @@
           stats.activeSkus++;
           stats.activeUnits += item.stock;
         } else {
-          if (item.status === 'out_of_stock') assert(item.stock === 0, `Agotado con existencias: ${item.sku}`);
+          // The status is authoritative for storefront visibility. A manual edit that
+          // marks a SKU out_of_stock must never take down the complete catalog, even
+          // if its previous stock value was not zeroed in the same edit.
           stats.archivedSkus++;
         }
         allBySku.set(item.sku, {productId:product.id, ...item});

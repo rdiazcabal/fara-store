@@ -7,6 +7,7 @@ const root=path.resolve(__dirname,'..');
 const read=p=>fs.readFileSync(path.join(root,p),'utf8');
 const data=JSON.parse(read('assets/inventory.json'));
 const api=require('../assets/inventory-document.js');
+const {applyUpdates}=require('../scripts/inventory.js');
 const inspection=api.inspectInventory(data);
 const catalog=inspection.catalog;
 const variant=sku=>inspection.allBySku.get(sku);
@@ -15,9 +16,23 @@ const zeroSkus=["FARA00006222","FARA00006230","FARA00006235","FARA00006118","FAR
 test('The canonical JSON preserves current inventory and historical references',()=>{
   assert.equal(data.schemaVersion,3);
   assert.equal(data.source.file,'inventario-avanzado-20260918-163354.xlsx');
-  assert.deepEqual([inspection.stats.products,inspection.stats.skus,inspection.stats.activeSkus,inspection.stats.activeUnits,inspection.stats.archivedSkus],[82,333,275,501,58]);
+  assert.deepEqual([inspection.stats.products,inspection.stats.skus,inspection.stats.activeSkus,inspection.stats.activeUnits,inspection.stats.archivedSkus],[82,333,274,500,59]);
   assert.equal(new Set(data.products.flatMap(p=>p.variants.map(v=>v.sku))).size,333);
   assert.equal(inspection.allBySku.has('FARA00068001'),false);
+});
+
+
+test('Changing only status to out_of_stock never takes down the whole catalog',()=>{
+  const edited=JSON.parse(JSON.stringify(data));
+  const live=edited.products.flatMap(p=>p.variants).find(v=>v.sku==='FARA00002490');
+  assert.ok(live && live.stock>0);
+  live.status='out_of_stock';
+  const checked=api.inspectInventory(edited);
+  assert.equal(checked.catalog.bySku.has('FARA00002490'),false);
+
+  const normalized=applyUpdates(data,{changes:[{sku:'FARA00002490',status:'out_of_stock'}]});
+  const changed=api.inspectInventory(normalized).allBySku.get('FARA00002490');
+  assert.deepEqual([changed.status,changed.stock],['out_of_stock',0]);
 });
 
 test('All 53 zero-stock spreadsheet rows remain as history outside shopping',()=>{
