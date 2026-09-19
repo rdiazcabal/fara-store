@@ -1116,7 +1116,7 @@
                     "tone": "120",
                     "price": 480,
                     "stock": 1,
-                    "status": "active"
+                    "status": "out_of_stock"
                 }
             ],
             "description": "Base Advanced Radiance de Covergirl está enfocada en un acabado radiante y uniforme, aportando cobertura al rostro sin renunciar a una apariencia luminosa. Presentación: 1 oz."
