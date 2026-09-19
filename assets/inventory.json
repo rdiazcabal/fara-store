@@ -1,2772 +1,2754 @@
 {
-  "schemaVersion": 3,
-  "source": {
-    "kind": "inventory-reconciliation",
-    "file": "inventario-avanzado-20260918-163354.xlsx",
-    "receivedDate": "2026-09-18",
-    "cutoff": "2026-09-18 16:33:54 CST",
-    "stockIsSnapshot": true,
-    "timezone": "America/Tegucigalpa",
-    "notes": "Conciliado contra el inventario actualizado del 18 de septiembre de 2026. Se retiraron del catálogo las referencias con existencia 0 y se conservó un único JSON canónico."
-  },
-  "currency": "HNL",
-  "products": [
-    {
-      "id": "base-infallible-fresh-wear-de-loreal",
-      "name": "Base Infallible Fresh Wear de L’Oréal",
-      "brand": "L’Oréal Paris",
-      "category": "Bases",
-      "presentation": "1 oz",
-      "image": "assets/products/Infallible Fresh Wear 32H.jpg",
-      "variants": [
-        {
-          "sku": "FARA00002395",
-          "tone": "395",
-          "price": 480,
-          "stock": 3,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00002400",
-          "tone": "400",
-          "price": 480,
-          "stock": 3,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00002405",
-          "tone": "405",
-          "price": 480,
-          "stock": 4,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00002415",
-          "tone": "415",
-          "price": 480,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00002475",
-          "tone": "475",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00002490",
-          "tone": "490",
-          "price": 480,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00002495",
-          "tone": "495",
-          "price": 480,
-          "stock": 4,
-          "status": "active"
-        }
-      ],
-      "description": "Base Infallible Fresh Wear de L’Oréal es una base de maquillaje para complementar tu rutina de rostro. Selecciona la tonalidad disponible que mejor se adapte a tu look."
-    },
-    {
-      "id": "base-infallible-pro-matte-de-loreal",
-      "name": "Base Infallible Pro-Matte de L’Oréal",
-      "brand": "L’Oréal Paris",
-      "category": "Bases",
-      "presentation": "1 oz",
-      "image": "assets/products/Infallible Pro-Matte 24H.webp",
-      "variants": [
-        {
-          "sku": "FARA00003101",
-          "tone": "101",
-          "price": 480,
-          "stock": 6,
-          "status": "active"
-        },
-        {
-          "sku": "FARA000031015",
-          "tone": "101.5",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00003104",
-          "tone": "104",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA000031045",
-          "tone": "104.5",
-          "price": 480,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA000031055",
-          "tone": "105.5",
-          "price": 480,
-          "stock": 3,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00003106",
-          "tone": "106",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00003107",
-          "tone": "107",
-          "price": 480,
-          "stock": 4,
-          "status": "active"
-        },
-        {
-          "sku": "FARA000031075",
-          "tone": "107.5",
-          "price": 480,
-          "stock": 3,
-          "status": "active"
-        },
-        {
-          "sku": "FARA000031082",
-          "tone": "108.2",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA000031084",
-          "tone": "108.4",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA000031085",
-          "tone": "108.5",
-          "price": 480,
-          "stock": 3,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00003110",
-          "tone": "110",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Base Infallible Pro-Matte de L’Oréal es una base de maquillaje para complementar tu rutina de rostro. Selecciona la tonalidad disponible que mejor se adapte a tu look."
-    },
-    {
-      "id": "base-true-match-de-loreal",
-      "name": "Base Tinted Serum True Match de L’Oréal",
-      "brand": "L’Oréal Paris",
-      "category": "Bases",
-      "presentation": "1 oz",
-      "image": "assets/products/serum True Match Super-Blendable Foundation.jpg",
-      "variants": [
-        {
-          "sku": "FARA0000556",
-          "tone": "5-6",
-          "price": 480,
-          "stock": 6,
-          "status": "active"
-        }
-      ],
-      "description": "Base Tinted Serum True Match de L’Oréal es una base de maquillaje para complementar tu rutina de rostro. Selecciona la tonalidad disponible que mejor se adapte a tu look."
-    },
-    {
-      "id": "base-y-corrector-skin-ink-de-loreal",
-      "name": "Base y corrector Skin Ink de L’Oréal",
-      "brand": "L’Oréal Paris",
-      "category": "Bases y corrector",
-      "presentation": "0.50 oz",
-      "image": "assets/products/Base y corrector Skin Ink de L’Oréal.webp",
-      "variants": [
-        {
-          "sku": "FARA00047040",
-          "tone": "40",
-          "price": 480,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00047100",
-          "tone": "100",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00047125",
-          "tone": "125",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00047130",
-          "tone": "130",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00047140",
-          "tone": "140",
-          "price": 480,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00047180",
-          "tone": "180",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00047265",
-          "tone": "265",
-          "price": 480,
-          "stock": 3,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00047270",
-          "tone": "270",
-          "price": 480,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00047290",
-          "tone": "290",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Base y corrector Skin Ink de L’Oréal combina el uso de base y corrector en una sola referencia para complementar el maquillaje del rostro. Elige la tonalidad disponible que prefieras."
-    },
-    {
-      "id": "base-skin-tint-de-maybelline",
-      "name": "Base Skin Tint de Maybelline",
-      "brand": "Maybelline",
-      "category": "Bases",
-      "presentation": "1 oz",
-      "image": "assets/products/Base Skin Tint de Maybelline.jpg",
-      "variants": [
-        {
-          "sku": "FARA00004110",
-          "tone": "110",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00004112",
-          "tone": "112",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00004129",
-          "tone": "129",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00004130",
-          "tone": "130",
-          "price": 480,
-          "stock": 3,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00004310",
-          "tone": "310",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Base Skin Tint de Maybelline es una base de maquillaje para complementar tu rutina de rostro. Selecciona la tonalidad disponible que mejor se adapte a tu look."
-    },
-    {
-      "id": "base-fit-me-de-maybelline-azul",
-      "name": "Base Fit Me de Maybelline (Azul)",
-      "brand": "Maybelline",
-      "category": "Bases",
-      "presentation": "1 oz",
-      "image": "assets/products/fit me azul.jpeg",
-      "variants": [
-        {
-          "sku": "FARA00006120",
-          "tone": "120",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00006122",
-          "tone": "122",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00006128",
-          "tone": "128",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00006228",
-          "tone": "228",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00006238",
-          "tone": "238",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00006242",
-          "tone": "242",
-          "price": 480,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00006320",
-          "tone": "320",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Base Fit Me de Maybelline (Azul) es una base de maquillaje para complementar tu rutina de rostro. Selecciona la tonalidad disponible que mejor se adapte a tu look."
-    },
-    {
-      "id": "base-fit-me-de-maybelline-morada",
-      "name": "Base Fit Me de Maybelline (Morada)",
-      "brand": "Maybelline",
-      "category": "Bases",
-      "presentation": "1 oz",
-      "image": "assets/products/fit me morada.jpg",
-      "variants": [
-        {
-          "sku": "FARA00048118",
-          "tone": "118",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00048120",
-          "tone": "120",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00048125",
-          "tone": "125",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00048210",
-          "tone": "210",
-          "price": 480,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00048220",
-          "tone": "220",
-          "price": 480,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00048225",
-          "tone": "225",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Base Fit Me de Maybelline (Morada) es una base de maquillaje para complementar tu rutina de rostro. Selecciona la tonalidad disponible que mejor se adapte a tu look."
-    },
-    {
-      "id": "base-superstay-de-maybelline",
-      "name": "Base Superstay de Maybelline",
-      "brand": "Maybelline",
-      "category": "Bases",
-      "presentation": "1 oz",
-      "image": "assets/products/Base Superstay de Maybelline.webp",
-      "variants": [
-        {
-          "sku": "FARA00007120",
-          "tone": "120",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00007140",
-          "tone": "140",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00007310",
-          "tone": "310",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Base Superstay de Maybelline es una base de maquillaje para complementar tu rutina de rostro. Selecciona la tonalidad disponible que mejor se adapte a tu look."
-    },
-    {
-      "id": "base-lumi-matte-de-maybelline",
-      "name": "Base Lumi-Matte de Maybelline",
-      "brand": "Maybelline",
-      "category": "Bases",
-      "presentation": "1 oz",
-      "image": "assets/products/Base Lumi-Matte de Maybelline.jpg",
-      "variants": [
-        {
-          "sku": "FARA00008110",
-          "tone": "110",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00008118",
-          "tone": "118",
-          "price": 480,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00008120",
-          "tone": "120",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00008129",
-          "tone": "129",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00008220",
-          "tone": "220",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00008250",
-          "tone": "250",
-          "price": 480,
-          "stock": 3,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00008312",
-          "tone": "312",
-          "price": 480,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00008322",
-          "tone": "322",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00008310",
-          "tone": "310",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Base Lumi-Matte de Maybelline es una base de maquillaje para complementar tu rutina de rostro. Selecciona la tonalidad disponible que mejor se adapte a tu look."
-    },
-    {
-      "id": "base-lifter-plump-glow-de-maybelline",
-      "name": "Base Lifter Plump & Glow de Maybelline",
-      "brand": "Maybelline",
-      "category": "Bases",
-      "presentation": "1 oz",
-      "image": "assets/products/Base Lifter Plump & Glow de Maybelline.jpg",
-      "variants": [
-        {
-          "sku": "FARA00009110",
-          "tone": "110",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00009118",
-          "tone": "118",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00009120",
-          "tone": "120",
-          "price": 480,
-          "stock": 3,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00009130",
-          "tone": "130",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00009210",
-          "tone": "210",
-          "price": 480,
-          "stock": 3,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00009220",
-          "tone": "220",
-          "price": 480,
-          "stock": 5,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00009235",
-          "tone": "235",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Base Lifter Plump & Glow de Maybelline es una base de maquillaje para complementar tu rutina de rostro. Selecciona la tonalidad disponible que mejor se adapte a tu look."
-    },
-    {
-      "id": "base-halo-glow-de-e-l-f",
-      "name": "Base Halo Glow de e.l.f.",
-      "brand": "e.l.f.",
-      "category": "Bases",
-      "presentation": "1 oz",
-      "image": "assets/products/Base Halo Glow de e.l.f..webp",
-      "variants": [
-        {
-          "sku": "FARA00001005",
-          "tone": "0.5",
-          "price": 480,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00001035",
-          "tone": "3.5",
-          "price": 480,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00000105",
-          "tone": "5",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Base Halo Glow de e.l.f. es una base de maquillaje para complementar tu rutina de rostro. Selecciona la tonalidad disponible que mejor se adapte a tu look."
-    },
-    {
-      "id": "base-soft-glam-de-e-l-f",
-      "name": "Base Soft Glam de e.l.f.",
-      "brand": "e.l.f.",
-      "category": "Bases",
-      "presentation": "1 oz",
-      "image": "assets/products/Base Soft Glam de e.l.f.v2.webp",
-      "variants": [
-        {
-          "sku": "FARA00001111",
-          "tone": "11",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00001112",
-          "tone": "12",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00001113",
-          "tone": "13",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00001122",
-          "tone": "22",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00001130",
-          "tone": "30",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00001131",
-          "tone": "31",
-          "price": 480,
-          "stock": 2,
-          "status": "active"
-        }
-      ],
-      "description": "Base Soft Glam de e.l.f. es una base de maquillaje para complementar tu rutina de rostro. Selecciona la tonalidad disponible que mejor se adapte a tu look."
-    },
-    {
-      "id": "base-camo-cc-cream-de-e-l-f",
-      "name": "Base Camo CC Cream de e.l.f.",
-      "brand": "e.l.f.",
-      "category": "Bases",
-      "presentation": "1 oz",
-      "image": "assets/products/CC-CREAM-ELF.png",
-      "variants": [
-        {
-          "sku": "FARA00020205",
-          "tone": "205N",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00020210",
-          "tone": "210N",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00020370",
-          "tone": "370N",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Base Camo CC Cream de e.l.f. es una base de maquillaje para complementar tu rutina de rostro. Selecciona la tonalidad disponible que mejor se adapte a tu look."
-    },
-    {
-      "id": "base-outlast-active-de-covergirl",
-      "name": "Base Outlast Active de Covergirl",
-      "brand": "Covergirl",
-      "category": "Bases",
-      "presentation": "1 oz",
-      "image": "assets/products/Base Outlast Active de Covergirl.jpg",
-      "variants": [
-        {
-          "sku": "FARA00012825",
-          "tone": "825",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Base Outlast Active de Covergirl es una base de maquillaje para complementar tu rutina de rostro. Selecciona la tonalidad disponible que mejor se adapte a tu look."
-    },
-    {
-      "id": "base-advanced-radiance-de-covergirl",
-      "name": "Base Advanced Radiance de Covergirl",
-      "brand": "Covergirl",
-      "category": "Bases",
-      "presentation": "1 oz",
-      "image": null,
-      "variants": [
-        {
-          "sku": "FARA00013120",
-          "tone": "120",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Base Advanced Radiance de Covergirl es una base de maquillaje para complementar tu rutina de rostro. Selecciona la tonalidad disponible que mejor se adapte a tu look."
-    },
-    {
-      "id": "polvo-compacto-infallible-fresh-wear-de-loreal",
-      "name": "Polvo compacto Infallible Fresh Wear de L’Oréal",
-      "brand": "L’Oréal Paris",
-      "category": "Polvos compactos",
-      "presentation": "1 oz",
-      "image": "assets/products/Polvo compacto Infallible Fresh Wear de L’Oréal.jpg",
-      "variants": [
-        {
-          "sku": "FARA00014005",
-          "tone": "5",
-          "price": 480,
-          "stock": 7,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00014010",
-          "tone": "10",
-          "price": 480,
-          "stock": 2,
-          "status": "active"
-        }
-      ],
-      "description": "Polvo compacto Infallible Fresh Wear de L’Oréal es un polvo de maquillaje para complementar y dar el toque final a tu rutina de rostro. Elige la tonalidad disponible que mejor acompañe tu maquillaje."
-    },
-    {
-      "id": "polvo-compacto-true-match-de-loreal",
-      "name": "Polvo compacto True Match de L’Oréal",
-      "brand": "L’Oréal Paris",
-      "category": "Polvos compactos",
-      "presentation": "1 oz",
-      "image": "assets/products/True Match Super-Blendable Powder.png",
-      "variants": [
-        {
-          "sku": "FARA000017N1",
-          "tone": "N1",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Polvo compacto True Match de L’Oréal es un polvo de maquillaje para complementar y dar el toque final a tu rutina de rostro. Elige la tonalidad disponible que mejor acompañe tu maquillaje."
-    },
-    {
-      "id": "polvo-compacto-superstay-24h-de-maybelline",
-      "name": "Polvo compacto Superstay 24H de Maybelline",
-      "brand": "Maybelline",
-      "category": "Polvos compactos",
-      "presentation": "1 oz",
-      "image": "assets/products/Polvo compacto Superstay 24H de Maybelline.webp",
-      "variants": [
-        {
-          "sku": "FARA00015102",
-          "tone": "102",
-          "price": 480,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00015110",
-          "tone": "110",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00015112",
-          "tone": "112",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00015118",
-          "tone": "118",
-          "price": 480,
-          "stock": 3,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00015120",
-          "tone": "120",
-          "price": 480,
-          "stock": 5,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00015128",
-          "tone": "128",
-          "price": 480,
-          "stock": 4,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00015130",
-          "tone": "130",
-          "price": 480,
-          "stock": 11,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00015220",
-          "tone": "220",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00015332",
-          "tone": "332",
-          "price": 480,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00015310",
-          "tone": "310",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00015312",
-          "tone": "312",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Polvo compacto Superstay 24H de Maybelline es un polvo de maquillaje para complementar y dar el toque final a tu rutina de rostro. Elige la tonalidad disponible que mejor acompañe tu maquillaje."
-    },
-    {
-      "id": "polvo-compacto-fit-me-de-maybelline",
-      "name": "Polvo compacto Fit Me de Maybelline",
-      "brand": "Maybelline",
-      "category": "Polvos compactos",
-      "presentation": "1 oz",
-      "image": "assets/products/Polvo compacto Fit Me de Maybelline.webp",
-      "variants": [
-        {
-          "sku": "FARA00016100",
-          "tone": "100",
-          "price": 480,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00016112",
-          "tone": "112",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00016120",
-          "tone": "120",
-          "price": 480,
-          "stock": 5,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00016122",
-          "tone": "122",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00016130",
-          "tone": "130",
-          "price": 480,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00016222",
-          "tone": "222",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00016230",
-          "tone": "230",
-          "price": 480,
-          "stock": 5,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00016235",
-          "tone": "235",
-          "price": 480,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00016310",
-          "tone": "310",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00016320",
-          "tone": "320",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00016330",
-          "tone": "330",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00016332",
-          "tone": "332",
-          "price": 480,
-          "stock": 2,
-          "status": "active"
-        }
-      ],
-      "description": "Polvo compacto Fit Me de Maybelline es un polvo de maquillaje para complementar y dar el toque final a tu rutina de rostro. Elige la tonalidad disponible que mejor acompañe tu maquillaje."
-    },
-    {
-      "id": "polvo-compacto-prime-stay-finishing-de-e-l-f",
-      "name": "Polvo compacto Prime & Stay Finishing de e.l.f.",
-      "brand": "e.l.f.",
-      "category": "Polvos compactos",
-      "presentation": "1 oz",
-      "image": "assets/products/Polvo compacto Prime & Stay Finishing de e.l.f..jpg",
-      "variants": [
-        {
-          "sku": "FARA00001800",
-          "tone": "Transparent",
-          "price": 480,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Polvo compacto Prime & Stay Finishing de e.l.f. es un polvo de maquillaje para complementar y dar el toque final a tu rutina de rostro. Elige la tonalidad disponible que mejor acompañe tu maquillaje."
-    },
-    {
-      "id": "bronceador-natural-bronzer-de-rimmel-london",
-      "name": "Bronceador Natural Bronzer de Rimmel London",
-      "brand": "Rimmel London",
-      "category": "Bronceadores",
-      "presentation": "1 oz",
-      "image": "assets/products/Bronceador Natural Bronzer de Rimmel London.webp",
-      "variants": [
-        {
-          "sku": "FARA00019022",
-          "tone": "22",
-          "price": 420,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Bronceador Natural Bronzer de Rimmel London es un bronceador para aportar calidez y definición visual al maquillaje del rostro. Elige la tonalidad disponible que prefieras."
-    },
-    {
-      "id": "corrector-infallible-full-wear-24h-de-loreal",
-      "name": "Corrector Infallible Full Wear 24H de L’Oréal",
-      "brand": "L’Oréal Paris",
-      "category": "Correctores",
-      "presentation": "0.33 oz",
-      "image": "assets/products/Corrector Infallible Full Wear 24H de L’Oréal.webp",
-      "variants": [
-        {
-          "sku": "FARA00021325",
-          "tone": "325",
-          "price": 360,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00021340",
-          "tone": "340",
-          "price": 360,
-          "stock": 3,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00021345",
-          "tone": "345",
-          "price": 360,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00021355",
-          "tone": "355",
-          "price": 360,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00021360",
-          "tone": "360",
-          "price": 360,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00021365",
-          "tone": "365",
-          "price": 360,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00021370",
-          "tone": "370",
-          "price": 360,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00021375",
-          "tone": "375",
-          "price": 360,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00021380",
-          "tone": "380",
-          "price": 360,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00021395",
-          "tone": "395",
-          "price": 360,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Corrector Infallible Full Wear 24H de L’Oréal es un corrector para complementar el maquillaje del rostro y trabajar zonas puntuales. Selecciona la tonalidad disponible que mejor se adapte a tu look."
-    },
-    {
-      "id": "corrector-superstay-30h-de-maybelline",
-      "name": "Corrector Superstay 30H de Maybelline",
-      "brand": "Maybelline",
-      "category": "Correctores",
-      "presentation": "0.33 oz",
-      "image": "assets/products/Corrector Superstay 30H de Maybelline.jpg",
-      "variants": [
-        {
-          "sku": "FARA00002245",
-          "tone": "45",
-          "price": 360,
-          "stock": 2,
-          "status": "active"
-        }
-      ],
-      "description": "Corrector Superstay 30H de Maybelline es un corrector para complementar el maquillaje del rostro y trabajar zonas puntuales. Selecciona la tonalidad disponible que mejor se adapte a tu look."
-    },
-    {
-      "id": "corrector-instant-age-rewind-eraser-de-maybelline",
-      "name": "Corrector Instant Age Rewind Eraser de Maybelline",
-      "brand": "Maybelline",
-      "category": "Correctores",
-      "presentation": "0.2 oz",
-      "image": "assets/products/Corrector Instant Age Rewind Eraser de Maybelline.jpg",
-      "variants": [
-        {
-          "sku": "FARA00029095",
-          "tone": "95",
-          "price": 360,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00029141",
-          "tone": "141",
-          "price": 360,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00029160",
-          "tone": "160",
-          "price": 360,
-          "stock": 2,
-          "status": "active"
-        }
-      ],
-      "description": "Corrector Instant Age Rewind Eraser de Maybelline es un corrector para complementar el maquillaje del rostro y trabajar zonas puntuales. Selecciona la tonalidad disponible que mejor se adapte a tu look."
-    },
-    {
-      "id": "corrector-lifter-glow-de-maybelline",
-      "name": "Corrector Lifter Glow de Maybelline",
-      "brand": "Maybelline",
-      "category": "Correctores",
-      "presentation": "0.33 oz",
-      "image": "assets/products/Corrector Lifter Glow de Maybelline.jpg",
-      "variants": [
-        {
-          "sku": "FARA00054015",
-          "tone": "15",
-          "price": 360,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00054020",
-          "tone": "20",
-          "price": 360,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00054025",
-          "tone": "25",
-          "price": 360,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00054030",
-          "tone": "30",
-          "price": 360,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00054035",
-          "tone": "35",
-          "price": 360,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00054050",
-          "tone": "50",
-          "price": 360,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00054055",
-          "tone": "55",
-          "price": 360,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00054060",
-          "tone": "60",
-          "price": 360,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Corrector Lifter Glow de Maybelline es un corrector para complementar el maquillaje del rostro y trabajar zonas puntuales. Selecciona la tonalidad disponible que mejor se adapte a tu look."
-    },
-    {
-      "id": "corrector-soft-glam-de-elf",
-      "name": "Corrector Soft Glam de e.l.f.",
-      "brand": "e.l.f.",
-      "category": "Correctores",
-      "presentation": "0.21 oz",
-      "image": "assets/products/Corrector Soft Glam de e.l.f..jpg",
-      "variants": [
-        {
-          "sku": "FARA00049013",
-          "tone": "13",
-          "price": 360,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00049020",
-          "tone": "20",
-          "price": 360,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00049021",
-          "tone": "21",
-          "price": 360,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00049023",
-          "tone": "23",
-          "price": 360,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00049025",
-          "tone": "25",
-          "price": 360,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00049030",
-          "tone": "30",
-          "price": 360,
-          "stock": 2,
-          "status": "active"
-        }
-      ],
-      "description": "Corrector Soft Glam de e.l.f. es un corrector para complementar el maquillaje del rostro y trabajar zonas puntuales. Selecciona la tonalidad disponible que mejor se adapte a tu look."
-    },
-    {
-      "id": "corrector-camo-color-corrector-de-e-l-f",
-      "name": "Corrector Camo Color Corrector de e.l.f.",
-      "brand": "e.l.f.",
-      "category": "Correctores",
-      "presentation": "0.09 oz",
-      "image": "assets/products/Corrector Camo Color Corrector de e.l.f..webp",
-      "variants": [
-        {
-          "sku": "FARA00002300",
-          "tone": "Green",
-          "price": 360,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Corrector Camo Color Corrector de e.l.f. es un corrector para complementar el maquillaje del rostro y trabajar zonas puntuales. Selecciona la tonalidad disponible que mejor se adapte a tu look."
-    },
-    {
-      "id": "corrector-camo-concealer-16h-de-e-l-f",
-      "name": "Corrector Camo Concealer 16H de e.l.f.",
-      "brand": "e.l.f.",
-      "category": "Correctores",
-      "presentation": "0.2 oz",
-      "image": "assets/products/Corrector Camo Concealer 16H de e.l.f..jpg",
-      "variants": [
-        {
-          "sku": "FARA0000TANN",
-          "tone": "Tan Neutral",
-          "price": 360,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Corrector Camo Concealer 16H de e.l.f. es un corrector para complementar el maquillaje del rostro y trabajar zonas puntuales. Selecciona la tonalidad disponible que mejor se adapte a tu look."
-    },
-    {
-      "id": "labial-infallible-matte-resistance-de-loreal",
-      "name": "Labial Infallible Matte Resistance de L’Oréal",
-      "brand": "L’Oréal Paris",
-      "category": "Labiales",
-      "presentation": "0.16 oz",
-      "image": "assets/products/Labial Infallible Matte Resistance de L’Oréal.jpg",
-      "variants": [
-        {
-          "sku": "FARA00025100",
-          "tone": "100",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00025120",
-          "tone": "120",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00025230",
-          "tone": "230",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00025240",
-          "tone": "240",
-          "price": 350,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00025245",
-          "tone": "245",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00025500",
-          "tone": "500",
-          "price": 350,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00025600",
-          "tone": "600",
-          "price": 350,
-          "stock": 3,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00025601",
-          "tone": "601",
-          "price": 350,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00025625",
-          "tone": "625",
-          "price": 350,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00025645",
-          "tone": "645",
-          "price": 350,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00025650",
-          "tone": "650",
-          "price": 350,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00025655",
-          "tone": "655",
-          "price": 350,
-          "stock": 3,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00025660",
-          "tone": "660",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00025665",
-          "tone": "665",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Labial Infallible Matte Resistance de L’Oréal es un producto para labios que aporta color y completa tu maquillaje. Explora las tonalidades disponibles y elige tu favorita."
-    },
-    {
-      "id": "labial-infallible-laque-resistance-de-loreal",
-      "name": "Labial Infallible Laque Resistance de L’Oréal",
-      "brand": "L’Oréal Paris",
-      "category": "Labiales",
-      "presentation": "0.13 oz",
-      "image": "assets/products/Labial Infallible Laque Resistance de L’Oréal.webp",
-      "variants": [
-        {
-          "sku": "FARA00026215",
-          "tone": "215",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00026220",
-          "tone": "220",
-          "price": 350,
-          "stock": 5,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00026250",
-          "tone": "250",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00026410",
-          "tone": "410",
-          "price": 350,
-          "stock": 4,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00026415",
-          "tone": "415",
-          "price": 350,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00026510",
-          "tone": "510",
-          "price": 350,
-          "stock": 3,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00026520",
-          "tone": "520",
-          "price": 350,
-          "stock": 3,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00026600",
-          "tone": "600",
-          "price": 350,
-          "stock": 3,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00026601",
-          "tone": "601",
-          "price": 350,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00026635",
-          "tone": "635",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Labial Infallible Laque Resistance de L’Oréal es un producto para labios que aporta color y completa tu maquillaje. Explora las tonalidades disponibles y elige tu favorita."
-    },
-    {
-      "id": "labial-superstay-matte-ink-de-maybelline",
-      "name": "Labial Superstay Matte Ink de Maybelline",
-      "brand": "Maybelline",
-      "category": "Labiales",
-      "presentation": "0.17 oz",
-      "image": "assets/products/Labial Superstay Matte Ink de Maybelline.jpg",
-      "variants": [
-        {
-          "sku": "FARA00027005",
-          "tone": "5",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00027010",
-          "tone": "10",
-          "price": 350,
-          "stock": 3,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00027015",
-          "tone": "15",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00027020",
-          "tone": "20",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00027050",
-          "tone": "50",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00027060",
-          "tone": "60",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00027118",
-          "tone": "118",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00027125",
-          "tone": "125",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00027130",
-          "tone": "130",
-          "price": 350,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00027135",
-          "tone": "135",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00027155",
-          "tone": "155",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00027175",
-          "tone": "175",
-          "price": 350,
-          "stock": 5,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00027180",
-          "tone": "180",
-          "price": 350,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00027325",
-          "tone": "325",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00027330",
-          "tone": "330",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00027335",
-          "tone": "335",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00027505",
-          "tone": "505",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00027510",
-          "tone": "510",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00027515",
-          "tone": "515",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00027520",
-          "tone": "520",
-          "price": 350,
-          "stock": 3,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00027525",
-          "tone": "525",
-          "price": 350,
-          "stock": 2,
-          "status": "active"
-        }
-      ],
-      "description": "Labial Superstay Matte Ink de Maybelline es un producto para labios que aporta color y completa tu maquillaje. Explora las tonalidades disponibles y elige tu favorita."
-    },
-    {
-      "id": "labial-superstay-vinyl-ink-de-maybelline",
-      "name": "Labial Superstay Vinyl Ink de Maybelline",
-      "brand": "Maybelline",
-      "category": "Labiales",
-      "presentation": "0.14 oz",
-      "image": "assets/products/Labial Superstay Vinyl Ink de Maybelline.jpg",
-      "variants": [
-        {
-          "sku": "FARA00028010",
-          "tone": "10",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00028015",
-          "tone": "15",
-          "price": 350,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00028020",
-          "tone": "20",
-          "price": 350,
-          "stock": 6,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00028025",
-          "tone": "25",
-          "price": 350,
-          "stock": 5,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00028030",
-          "tone": "30",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00028035",
-          "tone": "35",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00028040",
-          "tone": "40",
-          "price": 350,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00028055",
-          "tone": "55",
-          "price": 350,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00028095",
-          "tone": "95",
-          "price": 350,
-          "stock": 4,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00028100",
-          "tone": "100",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00028135",
-          "tone": "135",
-          "price": 350,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00028150",
-          "tone": "150",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00028165",
-          "tone": "165",
-          "price": 350,
-          "stock": 2,
-          "status": "active"
-        }
-      ],
-      "description": "Labial Superstay Vinyl Ink de Maybelline es un producto para labios que aporta color y completa tu maquillaje. Explora las tonalidades disponibles y elige tu favorita."
-    },
-    {
-      "id": "labial-superstay-teddy-tint-de-maybelline",
-      "name": "Labial Superstay Teddy Tint de Maybelline",
-      "brand": "Maybelline",
-      "category": "Labiales",
-      "presentation": "0.14 oz",
-      "image": "assets/products/Labial Superstay Teddy Tint de Maybelline.webp",
-      "variants": [
-        {
-          "sku": "FARA00030010",
-          "tone": "10",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00030020",
-          "tone": "20",
-          "price": 350,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00030040",
-          "tone": "40",
-          "price": 350,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00030045",
-          "tone": "45",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00030050",
-          "tone": "50",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00030055",
-          "tone": "55",
-          "price": 350,
-          "stock": 3,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00030060",
-          "tone": "60",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00030090",
-          "tone": "90",
-          "price": 350,
-          "stock": 3,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00030095",
-          "tone": "95",
-          "price": 350,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA000300100",
-          "tone": "100",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00030105",
-          "tone": "105",
-          "price": 350,
-          "stock": 3,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00030115",
-          "tone": "115",
-          "price": 350,
-          "stock": 3,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00030120",
-          "tone": "120",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00030130",
-          "tone": "130",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Labial Superstay Teddy Tint de Maybelline es un producto para labios que aporta color y completa tu maquillaje. Explora las tonalidades disponibles y elige tu favorita."
-    },
-    {
-      "id": "labial-lifter-gloss-de-maybelline",
-      "name": "Labial Lifter Gloss de Maybelline",
-      "brand": "Maybelline",
-      "category": "Labiales",
-      "presentation": "0.18 oz",
-      "image": "assets/products/Labial Lifter Gloss de Maybelline.jpg",
-      "variants": [
-        {
-          "sku": "FARA00031006",
-          "tone": "6",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00031008",
-          "tone": "8",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00031010",
-          "tone": "10",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00031028",
-          "tone": "28",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Labial Lifter Gloss de Maybelline es un producto para labios que aporta color y completa tu maquillaje. Explora las tonalidades disponibles y elige tu favorita."
-    },
-    {
-      "id": "lipstick-blind-date-satin-de-maybelline",
-      "name": "Lipstick Blind Date Satin de Maybelline",
-      "brand": "Maybelline",
-      "category": "Labiales",
-      "presentation": "0.18 oz",
-      "image": "assets/products/Lipstick Blind Date Satin de Maybelline.jpg",
-      "variants": [
-        {
-          "sku": "FARA00055107",
-          "tone": "107",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Lipstick Blind Date Satin de Maybelline es un producto para labios que aporta color y completa tu maquillaje. Explora las tonalidades disponibles y elige tu favorita."
-    },
-    {
-      "id": "lipstick-avenue-matte-de-maybelline",
-      "name": "Lipstick Avenue Matte de Maybelline",
-      "brand": "Maybelline",
-      "category": "Labiales",
-      "presentation": "0.18 oz",
-      "image": "assets/products/Lipstick Avenue Matte de Maybelline.avif",
-      "variants": [
-        {
-          "sku": "FARA00055007",
-          "tone": "7",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Lipstick Avenue Matte de Maybelline es un producto para labios que aporta color y completa tu maquillaje. Explora las tonalidades disponibles y elige tu favorita."
-    },
-    {
-      "id": "tinta-sheer-for-it-blush-de-elf",
-      "name": "Tinta Sheer For It Blush Tint de e.l.f.",
-      "brand": "e.l.f.",
-      "category": "Tintas",
-      "presentation": "0.22 oz",
-      "image": "assets/products/Tinta Sheer For It Blush Tint de e.l.f..jpg",
-      "variants": [
-        {
-          "sku": "FARA00032001",
-          "tone": "Orange crush",
-          "price": 350,
-          "stock": 3,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00032002",
-          "tone": "Left on red",
-          "price": 350,
-          "stock": 3,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00032003",
-          "tone": "Plumps up",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00032004",
-          "tone": "Pink positive",
-          "price": 350,
-          "stock": 3,
-          "status": "active"
-        }
-      ],
-      "description": "Tinta Sheer For It Blush Tint de e.l.f. es una tinta de maquillaje para aportar color y complementar tu look. Elige la tonalidad disponible que prefieras."
-    },
-    {
-      "id": "labial-glossy-lip-stain-de-elf",
-      "name": "Labial Glossy Lip Satin de e.l.f.",
-      "brand": "e.l.f.",
-      "category": "Labiales",
-      "presentation": "0.1 oz",
-      "image": "assets/products/Labial Glossy Lip Satin de e.l.f..avif",
-      "variants": [
-        {
-          "sku": "FARA00033001",
-          "tone": "Power mauve",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00033002",
-          "tone": "Pinkies up",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Labial Glossy Lip Satin de e.l.f. es un producto para labios que aporta color y completa tu maquillaje. Explora las tonalidades disponibles y elige tu favorita."
-    },
-    {
-      "id": "rubor-halo-glow-de-elf",
-      "name": "Rubor líquido Halo Glow de e.l.f.",
-      "brand": "e.l.f.",
-      "category": "Rubores",
-      "presentation": "0.33 oz",
-      "image": "assets/products/Rubor líquido Halo Glow de e.l.f..avif",
-      "variants": [
-        {
-          "sku": "FARA00034001",
-          "tone": "Magic hour",
-          "price": 360,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00034002",
-          "tone": "Berry radiant",
-          "price": 360,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Rubor líquido Halo Glow de e.l.f. es un rubor para aportar un toque de color a las mejillas y complementar tu maquillaje. Elige la tonalidad disponible que mejor combine con tu look."
-    },
-    {
-      "id": "rubor-camo-liquid-blush-de-elf",
-      "name": "Rubor líquido Camo de e.l.f.",
-      "brand": "e.l.f.",
-      "category": "Rubores",
-      "presentation": "0.13 oz",
-      "image": "assets/products/Rubor líquido Camo de e.l.f..jpg",
-      "variants": [
-        {
-          "sku": "FARA00035001",
-          "tone": "Cheeky lychee",
-          "price": 390,
-          "stock": 3,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00035002",
-          "tone": "Coral crush",
-          "price": 390,
-          "stock": 3,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00035003",
-          "tone": "Suave mauve",
-          "price": 390,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00035004",
-          "tone": "Berry well",
-          "price": 390,
-          "stock": 3,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00035006",
-          "tone": "Dusty rose",
-          "price": 390,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00035007",
-          "tone": "Pinky promise",
-          "price": 390,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Rubor líquido Camo de e.l.f. es un rubor para aportar un toque de color a las mejillas y complementar tu maquillaje. Elige la tonalidad disponible que mejor combine con tu look."
-    },
-    {
-      "id": "rubor-en-polvo-buttermelt-blush-de-nyx",
-      "name": "Rubor en polvo Buttermelt Blush de NYX",
-      "brand": "NYX",
-      "category": "Rubores",
-      "presentation": "0.17 oz",
-      "image": "assets/products/Rubor en polvo Buttermelt Blush de NYX.jpg",
-      "variants": [
-        {
-          "sku": "FARA00062004",
-          "tone": "BMBL01",
-          "price": 400,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00062001",
-          "tone": "BMBL04",
-          "price": 400,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00062008",
-          "tone": "BMBL08",
-          "price": 400,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Rubor en polvo Buttermelt Blush de NYX es un rubor para aportar un toque de color a las mejillas y complementar tu maquillaje. Elige la tonalidad disponible que mejor combine con tu look."
-    },
-    {
-      "id": "gel-cejas-zero-to-brow-de-nyx",
-      "name": "Gel de cejas Zero to Brow de NYX",
-      "brand": "NYX",
-      "category": "Cejas",
-      "presentation": "0.06 oz",
-      "image": "assets/products/Gel de cejas Zero to Brow de NYX.jpg",
-      "variants": [
-        {
-          "sku": "FARA00036G04",
-          "tone": "Auburn",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00036G08",
-          "tone": "Black",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Gel de cejas Zero to Brow de NYX es un producto para definir, peinar o complementar el maquillaje de las cejas. Elige la tonalidad disponible que mejor se adapte al resultado que buscas."
-    },
-    {
-      "id": "lapiz-cejas-blade-and-shade-de-nyx",
-      "name": "Lápiz de cejas Blade & Shade de NYX",
-      "brand": "NYX",
-      "category": "Cejas",
-      "presentation": "0.002 oz",
-      "image": "assets/products/Lápiz de cejas Blade & Shade de NYX.webp",
-      "variants": [
-        {
-          "sku": "FARA00037P07",
-          "tone": "Ash brown",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00037P09",
-          "tone": "Brunette",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00037P12",
-          "tone": "Black",
-          "price": 350,
-          "stock": 2,
-          "status": "active"
-        }
-      ],
-      "description": "Lápiz de cejas Blade & Shade de NYX es un producto para definir, peinar o complementar el maquillaje de las cejas. Elige la tonalidad disponible que mejor se adapte al resultado que buscas."
-    },
-    {
-      "id": "gel-cejas-super-lock-de-maybelline",
-      "name": "Gel de cejas Super Lock de Maybelline",
-      "brand": "Maybelline",
-      "category": "Cejas",
-      "presentation": "0.23 oz",
-      "image": "assets/products/Gel de cejas Super Lock de Maybelline.webp",
-      "variants": [
-        {
-          "sku": "FARA00039257",
-          "tone": "257",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00039264",
-          "tone": "264",
-          "price": 350,
-          "stock": 3,
-          "status": "active"
-        }
-      ],
-      "description": "Gel de cejas Super Lock de Maybelline es un producto para definir, peinar o complementar el maquillaje de las cejas. Elige la tonalidad disponible que mejor se adapte al resultado que buscas."
-    },
-    {
-      "id": "mascara-voluminous-million-lashes-de-loreal",
-      "name": "Máscara Voluminous Million Lashes de L’Oréal",
-      "brand": "L’Oréal Paris",
-      "category": "Máscaras de pestañas",
-      "presentation": "0.32 oz",
-      "image": "assets/products/Máscara Voluminous Million Lashes de L’Oréal.avif",
-      "variants": [
-        {
-          "sku": "FARA00040630",
-          "tone": "630",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00040670",
-          "tone": "670",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Máscara Voluminous Million Lashes de L’Oréal es una máscara de pestañas para complementar el maquillaje de ojos. Revisa la opción disponible antes de agregarla al carrito."
-    },
-    {
-      "id": "mascara-the-falsies-de-maybelline",
-      "name": "Máscara The Falsies de Maybelline",
-      "brand": "Maybelline",
-      "category": "Máscaras de pestañas",
-      "presentation": "0.25 oz",
-      "image": "assets/products/Máscara The Falsies de Maybelline.webp",
-      "variants": [
-        {
-          "sku": "FARA00041291",
-          "tone": "291 very black",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Máscara The Falsies de Maybelline es una máscara de pestañas para complementar el maquillaje de ojos. Revisa la opción disponible antes de agregarla al carrito."
-    },
-    {
-      "id": "mascara-define-a-lash-de-maybelline",
-      "name": "Máscara Define-A-Lash de Maybelline",
-      "brand": "Maybelline",
-      "category": "Máscaras de pestañas",
-      "presentation": "0.22 oz",
-      "image": "assets/products/Máscara Define-A-Lash de Maybelline.jpg",
-      "variants": [
-        {
-          "sku": "FARA00042811",
-          "tone": "811 very black",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Máscara Define-A-Lash de Maybelline es una máscara de pestañas para complementar el maquillaje de ojos. Revisa la opción disponible antes de agregarla al carrito."
-    },
-    {
-      "id": "mascara-the-colossal-de-maybelline",
-      "name": "Máscara The Colossal de Maybelline",
-      "brand": "Maybelline",
-      "category": "Máscaras de pestañas",
-      "presentation": "0.27 oz",
-      "image": "assets/products/Máscara The Colossal de Maybelline.jpg",
-      "variants": [
-        {
-          "sku": "FARA00043241",
-          "tone": "241 classic black",
-          "price": 350,
-          "stock": 5,
-          "status": "active"
-        }
-      ],
-      "description": "Máscara The Colossal de Maybelline es una máscara de pestañas para complementar el maquillaje de ojos. Revisa la opción disponible antes de agregarla al carrito."
-    },
-    {
-      "id": "mascara-de-pestanas-lash-sensational-body-de-maybelline",
-      "name": "Máscara Lash Sensational Body de Maybelline",
-      "brand": "Maybelline",
-      "category": "Máscaras de pestañas",
-      "presentation": "0.27 oz",
-      "image": "assets/products/Máscara Lash Sensational Body de Maybelline.jpg",
-      "variants": [
-        {
-          "sku": "FARA00060901",
-          "tone": "901",
-          "price": 350,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00060903",
-          "tone": "903",
-          "price": 350,
-          "stock": 2,
-          "status": "active"
-        }
-      ],
-      "description": "Máscara Lash Sensational Body de Maybelline es una máscara de pestañas para complementar el maquillaje de ojos. Revisa la opción disponible antes de agregarla al carrito."
-    },
-    {
-      "id": "parches-acne-starface",
-      "name": "Parches para el acné Starface",
-      "brand": "Starface",
-      "category": "Cuidado facial",
-      "presentation": "8 unidades",
-      "image": "assets/products/Parches para el acné Starface.webp",
-      "variants": [
-        {
-          "sku": "FARA00044001",
-          "tone": "Morado",
-          "price": 450,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00044002",
-          "tone": "Azul",
-          "price": 450,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00044003",
-          "tone": "Gris",
-          "price": 450,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00044004",
-          "tone": "Amarillo",
-          "price": 450,
-          "stock": 2,
-          "status": "active"
-        }
-      ],
-      "description": "Parches para el acné Starface es un producto cosmético para complementar tu rutina de cuidado facial. Revisa las opciones disponibles y elige la presentación que prefieras."
-    },
-    {
-      "id": "primer-power-grip-verde-de-elf",
-      "name": "Primer Power Grip de e.l.f. (Verde)",
-      "brand": "e.l.f.",
-      "category": "Prebases",
-      "presentation": "0.811 oz",
-      "image": "assets/products/Primer Power Grip de e.l.f. (Verde).jpg",
-      "variants": [
-        {
-          "sku": "FARA00050001",
-          "tone": "Transparent verde",
-          "price": 480,
-          "stock": 5,
-          "status": "active"
-        }
-      ],
-      "description": "Primer Power Grip de e.l.f. (Verde) es una prebase para preparar el rostro antes del maquillaje. Revisa la presentación disponible antes de agregarla al carrito."
-    },
-    {
-      "id": "fijador-make-it-last-matte-de-milani",
-      "name": "Fijador Make It Last Matte de Milani",
-      "brand": "Milani",
-      "category": "Fijadores",
-      "presentation": "2.03 oz",
-      "image": "assets/products/Fijador Make It Last Matte de Milani.jpg",
-      "variants": [
-        {
-          "sku": "FARA00046001",
-          "tone": "Negro",
-          "price": 490,
-          "stock": 2,
-          "status": "active"
-        }
-      ],
-      "description": "Fijador Make It Last Matte de Milani es un fijador pensado como paso final de tu rutina de maquillaje. Revisa la presentación disponible antes de agregarlo al carrito."
-    },
-    {
-      "id": "fijador-power-grip-dewy-setting-spray-de-elf",
-      "name": "Fijador Power Grip Dewy Setting Spray de e.l.f.",
-      "brand": "e.l.f.",
-      "category": "Fijadores",
-      "presentation": "2.7 oz",
-      "image": "assets/products/Fijador Power Grip Dewy Setting Spray de e.l.f..webp",
-      "variants": [
-        {
-          "sku": "FARA00051001",
-          "tone": "Verde",
-          "price": 480,
-          "stock": 2,
-          "status": "active"
-        }
-      ],
-      "description": "Fijador Power Grip Dewy Setting Spray de e.l.f. es un fijador pensado como paso final de tu rutina de maquillaje. Revisa la presentación disponible antes de agregarlo al carrito."
-    },
-    {
-      "id": "paleta-contorno-y-blush",
-      "name": "Paleta de contorno y blush",
-      "brand": "e.l.f.",
-      "category": "Paletas",
-      "presentation": "0.47 oz",
-      "image": "assets/products/Paleta de contorno y blush.jpg",
-      "variants": [
-        {
-          "sku": "FARA00053001",
-          "tone": "4 Colores rosa y café",
-          "price": 400,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Paleta de contorno y blush reúne tonos para complementar el maquillaje del rostro. Revisa la presentación disponible antes de agregarla al carrito."
-    },
-    {
-      "id": "mascara-de-pestanas-de-prosa",
-      "name": "Máscara de pestañas de Prosa",
-      "brand": "Prosa",
-      "category": "Máscaras de pestañas",
-      "presentation": "13 g",
-      "image": "assets/products/Máscara de pestañas de Prosa.webp",
-      "variants": [
-        {
-          "sku": "FARA00063001",
-          "tone": "Negro",
-          "price": 130,
-          "stock": 3,
-          "status": "active"
-        }
-      ],
-      "description": "Máscara de pestañas de Prosa es una máscara de pestañas para complementar el maquillaje de ojos. Revisa la opción disponible antes de agregarla al carrito."
-    },
-    {
-      "id": "encrespadoras-de-pestanas",
-      "name": "Encrespadoras de pestañas",
-      "brand": "Stay",
-      "category": "Accesorios",
-      "presentation": "mediana",
-      "image": "assets/products/Encrespadoras de pestañas.jpg",
-      "variants": [
-        {
-          "sku": "FARA00064001",
-          "tone": "Plateada",
-          "price": 80,
-          "stock": 3,
-          "status": "active"
-        }
-      ],
-      "description": "Encrespadoras de pestañas es un accesorio para complementar tu rutina de maquillaje. Revisa la presentación disponible antes de agregarlo al carrito."
-    },
-    {
-      "id": "acne-control-cleanser-de-cerave-acne-treatment-16-onzas",
-      "name": "Acne control cleanser de CeraVe + acne treatment",
-      "brand": "CeraVe",
-      "category": "Jabón facial",
-      "presentation": "16 Onzas",
-      "image": null,
-      "variants": [
-        {
-          "sku": "FARA00066001",
-          "tone": "Sin Tono",
-          "price": 800,
-          "stock": 2,
-          "status": "active"
-        }
-      ],
-      "description": "Acne control cleanser de CeraVe + acne treatment de CeraVe forma parte del inventario actualizado de FARA. Presentación 16 Onzas; disponibilidad, existencia y precio corresponden al corte oficial del 18 de septiembre de 2026."
-    },
-    {
-      "id": "acne-control-cleanser-de-cerave-acne-treatment-12-onzas",
-      "name": "Acne control cleanser de CeraVe + acne treatment",
-      "brand": "CeraVe",
-      "category": "Jabón facial",
-      "presentation": "12 Onzas",
-      "image": null,
-      "variants": [
-        {
-          "sku": "FARA00066004",
-          "tone": "Sin Tono",
-          "price": 700,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Acne control cleanser de CeraVe + acne treatment de CeraVe forma parte del inventario actualizado de FARA. Presentación 12 Onzas; disponibilidad, existencia y precio corresponden al corte oficial del 18 de septiembre de 2026."
-    },
-    {
-      "id": "anthelios-light-fluid-sunscreen-ultra-light-1-7-onzas",
-      "name": "Anthelios light fluid sunscreen Ultra light",
-      "brand": "La roche-posay",
-      "category": "Protector solar facial",
-      "presentation": "1.7 Onzas",
-      "image": null,
-      "variants": [
-        {
-          "sku": "FARA00070001",
-          "tone": "Sin Tono",
-          "price": 650,
-          "stock": 3,
-          "status": "active"
-        }
-      ],
-      "description": "Anthelios light fluid sunscreen Ultra light de La roche-posay forma parte del inventario actualizado de FARA. Presentación 1.7 Onzas; disponibilidad, existencia y precio corresponden al corte oficial del 18 de septiembre de 2026."
-    },
-    {
-      "id": "eye-repair-cream-de-cerave-0-5-onzas",
-      "name": "Eye repair cream de CeraVe",
-      "brand": "CeraVe",
-      "category": "Crema para el contorno de ojos",
-      "presentation": "0.5 Onzas",
-      "image": null,
-      "variants": [
-        {
-          "sku": "FARA00069001",
-          "tone": "Sin Tono",
-          "price": 500,
-          "stock": 3,
-          "status": "active"
-        }
-      ],
-      "description": "Eye repair cream de CeraVe de CeraVe forma parte del inventario actualizado de FARA. Presentación 0.5 Onzas; disponibilidad, existencia y precio corresponden al corte oficial del 18 de septiembre de 2026."
-    },
-    {
-      "id": "facial-moisturizing-lotion-pm-oil-free-2-onzas",
-      "name": "Facial moisturizing lotion PM oil free",
-      "brand": "CeraVe",
-      "category": "Crema hidratante facial",
-      "presentation": "2 Onzas",
-      "image": null,
-      "variants": [
-        {
-          "sku": "FARA00071001",
-          "tone": "Sin Tono",
-          "price": 525,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Facial moisturizing lotion PM oil free de CeraVe forma parte del inventario actualizado de FARA. Presentación 2 Onzas; disponibilidad, existencia y precio corresponden al corte oficial del 18 de septiembre de 2026."
-    },
-    {
-      "id": "facial-moisturizing-lotion-pm-oil-free-3-onzas",
-      "name": "Facial moisturizing lotion PM oil free",
-      "brand": "CeraVe",
-      "category": "Crema hidratante facial",
-      "presentation": "3 Onzas",
-      "image": null,
-      "variants": [
-        {
-          "sku": "FARA00071002",
-          "tone": "Sin Tono",
-          "price": 550,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Facial moisturizing lotion PM oil free de CeraVe forma parte del inventario actualizado de FARA. Presentación 3 Onzas; disponibilidad, existencia y precio corresponden al corte oficial del 18 de septiembre de 2026."
-    },
-    {
-      "id": "foaming-facial-cleanser-de-cerave-normal-to-oily-skin-12-onzas",
-      "name": "Foaming Facial cleanser de CeraVe normal to oily skin",
-      "brand": "CeraVe",
-      "category": "Jabón facial",
-      "presentation": "12 Onzas",
-      "image": null,
-      "variants": [
-        {
-          "sku": "FARA00066003",
-          "tone": "Sin Tono",
-          "price": 600,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Foaming Facial cleanser de CeraVe normal to oily skin de CeraVe forma parte del inventario actualizado de FARA. Presentación 12 Onzas; disponibilidad, existencia y precio corresponden al corte oficial del 18 de septiembre de 2026."
-    },
-    {
-      "id": "hydrating-cream-to-foam-cleanser-de-cerave-normal-to-dry-skin-removes-makeup-16-",
-      "name": "Hydrating cream-to-foam cleanser de CeraVe + normal to dry skin removes makeup",
-      "brand": "CeraVe",
-      "category": "Jabón facial",
-      "presentation": "16 Onzas",
-      "image": null,
-      "variants": [
-        {
-          "sku": "FARA00066002",
-          "tone": "Sin Tono",
-          "price": 700,
-          "stock": 2,
-          "status": "active"
-        }
-      ],
-      "description": "Hydrating cream-to-foam cleanser de CeraVe + normal to dry skin removes makeup de CeraVe forma parte del inventario actualizado de FARA. Presentación 16 Onzas; disponibilidad, existencia y precio corresponden al corte oficial del 18 de septiembre de 2026."
-    },
-    {
-      "id": "hydro-boost-hyaluronic-acid-gel-cream-normal-to-dry-skin-1-7-onzas",
-      "name": "Hydro boost hyaluronic acid gel cream normal to dry skin",
-      "brand": "Neutrogena",
-      "category": "Crema hidratante facial",
-      "presentation": "1.7 Onzas",
-      "image": null,
-      "variants": [
-        {
-          "sku": "FARA00067001",
-          "tone": "Sin Tono",
-          "price": 600,
-          "stock": 3,
-          "status": "active"
-        }
-      ],
-      "description": "Hydro boost hyaluronic acid gel cream normal to dry skin de Neutrogena forma parte del inventario actualizado de FARA. Presentación 1.7 Onzas; disponibilidad, existencia y precio corresponden al corte oficial del 18 de septiembre de 2026."
-    },
-    {
-      "id": "hydro-boost-hyaluronic-acid-gel-cream-normal-to-extra-dry-skin-1-7-onzas",
-      "name": "Hydro boost hyaluronic acid gel cream normal to extra dry skin",
-      "brand": "Neutrogena",
-      "category": "Crema hidratante facial",
-      "presentation": "1.7 Onzas",
-      "image": null,
-      "variants": [
-        {
-          "sku": "FARA00067003",
-          "tone": "Sin Tono",
-          "price": 600,
-          "stock": 2,
-          "status": "active"
-        }
-      ],
-      "description": "Hydro boost hyaluronic acid gel cream normal to extra dry skin de Neutrogena forma parte del inventario actualizado de FARA. Presentación 1.7 Onzas; disponibilidad, existencia y precio corresponden al corte oficial del 18 de septiembre de 2026."
-    },
-    {
-      "id": "hydro-boost-hyaluronic-acid-gel-cream-normal-to-oily-skin-1-7-onzas",
-      "name": "Hydro boost hyaluronic acid gel cream normal to oily skin",
-      "brand": "Neutrogena",
-      "category": "Crema hidratante facial",
-      "presentation": "1.7 Onzas",
-      "image": null,
-      "variants": [
-        {
-          "sku": "FARA00067002",
-          "tone": "Sin Tono",
-          "price": 600,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Hydro boost hyaluronic acid gel cream normal to oily skin de Neutrogena forma parte del inventario actualizado de FARA. Presentación 1.7 Onzas; disponibilidad, existencia y precio corresponden al corte oficial del 18 de septiembre de 2026."
-    },
-    {
-      "id": "hydro-boost-hyaluronic-acid-moisturizer-50-spf-1-7-onzas",
-      "name": "Hydro boost hyaluronic acid moisturizer 50 spf",
-      "brand": "Neutrogena",
-      "category": "Crema hidratante facial",
-      "presentation": "1.7 Onzas",
-      "image": null,
-      "variants": [
-        {
-          "sku": "FARA00072001",
-          "tone": "Sin Tono",
-          "price": 600,
-          "stock": 2,
-          "status": "active"
-        }
-      ],
-      "description": "Hydro boost hyaluronic acid moisturizer 50 spf de Neutrogena forma parte del inventario actualizado de FARA. Presentación 1.7 Onzas; disponibilidad, existencia y precio corresponden al corte oficial del 18 de septiembre de 2026."
-    },
-    {
-      "id": "hydro-boost-hyaluronic-acid-serum-17-1-0-onzas",
-      "name": "Hydro boost hyaluronic acid serum 17%",
-      "brand": "Neutrogena",
-      "category": "Crema hidratante facial",
-      "presentation": "1.0 Onzas",
-      "image": null,
-      "variants": [
-        {
-          "sku": "FARA00073001",
-          "tone": "Sin Tono",
-          "price": 600,
-          "stock": 3,
-          "status": "active"
-        }
-      ],
-      "description": "Hydro boost hyaluronic acid serum 17% de Neutrogena forma parte del inventario actualizado de FARA. Presentación 1.0 Onzas; disponibilidad, existencia y precio corresponden al corte oficial del 18 de septiembre de 2026."
-    },
-    {
-      "id": "micellar-cleansing-water-hyaluronic-acid-aloe-vera-23-7-onzas",
-      "name": "Micellar cleansing water hyaluronic acid + aloe vera",
-      "brand": "Garnier",
-      "category": "Agua Micelar",
-      "presentation": "23.7 Onzas",
-      "image": null,
-      "variants": [
-        {
-          "sku": "FARA00065001",
-          "tone": "Sin Tono",
-          "price": 550,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Micellar cleansing water hyaluronic acid + aloe vera de Garnier forma parte del inventario actualizado de FARA. Presentación 23.7 Onzas; disponibilidad, existencia y precio corresponden al corte oficial del 18 de septiembre de 2026."
-    },
-    {
-      "id": "revitalift-10-pure-vitamin-c-concentrate-1-0-onzas",
-      "name": "Revitalift 10% pure vitamin c concentrate",
-      "brand": "L´Oreal",
-      "category": "Crema hidratante facial",
-      "presentation": "1.0 Onzas",
-      "image": null,
-      "variants": [
-        {
-          "sku": "FARA00068001",
-          "tone": "Sin Tono",
-          "price": 550,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Revitalift 10% pure vitamin c concentrate de L´Oreal forma parte del inventario actualizado de FARA. Presentación 1.0 Onzas; disponibilidad, existencia y precio corresponden al corte oficial del 18 de septiembre de 2026."
-    },
-    {
-      "id": "shea-better-24h-moisture-body-lotion-coconut-waters-16-onzas",
-      "name": "Shea better 24h moisture body lotion coconut waters",
-      "brand": "EOS",
-      "category": "Crema hidratante corporal",
-      "presentation": "16 Onzas",
-      "image": null,
-      "variants": [
-        {
-          "sku": "FARA00074003",
-          "tone": "Sin Tono",
-          "price": 495,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Shea better 24h moisture body lotion coconut waters de EOS forma parte del inventario actualizado de FARA. Presentación 16 Onzas; disponibilidad, existencia y precio corresponden al corte oficial del 18 de septiembre de 2026."
-    },
-    {
-      "id": "shea-better-24h-moisture-body-lotion-fresh-cozy-16-onzas",
-      "name": "Shea better 24h moisture body lotion fresh + cozy",
-      "brand": "EOS",
-      "category": "Crema hidratante corporal",
-      "presentation": "16 Onzas",
-      "image": null,
-      "variants": [
-        {
-          "sku": "FARA00074002",
-          "tone": "Sin Tono",
-          "price": 495,
-          "stock": 2,
-          "status": "active"
-        }
-      ],
-      "description": "Shea better 24h moisture body lotion fresh + cozy de EOS forma parte del inventario actualizado de FARA. Presentación 16 Onzas; disponibilidad, existencia y precio corresponden al corte oficial del 18 de septiembre de 2026."
-    },
-    {
-      "id": "shea-better-24h-moisture-body-lotion-pink-champagne-16-onzas",
-      "name": "Shea better 24h moisture body lotion pink champagne",
-      "brand": "EOS",
-      "category": "Crema hidratante corporal",
-      "presentation": "16 Onzas",
-      "image": null,
-      "variants": [
-        {
-          "sku": "FARA00074004",
-          "tone": "Sin Tono",
-          "price": 495,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Shea better 24h moisture body lotion pink champagne de EOS forma parte del inventario actualizado de FARA. Presentación 16 Onzas; disponibilidad, existencia y precio corresponden al corte oficial del 18 de septiembre de 2026."
-    },
-    {
-      "id": "shea-better-24h-moisture-body-lotion-pistachio-16-onzas",
-      "name": "Shea better 24h moisture body lotion pistachio",
-      "brand": "EOS",
-      "category": "Crema hidratante corporal",
-      "presentation": "16 Onzas",
-      "image": null,
-      "variants": [
-        {
-          "sku": "FARA00074001",
-          "tone": "Sin Tono",
-          "price": 495,
-          "stock": 2,
-          "status": "active"
-        }
-      ],
-      "description": "Shea better 24h moisture body lotion pistachio de EOS forma parte del inventario actualizado de FARA. Presentación 16 Onzas; disponibilidad, existencia y precio corresponden al corte oficial del 18 de septiembre de 2026."
-    }
-  ]
+    "schemaVersion": 3,
+    "source": {
+        "kind": "inventory-reconciliation",
+        "file": "inventario-avanzado-20260918-163354.xlsx",
+        "receivedDate": "2026-09-18",
+        "cutoff": "2026-09-18 16:33:54 CST",
+        "stockIsSnapshot": true,
+        "timezone": "America/Tegucigalpa",
+        "notes": "Conciliado contra el inventario actualizado del 18 de septiembre de 2026. Se retiraron del catálogo las referencias con existencia 0 y se conservó un único JSON canónico."
+    },
+    "currency": "HNL",
+    "products": [
+        {
+            "id": "base-infallible-fresh-wear-de-loreal",
+            "name": "Base Infallible Fresh Wear de L’Oréal",
+            "brand": "L’Oréal Paris",
+            "category": "Bases",
+            "presentation": "1 oz",
+            "image": "assets/products/Infallible Fresh Wear 32H.jpg",
+            "variants": [
+                {
+                    "sku": "FARA00002395",
+                    "tone": "395",
+                    "price": 480,
+                    "stock": 3,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00002400",
+                    "tone": "400",
+                    "price": 480,
+                    "stock": 3,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00002405",
+                    "tone": "405",
+                    "price": 480,
+                    "stock": 4,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00002415",
+                    "tone": "415",
+                    "price": 480,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00002475",
+                    "tone": "475",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00002490",
+                    "tone": "490",
+                    "price": 480,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00002495",
+                    "tone": "495",
+                    "price": 480,
+                    "stock": 4,
+                    "status": "active"
+                }
+            ],
+            "description": "Base Infallible Fresh Wear de L’Oréal es una base de maquillaje para complementar tu rutina de rostro. Selecciona la tonalidad disponible que mejor se adapte a tu look."
+        },
+        {
+            "id": "base-infallible-pro-matte-de-loreal",
+            "name": "Base Infallible Pro-Matte de L’Oréal",
+            "brand": "L’Oréal Paris",
+            "category": "Bases",
+            "presentation": "1 oz",
+            "image": "assets/products/Infallible Pro-Matte 24H.webp",
+            "variants": [
+                {
+                    "sku": "FARA00003101",
+                    "tone": "101",
+                    "price": 480,
+                    "stock": 6,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA000031015",
+                    "tone": "101.5",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00003104",
+                    "tone": "104",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA000031045",
+                    "tone": "104.5",
+                    "price": 480,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA000031055",
+                    "tone": "105.5",
+                    "price": 480,
+                    "stock": 3,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00003106",
+                    "tone": "106",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00003107",
+                    "tone": "107",
+                    "price": 480,
+                    "stock": 4,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA000031075",
+                    "tone": "107.5",
+                    "price": 480,
+                    "stock": 3,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA000031082",
+                    "tone": "108.2",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA000031084",
+                    "tone": "108.4",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA000031085",
+                    "tone": "108.5",
+                    "price": 480,
+                    "stock": 3,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00003110",
+                    "tone": "110",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Base Infallible Pro-Matte de L’Oréal es una base de maquillaje para complementar tu rutina de rostro. Selecciona la tonalidad disponible que mejor se adapte a tu look."
+        },
+        {
+            "id": "base-true-match-de-loreal",
+            "name": "Base Tinted Serum True Match de L’Oréal",
+            "brand": "L’Oréal Paris",
+            "category": "Bases",
+            "presentation": "1 oz",
+            "image": "assets/products/serum True Match Super-Blendable Foundation.jpg",
+            "variants": [
+                {
+                    "sku": "FARA0000556",
+                    "tone": "5-6",
+                    "price": 480,
+                    "stock": 6,
+                    "status": "active"
+                }
+            ],
+            "description": "Base Tinted Serum True Match de L’Oréal es una base de maquillaje para complementar tu rutina de rostro. Selecciona la tonalidad disponible que mejor se adapte a tu look."
+        },
+        {
+            "id": "base-y-corrector-skin-ink-de-loreal",
+            "name": "Base y corrector Skin Ink de L’Oréal",
+            "brand": "L’Oréal Paris",
+            "category": "Bases y corrector",
+            "presentation": "0.50 oz",
+            "image": "assets/products/Base y corrector Skin Ink de L’Oréal.webp",
+            "variants": [
+                {
+                    "sku": "FARA00047040",
+                    "tone": "40",
+                    "price": 480,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00047100",
+                    "tone": "100",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00047125",
+                    "tone": "125",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00047130",
+                    "tone": "130",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00047140",
+                    "tone": "140",
+                    "price": 480,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00047180",
+                    "tone": "180",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00047265",
+                    "tone": "265",
+                    "price": 480,
+                    "stock": 3,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00047270",
+                    "tone": "270",
+                    "price": 480,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00047290",
+                    "tone": "290",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Base y corrector Skin Ink de L’Oréal combina el uso de base y corrector en una sola referencia para complementar el maquillaje del rostro. Elige la tonalidad disponible que prefieras."
+        },
+        {
+            "id": "base-skin-tint-de-maybelline",
+            "name": "Base Skin Tint de Maybelline",
+            "brand": "Maybelline",
+            "category": "Bases",
+            "presentation": "1 oz",
+            "image": "assets/products/Base Skin Tint de Maybelline.jpg",
+            "variants": [
+                {
+                    "sku": "FARA00004110",
+                    "tone": "110",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00004112",
+                    "tone": "112",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00004129",
+                    "tone": "129",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00004130",
+                    "tone": "130",
+                    "price": 480,
+                    "stock": 3,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00004310",
+                    "tone": "310",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Base Skin Tint de Maybelline es una base de maquillaje para complementar tu rutina de rostro. Selecciona la tonalidad disponible que mejor se adapte a tu look."
+        },
+        {
+            "id": "base-fit-me-de-maybelline-azul",
+            "name": "Base Fit Me de Maybelline (Azul)",
+            "brand": "Maybelline",
+            "category": "Bases",
+            "presentation": "1 oz",
+            "image": "assets/products/fit me azul.jpeg",
+            "variants": [
+                {
+                    "sku": "FARA00006120",
+                    "tone": "120",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00006122",
+                    "tone": "122",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00006128",
+                    "tone": "128",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00006228",
+                    "tone": "228",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00006238",
+                    "tone": "238",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00006242",
+                    "tone": "242",
+                    "price": 480,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00006320",
+                    "tone": "320",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Base Fit Me de Maybelline (Azul) es una base de maquillaje para complementar tu rutina de rostro. Selecciona la tonalidad disponible que mejor se adapte a tu look."
+        },
+        {
+            "id": "base-fit-me-de-maybelline-morada",
+            "name": "Base Fit Me de Maybelline (Morada)",
+            "brand": "Maybelline",
+            "category": "Bases",
+            "presentation": "1 oz",
+            "image": "assets/products/fit me morada.jpg",
+            "variants": [
+                {
+                    "sku": "FARA00048118",
+                    "tone": "118",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00048120",
+                    "tone": "120",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00048125",
+                    "tone": "125",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00048210",
+                    "tone": "210",
+                    "price": 480,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00048220",
+                    "tone": "220",
+                    "price": 480,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00048225",
+                    "tone": "225",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Base Fit Me de Maybelline (Morada) es una base de maquillaje para complementar tu rutina de rostro. Selecciona la tonalidad disponible que mejor se adapte a tu look."
+        },
+        {
+            "id": "base-superstay-de-maybelline",
+            "name": "Base Superstay de Maybelline",
+            "brand": "Maybelline",
+            "category": "Bases",
+            "presentation": "1 oz",
+            "image": "assets/products/Base Superstay de Maybelline.webp",
+            "variants": [
+                {
+                    "sku": "FARA00007120",
+                    "tone": "120",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00007140",
+                    "tone": "140",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00007310",
+                    "tone": "310",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Base Superstay de Maybelline es una base de maquillaje para complementar tu rutina de rostro. Selecciona la tonalidad disponible que mejor se adapte a tu look."
+        },
+        {
+            "id": "base-lumi-matte-de-maybelline",
+            "name": "Base Lumi-Matte de Maybelline",
+            "brand": "Maybelline",
+            "category": "Bases",
+            "presentation": "1 oz",
+            "image": "assets/products/Base Lumi-Matte de Maybelline.jpg",
+            "variants": [
+                {
+                    "sku": "FARA00008110",
+                    "tone": "110",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00008118",
+                    "tone": "118",
+                    "price": 480,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00008120",
+                    "tone": "120",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00008129",
+                    "tone": "129",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00008220",
+                    "tone": "220",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00008250",
+                    "tone": "250",
+                    "price": 480,
+                    "stock": 3,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00008312",
+                    "tone": "312",
+                    "price": 480,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00008322",
+                    "tone": "322",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00008310",
+                    "tone": "310",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Base Lumi-Matte de Maybelline es una base de maquillaje para complementar tu rutina de rostro. Selecciona la tonalidad disponible que mejor se adapte a tu look."
+        },
+        {
+            "id": "base-lifter-plump-glow-de-maybelline",
+            "name": "Base Lifter Plump & Glow de Maybelline",
+            "brand": "Maybelline",
+            "category": "Bases",
+            "presentation": "1 oz",
+            "image": "assets/products/Base Lifter Plump & Glow de Maybelline.jpg",
+            "variants": [
+                {
+                    "sku": "FARA00009110",
+                    "tone": "110",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00009118",
+                    "tone": "118",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00009120",
+                    "tone": "120",
+                    "price": 480,
+                    "stock": 3,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00009130",
+                    "tone": "130",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00009210",
+                    "tone": "210",
+                    "price": 480,
+                    "stock": 3,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00009220",
+                    "tone": "220",
+                    "price": 480,
+                    "stock": 5,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00009235",
+                    "tone": "235",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Base Lifter Plump & Glow de Maybelline es una base de maquillaje para complementar tu rutina de rostro. Selecciona la tonalidad disponible que mejor se adapte a tu look."
+        },
+        {
+            "id": "base-halo-glow-de-e-l-f",
+            "name": "Base Halo Glow de e.l.f.",
+            "brand": "e.l.f.",
+            "category": "Bases",
+            "presentation": "1 oz",
+            "image": "assets/products/Base Halo Glow de e.l.f..webp",
+            "variants": [
+                {
+                    "sku": "FARA00001005",
+                    "tone": "0.5",
+                    "price": 480,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00001035",
+                    "tone": "3.5",
+                    "price": 480,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00000105",
+                    "tone": "5",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Base Halo Glow de e.l.f. es una base de maquillaje para complementar tu rutina de rostro. Selecciona la tonalidad disponible que mejor se adapte a tu look."
+        },
+        {
+            "id": "base-soft-glam-de-e-l-f",
+            "name": "Base Soft Glam de e.l.f.",
+            "brand": "e.l.f.",
+            "category": "Bases",
+            "presentation": "1 oz",
+            "image": "assets/products/Base Soft Glam de e.l.f.v2.webp",
+            "variants": [
+                {
+                    "sku": "FARA00001111",
+                    "tone": "11",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00001112",
+                    "tone": "12",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00001113",
+                    "tone": "13",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00001122",
+                    "tone": "22",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00001130",
+                    "tone": "30",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00001131",
+                    "tone": "31",
+                    "price": 480,
+                    "stock": 2,
+                    "status": "active"
+                }
+            ],
+            "description": "Base Soft Glam de e.l.f. es una base de maquillaje para complementar tu rutina de rostro. Selecciona la tonalidad disponible que mejor se adapte a tu look."
+        },
+        {
+            "id": "base-camo-cc-cream-de-e-l-f",
+            "name": "Base Camo CC Cream de e.l.f.",
+            "brand": "e.l.f.",
+            "category": "Bases",
+            "presentation": "1 oz",
+            "image": "assets/products/CC-CREAM-ELF.png",
+            "variants": [
+                {
+                    "sku": "FARA00020205",
+                    "tone": "205N",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00020210",
+                    "tone": "210N",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00020370",
+                    "tone": "370N",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Base Camo CC Cream de e.l.f. es una base de maquillaje para complementar tu rutina de rostro. Selecciona la tonalidad disponible que mejor se adapte a tu look."
+        },
+        {
+            "id": "base-outlast-active-de-covergirl",
+            "name": "Base Outlast Active de Covergirl",
+            "brand": "Covergirl",
+            "category": "Bases",
+            "presentation": "1 oz",
+            "image": "assets/products/Base Outlast Active de Covergirl.jpg",
+            "variants": [
+                {
+                    "sku": "FARA00012825",
+                    "tone": "825",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Base Outlast Active de Covergirl es una base de maquillaje para complementar tu rutina de rostro. Selecciona la tonalidad disponible que mejor se adapte a tu look."
+        },
+        {
+            "id": "base-advanced-radiance-de-covergirl",
+            "name": "Base Advanced Radiance de Covergirl",
+            "brand": "Covergirl",
+            "category": "Bases",
+            "presentation": "1 oz",
+            "image": null,
+            "variants": [
+                {
+                    "sku": "FARA00013120",
+                    "tone": "120",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Base Advanced Radiance de Covergirl es una base de maquillaje para complementar tu rutina de rostro. Selecciona la tonalidad disponible que mejor se adapte a tu look."
+        },
+        {
+            "id": "polvo-compacto-infallible-fresh-wear-de-loreal",
+            "name": "Polvo compacto Infallible Fresh Wear de L’Oréal",
+            "brand": "L’Oréal Paris",
+            "category": "Polvos compactos",
+            "presentation": "1 oz",
+            "image": "assets/products/Polvo compacto Infallible Fresh Wear de L’Oréal.jpg",
+            "variants": [
+                {
+                    "sku": "FARA00014005",
+                    "tone": "5",
+                    "price": 480,
+                    "stock": 7,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00014010",
+                    "tone": "10",
+                    "price": 480,
+                    "stock": 2,
+                    "status": "active"
+                }
+            ],
+            "description": "Polvo compacto Infallible Fresh Wear de L’Oréal es un polvo de maquillaje para complementar y dar el toque final a tu rutina de rostro. Elige la tonalidad disponible que mejor acompañe tu maquillaje."
+        },
+        {
+            "id": "polvo-compacto-true-match-de-loreal",
+            "name": "Polvo compacto True Match de L’Oréal",
+            "brand": "L’Oréal Paris",
+            "category": "Polvos compactos",
+            "presentation": "1 oz",
+            "image": "assets/products/True Match Super-Blendable Powder.png",
+            "variants": [
+                {
+                    "sku": "FARA000017N1",
+                    "tone": "N1",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Polvo compacto True Match de L’Oréal es un polvo de maquillaje para complementar y dar el toque final a tu rutina de rostro. Elige la tonalidad disponible que mejor acompañe tu maquillaje."
+        },
+        {
+            "id": "polvo-compacto-superstay-24h-de-maybelline",
+            "name": "Polvo compacto Superstay 24H de Maybelline",
+            "brand": "Maybelline",
+            "category": "Polvos compactos",
+            "presentation": "1 oz",
+            "image": "assets/products/Polvo compacto Superstay 24H de Maybelline.webp",
+            "variants": [
+                {
+                    "sku": "FARA00015102",
+                    "tone": "102",
+                    "price": 480,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00015110",
+                    "tone": "110",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00015112",
+                    "tone": "112",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00015118",
+                    "tone": "118",
+                    "price": 480,
+                    "stock": 3,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00015120",
+                    "tone": "120",
+                    "price": 480,
+                    "stock": 5,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00015128",
+                    "tone": "128",
+                    "price": 480,
+                    "stock": 4,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00015130",
+                    "tone": "130",
+                    "price": 480,
+                    "stock": 11,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00015220",
+                    "tone": "220",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00015332",
+                    "tone": "332",
+                    "price": 480,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00015310",
+                    "tone": "310",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00015312",
+                    "tone": "312",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Polvo compacto Superstay 24H de Maybelline es un polvo de maquillaje para complementar y dar el toque final a tu rutina de rostro. Elige la tonalidad disponible que mejor acompañe tu maquillaje."
+        },
+        {
+            "id": "polvo-compacto-fit-me-de-maybelline",
+            "name": "Polvo compacto Fit Me de Maybelline",
+            "brand": "Maybelline",
+            "category": "Polvos compactos",
+            "presentation": "1 oz",
+            "image": "assets/products/Polvo compacto Fit Me de Maybelline.webp",
+            "variants": [
+                {
+                    "sku": "FARA00016100",
+                    "tone": "100",
+                    "price": 480,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00016112",
+                    "tone": "112",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00016120",
+                    "tone": "120",
+                    "price": 480,
+                    "stock": 5,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00016122",
+                    "tone": "122",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00016130",
+                    "tone": "130",
+                    "price": 480,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00016222",
+                    "tone": "222",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00016230",
+                    "tone": "230",
+                    "price": 480,
+                    "stock": 5,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00016235",
+                    "tone": "235",
+                    "price": 480,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00016310",
+                    "tone": "310",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00016320",
+                    "tone": "320",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00016330",
+                    "tone": "330",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00016332",
+                    "tone": "332",
+                    "price": 480,
+                    "stock": 2,
+                    "status": "active"
+                }
+            ],
+            "description": "Polvo compacto Fit Me de Maybelline es un polvo de maquillaje para complementar y dar el toque final a tu rutina de rostro. Elige la tonalidad disponible que mejor acompañe tu maquillaje."
+        },
+        {
+            "id": "polvo-compacto-prime-stay-finishing-de-e-l-f",
+            "name": "Polvo compacto Prime & Stay Finishing de e.l.f.",
+            "brand": "e.l.f.",
+            "category": "Polvos compactos",
+            "presentation": "1 oz",
+            "image": "assets/products/Polvo compacto Prime & Stay Finishing de e.l.f..jpg",
+            "variants": [
+                {
+                    "sku": "FARA00001800",
+                    "tone": "Transparent",
+                    "price": 480,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Polvo compacto Prime & Stay Finishing de e.l.f. es un polvo de maquillaje para complementar y dar el toque final a tu rutina de rostro. Elige la tonalidad disponible que mejor acompañe tu maquillaje."
+        },
+        {
+            "id": "bronceador-natural-bronzer-de-rimmel-london",
+            "name": "Bronceador Natural Bronzer de Rimmel London",
+            "brand": "Rimmel London",
+            "category": "Bronceadores",
+            "presentation": "1 oz",
+            "image": "assets/products/Bronceador Natural Bronzer de Rimmel London.webp",
+            "variants": [
+                {
+                    "sku": "FARA00019022",
+                    "tone": "22",
+                    "price": 420,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Bronceador Natural Bronzer de Rimmel London es un bronceador para aportar calidez y definición visual al maquillaje del rostro. Elige la tonalidad disponible que prefieras."
+        },
+        {
+            "id": "corrector-infallible-full-wear-24h-de-loreal",
+            "name": "Corrector Infallible Full Wear 24H de L’Oréal",
+            "brand": "L’Oréal Paris",
+            "category": "Correctores",
+            "presentation": "0.33 oz",
+            "image": "assets/products/Corrector Infallible Full Wear 24H de L’Oréal.webp",
+            "variants": [
+                {
+                    "sku": "FARA00021325",
+                    "tone": "325",
+                    "price": 360,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00021340",
+                    "tone": "340",
+                    "price": 360,
+                    "stock": 3,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00021345",
+                    "tone": "345",
+                    "price": 360,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00021355",
+                    "tone": "355",
+                    "price": 360,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00021360",
+                    "tone": "360",
+                    "price": 360,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00021365",
+                    "tone": "365",
+                    "price": 360,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00021370",
+                    "tone": "370",
+                    "price": 360,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00021375",
+                    "tone": "375",
+                    "price": 360,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00021380",
+                    "tone": "380",
+                    "price": 360,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00021395",
+                    "tone": "395",
+                    "price": 360,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Corrector Infallible Full Wear 24H de L’Oréal es un corrector para complementar el maquillaje del rostro y trabajar zonas puntuales. Selecciona la tonalidad disponible que mejor se adapte a tu look."
+        },
+        {
+            "id": "corrector-superstay-30h-de-maybelline",
+            "name": "Corrector Superstay 30H de Maybelline",
+            "brand": "Maybelline",
+            "category": "Correctores",
+            "presentation": "0.33 oz",
+            "image": "assets/products/Corrector Superstay 30H de Maybelline.jpg",
+            "variants": [
+                {
+                    "sku": "FARA00002245",
+                    "tone": "45",
+                    "price": 360,
+                    "stock": 2,
+                    "status": "active"
+                }
+            ],
+            "description": "Corrector Superstay 30H de Maybelline es un corrector para complementar el maquillaje del rostro y trabajar zonas puntuales. Selecciona la tonalidad disponible que mejor se adapte a tu look."
+        },
+        {
+            "id": "corrector-instant-age-rewind-eraser-de-maybelline",
+            "name": "Corrector Instant Age Rewind Eraser de Maybelline",
+            "brand": "Maybelline",
+            "category": "Correctores",
+            "presentation": "0.2 oz",
+            "image": "assets/products/Corrector Instant Age Rewind Eraser de Maybelline.jpg",
+            "variants": [
+                {
+                    "sku": "FARA00029095",
+                    "tone": "95",
+                    "price": 360,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00029141",
+                    "tone": "141",
+                    "price": 360,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00029160",
+                    "tone": "160",
+                    "price": 360,
+                    "stock": 2,
+                    "status": "active"
+                }
+            ],
+            "description": "Corrector Instant Age Rewind Eraser de Maybelline es un corrector para complementar el maquillaje del rostro y trabajar zonas puntuales. Selecciona la tonalidad disponible que mejor se adapte a tu look."
+        },
+        {
+            "id": "corrector-lifter-glow-de-maybelline",
+            "name": "Corrector Lifter Glow de Maybelline",
+            "brand": "Maybelline",
+            "category": "Correctores",
+            "presentation": "0.33 oz",
+            "image": "assets/products/Corrector Lifter Glow de Maybelline.jpg",
+            "variants": [
+                {
+                    "sku": "FARA00054015",
+                    "tone": "15",
+                    "price": 360,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00054020",
+                    "tone": "20",
+                    "price": 360,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00054025",
+                    "tone": "25",
+                    "price": 360,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00054030",
+                    "tone": "30",
+                    "price": 360,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00054035",
+                    "tone": "35",
+                    "price": 360,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00054050",
+                    "tone": "50",
+                    "price": 360,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00054055",
+                    "tone": "55",
+                    "price": 360,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00054060",
+                    "tone": "60",
+                    "price": 360,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Corrector Lifter Glow de Maybelline es un corrector para complementar el maquillaje del rostro y trabajar zonas puntuales. Selecciona la tonalidad disponible que mejor se adapte a tu look."
+        },
+        {
+            "id": "corrector-soft-glam-de-elf",
+            "name": "Corrector Soft Glam de e.l.f.",
+            "brand": "e.l.f.",
+            "category": "Correctores",
+            "presentation": "0.21 oz",
+            "image": "assets/products/Corrector Soft Glam de e.l.f..jpg",
+            "variants": [
+                {
+                    "sku": "FARA00049013",
+                    "tone": "13",
+                    "price": 360,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00049020",
+                    "tone": "20",
+                    "price": 360,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00049021",
+                    "tone": "21",
+                    "price": 360,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00049023",
+                    "tone": "23",
+                    "price": 360,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00049025",
+                    "tone": "25",
+                    "price": 360,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00049030",
+                    "tone": "30",
+                    "price": 360,
+                    "stock": 2,
+                    "status": "active"
+                }
+            ],
+            "description": "Corrector Soft Glam de e.l.f. es un corrector para complementar el maquillaje del rostro y trabajar zonas puntuales. Selecciona la tonalidad disponible que mejor se adapte a tu look."
+        },
+        {
+            "id": "corrector-camo-color-corrector-de-e-l-f",
+            "name": "Corrector Camo Color Corrector de e.l.f.",
+            "brand": "e.l.f.",
+            "category": "Correctores",
+            "presentation": "0.09 oz",
+            "image": "assets/products/Corrector Camo Color Corrector de e.l.f..webp",
+            "variants": [
+                {
+                    "sku": "FARA00002300",
+                    "tone": "Green",
+                    "price": 360,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Corrector Camo Color Corrector de e.l.f. es un corrector para complementar el maquillaje del rostro y trabajar zonas puntuales. Selecciona la tonalidad disponible que mejor se adapte a tu look."
+        },
+        {
+            "id": "corrector-camo-concealer-16h-de-e-l-f",
+            "name": "Corrector Camo Concealer 16H de e.l.f.",
+            "brand": "e.l.f.",
+            "category": "Correctores",
+            "presentation": "0.2 oz",
+            "image": "assets/products/Corrector Camo Concealer 16H de e.l.f..jpg",
+            "variants": [
+                {
+                    "sku": "FARA0000TANN",
+                    "tone": "Tan Neutral",
+                    "price": 360,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Corrector Camo Concealer 16H de e.l.f. es un corrector para complementar el maquillaje del rostro y trabajar zonas puntuales. Selecciona la tonalidad disponible que mejor se adapte a tu look."
+        },
+        {
+            "id": "labial-infallible-matte-resistance-de-loreal",
+            "name": "Labial Infallible Matte Resistance de L’Oréal",
+            "brand": "L’Oréal Paris",
+            "category": "Labiales",
+            "presentation": "0.16 oz",
+            "image": "assets/products/Labial Infallible Matte Resistance de L’Oréal.jpg",
+            "variants": [
+                {
+                    "sku": "FARA00025100",
+                    "tone": "100",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00025120",
+                    "tone": "120",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00025230",
+                    "tone": "230",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00025240",
+                    "tone": "240",
+                    "price": 350,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00025245",
+                    "tone": "245",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00025500",
+                    "tone": "500",
+                    "price": 350,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00025600",
+                    "tone": "600",
+                    "price": 350,
+                    "stock": 3,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00025601",
+                    "tone": "601",
+                    "price": 350,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00025625",
+                    "tone": "625",
+                    "price": 350,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00025645",
+                    "tone": "645",
+                    "price": 350,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00025650",
+                    "tone": "650",
+                    "price": 350,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00025655",
+                    "tone": "655",
+                    "price": 350,
+                    "stock": 3,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00025660",
+                    "tone": "660",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00025665",
+                    "tone": "665",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Labial Infallible Matte Resistance de L’Oréal es un producto para labios que aporta color y completa tu maquillaje. Explora las tonalidades disponibles y elige tu favorita."
+        },
+        {
+            "id": "labial-infallible-laque-resistance-de-loreal",
+            "name": "Labial Infallible Laque Resistance de L’Oréal",
+            "brand": "L’Oréal Paris",
+            "category": "Labiales",
+            "presentation": "0.13 oz",
+            "image": "assets/products/Labial Infallible Laque Resistance de L’Oréal.webp",
+            "variants": [
+                {
+                    "sku": "FARA00026215",
+                    "tone": "215",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00026220",
+                    "tone": "220",
+                    "price": 350,
+                    "stock": 5,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00026250",
+                    "tone": "250",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00026410",
+                    "tone": "410",
+                    "price": 350,
+                    "stock": 4,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00026415",
+                    "tone": "415",
+                    "price": 350,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00026510",
+                    "tone": "510",
+                    "price": 350,
+                    "stock": 3,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00026520",
+                    "tone": "520",
+                    "price": 350,
+                    "stock": 3,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00026600",
+                    "tone": "600",
+                    "price": 350,
+                    "stock": 3,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00026601",
+                    "tone": "601",
+                    "price": 350,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00026635",
+                    "tone": "635",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Labial Infallible Laque Resistance de L’Oréal es un producto para labios que aporta color y completa tu maquillaje. Explora las tonalidades disponibles y elige tu favorita."
+        },
+        {
+            "id": "labial-superstay-matte-ink-de-maybelline",
+            "name": "Labial Superstay Matte Ink de Maybelline",
+            "brand": "Maybelline",
+            "category": "Labiales",
+            "presentation": "0.17 oz",
+            "image": "assets/products/Labial Superstay Matte Ink de Maybelline.jpg",
+            "variants": [
+                {
+                    "sku": "FARA00027005",
+                    "tone": "5",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00027010",
+                    "tone": "10",
+                    "price": 350,
+                    "stock": 3,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00027015",
+                    "tone": "15",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00027020",
+                    "tone": "20",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00027050",
+                    "tone": "50",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00027060",
+                    "tone": "60",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00027118",
+                    "tone": "118",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00027125",
+                    "tone": "125",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00027130",
+                    "tone": "130",
+                    "price": 350,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00027135",
+                    "tone": "135",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00027155",
+                    "tone": "155",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00027175",
+                    "tone": "175",
+                    "price": 350,
+                    "stock": 5,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00027180",
+                    "tone": "180",
+                    "price": 350,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00027325",
+                    "tone": "325",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00027330",
+                    "tone": "330",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00027335",
+                    "tone": "335",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00027505",
+                    "tone": "505",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00027510",
+                    "tone": "510",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00027515",
+                    "tone": "515",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00027520",
+                    "tone": "520",
+                    "price": 350,
+                    "stock": 3,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00027525",
+                    "tone": "525",
+                    "price": 350,
+                    "stock": 2,
+                    "status": "active"
+                }
+            ],
+            "description": "Labial Superstay Matte Ink de Maybelline es un producto para labios que aporta color y completa tu maquillaje. Explora las tonalidades disponibles y elige tu favorita."
+        },
+        {
+            "id": "labial-superstay-vinyl-ink-de-maybelline",
+            "name": "Labial Superstay Vinyl Ink de Maybelline",
+            "brand": "Maybelline",
+            "category": "Labiales",
+            "presentation": "0.14 oz",
+            "image": "assets/products/Labial Superstay Vinyl Ink de Maybelline.jpg",
+            "variants": [
+                {
+                    "sku": "FARA00028010",
+                    "tone": "10",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00028015",
+                    "tone": "15",
+                    "price": 350,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00028020",
+                    "tone": "20",
+                    "price": 350,
+                    "stock": 6,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00028025",
+                    "tone": "25",
+                    "price": 350,
+                    "stock": 5,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00028030",
+                    "tone": "30",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00028035",
+                    "tone": "35",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00028040",
+                    "tone": "40",
+                    "price": 350,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00028055",
+                    "tone": "55",
+                    "price": 350,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00028095",
+                    "tone": "95",
+                    "price": 350,
+                    "stock": 4,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00028100",
+                    "tone": "100",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00028135",
+                    "tone": "135",
+                    "price": 350,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00028150",
+                    "tone": "150",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00028165",
+                    "tone": "165",
+                    "price": 350,
+                    "stock": 2,
+                    "status": "active"
+                }
+            ],
+            "description": "Labial Superstay Vinyl Ink de Maybelline es un producto para labios que aporta color y completa tu maquillaje. Explora las tonalidades disponibles y elige tu favorita."
+        },
+        {
+            "id": "labial-superstay-teddy-tint-de-maybelline",
+            "name": "Labial Superstay Teddy Tint de Maybelline",
+            "brand": "Maybelline",
+            "category": "Labiales",
+            "presentation": "0.14 oz",
+            "image": "assets/products/Labial Superstay Teddy Tint de Maybelline.webp",
+            "variants": [
+                {
+                    "sku": "FARA00030010",
+                    "tone": "10",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00030020",
+                    "tone": "20",
+                    "price": 350,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00030040",
+                    "tone": "40",
+                    "price": 350,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00030045",
+                    "tone": "45",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00030050",
+                    "tone": "50",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00030055",
+                    "tone": "55",
+                    "price": 350,
+                    "stock": 3,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00030060",
+                    "tone": "60",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00030090",
+                    "tone": "90",
+                    "price": 350,
+                    "stock": 3,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00030095",
+                    "tone": "95",
+                    "price": 350,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA000300100",
+                    "tone": "100",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00030105",
+                    "tone": "105",
+                    "price": 350,
+                    "stock": 3,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00030115",
+                    "tone": "115",
+                    "price": 350,
+                    "stock": 3,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00030120",
+                    "tone": "120",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00030130",
+                    "tone": "130",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Labial Superstay Teddy Tint de Maybelline es un producto para labios que aporta color y completa tu maquillaje. Explora las tonalidades disponibles y elige tu favorita."
+        },
+        {
+            "id": "labial-lifter-gloss-de-maybelline",
+            "name": "Labial Lifter Gloss de Maybelline",
+            "brand": "Maybelline",
+            "category": "Labiales",
+            "presentation": "0.18 oz",
+            "image": "assets/products/Labial Lifter Gloss de Maybelline.jpg",
+            "variants": [
+                {
+                    "sku": "FARA00031006",
+                    "tone": "6",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00031008",
+                    "tone": "8",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00031010",
+                    "tone": "10",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00031028",
+                    "tone": "28",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Labial Lifter Gloss de Maybelline es un producto para labios que aporta color y completa tu maquillaje. Explora las tonalidades disponibles y elige tu favorita."
+        },
+        {
+            "id": "lipstick-blind-date-satin-de-maybelline",
+            "name": "Lipstick Blind Date Satin de Maybelline",
+            "brand": "Maybelline",
+            "category": "Labiales",
+            "presentation": "0.18 oz",
+            "image": "assets/products/Lipstick Blind Date Satin de Maybelline.jpg",
+            "variants": [
+                {
+                    "sku": "FARA00055107",
+                    "tone": "107",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Lipstick Blind Date Satin de Maybelline es un producto para labios que aporta color y completa tu maquillaje. Explora las tonalidades disponibles y elige tu favorita."
+        },
+        {
+            "id": "lipstick-avenue-matte-de-maybelline",
+            "name": "Lipstick Avenue Matte de Maybelline",
+            "brand": "Maybelline",
+            "category": "Labiales",
+            "presentation": "0.18 oz",
+            "image": "assets/products/Lipstick Avenue Matte de Maybelline.avif",
+            "variants": [
+                {
+                    "sku": "FARA00055007",
+                    "tone": "7",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Lipstick Avenue Matte de Maybelline es un producto para labios que aporta color y completa tu maquillaje. Explora las tonalidades disponibles y elige tu favorita."
+        },
+        {
+            "id": "tinta-sheer-for-it-blush-de-elf",
+            "name": "Tinta Sheer For It Blush Tint de e.l.f.",
+            "brand": "e.l.f.",
+            "category": "Tintas",
+            "presentation": "0.22 oz",
+            "image": "assets/products/Tinta Sheer For It Blush Tint de e.l.f..jpg",
+            "variants": [
+                {
+                    "sku": "FARA00032001",
+                    "tone": "Orange crush",
+                    "price": 350,
+                    "stock": 3,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00032002",
+                    "tone": "Left on red",
+                    "price": 350,
+                    "stock": 3,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00032003",
+                    "tone": "Plumps up",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00032004",
+                    "tone": "Pink positive",
+                    "price": 350,
+                    "stock": 3,
+                    "status": "active"
+                }
+            ],
+            "description": "Tinta Sheer For It Blush Tint de e.l.f. es una tinta de maquillaje para aportar color y complementar tu look. Elige la tonalidad disponible que prefieras."
+        },
+        {
+            "id": "labial-glossy-lip-stain-de-elf",
+            "name": "Labial Glossy Lip Satin de e.l.f.",
+            "brand": "e.l.f.",
+            "category": "Labiales",
+            "presentation": "0.1 oz",
+            "image": "assets/products/Labial Glossy Lip Satin de e.l.f..avif",
+            "variants": [
+                {
+                    "sku": "FARA00033001",
+                    "tone": "Power mauve",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00033002",
+                    "tone": "Pinkies up",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Labial Glossy Lip Satin de e.l.f. es un producto para labios que aporta color y completa tu maquillaje. Explora las tonalidades disponibles y elige tu favorita."
+        },
+        {
+            "id": "rubor-halo-glow-de-elf",
+            "name": "Rubor líquido Halo Glow de e.l.f.",
+            "brand": "e.l.f.",
+            "category": "Rubores",
+            "presentation": "0.33 oz",
+            "image": "assets/products/Rubor líquido Halo Glow de e.l.f..avif",
+            "variants": [
+                {
+                    "sku": "FARA00034001",
+                    "tone": "Magic hour",
+                    "price": 360,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00034002",
+                    "tone": "Berry radiant",
+                    "price": 360,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Rubor líquido Halo Glow de e.l.f. es un rubor para aportar un toque de color a las mejillas y complementar tu maquillaje. Elige la tonalidad disponible que mejor combine con tu look."
+        },
+        {
+            "id": "rubor-camo-liquid-blush-de-elf",
+            "name": "Rubor líquido Camo de e.l.f.",
+            "brand": "e.l.f.",
+            "category": "Rubores",
+            "presentation": "0.13 oz",
+            "image": "assets/products/Rubor líquido Camo de e.l.f..jpg",
+            "variants": [
+                {
+                    "sku": "FARA00035001",
+                    "tone": "Cheeky lychee",
+                    "price": 390,
+                    "stock": 3,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00035002",
+                    "tone": "Coral crush",
+                    "price": 390,
+                    "stock": 3,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00035003",
+                    "tone": "Suave mauve",
+                    "price": 390,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00035004",
+                    "tone": "Berry well",
+                    "price": 390,
+                    "stock": 3,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00035006",
+                    "tone": "Dusty rose",
+                    "price": 390,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00035007",
+                    "tone": "Pinky promise",
+                    "price": 390,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Rubor líquido Camo de e.l.f. es un rubor para aportar un toque de color a las mejillas y complementar tu maquillaje. Elige la tonalidad disponible que mejor combine con tu look."
+        },
+        {
+            "id": "rubor-en-polvo-buttermelt-blush-de-nyx",
+            "name": "Rubor en polvo Buttermelt Blush de NYX",
+            "brand": "NYX",
+            "category": "Rubores",
+            "presentation": "0.17 oz",
+            "image": "assets/products/Rubor en polvo Buttermelt Blush de NYX.jpg",
+            "variants": [
+                {
+                    "sku": "FARA00062004",
+                    "tone": "BMBL01",
+                    "price": 400,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00062001",
+                    "tone": "BMBL04",
+                    "price": 400,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00062008",
+                    "tone": "BMBL08",
+                    "price": 400,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Rubor en polvo Buttermelt Blush de NYX es un rubor para aportar un toque de color a las mejillas y complementar tu maquillaje. Elige la tonalidad disponible que mejor combine con tu look."
+        },
+        {
+            "id": "gel-cejas-zero-to-brow-de-nyx",
+            "name": "Gel de cejas Zero to Brow de NYX",
+            "brand": "NYX",
+            "category": "Cejas",
+            "presentation": "0.06 oz",
+            "image": "assets/products/Gel de cejas Zero to Brow de NYX.jpg",
+            "variants": [
+                {
+                    "sku": "FARA00036G04",
+                    "tone": "Auburn",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00036G08",
+                    "tone": "Black",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Gel de cejas Zero to Brow de NYX es un producto para definir, peinar o complementar el maquillaje de las cejas. Elige la tonalidad disponible que mejor se adapte al resultado que buscas."
+        },
+        {
+            "id": "lapiz-cejas-blade-and-shade-de-nyx",
+            "name": "Lápiz de cejas Blade & Shade de NYX",
+            "brand": "NYX",
+            "category": "Cejas",
+            "presentation": "0.002 oz",
+            "image": "assets/products/Lápiz de cejas Blade & Shade de NYX.webp",
+            "variants": [
+                {
+                    "sku": "FARA00037P07",
+                    "tone": "Ash brown",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00037P09",
+                    "tone": "Brunette",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00037P12",
+                    "tone": "Black",
+                    "price": 350,
+                    "stock": 2,
+                    "status": "active"
+                }
+            ],
+            "description": "Lápiz de cejas Blade & Shade de NYX es un producto para definir, peinar o complementar el maquillaje de las cejas. Elige la tonalidad disponible que mejor se adapte al resultado que buscas."
+        },
+        {
+            "id": "gel-cejas-super-lock-de-maybelline",
+            "name": "Gel de cejas Super Lock de Maybelline",
+            "brand": "Maybelline",
+            "category": "Cejas",
+            "presentation": "0.23 oz",
+            "image": "assets/products/Gel de cejas Super Lock de Maybelline.webp",
+            "variants": [
+                {
+                    "sku": "FARA00039257",
+                    "tone": "257",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00039264",
+                    "tone": "264",
+                    "price": 350,
+                    "stock": 3,
+                    "status": "active"
+                }
+            ],
+            "description": "Gel de cejas Super Lock de Maybelline es un producto para definir, peinar o complementar el maquillaje de las cejas. Elige la tonalidad disponible que mejor se adapte al resultado que buscas."
+        },
+        {
+            "id": "mascara-voluminous-million-lashes-de-loreal",
+            "name": "Máscara Voluminous Million Lashes de L’Oréal",
+            "brand": "L’Oréal Paris",
+            "category": "Máscaras de pestañas",
+            "presentation": "0.32 oz",
+            "image": "assets/products/Máscara Voluminous Million Lashes de L’Oréal.avif",
+            "variants": [
+                {
+                    "sku": "FARA00040630",
+                    "tone": "630",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00040670",
+                    "tone": "670",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Máscara Voluminous Million Lashes de L’Oréal es una máscara de pestañas para complementar el maquillaje de ojos."
+        },
+        {
+            "id": "mascara-the-falsies-de-maybelline",
+            "name": "Máscara The Falsies de Maybelline",
+            "brand": "Maybelline",
+            "category": "Máscaras de pestañas",
+            "presentation": "0.25 oz",
+            "image": "assets/products/Máscara The Falsies de Maybelline.webp",
+            "variants": [
+                {
+                    "sku": "FARA00041291",
+                    "tone": "291 very black",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Máscara The Falsies de Maybelline es una máscara de pestañas para complementar el maquillaje de ojos."
+        },
+        {
+            "id": "mascara-define-a-lash-de-maybelline",
+            "name": "Máscara Define-A-Lash de Maybelline",
+            "brand": "Maybelline",
+            "category": "Máscaras de pestañas",
+            "presentation": "0.22 oz",
+            "image": "assets/products/Máscara Define-A-Lash de Maybelline.jpg",
+            "variants": [
+                {
+                    "sku": "FARA00042811",
+                    "tone": "811 very black",
+                    "price": 350,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Máscara Define-A-Lash de Maybelline es una máscara de pestañas para complementar el maquillaje de ojos."
+        },
+        {
+            "id": "mascara-the-colossal-de-maybelline",
+            "name": "Máscara The Colossal de Maybelline",
+            "brand": "Maybelline",
+            "category": "Máscaras de pestañas",
+            "presentation": "0.27 oz",
+            "image": "assets/products/Máscara The Colossal de Maybelline.jpg",
+            "variants": [
+                {
+                    "sku": "FARA00043241",
+                    "tone": "241 classic black",
+                    "price": 350,
+                    "stock": 5,
+                    "status": "active"
+                }
+            ],
+            "description": "Máscara The Colossal de Maybelline es una máscara de pestañas para complementar el maquillaje de ojos."
+        },
+        {
+            "id": "mascara-de-pestanas-lash-sensational-body-de-maybelline",
+            "name": "Máscara Lash Sensational Body de Maybelline",
+            "brand": "Maybelline",
+            "category": "Máscaras de pestañas",
+            "presentation": "0.27 oz",
+            "image": "assets/products/Máscara Lash Sensational Body de Maybelline.jpg",
+            "variants": [
+                {
+                    "sku": "FARA00060901",
+                    "tone": "901",
+                    "price": 350,
+                    "stock": 2,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00060903",
+                    "tone": "903",
+                    "price": 350,
+                    "stock": 2,
+                    "status": "active"
+                }
+            ],
+            "description": "Máscara Lash Sensational Body de Maybelline es una máscara de pestañas para complementar el maquillaje de ojos."
+        },
+        {
+            "id": "parches-acne-starface",
+            "name": "Parches para el acné Starface",
+            "brand": "Starface",
+            "category": "Cuidado facial",
+            "presentation": "8 unidades",
+            "image": "assets/products/Parches para el acné Starface.webp",
+            "variants": [
+                {
+                    "sku": "FARA00044001",
+                    "tone": "Morado",
+                    "price": 450,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00044002",
+                    "tone": "Azul",
+                    "price": 450,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00044003",
+                    "tone": "Gris",
+                    "price": 450,
+                    "stock": 1,
+                    "status": "active"
+                },
+                {
+                    "sku": "FARA00044004",
+                    "tone": "Amarillo",
+                    "price": 450,
+                    "stock": 2,
+                    "status": "active"
+                }
+            ],
+            "description": "Parches para el acné Starface es un producto cosmético para complementar tu rutina de cuidado facial."
+        },
+        {
+            "id": "primer-power-grip-verde-de-elf",
+            "name": "Primer Power Grip de e.l.f. (Verde)",
+            "brand": "e.l.f.",
+            "category": "Prebases",
+            "presentation": "0.811 oz",
+            "image": "assets/products/Primer Power Grip de e.l.f. (Verde).jpg",
+            "variants": [
+                {
+                    "sku": "FARA00050001",
+                    "tone": "Transparent verde",
+                    "price": 480,
+                    "stock": 5,
+                    "status": "active"
+                }
+            ],
+            "description": "Primer Power Grip de e.l.f. (Verde) es una prebase para preparar el rostro antes del maquillaje."
+        },
+        {
+            "id": "fijador-make-it-last-matte-de-milani",
+            "name": "Fijador Make It Last Matte de Milani",
+            "brand": "Milani",
+            "category": "Fijadores",
+            "presentation": "2.03 oz",
+            "image": "assets/products/Fijador Make It Last Matte de Milani.jpg",
+            "variants": [
+                {
+                    "sku": "FARA00046001",
+                    "tone": "Negro",
+                    "price": 490,
+                    "stock": 2,
+                    "status": "active"
+                }
+            ],
+            "description": "Fijador Make It Last Matte de Milani es un fijador pensado como paso final de tu rutina de maquillaje."
+        },
+        {
+            "id": "fijador-power-grip-dewy-setting-spray-de-elf",
+            "name": "Fijador Power Grip Dewy Setting Spray de e.l.f.",
+            "brand": "e.l.f.",
+            "category": "Fijadores",
+            "presentation": "2.7 oz",
+            "image": "assets/products/Fijador Power Grip Dewy Setting Spray de e.l.f..webp",
+            "variants": [
+                {
+                    "sku": "FARA00051001",
+                    "tone": "Verde",
+                    "price": 480,
+                    "stock": 2,
+                    "status": "active"
+                }
+            ],
+            "description": "Fijador Power Grip Dewy Setting Spray de e.l.f. es un fijador pensado como paso final de tu rutina de maquillaje."
+        },
+        {
+            "id": "paleta-contorno-y-blush",
+            "name": "Paleta de contorno y blush",
+            "brand": "e.l.f.",
+            "category": "Paletas",
+            "presentation": "0.47 oz",
+            "image": "assets/products/Paleta de contorno y blush.jpg",
+            "variants": [
+                {
+                    "sku": "FARA00053001",
+                    "tone": "4 Colores rosa y café",
+                    "price": 400,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Paleta de contorno y blush reúne tonos para complementar el maquillaje del rostro."
+        },
+        {
+            "id": "mascara-de-pestanas-de-prosa",
+            "name": "Máscara de pestañas de Prosa",
+            "brand": "Prosa",
+            "category": "Máscaras de pestañas",
+            "presentation": "13 g",
+            "image": "assets/products/Máscara de pestañas de Prosa.webp",
+            "variants": [
+                {
+                    "sku": "FARA00063001",
+                    "tone": "Negro",
+                    "price": 130,
+                    "stock": 3,
+                    "status": "active"
+                }
+            ],
+            "description": "Máscara de pestañas de Prosa es una máscara de pestañas para complementar el maquillaje de ojos."
+        },
+        {
+            "id": "encrespadoras-de-pestanas",
+            "name": "Encrespadoras de pestañas",
+            "brand": "Stay",
+            "category": "Accesorios",
+            "presentation": "mediana",
+            "image": "assets/products/Encrespadoras de pestañas.jpg",
+            "variants": [
+                {
+                    "sku": "FARA00064001",
+                    "tone": "Plateada",
+                    "price": 80,
+                    "stock": 3,
+                    "status": "active"
+                }
+            ],
+            "description": "Encrespadoras de pestañas es un accesorio para complementar tu rutina de maquillaje."
+        },
+        {
+            "id": "acne-control-cleanser-de-cerave-acne-treatment-16-onzas",
+            "name": "Acne control cleanser de CeraVe + acne treatment",
+            "brand": "CeraVe",
+            "category": "Jabón facial",
+            "presentation": "16 Onzas",
+            "image": "assets/products/acne-control-cleanser-de-cerave-acne-treatment-16-onzas.avif",
+            "variants": [
+                {
+                    "sku": "FARA00066001",
+                    "tone": "Sin Tono",
+                    "price": 800,
+                    "stock": 2,
+                    "status": "active"
+                }
+            ],
+            "description": "Acne control cleanser de CeraVe + acne treatment de CeraVe forma parte del inventario actualizado de FARA. Presentación 16 Onzas"
+        },
+        {
+            "id": "acne-control-cleanser-de-cerave-acne-treatment-12-onzas",
+            "name": "Acne control cleanser de CeraVe + acne treatment",
+            "brand": "CeraVe",
+            "category": "Jabón facial",
+            "presentation": "12 Onzas",
+            "image": "assets/products/acne-control-cleanser-de-cerave-acne-treatment-12-onzas.webp",
+            "variants": [
+                {
+                    "sku": "FARA00066004",
+                    "tone": "Sin Tono",
+                    "price": 700,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Acne control cleanser de CeraVe + acne treatment de CeraVe forma parte del inventario actualizado de FARA. Presentación 12 Onzas"
+        },
+        {
+            "id": "anthelios-light-fluid-sunscreen-ultra-light-1-7-onzas",
+            "name": "Anthelios light fluid sunscreen Ultra light",
+            "brand": "La roche-posay",
+            "category": "Protector solar facial",
+            "presentation": "1.7 Onzas",
+            "image": "assets/products/anthelios-light-fluid-sunscreen-ultra-light-1-7-onzas.avif",
+            "variants": [
+                {
+                    "sku": "FARA00070001",
+                    "tone": "Sin Tono",
+                    "price": 650,
+                    "stock": 3,
+                    "status": "active"
+                }
+            ],
+            "description": "Anthelios light fluid sunscreen Ultra light de La roche-posay forma parte del inventario actualizado de FARA. Presentación 1.7 Onzas"
+        },
+        {
+            "id": "eye-repair-cream-de-cerave-0-5-onzas",
+            "name": "Eye repair cream de CeraVe",
+            "brand": "CeraVe",
+            "category": "Crema para el contorno de ojos",
+            "presentation": "0.5 Onzas",
+            "image": "assets/products/eye-repair-cream-de-cerave-0-5-onzas.webp",
+            "variants": [
+                {
+                    "sku": "FARA00069001",
+                    "tone": "Sin Tono",
+                    "price": 500,
+                    "stock": 3,
+                    "status": "active"
+                }
+            ],
+            "description": "Eye repair cream de CeraVe de CeraVe forma parte del inventario actualizado de FARA. Presentación 0.5 Onzas"
+        },
+        {
+            "id": "facial-moisturizing-lotion-pm-oil-free-2-onzas",
+            "name": "Facial moisturizing lotion PM oil free",
+            "brand": "CeraVe",
+            "category": "Crema hidratante facial",
+            "presentation": "2 Onzas",
+            "image": "assets/products/facial-moisturizing-lotion-pm-oil-free-2-onzas.webp",
+            "variants": [
+                {
+                    "sku": "FARA00071001",
+                    "tone": "Sin Tono",
+                    "price": 525,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Facial moisturizing lotion PM oil free de CeraVe forma parte del inventario actualizado de FARA. Presentación 2 Onzas"
+        },
+        {
+            "id": "facial-moisturizing-lotion-pm-oil-free-3-onzas",
+            "name": "Facial moisturizing lotion PM oil free",
+            "brand": "CeraVe",
+            "category": "Crema hidratante facial",
+            "presentation": "3 Onzas",
+            "image": "assets/products/facial-moisturizing-lotion-pm-oil-free-3-onzas.webp",
+            "variants": [
+                {
+                    "sku": "FARA00071002",
+                    "tone": "Sin Tono",
+                    "price": 550,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Facial moisturizing lotion PM oil free de CeraVe forma parte del inventario actualizado de FARA. Presentación 3 Onzas"
+        },
+        {
+            "id": "foaming-facial-cleanser-de-cerave-normal-to-oily-skin-12-onzas",
+            "name": "Foaming Facial cleanser de CeraVe normal to oily skin",
+            "brand": "CeraVe",
+            "category": "Jabón facial",
+            "presentation": "12 Onzas",
+            "image": "assets/products/foaming-facial-cleanser-de-cerave-normal-to-oily-skin-12-onzas.webp",
+            "variants": [
+                {
+                    "sku": "FARA00066003",
+                    "tone": "Sin Tono",
+                    "price": 600,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Foaming Facial cleanser de CeraVe normal to oily skin de CeraVe forma parte del inventario actualizado de FARA. Presentación 12 Onzas"
+        },
+        {
+            "id": "hydrating-cream-to-foam-cleanser-de-cerave-normal-to-dry-skin-removes-makeup-16-",
+            "name": "Hydrating cream-to-foam cleanser de CeraVe + normal to dry skin removes makeup",
+            "brand": "CeraVe",
+            "category": "Jabón facial",
+            "presentation": "16 Onzas",
+            "image": "assets/products/hydrating-cream-to-foam-cleanser-de-cerave-normal-to-dry-skin-removes-makeup-16.avif",
+            "variants": [
+                {
+                    "sku": "FARA00066002",
+                    "tone": "Sin Tono",
+                    "price": 700,
+                    "stock": 2,
+                    "status": "active"
+                }
+            ],
+            "description": "Hydrating cream-to-foam cleanser de CeraVe + normal to dry skin removes makeup de CeraVe forma parte del inventario actualizado de FARA. Presentación 16 Onzas"
+        },
+        {
+            "id": "hydro-boost-hyaluronic-acid-gel-cream-normal-to-dry-skin-1-7-onzas",
+            "name": "Hydro boost hyaluronic acid gel cream normal to dry skin",
+            "brand": "Neutrogena",
+            "category": "Crema hidratante facial",
+            "presentation": "1.7 Onzas",
+            "image": "assets/products/hydro-boost-hyaluronic-acid-gel-cream-normal-to-dry-skin-1-7-onzas.avif",
+            "variants": [
+                {
+                    "sku": "FARA00067001",
+                    "tone": "Sin Tono",
+                    "price": 600,
+                    "stock": 3,
+                    "status": "active"
+                }
+            ],
+            "description": "Hydro boost hyaluronic acid gel cream normal to dry skin de Neutrogena forma parte del inventario actualizado de FARA. Presentación 1.7 Onzas"
+        },
+        {
+            "id": "hydro-boost-hyaluronic-acid-gel-cream-normal-to-extra-dry-skin-1-7-onzas",
+            "name": "Hydro boost hyaluronic acid gel cream normal to extra dry skin",
+            "brand": "Neutrogena",
+            "category": "Crema hidratante facial",
+            "presentation": "1.7 Onzas",
+            "image": "assets/products/hydro-boost-hyaluronic-acid-gel-cream-normal-to-extra-dry-skin-1-7-onzas.avif",
+            "variants": [
+                {
+                    "sku": "FARA00067003",
+                    "tone": "Sin Tono",
+                    "price": 600,
+                    "stock": 2,
+                    "status": "active"
+                }
+            ],
+            "description": "Hydro boost hyaluronic acid gel cream normal to extra dry skin de Neutrogena forma parte del inventario actualizado de FARA. Presentación 1.7 Onzas"
+        },
+        {
+            "id": "hydro-boost-hyaluronic-acid-gel-cream-normal-to-oily-skin-1-7-onzas",
+            "name": "Hydro boost hyaluronic acid gel cream normal to oily skin",
+            "brand": "Neutrogena",
+            "category": "Crema hidratante facial",
+            "presentation": "1.7 Onzas",
+            "image": "assets/products/hydro-boost-hyaluronic-acid-gel-cream-normal-to-oily-skin-1-7-onzas.avif",
+            "variants": [
+                {
+                    "sku": "FARA00067002",
+                    "tone": "Sin Tono",
+                    "price": 600,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Hydro boost hyaluronic acid gel cream normal to oily skin de Neutrogena forma parte del inventario actualizado de FARA. Presentación 1.7 Onzas"
+        },
+        {
+            "id": "hydro-boost-hyaluronic-acid-moisturizer-50-spf-1-7-onzas",
+            "name": "Hydro boost hyaluronic acid moisturizer 50 spf",
+            "brand": "Neutrogena",
+            "category": "Crema hidratante facial",
+            "presentation": "1.7 Onzas",
+            "image": "assets/products/hydro-boost-hyaluronic-acid-moisturizer-50-spf-1-7-onzas.avif",
+            "variants": [
+                {
+                    "sku": "FARA00072001",
+                    "tone": "Sin Tono",
+                    "price": 600,
+                    "stock": 2,
+                    "status": "active"
+                }
+            ],
+            "description": "Hydro boost hyaluronic acid moisturizer 50 spf de Neutrogena forma parte del inventario actualizado de FARA. Presentación 1.7 Onzas"
+        },
+        {
+            "id": "hydro-boost-hyaluronic-acid-serum-17-1-0-onzas",
+            "name": "Hydro boost hyaluronic acid serum 17%",
+            "brand": "Neutrogena",
+            "category": "Crema hidratante facial",
+            "presentation": "1.0 Onzas",
+            "image": "assets/products/hydro-boost-hyaluronic-acid-serum-17-1-0-onzas.avif",
+            "variants": [
+                {
+                    "sku": "FARA00073001",
+                    "tone": "Sin Tono",
+                    "price": 600,
+                    "stock": 3,
+                    "status": "active"
+                }
+            ],
+            "description": "Hydro boost hyaluronic acid serum 17% de Neutrogena forma parte del inventario actualizado de FARA. Presentación 1.0 Onzas"
+        },
+        {
+            "id": "micellar-cleansing-water-hyaluronic-acid-aloe-vera-23-7-onzas",
+            "name": "Micellar cleansing water hyaluronic acid + aloe vera",
+            "brand": "Garnier",
+            "category": "Agua Micelar",
+            "presentation": "23.7 Onzas",
+            "image": "assets/products/micellar-cleansing-water-hyaluronic-acid-aloe-vera-23-7-onzas.avif",
+            "variants": [
+                {
+                    "sku": "FARA00065001",
+                    "tone": "Sin Tono",
+                    "price": 550,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Micellar cleansing water hyaluronic acid + aloe vera de Garnier forma parte del inventario actualizado de FARA. Presentación 23.7 Onzas"
+        },
+        {
+            "id": "shea-better-24h-moisture-body-lotion-coconut-waters-16-onzas",
+            "name": "Shea better 24h moisture body lotion coconut waters",
+            "brand": "EOS",
+            "category": "Crema hidratante corporal",
+            "presentation": "16 Onzas",
+            "image": "assets/products/shea-better-24h-moisture-body-lotion-coconut-waters-16-onzas.jpeg",
+            "variants": [
+                {
+                    "sku": "FARA00074003",
+                    "tone": "Sin Tono",
+                    "price": 495,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Shea better 24h moisture body lotion coconut waters de EOS forma parte del inventario actualizado de FARA. Presentación 16 Onzas"
+        },
+        {
+            "id": "shea-better-24h-moisture-body-lotion-fresh-cozy-16-onzas",
+            "name": "Shea better 24h moisture body lotion fresh + cozy",
+            "brand": "EOS",
+            "category": "Crema hidratante corporal",
+            "presentation": "16 Onzas",
+            "image": "assets/products/shea-better-24h-moisture-body-lotion-fresh-cozy-16-onzas.jpeg",
+            "variants": [
+                {
+                    "sku": "FARA00074002",
+                    "tone": "Sin Tono",
+                    "price": 495,
+                    "stock": 2,
+                    "status": "active"
+                }
+            ],
+            "description": "Shea better 24h moisture body lotion fresh + cozy de EOS forma parte del inventario actualizado de FARA. Presentación 16 Onzas"
+        },
+        {
+            "id": "shea-better-24h-moisture-body-lotion-pink-champagne-16-onzas",
+            "name": "Shea better 24h moisture body lotion pink champagne",
+            "brand": "EOS",
+            "category": "Crema hidratante corporal",
+            "presentation": "16 Onzas",
+            "image": "assets/products/shea-better-24h-moisture-body-lotion-pink-champagne-16-onzas.webp",
+            "variants": [
+                {
+                    "sku": "FARA00074004",
+                    "tone": "Sin Tono",
+                    "price": 495,
+                    "stock": 1,
+                    "status": "active"
+                }
+            ],
+            "description": "Shea better 24h moisture body lotion pink champagne de EOS forma parte del inventario actualizado de FARA. Presentación 16 Onzas"
+        },
+        {
+            "id": "shea-better-24h-moisture-body-lotion-pistachio-16-onzas",
+            "name": "Shea better 24h moisture body lotion pistachio",
+            "brand": "EOS",
+            "category": "Crema hidratante corporal",
+            "presentation": "16 Onzas",
+            "image": "assets/products/shea-better-24h-moisture-body-lotion-pistachio-16-onzas.avif",
+            "variants": [
+                {
+                    "sku": "FARA00074001",
+                    "tone": "Sin Tono",
+                    "price": 495,
+                    "stock": 2,
+                    "status": "active"
+                }
+            ],
+            "description": "Shea better 24h moisture body lotion pistachio de EOS forma parte del inventario actualizado de FARA. Presentación 16 Onzas"
+        }
+    ]
 }
