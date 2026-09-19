@@ -1627,17 +1627,20 @@ img {
     display: grid;
     place-items: center;
     align-self: stretch;
-    background: transparent;
-    border: 0;
-    box-shadow: none;
-    padding: 0
+    overflow: hidden;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    padding: 0 !important
 }
 
 .location-art img {
+    display: block;
     width: 100%;
-    height: auto;
-    max-height: 100%;
-    object-fit: contain;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    object-fit: cover;
     object-position: center
 }
 
