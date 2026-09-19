@@ -10,7 +10,7 @@
   const socialUrls = {
     Instagram: 'https://www.instagram.com/fara__hnd/',
     Facebook: 'https://www.facebook.com/Fara.Honduras',
-    TikTok: '#'
+    TikTok: 'https://www.tiktok.com/@fara.hnd?_r=1&_t=ZS-99cYiEB0FvR'
   };
 
   function ensureSocialStyles() {
