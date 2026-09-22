@@ -15,10 +15,10 @@ const zeroSkus=["FARA00006222","FARA00006230","FARA00006235","FARA00006118","FAR
 
 test('The canonical JSON preserves current inventory and historical references',()=>{
   assert.equal(data.schemaVersion,3);
-  assert.equal(data.source.file,'inventario-avanzado-20260918-163354.xlsx');
-  assert.deepEqual([inspection.stats.products,inspection.stats.skus,inspection.stats.activeSkus,inspection.stats.activeUnits,inspection.stats.archivedSkus],[82,333,274,500,59]);
-  assert.equal(new Set(data.products.flatMap(p=>p.variants.map(v=>v.sku))).size,333);
-  assert.equal(inspection.allBySku.has('FARA00068001'),false);
+  assert.equal(data.source.file,'inventario-avanzado-20260922-141309.xlsx');
+  assert.deepEqual([inspection.stats.products,inspection.stats.skus,inspection.stats.activeSkus,inspection.stats.activeUnits,inspection.stats.archivedSkus],[83,334,267,490,67]);
+  assert.equal(new Set(data.products.flatMap(p=>p.variants.map(v=>v.sku))).size,334);
+  assert.equal(inspection.allBySku.has('FARA00068001'),true);
 });
 
 
