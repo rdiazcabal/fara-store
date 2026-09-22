@@ -21,56 +21,56 @@
       "variants": [
         {
           "sku": "FARA00002395",
-          "tone": "Base Fresh Wear 395",
+          "tone": "395",
           "price": 480,
           "stock": 3,
           "status": "active"
         },
         {
           "sku": "FARA00002400",
-          "tone": "Base Fresh Wear 400",
+          "tone": "400",
           "price": 480,
           "stock": 3,
           "status": "active"
         },
         {
           "sku": "FARA00002405",
-          "tone": "Base Fresh Wear 405",
+          "tone": "405",
           "price": 480,
           "stock": 4,
           "status": "active"
         },
         {
           "sku": "FARA00002415",
-          "tone": "Base Fresh Wear 415",
+          "tone": "415",
           "price": 480,
           "stock": 2,
           "status": "active"
         },
         {
           "sku": "FARA00002475",
-          "tone": "Base Fresh Wear 475",
+          "tone": "475",
           "price": 480,
           "stock": 1,
           "status": "active"
         },
         {
           "sku": "FARA00002490",
-          "tone": "Base Fresh Wear 490",
+          "tone": "490",
           "price": 480,
           "stock": 2,
           "status": "active"
         },
         {
           "sku": "FARA00002495",
-          "tone": "Base Fresh Wear 495",
+          "tone": "495",
           "price": 480,
           "stock": 4,
           "status": "active"
         },
         {
           "sku": "FARA00002410",
-          "tone": "Base Fresh Wear 410",
+          "tone": "410",
           "price": 480,
           "stock": 0,
           "status": "out_of_stock",
@@ -81,7 +81,7 @@
         },
         {
           "sku": "FARA00002420",
-          "tone": "Base Fresh Wear 420",
+          "tone": "420",
           "price": 480,
           "stock": 0,
           "status": "out_of_stock",
@@ -92,7 +92,7 @@
         },
         {
           "sku": "FARA00002425",
-          "tone": "Base Fresh Wear 425",
+          "tone": "425",
           "price": 480,
           "stock": 0,
           "status": "out_of_stock",
@@ -103,7 +103,7 @@
         },
         {
           "sku": "FARA00002430",
-          "tone": "Base Fresh Wear 430",
+          "tone": "430",
           "price": 480,
           "stock": 0,
           "status": "out_of_stock",
@@ -114,7 +114,7 @@
         },
         {
           "sku": "FARA00002460",
-          "tone": "Base Fresh Wear 460",
+          "tone": "460",
           "price": 480,
           "stock": 0,
           "status": "out_of_stock",
@@ -125,7 +125,7 @@
         },
         {
           "sku": "FARA00002465",
-          "tone": "Base Fresh Wear 465",
+          "tone": "465",
           "price": 480,
           "stock": 0,
           "status": "out_of_stock",
@@ -136,7 +136,7 @@
         },
         {
           "sku": "FARA00002470",
-          "tone": "Base Fresh Wear 470",
+          "tone": "470",
           "price": 480,
           "stock": 0,
           "status": "out_of_stock",
@@ -147,7 +147,7 @@
         },
         {
           "sku": "FARA00002480",
-          "tone": "Base Fresh Wear 480",
+          "tone": "480",
           "price": 480,
           "stock": 0,
           "status": "out_of_stock",
@@ -169,91 +169,91 @@
       "variants": [
         {
           "sku": "FARA00003101",
-          "tone": "Base Pro-Matte 101",
+          "tone": "101",
           "price": 480,
           "stock": 6,
           "status": "active"
         },
         {
           "sku": "FARA000031015",
-          "tone": "Base Pro-Matte 101.5",
+          "tone": "101.5",
           "price": 480,
           "stock": 1,
           "status": "active"
         },
         {
           "sku": "FARA00003104",
-          "tone": "Base Pro-Matte 104",
+          "tone": "104",
           "price": 480,
           "stock": 1,
           "status": "active"
         },
         {
           "sku": "FARA000031045",
-          "tone": "Base Pro-Matte 104.5",
+          "tone": "104.5",
           "price": 480,
           "stock": 2,
           "status": "active"
         },
         {
           "sku": "FARA000031055",
-          "tone": "Base Pro-Matte 105.5",
+          "tone": "105.5",
           "price": 480,
           "stock": 3,
           "status": "active"
         },
         {
           "sku": "FARA00003106",
-          "tone": "Base Pro-Matte 106",
+          "tone": "106",
           "price": 480,
           "stock": 1,
           "status": "active"
         },
         {
           "sku": "FARA00003107",
-          "tone": "Base Pro-Matte 107",
+          "tone": "107",
           "price": 480,
           "stock": 3,
           "status": "active"
         },
         {
           "sku": "FARA000031075",
-          "tone": "Base Pro-Matte 107.5",
+          "tone": "107.5",
           "price": 480,
           "stock": 3,
           "status": "active"
         },
         {
           "sku": "FARA000031082",
-          "tone": "Base Pro-Matte 108.2",
+          "tone": "108.2",
           "price": 480,
           "stock": 1,
           "status": "active"
         },
         {
           "sku": "FARA000031084",
-          "tone": "Base Pro-Matte 108.4",
+          "tone": "108.4",
           "price": 480,
           "stock": 1,
           "status": "active"
         },
         {
           "sku": "FARA000031085",
-          "tone": "Base Pro-Matte 108.5",
+          "tone": "108.5",
           "price": 480,
           "stock": 3,
           "status": "active"
         },
         {
           "sku": "FARA00003110",
-          "tone": "Base Pro-Matte 110",
+          "tone": "110",
           "price": 480,
           "stock": 1,
           "status": "active"
         },
         {
           "sku": "FARA00003102",
-          "tone": "Base Pro-Matte 102",
+          "tone": "102",
           "price": 480,
           "stock": 0,
           "status": "out_of_stock",
@@ -264,7 +264,7 @@
         },
         {
           "sku": "FARA000031025",
-          "tone": "Base Pro-Matte 102.5",
+          "tone": "102.5",
           "price": 480,
           "stock": 0,
           "status": "out_of_stock",
@@ -275,7 +275,7 @@
         },
         {
           "sku": "FARA00003103",
-          "tone": "Base Pro-Matte 103",
+          "tone": "103",
           "price": 480,
           "stock": 0,
           "status": "out_of_stock",
@@ -286,7 +286,7 @@
         },
         {
           "sku": "FARA00003108",
-          "tone": "Base Pro-Matte 108",
+          "tone": "108",
           "price": 480,
           "stock": 0,
           "status": "out_of_stock",
@@ -315,7 +315,7 @@
         },
         {
           "sku": "FARA00005052",
-          "tone": "Sin Tono",
+          "tone": "0.5-2",
           "price": 470,
           "stock": 0,
           "status": "out_of_stock",
@@ -660,7 +660,7 @@
         },
         {
           "sku": "FARA00006210",
-          "tone": "Base fit me de Maybelline Morada 210",
+          "tone": "210",
           "price": 480,
           "stock": 0,
           "status": "out_of_stock",
@@ -693,7 +693,7 @@
         },
         {
           "sku": "FARA00006245",
-          "tone": "Sin Tono",
+          "tone": "245",
           "price": 480,
           "stock": 0,
           "status": "out_of_stock",
@@ -1067,21 +1067,21 @@
       "variants": [
         {
           "sku": "FARA00020205",
-          "tone": "205N-",
+          "tone": "205N",
           "price": 480,
           "stock": 1,
           "status": "active"
         },
         {
           "sku": "FARA00020210",
-          "tone": "210N-",
+          "tone": "210N",
           "price": 480,
           "stock": 1,
           "status": "active"
         },
         {
           "sku": "FARA00020370",
-          "tone": "370N-",
+          "tone": "370N",
           "price": 480,
           "stock": 1,
           "status": "active"
@@ -1168,7 +1168,7 @@
         },
         {
           "sku": "FARA00014130",
-          "tone": "Sin Tono",
+          "tone": "130",
           "price": 480,
           "stock": 0,
           "status": "out_of_stock",
@@ -1271,14 +1271,14 @@
         },
         {
           "sku": "FARA00015310",
-          "tone": "Sin Tono",
+          "tone": "310",
           "price": 480,
           "stock": 1,
           "status": "active"
         },
         {
           "sku": "FARA00015312",
-          "tone": "Sin Tono",
+          "tone": "312",
           "price": 480,
           "stock": 1,
           "status": "active"
@@ -1760,7 +1760,7 @@
         },
         {
           "sku": "FARA00025600",
-          "tone": "Labial infaillible laque resistance de L´Oreal 600",
+          "tone": "600",
           "price": 350,
           "stock": 3,
           "status": "active"
@@ -1834,49 +1834,49 @@
         },
         {
           "sku": "FARA00026220",
-          "tone": "Labial infaillible laque resistance de L´Oreal 220",
+          "tone": "220",
           "price": 350,
           "stock": 5,
           "status": "active"
         },
         {
           "sku": "FARA00026250",
-          "tone": "Labial infaillible laque resistance de L´Oreal 250",
+          "tone": "250",
           "price": 350,
           "stock": 1,
           "status": "active"
         },
         {
           "sku": "FARA00026410",
-          "tone": "Labial infaillible laque resistance de L´Oreal 410",
+          "tone": "410",
           "price": 350,
           "stock": 4,
           "status": "active"
         },
         {
           "sku": "FARA00026415",
-          "tone": "Labial infaillible laque resistance de L´Oreal 415",
+          "tone": "415",
           "price": 350,
           "stock": 2,
           "status": "active"
         },
         {
           "sku": "FARA00026510",
-          "tone": "Labial infaillible laque resistance de L´Oreal 510",
+          "tone": "510",
           "price": 350,
           "stock": 3,
           "status": "active"
         },
         {
           "sku": "FARA00026520",
-          "tone": "Labial infaillible laque resistance de L´Oreal 520",
+          "tone": "520",
           "price": 350,
           "stock": 3,
           "status": "active"
         },
         {
           "sku": "FARA00026600",
-          "tone": "Labial infaillible laque resistance de L´Oreal 600",
+          "tone": "600",
           "price": 350,
           "stock": 3,
           "status": "active"
@@ -1908,14 +1908,14 @@
       "variants": [
         {
           "sku": "FARA00027005",
-          "tone": "Labial superstay matte ink de Maybelline 505",
+          "tone": "5",
           "price": 350,
           "stock": 1,
           "status": "active"
         },
         {
           "sku": "FARA00027010",
-          "tone": "Sin Tono",
+          "tone": "10",
           "price": 350,
           "stock": 3,
           "status": "active"
@@ -2657,7 +2657,7 @@
         },
         {
           "sku": "FARA00039000",
-          "tone": "Transparente",
+          "tone": "0",
           "price": 350,
           "stock": 0,
           "status": "out_of_stock",
@@ -2822,7 +2822,7 @@
       "variants": [
         {
           "sku": "FARA00050001",
-          "tone": "Primer power grip primer de E.l.f. naranja",
+          "tone": "Transparent verde",
           "price": 480,
           "stock": 5,
           "status": "active"
@@ -3347,7 +3347,7 @@
       "variants": [
         {
           "sku": "FARA00001",
-          "tone": "Translúcido",
+          "tone": "101.5",
           "price": 500,
           "stock": 0,
           "status": "out_of_stock",
