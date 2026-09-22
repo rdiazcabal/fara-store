@@ -2,12 +2,12 @@
   "schemaVersion": 3,
   "source": {
     "kind": "inventory-reconciliation",
-    "file": "inventario-avanzado-20260918-163354.xlsx",
-    "receivedDate": "2026-09-18",
-    "cutoff": "2026-09-18 16:33:54 CST",
+    "file": "inventario-avanzado-20260922-141309.xlsx",
+    "receivedDate": "2026-09-22",
+    "cutoff": "2026-09-22 14:13:09 CST",
     "stockIsSnapshot": true,
     "timezone": "America/Tegucigalpa",
-    "notes": "Conciliado contra el inventario actualizado del 18 de septiembre de 2026. Los SKU con existencia 0 se conservan como histórico dentro del mismo JSON y quedan excluidos de la tienda; también se preservan referencias históricas anteriores."
+    "notes": "Conciliado contra el inventario actualizado del 22 de septiembre de 2026. Los SKU con existencia 0 se conservan como histórico dentro del mismo JSON y quedan excluidos de la tienda; también se preservan referencias históricas anteriores."
   },
   "currency": "HNL",
   "products": [
@@ -21,140 +21,140 @@
       "variants": [
         {
           "sku": "FARA00002395",
-          "tone": "395",
+          "tone": "Base Fresh Wear 395",
           "price": 480,
           "stock": 3,
           "status": "active"
         },
         {
           "sku": "FARA00002400",
-          "tone": "400",
+          "tone": "Base Fresh Wear 400",
           "price": 480,
           "stock": 3,
           "status": "active"
         },
         {
           "sku": "FARA00002405",
-          "tone": "405",
+          "tone": "Base Fresh Wear 405",
           "price": 480,
           "stock": 4,
           "status": "active"
         },
         {
           "sku": "FARA00002415",
-          "tone": "415",
+          "tone": "Base Fresh Wear 415",
           "price": 480,
           "stock": 2,
           "status": "active"
         },
         {
           "sku": "FARA00002475",
-          "tone": "475",
+          "tone": "Base Fresh Wear 475",
           "price": 480,
           "stock": 1,
           "status": "active"
         },
         {
           "sku": "FARA00002490",
-          "tone": "490",
+          "tone": "Base Fresh Wear 490",
           "price": 480,
           "stock": 2,
           "status": "active"
         },
         {
           "sku": "FARA00002495",
-          "tone": "495",
+          "tone": "Base Fresh Wear 495",
           "price": 480,
           "stock": 4,
           "status": "active"
         },
         {
           "sku": "FARA00002410",
-          "tone": "410",
+          "tone": "Base Fresh Wear 410",
           "price": 480,
           "stock": 0,
           "status": "out_of_stock",
           "sourceRows": [
             43
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00002420",
-          "tone": "420",
+          "tone": "Base Fresh Wear 420",
           "price": 480,
           "stock": 0,
           "status": "out_of_stock",
           "sourceRows": [
             45
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00002425",
-          "tone": "425",
+          "tone": "Base Fresh Wear 425",
           "price": 480,
           "stock": 0,
           "status": "out_of_stock",
           "sourceRows": [
             46
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00002430",
-          "tone": "430",
+          "tone": "Base Fresh Wear 430",
           "price": 480,
           "stock": 0,
           "status": "out_of_stock",
           "sourceRows": [
             47
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00002460",
-          "tone": "460",
+          "tone": "Base Fresh Wear 460",
           "price": 480,
           "stock": 0,
           "status": "out_of_stock",
           "sourceRows": [
             48
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00002465",
-          "tone": "465",
+          "tone": "Base Fresh Wear 465",
           "price": 480,
           "stock": 0,
           "status": "out_of_stock",
           "sourceRows": [
             49
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00002470",
-          "tone": "470",
+          "tone": "Base Fresh Wear 470",
           "price": 480,
           "stock": 0,
           "status": "out_of_stock",
           "sourceRows": [
             50
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00002480",
-          "tone": "480",
+          "tone": "Base Fresh Wear 480",
           "price": 480,
           "stock": 0,
           "status": "out_of_stock",
           "sourceRows": [
             52
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         }
       ],
       "description": "Base Infallible Fresh Wear de L’Oréal es una base líquida de larga duración pensada para un acabado uniforme, fresco y de aspecto natural sin perder ligereza durante el uso. Presentación: 1 oz."
@@ -169,131 +169,131 @@
       "variants": [
         {
           "sku": "FARA00003101",
-          "tone": "101",
+          "tone": "Base Pro-Matte 101",
           "price": 480,
           "stock": 6,
           "status": "active"
         },
         {
           "sku": "FARA000031015",
-          "tone": "101.5",
+          "tone": "Base Pro-Matte 101.5",
           "price": 480,
           "stock": 1,
           "status": "active"
         },
         {
           "sku": "FARA00003104",
-          "tone": "104",
+          "tone": "Base Pro-Matte 104",
           "price": 480,
           "stock": 1,
           "status": "active"
         },
         {
           "sku": "FARA000031045",
-          "tone": "104.5",
+          "tone": "Base Pro-Matte 104.5",
           "price": 480,
           "stock": 2,
           "status": "active"
         },
         {
           "sku": "FARA000031055",
-          "tone": "105.5",
+          "tone": "Base Pro-Matte 105.5",
           "price": 480,
           "stock": 3,
           "status": "active"
         },
         {
           "sku": "FARA00003106",
-          "tone": "106",
+          "tone": "Base Pro-Matte 106",
           "price": 480,
           "stock": 1,
           "status": "active"
         },
         {
           "sku": "FARA00003107",
-          "tone": "107",
+          "tone": "Base Pro-Matte 107",
           "price": 480,
-          "stock": 4,
+          "stock": 3,
           "status": "active"
         },
         {
           "sku": "FARA000031075",
-          "tone": "107.5",
+          "tone": "Base Pro-Matte 107.5",
           "price": 480,
           "stock": 3,
           "status": "active"
         },
         {
           "sku": "FARA000031082",
-          "tone": "108.2",
+          "tone": "Base Pro-Matte 108.2",
           "price": 480,
           "stock": 1,
           "status": "active"
         },
         {
           "sku": "FARA000031084",
-          "tone": "108.4",
+          "tone": "Base Pro-Matte 108.4",
           "price": 480,
           "stock": 1,
           "status": "active"
         },
         {
           "sku": "FARA000031085",
-          "tone": "108.5",
+          "tone": "Base Pro-Matte 108.5",
           "price": 480,
           "stock": 3,
           "status": "active"
         },
         {
           "sku": "FARA00003110",
-          "tone": "110",
+          "tone": "Base Pro-Matte 110",
           "price": 480,
           "stock": 1,
           "status": "active"
         },
         {
           "sku": "FARA00003102",
-          "tone": "102",
+          "tone": "Base Pro-Matte 102",
           "price": 480,
           "stock": 0,
           "status": "out_of_stock",
           "sourceRows": [
             57
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA000031025",
-          "tone": "102.5",
+          "tone": "Base Pro-Matte 102.5",
           "price": 480,
           "stock": 0,
           "status": "out_of_stock",
           "sourceRows": [
             58
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00003103",
-          "tone": "103",
+          "tone": "Base Pro-Matte 103",
           "price": 480,
           "stock": 0,
           "status": "out_of_stock",
           "sourceRows": [
             59
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00003108",
-          "tone": "108",
+          "tone": "Base Pro-Matte 108",
           "price": 480,
           "stock": 0,
           "status": "out_of_stock",
           "sourceRows": [
             66
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         }
       ],
       "description": "Base Infallible Pro-Matte de L’Oréal es una base líquida de acabado mate, diseñada para uniformar el tono y controlar visualmente el brillo con un resultado de larga duración. Presentación: 1 oz."
@@ -315,14 +315,14 @@
         },
         {
           "sku": "FARA00005052",
-          "tone": "0.5-2",
+          "tone": "Sin Tono",
           "price": 470,
           "stock": 0,
           "status": "out_of_stock",
           "sourceRows": [
             108
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA000054555",
@@ -333,7 +333,7 @@
           "sourceRows": [
             109
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA000053125",
@@ -344,7 +344,7 @@
           "sourceRows": [
             111
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA0000523",
@@ -355,7 +355,7 @@
           "sourceRows": [
             112
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA0000534",
@@ -366,7 +366,7 @@
           "sourceRows": [
             113
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA0000545",
@@ -377,7 +377,7 @@
           "sourceRows": [
             114
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         }
       ],
       "description": "Base Tinted Serum True Match de L’Oréal combina una textura ligera tipo sérum con color para unificar el tono con cobertura modulable y un acabado natural y luminoso. Presentación: 1 oz."
@@ -508,7 +508,7 @@
           "sourceRows": [
             93
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00004118",
@@ -519,7 +519,7 @@
           "sourceRows": [
             95
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         }
       ],
       "description": "Base Skin Tint de Maybelline es un tinte facial ligero que aporta cobertura flexible para emparejar el tono sin perder un acabado natural de apariencia fresca. Presentación: 1 oz."
@@ -590,7 +590,7 @@
           "sourceRows": [
             14
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00006230",
@@ -601,7 +601,7 @@
           "sourceRows": [
             15
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00006235",
@@ -612,7 +612,7 @@
           "sourceRows": [
             16
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00006118",
@@ -623,7 +623,7 @@
           "sourceRows": [
             20
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00006124",
@@ -634,7 +634,7 @@
           "sourceRows": [
             23
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00006125",
@@ -645,7 +645,7 @@
           "sourceRows": [
             24
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00006130",
@@ -656,18 +656,18 @@
           "sourceRows": [
             25
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00006210",
-          "tone": "210",
+          "tone": "Base fit me de Maybelline Morada 210",
           "price": 480,
           "stock": 0,
           "status": "out_of_stock",
           "sourceRows": [
             26
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00006220",
@@ -678,7 +678,7 @@
           "sourceRows": [
             27
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00006225",
@@ -689,18 +689,18 @@
           "sourceRows": [
             28
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00006245",
-          "tone": "245",
+          "tone": "Sin Tono",
           "price": 480,
           "stock": 0,
           "status": "out_of_stock",
           "sourceRows": [
             30
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         }
       ],
       "description": "Base Fit Me de Maybelline (Azul) es una base líquida de la línea Fit Me creada para emparejar el tono de la piel y ofrecer un acabado natural fácil de integrar en el maquillaje diario. Presentación: 1 oz."
@@ -796,7 +796,7 @@
           "sourceRows": [
             105
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         }
       ],
       "description": "Base Superstay de Maybelline es una base de larga duración orientada a mantener cobertura y uniformidad durante horas, ideal cuando se busca un maquillaje de mayor resistencia. Presentación: 1 oz."
@@ -841,8 +841,12 @@
           "sku": "FARA00008220",
           "tone": "220",
           "price": 480,
-          "stock": 1,
-          "status": "active"
+          "stock": 0,
+          "status": "out_of_stock",
+          "sourceRows": [
+            87
+          ],
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00008250",
@@ -881,7 +885,7 @@
           "sourceRows": [
             82
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00008115",
@@ -892,7 +896,7 @@
           "sourceRows": [
             83
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00008125",
@@ -903,7 +907,7 @@
           "sourceRows": [
             86
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         }
       ],
       "description": "Base Lumi-Matte de Maybelline combina un efecto luminoso con acabado mate suave para lograr una piel uniforme, pulida y con dimensión sin verse excesivamente brillante. Presentación: 1 oz."
@@ -1063,21 +1067,21 @@
       "variants": [
         {
           "sku": "FARA00020205",
-          "tone": "205N",
+          "tone": "205N-",
           "price": 480,
           "stock": 1,
           "status": "active"
         },
         {
           "sku": "FARA00020210",
-          "tone": "210N",
+          "tone": "210N-",
           "price": 480,
           "stock": 1,
           "status": "active"
         },
         {
           "sku": "FARA00020370",
-          "tone": "370N",
+          "tone": "370N-",
           "price": 480,
           "stock": 1,
           "status": "active"
@@ -1098,7 +1102,11 @@
           "tone": "825",
           "price": 480,
           "stock": 0,
-          "status": "out_of_stock"
+          "status": "out_of_stock",
+          "sourceRows": [
+            90
+          ],
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         }
       ],
       "description": "Base Outlast Active de Covergirl es una base de larga duración diseñada para mantener el maquillaje uniforme durante jornadas activas y ofrecer un acabado resistente. Presentación: 1 oz."
@@ -1117,7 +1125,10 @@
           "price": 480,
           "stock": 0,
           "status": "out_of_stock",
-          "reason": "Marcado como agotado en el catálogo; se conserva como histórico y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta.",
+          "sourceRows": [
+            9
+          ]
         }
       ],
       "description": "Base Advanced Radiance de Covergirl está enfocada en un acabado radiante y uniforme, aportando cobertura al rostro sin renunciar a una apariencia luminosa. Presentación: 1 oz."
@@ -1153,18 +1164,18 @@
           "sourceRows": [
             294
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00014130",
-          "tone": "130",
+          "tone": "Sin Tono",
           "price": 480,
           "stock": 0,
           "status": "out_of_stock",
           "sourceRows": [
             297
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         }
       ],
       "description": "Polvo compacto Infallible Fresh Wear de L’Oréal es un polvo compacto para fijar, retocar y reforzar cobertura, pensado para mantener un acabado uniforme y fresco durante el día. Presentación: 1 oz."
@@ -1260,14 +1271,14 @@
         },
         {
           "sku": "FARA00015310",
-          "tone": "310",
+          "tone": "Sin Tono",
           "price": 480,
           "stock": 1,
           "status": "active"
         },
         {
           "sku": "FARA00015312",
-          "tone": "312",
+          "tone": "Sin Tono",
           "price": 480,
           "stock": 1,
           "status": "active"
@@ -1712,8 +1723,12 @@
           "sku": "FARA00025120",
           "tone": "120",
           "price": 350,
-          "stock": 1,
-          "status": "active"
+          "stock": 0,
+          "status": "out_of_stock",
+          "sourceRows": [
+            199
+          ],
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00025230",
@@ -1745,7 +1760,7 @@
         },
         {
           "sku": "FARA00025600",
-          "tone": "600",
+          "tone": "Labial infaillible laque resistance de L´Oreal 600",
           "price": 350,
           "stock": 3,
           "status": "active"
@@ -1819,49 +1834,49 @@
         },
         {
           "sku": "FARA00026220",
-          "tone": "220",
+          "tone": "Labial infaillible laque resistance de L´Oreal 220",
           "price": 350,
           "stock": 5,
           "status": "active"
         },
         {
           "sku": "FARA00026250",
-          "tone": "250",
+          "tone": "Labial infaillible laque resistance de L´Oreal 250",
           "price": 350,
           "stock": 1,
           "status": "active"
         },
         {
           "sku": "FARA00026410",
-          "tone": "410",
+          "tone": "Labial infaillible laque resistance de L´Oreal 410",
           "price": 350,
           "stock": 4,
           "status": "active"
         },
         {
           "sku": "FARA00026415",
-          "tone": "415",
+          "tone": "Labial infaillible laque resistance de L´Oreal 415",
           "price": 350,
           "stock": 2,
           "status": "active"
         },
         {
           "sku": "FARA00026510",
-          "tone": "510",
+          "tone": "Labial infaillible laque resistance de L´Oreal 510",
           "price": 350,
           "stock": 3,
           "status": "active"
         },
         {
           "sku": "FARA00026520",
-          "tone": "520",
+          "tone": "Labial infaillible laque resistance de L´Oreal 520",
           "price": 350,
           "stock": 3,
           "status": "active"
         },
         {
           "sku": "FARA00026600",
-          "tone": "600",
+          "tone": "Labial infaillible laque resistance de L´Oreal 600",
           "price": 350,
           "stock": 3,
           "status": "active"
@@ -1893,14 +1908,14 @@
       "variants": [
         {
           "sku": "FARA00027005",
-          "tone": "5",
+          "tone": "Labial superstay matte ink de Maybelline 505",
           "price": 350,
           "stock": 1,
           "status": "active"
         },
         {
           "sku": "FARA00027010",
-          "tone": "10",
+          "tone": "Sin Tono",
           "price": 350,
           "stock": 3,
           "status": "active"
@@ -1923,8 +1938,12 @@
           "sku": "FARA00027050",
           "tone": "50",
           "price": 350,
-          "stock": 1,
-          "status": "active"
+          "stock": 0,
+          "status": "out_of_stock",
+          "sourceRows": [
+            228
+          ],
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00027060",
@@ -2047,7 +2066,7 @@
           "sourceRows": [
             212
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00027112",
@@ -2058,7 +2077,7 @@
           "sourceRows": [
             213
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         }
       ],
       "description": "Labial Superstay Matte Ink de Maybelline es un labial líquido de larga duración con acabado mate y color intenso, pensado para permanecer definido durante el uso. Presentación: 0.17 oz."
@@ -2124,7 +2143,7 @@
           "sku": "FARA00028055",
           "tone": "55",
           "price": 350,
-          "stock": 2,
+          "stock": 1,
           "status": "active"
         },
         {
@@ -2240,8 +2259,12 @@
           "sku": "FARA000300100",
           "tone": "100",
           "price": 350,
-          "stock": 1,
-          "status": "active"
+          "stock": 0,
+          "status": "out_of_stock",
+          "sourceRows": [
+            233
+          ],
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00030105",
@@ -2293,8 +2316,12 @@
           "sku": "FARA00031008",
           "tone": "8",
           "price": 350,
-          "stock": 1,
-          "status": "active"
+          "stock": 0,
+          "status": "out_of_stock",
+          "sourceRows": [
+            206
+          ],
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00031010",
@@ -2497,7 +2524,7 @@
           "sourceRows": [
             128
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         }
       ],
       "description": "Rubor líquido Camo de e.l.f. es un rubor líquido pigmentado que permite aplicar poca cantidad y difuminarla para construir la intensidad de color deseada. Presentación: 0.13 oz."
@@ -2597,7 +2624,7 @@
           "sourceRows": [
             261
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         }
       ],
       "description": "Lápiz de cejas Blade & Shade de NYX es un lápiz de cejas de precisión para dibujar, rellenar espacios y definir la forma de la ceja con trazos controlados. Presentación: 0.002 oz."
@@ -2614,8 +2641,12 @@
           "sku": "FARA00039257",
           "tone": "257",
           "price": 350,
-          "stock": 1,
-          "status": "active"
+          "stock": 0,
+          "status": "out_of_stock",
+          "sourceRows": [
+            276
+          ],
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00039264",
@@ -2626,14 +2657,14 @@
         },
         {
           "sku": "FARA00039000",
-          "tone": "0",
+          "tone": "Transparente",
           "price": 350,
           "stock": 0,
           "status": "out_of_stock",
           "sourceRows": [
             275
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         }
       ],
       "description": "Gel de cejas Super Lock de Maybelline es un gel para cejas diseñado para peinar y fijar los vellos en la posición deseada, manteniendo una apariencia ordenada. Presentación: 0.23 oz."
@@ -2711,7 +2742,7 @@
           "sku": "FARA00043241",
           "tone": "241 classic black",
           "price": 350,
-          "stock": 5,
+          "stock": 4,
           "status": "active"
         }
       ],
@@ -2791,7 +2822,7 @@
       "variants": [
         {
           "sku": "FARA00050001",
-          "tone": "Transparent verde",
+          "tone": "Primer power grip primer de E.l.f. naranja",
           "price": 480,
           "stock": 5,
           "status": "active"
@@ -2799,13 +2830,13 @@
         {
           "sku": "FARA00045001",
           "tone": "Transparent verde",
-          "price": 480,
+          "price": 490,
           "stock": 0,
           "status": "out_of_stock",
           "sourceRows": [
             315
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         }
       ],
       "description": "Primer Power Grip de e.l.f. (Verde) es una prebase en gel de efecto adherente que prepara la piel y ayuda a que las capas de maquillaje se sujeten mejor sobre el rostro. Presentación: 0.811 oz."
@@ -2849,7 +2880,7 @@
           "price": 490,
           "stock": 0,
           "status": "absent_from_snapshot",
-          "reason": "Referencia histórica del catálogo anterior; no aparece como SKU en el inventario recibido y queda fuera de venta."
+          "reason": "Referencia histórica del catálogo anterior; no aparece como SKU en el inventario recibido el 22 de septiembre de 2026 y queda fuera de venta."
         }
       ],
       "description": "Fijador Power Grip Dewy Setting Spray de e.l.f. es un spray fijador de acabado dewy que ayuda a asentar el maquillaje y deja en la piel un aspecto más luminoso y fresco. Presentación: 2.7 oz."
@@ -2875,7 +2906,7 @@
           "price": 490,
           "stock": 0,
           "status": "absent_from_snapshot",
-          "reason": "Referencia histórica del catálogo anterior; no aparece como SKU en el inventario recibido y queda fuera de venta."
+          "reason": "Referencia histórica del catálogo anterior; no aparece como SKU en el inventario recibido el 22 de septiembre de 2026 y queda fuera de venta."
         }
       ],
       "description": "Paleta de contorno y blush combina tonos para contorno y rubor en una sola paleta, permitiendo definir dimensiones del rostro y añadir color a las mejillas. Presentación: 0.47 oz."
@@ -3138,7 +3169,7 @@
           "sourceRows": [
             177
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         }
       ],
       "description": "Hydro boost hyaluronic acid moisturizer 50 spf combina hidratación facial de la línea Hydro Boost con protección solar SPF 50, pensado para el uso diurno en un solo paso. Presentación: 1.7 Onzas."
@@ -3268,7 +3299,7 @@
           "sourceRows": [
             165
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00071004",
@@ -3279,7 +3310,7 @@
           "sourceRows": [
             166
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         }
       ],
       "description": "Facial Moisturizing Lotion AM SPF 30 Oil Free de CeraVe es una loción hidratante facial de día libre de aceite que incorpora SPF 30, combinando hidratación diaria y protección solar en un mismo paso. Presentación: 3 Onzas."
@@ -3301,7 +3332,7 @@
           "sourceRows": [
             278
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         }
       ],
       "description": "Micellar Cleansing Water All-in-1 Waterproof de Garnier es un agua micelar formulada para limpiar el rostro y retirar maquillaje resistente al agua sin requerir una limpieza agresiva. Presentación: 23.7 Onzas."
@@ -3316,14 +3347,14 @@
       "variants": [
         {
           "sku": "FARA00001",
-          "tone": "101.5",
+          "tone": "Translúcido",
           "price": 500,
           "stock": 0,
           "status": "out_of_stock",
           "sourceRows": [
             311
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         }
       ],
       "description": "Polvo facial suelto Airspun de Coty es un polvo facial suelto clásico para sellar el maquillaje, disminuir visualmente el brillo y dejar un acabado más uniforme en el rostro. Presentación: 2.3 oz."
@@ -3345,7 +3376,7 @@
           "sourceRows": [
             312
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00056001",
@@ -3356,7 +3387,7 @@
           "sourceRows": [
             313
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         }
       ],
       "description": "Polvo suelto Set It Bright de e.l.f. es un polvo suelto para fijar el maquillaje y aportar un efecto de luminosidad controlada en zonas del rostro que se desean realzar. Presentación: 0.37 oz."
@@ -3378,7 +3409,7 @@
           "sourceRows": [
             314
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00045002",
@@ -3386,7 +3417,7 @@
           "price": 490,
           "stock": 0,
           "status": "absent_from_snapshot",
-          "reason": "Referencia histórica del catálogo anterior; no aparece como SKU en el inventario recibido y queda fuera de venta."
+          "reason": "Referencia histórica del catálogo anterior; no aparece como SKU en el inventario recibido el 22 de septiembre de 2026 y queda fuera de venta."
         }
       ],
       "description": "Primer Power Grip de e.l.f. (Naranja) es una prebase en gel de efecto adherente que prepara la piel y ayuda a que las capas de maquillaje se sujeten mejor sobre el rostro. Presentación: 0.8 oz."
@@ -3408,7 +3439,7 @@
           "sourceRows": [
             317
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         }
       ],
       "description": "Primer The Face Glue de NYX es una prebase de agarre diseñada para mejorar la adherencia del maquillaje y ayudar a mantener una aplicación uniforme durante más tiempo. Presentación: 1.18 Onzas."
@@ -3430,7 +3461,7 @@
           "sourceRows": [
             319
           ],
-          "reason": "Histórico del inventario actualizado del 18 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         }
       ],
       "description": "Rubor en polvo Baked Blush de Milani es un rubor horneado en polvo que aporta color a las mejillas con un acabado luminoso y una aplicación modulable. Presentación: 0.12 oz."
@@ -3449,7 +3480,7 @@
           "price": 490,
           "stock": 0,
           "status": "absent_from_snapshot",
-          "reason": "Referencia histórica del catálogo anterior; no aparece como SKU en el inventario recibido y queda fuera de venta."
+          "reason": "Referencia histórica del catálogo anterior; no aparece como SKU en el inventario recibido el 22 de septiembre de 2026 y queda fuera de venta."
         },
         {
           "sku": "FARA00048002",
@@ -3457,10 +3488,32 @@
           "price": 490,
           "stock": 0,
           "status": "absent_from_snapshot",
-          "reason": "Referencia histórica del catálogo anterior; no aparece como SKU en el inventario recibido y queda fuera de venta."
+          "reason": "Referencia histórica del catálogo anterior; no aparece como SKU en el inventario recibido el 22 de septiembre de 2026 y queda fuera de venta."
         }
       ],
       "description": "Set de cuatro polvos sueltos Halo Glow de e.l.f. reúne cuatro polvos sueltos en distintos tonos para sellar, corregir visualmente y dar acabado al maquillaje según la zona del rostro. Presentación: 0.35 oz."
+    },
+    {
+      "id": "revitalift-10-pure-vitamin-c-concentrate",
+      "name": "Revitalift 10% pure vitamin c concentrate",
+      "brand": "L’Oréal Paris",
+      "category": "Crema hidratante facial",
+      "presentation": "1.0 Onzas",
+      "image": null,
+      "variants": [
+        {
+          "sku": "FARA00068001",
+          "tone": "Sin Tono",
+          "price": 550,
+          "stock": 0,
+          "status": "out_of_stock",
+          "sourceRows": [
+            318
+          ],
+          "reason": "Histórico del inventario actualizado del 22 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
+        }
+      ],
+      "description": "Revitalift 10% pure vitamin c concentrate de L’Oréal Paris. Presentación: 1.0 Onzas."
     }
   ]
 }
