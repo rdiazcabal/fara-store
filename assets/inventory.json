@@ -2,12 +2,12 @@
   "schemaVersion": 3,
   "source": {
     "kind": "inventory-reconciliation",
-    "file": "inventario-avanzado-20260922-141309.xlsx",
-    "receivedDate": "2026-09-22",
-    "cutoff": "2026-09-22 14:13:09 CST",
+    "file": "inventario-avanzado-new.xlsx",
+    "receivedDate": "2026-09-28",
+    "cutoff": "2026-09-28 10:34:36 CST",
     "stockIsSnapshot": true,
     "timezone": "America/Tegucigalpa",
-    "notes": "Conciliado contra el inventario actualizado del 22 de septiembre de 2026. Los SKU con existencia 0 se conservan como histórico dentro del mismo JSON y quedan excluidos de la tienda; también se preservan referencias históricas anteriores."
+    "notes": "Conciliado contra el inventario actualizado del 28 de septiembre de 2026. Los SKU con existencia 0 se conservan como histórico dentro del mismo JSON y quedan excluidos de la tienda; también se preservan referencias históricas anteriores."
   },
   "currency": "HNL",
   "products": [
@@ -30,7 +30,7 @@
           "sku": "FARA00002400",
           "tone": "400",
           "price": 480,
-          "stock": 3,
+          "stock": 2,
           "status": "active"
         },
         {
@@ -450,8 +450,9 @@
           "sku": "FARA00047290",
           "tone": "290",
           "price": 480,
-          "stock": 1,
-          "status": "active"
+          "stock": 0,
+          "status": "out_of_stock",
+          "reason": "Inventario actualizado del 28 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         }
       ],
       "description": "Base y corrector Skin Ink de L’Oréal funciona como híbrido de base y corrector: permite unificar el rostro y reforzar cobertura en zonas puntuales con la misma fórmula. Presentación: 0.50 oz."
@@ -543,15 +544,17 @@
           "sku": "FARA00006122",
           "tone": "122",
           "price": 480,
-          "stock": 1,
-          "status": "active"
+          "stock": 0,
+          "status": "out_of_stock",
+          "reason": "Inventario actualizado del 28 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00006128",
           "tone": "128",
           "price": 480,
-          "stock": 1,
-          "status": "active"
+          "stock": 0,
+          "status": "out_of_stock",
+          "reason": "Inventario actualizado del 28 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00006228",
@@ -820,22 +823,25 @@
           "sku": "FARA00008118",
           "tone": "118",
           "price": 480,
-          "stock": 2,
-          "status": "active"
+          "stock": 0,
+          "status": "out_of_stock",
+          "reason": "Inventario actualizado del 28 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00008120",
           "tone": "120",
           "price": 480,
-          "stock": 1,
-          "status": "active"
+          "stock": 0,
+          "status": "out_of_stock",
+          "reason": "Inventario actualizado del 28 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00008129",
           "tone": "129",
           "price": 480,
-          "stock": 1,
-          "status": "active"
+          "stock": 0,
+          "status": "out_of_stock",
+          "reason": "Inventario actualizado del 28 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00008220",
@@ -852,7 +858,7 @@
           "sku": "FARA00008250",
           "tone": "250",
           "price": 480,
-          "stock": 3,
+          "stock": 2,
           "status": "active"
         },
         {
@@ -959,7 +965,7 @@
           "sku": "FARA00009220",
           "tone": "220",
           "price": 480,
-          "stock": 5,
+          "stock": 4,
           "status": "active"
         },
         {
@@ -1210,14 +1216,15 @@
           "sku": "FARA00015102",
           "tone": "102",
           "price": 480,
-          "stock": 2,
-          "status": "active"
+          "stock": 0,
+          "status": "out_of_stock",
+          "reason": "Inventario actualizado del 28 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00015110",
           "tone": "110",
           "price": 480,
-          "stock": 1,
+          "stock": 2,
           "status": "active"
         },
         {
@@ -1312,7 +1319,7 @@
           "sku": "FARA00016120",
           "tone": "120",
           "price": 480,
-          "stock": 5,
+          "stock": 3,
           "status": "active"
         },
         {
@@ -1333,14 +1340,15 @@
           "sku": "FARA00016222",
           "tone": "222",
           "price": 480,
-          "stock": 1,
-          "status": "active"
+          "stock": 0,
+          "status": "out_of_stock",
+          "reason": "Inventario actualizado del 28 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00016230",
           "tone": "230",
           "price": 480,
-          "stock": 5,
+          "stock": 4,
           "status": "active"
         },
         {
@@ -1588,8 +1596,9 @@
           "sku": "FARA00054035",
           "tone": "35",
           "price": 360,
-          "stock": 1,
-          "status": "active"
+          "stock": 0,
+          "status": "out_of_stock",
+          "reason": "Inventario actualizado del 28 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00054050",
@@ -1910,8 +1919,9 @@
           "sku": "FARA00027005",
           "tone": "5",
           "price": 350,
-          "stock": 1,
-          "status": "active"
+          "stock": 0,
+          "status": "out_of_stock",
+          "reason": "Inventario actualizado del 28 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00027010",
@@ -1949,8 +1959,9 @@
           "sku": "FARA00027060",
           "tone": "60",
           "price": 350,
-          "stock": 1,
-          "status": "active"
+          "stock": 0,
+          "status": "out_of_stock",
+          "reason": "Inventario actualizado del 28 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00027118",
@@ -1977,8 +1988,9 @@
           "sku": "FARA00027135",
           "tone": "135",
           "price": 350,
-          "stock": 1,
-          "status": "active"
+          "stock": 0,
+          "status": "out_of_stock",
+          "reason": "Inventario actualizado del 28 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00027155",
@@ -1991,7 +2003,7 @@
           "sku": "FARA00027175",
           "tone": "175",
           "price": 350,
-          "stock": 5,
+          "stock": 4,
           "status": "active"
         },
         {
@@ -2555,8 +2567,9 @@
           "sku": "FARA00062008",
           "tone": "BMBL08",
           "price": 400,
-          "stock": 1,
-          "status": "active"
+          "stock": 0,
+          "status": "out_of_stock",
+          "reason": "Inventario actualizado del 28 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         }
       ],
       "description": "Rubor en polvo Buttermelt Blush de NYX es un rubor en polvo de textura suave y fácil de difuminar, creado para depositar color uniforme en las mejillas y construir intensidad. Presentación: 0.17 oz."
@@ -2871,8 +2884,9 @@
           "sku": "FARA00051001",
           "tone": "Verde",
           "price": 480,
-          "stock": 2,
-          "status": "active"
+          "stock": 0,
+          "status": "out_of_stock",
+          "reason": "Inventario actualizado del 28 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00047001",
@@ -2897,8 +2911,9 @@
           "sku": "FARA00053001",
           "tone": "4 Colores rosa y café",
           "price": 400,
-          "stock": 1,
-          "status": "active"
+          "stock": 0,
+          "status": "out_of_stock",
+          "reason": "Inventario actualizado del 28 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         },
         {
           "sku": "FARA00049001",
@@ -2923,7 +2938,7 @@
           "sku": "FARA00063001",
           "tone": "Negro",
           "price": 130,
-          "stock": 3,
+          "stock": 1,
           "status": "active"
         }
       ],
@@ -3139,8 +3154,9 @@
           "sku": "FARA00067002",
           "tone": "Sin Tono",
           "price": 600,
-          "stock": 1,
-          "status": "active"
+          "stock": 0,
+          "status": "out_of_stock",
+          "reason": "Inventario actualizado del 28 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         }
       ],
       "description": "Hydro boost hyaluronic acid gel cream normal to oily skin es una crema gel hidratante de la línea Hydro Boost con ácido hialurónico, orientada a piel grasa y a mantener una sensación de hidratación ligera. Presentación: 1.7 Onzas."
@@ -3204,8 +3220,9 @@
           "sku": "FARA00065001",
           "tone": "Sin Tono",
           "price": 550,
-          "stock": 1,
-          "status": "active"
+          "stock": 0,
+          "status": "out_of_stock",
+          "reason": "Inventario actualizado del 28 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         }
       ],
       "description": "Micellar cleansing water hyaluronic acid + aloe vera es un agua micelar para limpiar y retirar maquillaje que incorpora ácido hialurónico y aloe vera como parte de su enfoque hidratante. Presentación: 23.7 Onzas."
@@ -3240,7 +3257,7 @@
           "sku": "FARA00074002",
           "tone": "Sin Tono",
           "price": 495,
-          "stock": 2,
+          "stock": 1,
           "status": "active"
         }
       ],
@@ -3258,8 +3275,9 @@
           "sku": "FARA00074004",
           "tone": "Sin Tono",
           "price": 495,
-          "stock": 1,
-          "status": "active"
+          "stock": 0,
+          "status": "out_of_stock",
+          "reason": "Inventario actualizado del 28 de septiembre de 2026: existencia 0; se conserva para trazabilidad y queda fuera de venta."
         }
       ],
       "description": "Shea better 24h moisture body lotion pink champagne es una loción corporal hidratante de la línea Shea Better de EOS, formulada para aportar humectación prolongada y dejar la fragancia indicada en su nombre. Presentación: 16 Onzas."
@@ -3276,7 +3294,7 @@
           "sku": "FARA00074001",
           "tone": "Sin Tono",
           "price": 495,
-          "stock": 2,
+          "stock": 1,
           "status": "active"
         }
       ],
@@ -3514,6 +3532,26 @@
         }
       ],
       "description": "Revitalift 10% pure vitamin c concentrate de L’Oréal Paris. Presentación: 1.0 Onzas."
+    },
+    {
+      "id": "rubor-en-barra-on-the-glow-de-pixi-ruby",
+      "name": "Rubor en barra On-The-Glow de Pixi Ruby",
+      "brand": "Pixi",
+      "category": "Blush barra",
+      "presentation": "1.0 Onzas",
+      "description": "Rubor en barra On-The-Glow de Pixi en tono Ruby, incorporado al catálogo de FARA según el inventario físico actualizado del 28 de septiembre de 2026.",
+      "variants": [
+        {
+          "sku": "FARA00075001",
+          "tone": "Ruby",
+          "price": 400,
+          "stock": 1,
+          "status": "active",
+          "sourceRows": [
+            319
+          ]
+        }
+      ]
     }
   ]
 }

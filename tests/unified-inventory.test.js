@@ -15,10 +15,11 @@ const zeroSkus=["FARA00006222","FARA00006230","FARA00006235","FARA00006118","FAR
 
 test('The canonical JSON preserves current inventory and historical references',()=>{
   assert.equal(data.schemaVersion,3);
-  assert.equal(data.source.file,'inventario-avanzado-20260922-141309.xlsx');
-  assert.deepEqual([inspection.stats.products,inspection.stats.skus,inspection.stats.activeSkus,inspection.stats.activeUnits,inspection.stats.archivedSkus],[83,334,267,490,67]);
-  assert.equal(new Set(data.products.flatMap(p=>p.variants.map(v=>v.sku))).size,334);
+  assert.equal(data.source.file,'inventario-avanzado-new.xlsx');
+  assert.deepEqual([inspection.stats.products,inspection.stats.skus,inspection.stats.activeSkus,inspection.stats.activeUnits,inspection.stats.archivedSkus],[84,335,250,460,85]);
+  assert.equal(new Set(data.products.flatMap(p=>p.variants.map(v=>v.sku))).size,335);
   assert.equal(inspection.allBySku.has('FARA00068001'),true);
+  assert.deepEqual([variant('FARA00075001').tone,variant('FARA00075001').price,variant('FARA00075001').stock,variant('FARA00075001').status],['Ruby',400,1,'active']);
 });
 
 
@@ -35,7 +36,7 @@ test('Changing only status to out_of_stock never takes down the whole catalog',(
   assert.deepEqual([changed.status,changed.stock],['out_of_stock',0]);
 });
 
-test('All 53 zero-stock spreadsheet rows remain as history outside shopping',()=>{
+test('Previously reconciled zero-stock references remain as history outside shopping',()=>{
   assert.equal(zeroSkus.length,53);
   for(const sku of zeroSkus){
     assert.ok(variant(sku),sku);
