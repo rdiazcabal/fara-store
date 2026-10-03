@@ -1256,7 +1256,7 @@
             "brand": "Milani",
             "category": "Bronceadores",
             "presentation": "0.12 oz",
-            "image": null,
+            "image": "assets/products/Bronceador baked de Milani.jpg",
             "variants": [
                 {
                     "sku": "FARA00084001",
@@ -1405,7 +1405,7 @@
             "brand": "e.l.f.",
             "category": "Correctores",
             "presentation": "0.2 oz",
-            "image": null,
+            "image": "assets/products/Corrector hydrating camo de e.l.f..webp",
             "variants": [
                 {
                     "sku": "FARA00082000",
@@ -1628,7 +1628,7 @@
             "brand": "Maybelline",
             "category": "Delineadores",
             "presentation": "0.04 oz",
-            "image": null,
+            "image": "assets/products/Delineador tattoo studio de Maybelline.webp",
             "variants": [
                 {
                     "sku": "FARA00080100",
@@ -1667,7 +1667,7 @@
             "brand": "Maybelline",
             "category": "Delineadores",
             "presentation": "0.01 oz",
-            "image": null,
+            "image": "assets/products/Delineador unstoppable de Maybelline.avif",
             "variants": [
                 {
                     "sku": "FARA00080010",
