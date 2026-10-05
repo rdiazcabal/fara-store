@@ -4212,6 +4212,27 @@
       ]
     },
     {
+      "name": "Shea Better 24H Moisture Body Wash Coconut Waters de EOS",
+      "brand": "EOS",
+      "category": "Jabón corporal",
+      "presentation": "16 oz",
+      "image": "assets/products/Shea Better 24H Moisture Body Wash Coconut Waters de EOS.avif",
+      "description": "Shea Better 24H Moisture Body Wash Coconut Waters de EOS es un gel corporal cremoso y balanceado en pH que limpia sin resecar; combina glicerina, manteca y aceite de karité, manteca de cacao y aceite de girasol, con aroma de coco, hibisco y almizcle solar.",
+      "id": "shea-better-24h-moisture-body-wash-coconut-waters-de-eos-16-oz",
+      "variants": [
+        {
+          "sku": "FARA00074005",
+          "tone": "Sin Tono",
+          "price": 495,
+          "stock": 2,
+          "sourceRows": [
+            447
+          ],
+          "status": "active"
+        }
+      ]
+    },
+    {
       "id": "tinta-sheer-for-it-blush-tint-de-e-l-f",
       "name": "Tinta Sheer For It Blush Tint de e.l.f.",
       "brand": "e.l.f.",
@@ -4559,32 +4580,11 @@
       ]
     },
     {
-      "name": "Shea Better 24H Moisture Body Wash Coconut Waters de EOS",
-      "brand": "EOS",
-      "category": "Jabón corporal",
-      "presentation": "16 oz",
-      "image": null,
-      "description": "Shea Better 24H Moisture Body Wash Coconut Waters de EOS es un gel corporal cremoso y balanceado en pH que limpia sin resecar; combina glicerina, manteca y aceite de karité, manteca de cacao y aceite de girasol, con aroma de coco, hibisco y almizcle solar.",
-      "id": "shea-better-24h-moisture-body-wash-coconut-waters-de-eos-16-oz",
-      "variants": [
-        {
-          "sku": "FARA00074005",
-          "tone": "Sin Tono",
-          "price": 495,
-          "stock": 2,
-          "sourceRows": [
-            447
-          ],
-          "status": "active"
-        }
-      ]
-    },
-    {
       "name": "Toleriane Purifying Foaming Face Wash de La Roche-Posay",
       "brand": "La Roche-Posay",
       "category": "Limpiadores faciales",
       "presentation": "13.52 oz",
-      "image": null,
+      "image": "assets/products/Toleriane Purifying Foaming Face Wash de La Roche-Posay.webp",
       "description": "Toleriane Purifying Foaming Face Wash de La Roche-Posay es un limpiador espumoso para piel normal a grasa y sensible, formulado con niacinamida, ceramida-3 y agua termal prebiótica para retirar grasa e impurezas sin alterar la barrera ni el pH de la piel.",
       "id": "toleriane-purifying-foaming-face-wash-de-la-roche-posay",
       "variants": [
