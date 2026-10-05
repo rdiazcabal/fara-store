@@ -3773,7 +3773,7 @@
       "brand": "Coty",
       "category": "Polvos sueltos",
       "presentation": "1.2 oz",
-      "image": null,
+      "image": "assets/products/Polvo facial suelto Airspun de Coty.webp",
       "variants": [
         {
           "sku": "FARA00001",
@@ -3805,7 +3805,7 @@
       "brand": "Maybelline",
       "category": "Polvos sueltos",
       "presentation": "0.7 oz",
-      "image": null,
+      "image": "assets/products/Polvos traslucidos fit me de Maybelline.jpg",
       "variants": [
         {
           "sku": "FARA00078005",
@@ -3904,7 +3904,7 @@
       "brand": "L’Oréal Paris",
       "category": "Polvos sueltos",
       "presentation": "0.21 oz",
-      "image": null,
+      "image": "assets/products/Polvo traslúcido infallible blur-fection de L’Oréal Paris.jpg",
       "variants": [
         {
           "sku": "FARA00077010",
