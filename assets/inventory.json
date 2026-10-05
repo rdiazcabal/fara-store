@@ -3865,7 +3865,7 @@
       "brand": "e.l.f.",
       "category": "Polvos sueltos",
       "presentation": "0.37 oz",
-      "image": null,
+      "image": "assets/products/Polvo suelto Set It Bright de e.l.f..png",
       "variants": [
         {
           "sku": "FARA00056000",
@@ -4264,7 +4264,7 @@
       "brand": "La Roche-Posay",
       "category": "Protector solar facial",
       "presentation": "1.7 oz",
-      "image": null,
+      "image": "assets/products/anthelios-light-fluid-sunscreen-ultra-light-1-7-onzas.avif",
       "description": "Anthelios Mineral Light Fluid Sunscreen SPF 50 de La Roche-Posay es un protector solar facial 100% mineral con óxido de zinc y dióxido de titanio; su textura ultraligera de rápida absorción está pensada para piel sensible y deja un acabado mate.",
       "id": "anthelios-mineral-light-fluid-sunscreen-spf-50-de-la-roche-posay",
       "variants": [
