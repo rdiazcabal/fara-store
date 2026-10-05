@@ -14,10 +14,10 @@ const variant=sku=>inspection.allBySku.get(sku);
 
 test('The canonical JSON matches the current reconciled catalog',()=>{
   assert.equal(data.schemaVersion,3);
-  assert.equal(data.source.file,'inventario-avanzado-20261005-094033.xlsx');
+  assert.equal(data.source.file,'inventario-avanzado-20261005-135545.xlsx');
   assert.deepEqual(
     [inspection.stats.products,inspection.stats.skus,inspection.stats.activeSkus,inspection.stats.activeUnits,inspection.stats.archivedSkus],
-    [118,455,388,888,67]
+    [117,455,388,888,67]
   );
   assert.equal(new Set(data.products.flatMap(p=>p.variants.map(v=>v.sku))).size,455);
   assert.equal(inspection.allBySku.has('FARA00068001'),true);
@@ -72,12 +72,42 @@ test('Product descriptions are specific and no longer use inventory filler',()=>
   assert.match(data.products.find(p=>p.id==='primer-the-face-glue-de-nyx').description,/adherencia/i);
 });
 
-test('New product families keep image null for later uploads',()=>{
-  const ids=['anthelios-mineral-light-fluid-sunscreen-spf-50-de-la-roche-posay','anthelios-melt-in-milk-sunscreen-rostro-cuerpo-de-la-roche-posay','toleriane-purifying-foaming-face-wash-de-la-roche-posay','shea-better-24h-moisture-body-wash-coconut-waters-de-eos-16-oz','shea-better-24h-moisture-body-lotion-vanilla-cashmere-de-eos-16-oz','paradise-hyaluron-tint-lip-stain-serum-de-loreal','glow-reviver-lip-oil-de-e-l-f','radiant-tone-dual-serum-de-eucerin','q10-revitalize-daily-cream-de-eucerin','radiant-tone-eye-cream-de-eucerin','radiant-tone-cleansing-gel-de-eucerin'];
-  for(const id of ids){
-    const product=data.products.find(p=>p.id===id);
-    assert.ok(product,id);
-    assert.equal(product.image,null,id);
+test('Curated product images stay available after reconciliation',()=>{
+  for(const product of data.products){
+    assert.ok(Object.hasOwn(product,'image'),product.id);
+  }
+  assert.equal(data.products.find(p=>p.id==='lipstick-avenue-matte-de-maybelline').image,'assets/products/Lipstick Avenue Matte de Maybelline.avif');
+  assert.equal(data.products.find(p=>p.id==='glow-reviver-lip-oil-de-e-l-f').image,'assets/products/Glow Reviver Lip Oil de e.l.f..avif');
+});
+
+test('Avenue Matte consolidates the former Scuse Me shades',()=>{
+  const avenue=data.products.find(p=>p.id==='lipstick-avenue-matte-de-maybelline');
+  assert.ok(avenue);
+  assert.equal(data.products.some(p=>/scuse me/i.test(p.name)||p.id==='lipstick-scuse-me-matte-de-maybelline'),false);
+  assert.equal(avenue.presentation,'0.12 oz');
+  assert.deepEqual(avenue.variants.map(v=>v.sku).sort(),['FARA00055002','FARA00055006','FARA00055007','FARA00055008']);
+  assert.deepEqual(avenue.variants.map(v=>v.tone).sort(),['002','006','007','008']);
+  assert.ok(avenue.variants.every(v=>v.status==='active'));
+});
+
+test('Latest spreadsheet price updates are applied',()=>{
+  assert.equal(variant('FARA00090000').price,1490);
+  assert.equal(variant('FARA00090001').price,1495);
+  assert.equal(variant('FARA00090002').price,980);
+  assert.equal(variant('FARA00090003').price,1150);
+});
+
+test('Labiales and tintas are consecutive in featured scroll',()=>{
+  const isLip=p=>String(p.category||'').toLocaleLowerCase('es')==='labiales';
+  const isTint=p=>!isLip(p)&&/^tinta\b/i.test(String(p.name||''));
+  const indexes=data.products.map((p,i)=>(isLip(p)||isTint(p))?i:-1).filter(i=>i>=0);
+  assert.ok(indexes.length>1);
+  assert.equal(Math.max(...indexes)-Math.min(...indexes)+1,indexes.length);
+  const block=data.products.slice(Math.min(...indexes),Math.max(...indexes)+1);
+  const firstTint=block.findIndex(isTint);
+  if(firstTint>=0){
+    assert.ok(block.slice(0,firstTint).every(isLip));
+    assert.ok(block.slice(firstTint).every(isTint));
   }
 });
 

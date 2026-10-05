@@ -2,12 +2,12 @@
   "schemaVersion": 3,
   "source": {
     "kind": "inventory-reconciliation",
-    "file": "inventario-avanzado-20261005-094033.xlsx",
+    "file": "inventario-avanzado-20261005-135545.xlsx",
     "receivedDate": "2026-10-05",
-    "cutoff": "2026-10-05 09:40:33 CST",
+    "cutoff": "2026-10-05 13:55:45 CST",
     "stockIsSnapshot": true,
     "timezone": "America/Tegucigalpa",
-    "notes": "Catálogo reconciliado con el corte del 5 de octubre de 2026; se actualizaron cantidades y precios y se agregaron únicamente las referencias nuevas, evitando duplicados."
+    "notes": "Catálogo reconciliado con el corte del 5 de octubre de 2026 a las 13:55:45; se conservaron las 455 referencias, se actualizaron cuatro precios y la presentación de Avenue Matte, se consolidó Scuse Me Matte dentro de Avenue Matte y se agruparon labiales y tintas para el orden de navegación."
   },
   "currency": "HNL",
   "products": [
@@ -2878,6 +2878,284 @@
       "description": "Labial Superstay Vinyl Ink de Maybelline es un producto para labios de acabado brillante que aporta color y luminosidad. Presentación: 0.14 oz."
     },
     {
+      "id": "lipstick-avenue-matte-de-maybelline",
+      "name": "Lipstick Avenue Matte de Maybelline",
+      "brand": "Maybelline",
+      "category": "Labiales",
+      "presentation": "0.12 oz",
+      "image": "assets/products/Lipstick Avenue Matte de Maybelline.avif",
+      "variants": [
+        {
+          "sku": "FARA00055002",
+          "tone": "002",
+          "price": 350,
+          "stock": 2,
+          "status": "active"
+        },
+        {
+          "sku": "FARA00055006",
+          "tone": "006",
+          "price": 350,
+          "stock": 4,
+          "status": "active"
+        },
+        {
+          "sku": "FARA00055007",
+          "tone": "007",
+          "price": 350,
+          "stock": 1,
+          "status": "active"
+        },
+        {
+          "sku": "FARA00055008",
+          "tone": "008",
+          "price": 350,
+          "stock": 2,
+          "status": "active"
+        }
+      ],
+      "description": "Lipstick Avenue Matte de Maybelline es un labial en barra de acabado mate y color intenso, con aplicación cremosa y cobertura uniforme para definir los labios. La familia queda consolidada en los tonos 002, 006, 007 y 008."
+    },
+    {
+      "id": "lipstick-blind-date-satin-de-maybelline",
+      "name": "Lipstick Blind Date Satin de Maybelline",
+      "brand": "Maybelline",
+      "category": "Labiales",
+      "presentation": "0.18 oz",
+      "image": "assets/products/Lipstick Blind Date Satin de Maybelline.jpg",
+      "variants": [
+        {
+          "sku": "FARA00055107",
+          "tone": "107",
+          "price": 350,
+          "stock": 1,
+          "status": "active"
+        }
+      ],
+      "description": "Lipstick Blind Date Satin de Maybelline es un producto para labios diseñado para aportar color y completar el maquillaje. Presentación: 0.18 oz."
+    },
+    {
+      "name": "Paradise Hyaluron Tint Lip Stain Serum de L’Oréal",
+      "brand": "L’Oréal Paris",
+      "category": "Labiales",
+      "presentation": "0.16 oz",
+      "image": "assets/products/Paradise Hyaluron Tint Lip Stain Serum de L’Oréal.png",
+      "description": "Paradise Hyaluron Tint Lip Stain Serum de L’Oréal combina sérum y tinta labial con ácido hialurónico para hidratar y aportar color ligero modulable; comienza con brillo y se fija como una tinta hidratante de larga duración.",
+      "id": "paradise-hyaluron-tint-lip-stain-serum-de-loreal",
+      "variants": [
+        {
+          "sku": "FARA00088217",
+          "tone": "217 Smoky Mauve",
+          "price": 350,
+          "stock": 2,
+          "sourceRows": [
+            214
+          ],
+          "status": "active"
+        },
+        {
+          "sku": "FARA00088420",
+          "tone": "420 Le Rouge Paris",
+          "price": 350,
+          "stock": 7,
+          "sourceRows": [
+            215
+          ],
+          "status": "active"
+        },
+        {
+          "sku": "FARA00088521",
+          "tone": "521 Bordeaux Please",
+          "price": 350,
+          "stock": 2,
+          "sourceRows": [
+            216
+          ],
+          "status": "active"
+        },
+        {
+          "sku": "FARA00088635",
+          "tone": "635 Worth It Medium",
+          "price": 350,
+          "stock": 2,
+          "sourceRows": [
+            217
+          ],
+          "status": "active"
+        },
+        {
+          "sku": "FARA00088640",
+          "tone": "640 Tea Time",
+          "price": 350,
+          "stock": 4,
+          "sourceRows": [
+            218
+          ],
+          "status": "active"
+        },
+        {
+          "sku": "FARA00088680",
+          "tone": "680 Nude Espresso",
+          "price": 350,
+          "stock": 3,
+          "sourceRows": [
+            219
+          ],
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "name": "Glow Reviver Lip Oil de e.l.f.",
+      "brand": "e.l.f.",
+      "category": "Labiales",
+      "presentation": "0.25 oz",
+      "image": "assets/products/Glow Reviver Lip Oil de e.l.f..avif",
+      "description": "Glow Reviver Lip Oil de e.l.f. es un aceite labial hidratante de alto brillo y textura no pegajosa, con color translúcido y aceites nutritivos de albaricoque, aguacate, jojoba y granada, además de escualano y un aroma fresco a menta.",
+      "id": "glow-reviver-lip-oil-de-e-l-f",
+      "variants": [
+        {
+          "sku": "FARA00089000",
+          "tone": "Crystal Clear",
+          "price": 350,
+          "stock": 2,
+          "sourceRows": [
+            331
+          ],
+          "status": "active"
+        },
+        {
+          "sku": "FARA00089001",
+          "tone": "Pink Quartz",
+          "price": 350,
+          "stock": 3,
+          "sourceRows": [
+            332
+          ],
+          "status": "active"
+        },
+        {
+          "sku": "FARA00089002",
+          "tone": "Rose Envy",
+          "price": 350,
+          "stock": 3,
+          "sourceRows": [
+            333
+          ],
+          "status": "active"
+        },
+        {
+          "sku": "FARA00089003",
+          "tone": "It's Giving Guava",
+          "price": 350,
+          "stock": 2,
+          "sourceRows": [
+            334
+          ],
+          "status": "active"
+        },
+        {
+          "sku": "FARA00089004",
+          "tone": "Jam Session",
+          "price": 350,
+          "stock": 6,
+          "sourceRows": [
+            335
+          ],
+          "status": "active"
+        },
+        {
+          "sku": "FARA00089005",
+          "tone": "Honey Talks",
+          "price": 350,
+          "stock": 2,
+          "sourceRows": [
+            336
+          ],
+          "status": "active"
+        },
+        {
+          "sku": "FARA00089006",
+          "tone": "Money Mauve",
+          "price": 350,
+          "stock": 1,
+          "sourceRows": [
+            337
+          ],
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "tinta-sheer-for-it-blush-tint-de-e-l-f",
+      "name": "Tinta Sheer For It Blush Tint de e.l.f.",
+      "brand": "e.l.f.",
+      "category": "Rubores",
+      "presentation": "0.22 oz",
+      "image": "assets/products/Tinta Sheer For It Blush Tint de e.l.f..jpg",
+      "variants": [
+        {
+          "sku": "FARA00032001",
+          "tone": "Orange crush",
+          "price": 350,
+          "stock": 4,
+          "status": "active"
+        },
+        {
+          "sku": "FARA00032002",
+          "tone": "Left on red",
+          "price": 350,
+          "stock": 3,
+          "status": "active"
+        },
+        {
+          "sku": "FARA00032003",
+          "tone": "Plumps up",
+          "price": 350,
+          "stock": 1,
+          "status": "active"
+        },
+        {
+          "sku": "FARA00032004",
+          "tone": "Pink positive",
+          "price": 350,
+          "stock": 4,
+          "status": "active"
+        },
+        {
+          "sku": "FARA00032005",
+          "tone": "So Petal",
+          "price": 350,
+          "stock": 1,
+          "sourceRows": [
+            457
+          ],
+          "status": "active"
+        },
+        {
+          "sku": "FARA00032006",
+          "tone": "Burgun-did That",
+          "price": 350,
+          "stock": 1,
+          "sourceRows": [
+            458
+          ],
+          "status": "active"
+        },
+        {
+          "sku": "FARA00032007",
+          "tone": "Mauve Actually",
+          "price": 350,
+          "stock": 2,
+          "sourceRows": [
+            459
+          ],
+          "status": "active"
+        }
+      ],
+      "description": "Tinta Sheer For It Blush Tint de e.l.f. es un rubor diseñado para aportar color a las mejillas y dar dimensión al rostro. Presentación: 0.22 oz."
+    },
+    {
       "id": "lapiz-de-cejas-blade-shade-de-nyx",
       "name": "Lápiz de cejas Blade & Shade de NYX",
       "brand": "NYX",
@@ -2940,81 +3218,6 @@
         }
       ],
       "description": "Gel de cejas Zero to Brow de NYX está diseñado para definir, rellenar o fijar las cejas según el formato del producto. Presentación: 0.06 oz."
-    },
-    {
-      "id": "lipstick-avenue-matte-de-maybelline",
-      "name": "Lipstick Avenue Matte de Maybelline",
-      "brand": "Maybelline",
-      "category": "Labiales",
-      "presentation": "0.18 oz",
-      "image": "assets/products/Lipstick Avenue Matte de Maybelline.avif",
-      "variants": [
-        {
-          "sku": "FARA00055007",
-          "tone": "7",
-          "price": 350,
-          "stock": 1,
-          "status": "out_of_stock"
-        }
-      ],
-      "description": "Lipstick Avenue Matte de Maybelline es un labial de acabado mate pensado para aportar color definido a los labios. Presentación: 0.18 oz."
-    },
-    {
-      "id": "lipstick-blind-date-satin-de-maybelline",
-      "name": "Lipstick Blind Date Satin de Maybelline",
-      "brand": "Maybelline",
-      "category": "Labiales",
-      "presentation": "0.18 oz",
-      "image": "assets/products/Lipstick Blind Date Satin de Maybelline.jpg",
-      "variants": [
-        {
-          "sku": "FARA00055107",
-          "tone": "107",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Lipstick Blind Date Satin de Maybelline es un producto para labios diseñado para aportar color y completar el maquillaje. Presentación: 0.18 oz."
-    },
-    {
-      "id": "lipstick-scuse-me-matte-de-maybelline",
-      "name": "Lipstick scuse me matte de Maybelline",
-      "brand": "Maybelline",
-      "category": "Labiales",
-      "presentation": "0.12 oz",
-      "image": "assets/products/Lipstick scuse me matte de Maybelline.avif",
-      "variants": [
-        {
-          "sku": "FARA00055008",
-          "tone": "008",
-          "price": 350,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00055002",
-          "tone": "002",
-          "price": 350,
-          "stock": 2,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00055006",
-          "tone": "006",
-          "price": 350,
-          "stock": 4,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00055007",
-          "tone": "007",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        }
-      ],
-      "description": "Lipstick scuse me matte de Maybelline es un labial de acabado mate pensado para aportar color definido a los labios. Presentación: 0.12 oz."
     },
     {
       "id": "mascara-de-cejas-superfluff-de-maybelline",
@@ -4240,75 +4443,6 @@
       ]
     },
     {
-      "id": "tinta-sheer-for-it-blush-tint-de-e-l-f",
-      "name": "Tinta Sheer For It Blush Tint de e.l.f.",
-      "brand": "e.l.f.",
-      "category": "Rubores",
-      "presentation": "0.22 oz",
-      "image": "assets/products/Tinta Sheer For It Blush Tint de e.l.f..jpg",
-      "variants": [
-        {
-          "sku": "FARA00032001",
-          "tone": "Orange crush",
-          "price": 350,
-          "stock": 4,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00032002",
-          "tone": "Left on red",
-          "price": 350,
-          "stock": 3,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00032003",
-          "tone": "Plumps up",
-          "price": 350,
-          "stock": 1,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00032004",
-          "tone": "Pink positive",
-          "price": 350,
-          "stock": 4,
-          "status": "active"
-        },
-        {
-          "sku": "FARA00032005",
-          "tone": "So Petal",
-          "price": 350,
-          "stock": 1,
-          "sourceRows": [
-            457
-          ],
-          "status": "active"
-        },
-        {
-          "sku": "FARA00032006",
-          "tone": "Burgun-did That",
-          "price": 350,
-          "stock": 1,
-          "sourceRows": [
-            458
-          ],
-          "status": "active"
-        },
-        {
-          "sku": "FARA00032007",
-          "tone": "Mauve Actually",
-          "price": 350,
-          "stock": 2,
-          "sourceRows": [
-            459
-          ],
-          "status": "active"
-        }
-      ],
-      "description": "Tinta Sheer For It Blush Tint de e.l.f. es un rubor diseñado para aportar color a las mejillas y dar dimensión al rostro. Presentación: 0.22 oz."
-    },
-    {
       "name": "Anthelios Mineral Light Fluid Sunscreen SPF 50 de La Roche-Posay",
       "brand": "La Roche-Posay",
       "category": "Protector solar facial",
@@ -4362,162 +4496,10 @@
         {
           "sku": "FARA00090001",
           "tone": "Sin Tono",
-          "price": 1000,
+          "price": 1495,
           "stock": 1,
           "sourceRows": [
             199
-          ],
-          "status": "active"
-        }
-      ]
-    },
-    {
-      "name": "Paradise Hyaluron Tint Lip Stain Serum de L’Oréal",
-      "brand": "L’Oréal Paris",
-      "category": "Labiales",
-      "presentation": "0.16 oz",
-      "image": "assets/products/Paradise Hyaluron Tint Lip Stain Serum de L’Oréal.png",
-      "description": "Paradise Hyaluron Tint Lip Stain Serum de L’Oréal combina sérum y tinta labial con ácido hialurónico para hidratar y aportar color ligero modulable; comienza con brillo y se fija como una tinta hidratante de larga duración.",
-      "id": "paradise-hyaluron-tint-lip-stain-serum-de-loreal",
-      "variants": [
-        {
-          "sku": "FARA00088217",
-          "tone": "217 Smoky Mauve",
-          "price": 350,
-          "stock": 2,
-          "sourceRows": [
-            214
-          ],
-          "status": "active"
-        },
-        {
-          "sku": "FARA00088420",
-          "tone": "420 Le Rouge Paris",
-          "price": 350,
-          "stock": 7,
-          "sourceRows": [
-            215
-          ],
-          "status": "active"
-        },
-        {
-          "sku": "FARA00088521",
-          "tone": "521 Bordeaux Please",
-          "price": 350,
-          "stock": 2,
-          "sourceRows": [
-            216
-          ],
-          "status": "active"
-        },
-        {
-          "sku": "FARA00088635",
-          "tone": "635 Worth It Medium",
-          "price": 350,
-          "stock": 2,
-          "sourceRows": [
-            217
-          ],
-          "status": "active"
-        },
-        {
-          "sku": "FARA00088640",
-          "tone": "640 Tea Time",
-          "price": 350,
-          "stock": 4,
-          "sourceRows": [
-            218
-          ],
-          "status": "active"
-        },
-        {
-          "sku": "FARA00088680",
-          "tone": "680 Nude Espresso",
-          "price": 350,
-          "stock": 3,
-          "sourceRows": [
-            219
-          ],
-          "status": "active"
-        }
-      ]
-    },
-    {
-      "name": "Glow Reviver Lip Oil de e.l.f.",
-      "brand": "e.l.f.",
-      "category": "Labiales",
-      "presentation": "0.25 oz",
-      "image": "assets/products/Glow Reviver Lip Oil de e.l.f..avif",
-      "description": "Glow Reviver Lip Oil de e.l.f. es un aceite labial hidratante de alto brillo y textura no pegajosa, con color translúcido y aceites nutritivos de albaricoque, aguacate, jojoba y granada, además de escualano y un aroma fresco a menta.",
-      "id": "glow-reviver-lip-oil-de-e-l-f",
-      "variants": [
-        {
-          "sku": "FARA00089000",
-          "tone": "Crystal Clear",
-          "price": 350,
-          "stock": 2,
-          "sourceRows": [
-            331
-          ],
-          "status": "active"
-        },
-        {
-          "sku": "FARA00089001",
-          "tone": "Pink Quartz",
-          "price": 350,
-          "stock": 3,
-          "sourceRows": [
-            332
-          ],
-          "status": "active"
-        },
-        {
-          "sku": "FARA00089002",
-          "tone": "Rose Envy",
-          "price": 350,
-          "stock": 3,
-          "sourceRows": [
-            333
-          ],
-          "status": "active"
-        },
-        {
-          "sku": "FARA00089003",
-          "tone": "It's Giving Guava",
-          "price": 350,
-          "stock": 2,
-          "sourceRows": [
-            334
-          ],
-          "status": "active"
-        },
-        {
-          "sku": "FARA00089004",
-          "tone": "Jam Session",
-          "price": 350,
-          "stock": 6,
-          "sourceRows": [
-            335
-          ],
-          "status": "active"
-        },
-        {
-          "sku": "FARA00089005",
-          "tone": "Honey Talks",
-          "price": 350,
-          "stock": 2,
-          "sourceRows": [
-            336
-          ],
-          "status": "active"
-        },
-        {
-          "sku": "FARA00089006",
-          "tone": "Money Mauve",
-          "price": 350,
-          "stock": 1,
-          "sourceRows": [
-            337
           ],
           "status": "active"
         }
@@ -4535,7 +4517,7 @@
         {
           "sku": "FARA00090003",
           "tone": "Sin Tono",
-          "price": 1000,
+          "price": 1150,
           "stock": 3,
           "sourceRows": [
             427
@@ -4556,7 +4538,7 @@
         {
           "sku": "FARA00090000",
           "tone": "Sin Tono",
-          "price": 1000,
+          "price": 1490,
           "stock": 2,
           "sourceRows": [
             428
@@ -4577,7 +4559,7 @@
         {
           "sku": "FARA00090002",
           "tone": "Sin Tono",
-          "price": 1000,
+          "price": 980,
           "stock": 2,
           "sourceRows": [
             429
