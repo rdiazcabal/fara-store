@@ -1,0 +1,91 @@
+name: Restore FARA inventory 2026-10-05
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/restore-inventory-20261005.yml
+
+permissions:
+  contents: write
+
+jobs:
+  restore:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Restore October 5 catalog and preserve new product images
+        shell: bash
+        run: |
+          set -euo pipefail
+          GOOD_REF=2e3546b71427cc4f0b38a815ed221c6b6af36338
+          RAW="https://raw.githubusercontent.com/rdiazcabal/fara-store/${GOOD_REF}"
+
+          curl -fsSL "${RAW}/assets/inventory.json" -o assets/inventory.json
+          curl -fsSL "${RAW}/tests/unified-inventory.test.js" -o tests/unified-inventory.test.js
+          curl -fsSL "${RAW}/tests/category-filter.test.js" -o tests/category-filter.test.js
+
+          node <<'NODE'
+          const fs = require('node:fs');
+          const file = 'assets/inventory.json';
+          const data = JSON.parse(fs.readFileSync(file, 'utf8'));
+
+          const imagesBySku = {
+            FARA00055008: 'assets/products/Lipstick scuse me matte de Maybelline.avif',
+            FARA00081255: 'assets/products/Máscara de cejas superfluff de Maybelline.jpg',
+            FARA00086001: 'assets/products/Máscara de cejas the brow glue de NYX.webp',
+            FARA00075775: 'assets/products/Máscara de pestañas paradise big deal de L’Oréal Paris.png',
+            FARA00079801: 'assets/products/Máscara de pestañas sky high de Maybelline.jpg',
+            FARA00079803: 'assets/products/Máscara de pestañas sky high waterproof de Maybelline.jpg',
+            FARA00065004: 'assets/products/Micellar cleansing water rose water glycerin de Garnier 23.7 onzas.jpg',
+            FARA00065005: 'assets/products/Micellar cleansing water rose water+ glycerin de Garnier.avif',
+            FARA00065003: 'assets/products/Micellar cleansing water + vitamin c de Garnier.jpg'
+          };
+
+          for (const [sku, image] of Object.entries(imagesBySku)) {
+            const product = data.products.find(p => p.variants.some(v => v.sku === sku));
+            if (!product) throw new Error(`No se encontró el producto para ${sku}`);
+            if (!fs.existsSync(image)) throw new Error(`No existe la imagen ${image}`);
+            product.image = image;
+          }
+
+          fs.writeFileSync(file, JSON.stringify(data, null, 2) + '\n');
+          NODE
+
+          node scripts/inventory.js validate
+          node --test tests/unified-inventory.test.js tests/category-filter.test.js
+
+          node <<'NODE'
+          const fs = require('node:fs');
+          const data = JSON.parse(fs.readFileSync('assets/inventory.json','utf8'));
+          const api = require('./assets/inventory-document.js');
+          const inspection = api.inspectInventory(data);
+          const actual = [inspection.stats.products, inspection.stats.skus, inspection.stats.activeSkus, inspection.stats.activeUnits, inspection.stats.archivedSkus];
+          const expected = [118,455,388,888,67];
+          if (JSON.stringify(actual) !== JSON.stringify(expected)) throw new Error(`Stats inesperadas: ${JSON.stringify(actual)}`);
+          if (data.source.file !== 'inventario-avanzado-20261005-094033.xlsx') throw new Error(`Fuente incorrecta: ${data.source.file}`);
+          const jsonFiles = fs.readdirSync('assets').filter(n => n.endsWith('.json'));
+          if (JSON.stringify(jsonFiles) !== JSON.stringify(['inventory.json'])) throw new Error(`JSON inesperados: ${jsonFiles.join(', ')}`);
+          console.log({source:data.source.file, stats:inspection.stats});
+          NODE
+
+      - name: Commit restored catalog
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -f .github/workflows/restore-inventory-20261005.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/inventory.json tests/unified-inventory.test.js tests/category-filter.test.js .github/workflows/restore-inventory-20261005.yml
+          git diff --cached --quiet && exit 0
+          git commit -m "Restore October 5 inventory and preserve product images"
+          git push origin main
