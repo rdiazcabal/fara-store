@@ -4191,6 +4191,27 @@
       "description": "Shea better 24H moisture body lotion pistachio de EOS es una loción hidratante corporal diseñada para aportar humectación y dejar la piel con una sensación suave y confortable. Presentación: 16 oz."
     },
     {
+      "name": "Shea Better 24H Moisture Body Lotion Vanilla Cashmere de EOS",
+      "brand": "EOS",
+      "category": "Hidratantes corporales",
+      "presentation": "16 oz",
+      "image": "assets/products/Shea Better 24H Moisture Body Lotion Vanilla Cashmere de EOS.jpg",
+      "description": "Shea Better 24H Moisture Body Lotion Vanilla Cashmere de EOS es una loción corporal ligera de absorción rápida que brinda hidratación prolongada con manteca y aceite de karité, vitamina E y glicerina, y deja notas de vainilla batida, almizcle suave y caramelo.",
+      "id": "shea-better-24h-moisture-body-lotion-vanilla-cashmere-de-eos-16-oz",
+      "variants": [
+        {
+          "sku": "FARA00074006",
+          "tone": "Sin Tono",
+          "price": 495,
+          "stock": 3,
+          "sourceRows": [
+            446
+          ],
+          "status": "active"
+        }
+      ]
+    },
+    {
       "id": "tinta-sheer-for-it-blush-tint-de-e-l-f",
       "name": "Tinta Sheer For It Blush Tint de e.l.f.",
       "brand": "e.l.f.",
@@ -4285,7 +4306,7 @@
       "brand": "La Roche-Posay",
       "category": "Protector solar facial",
       "presentation": "1.7 oz",
-      "image": null,
+      "image": "assets/products/Anthelios Melt-In Milk Sunscreen para rostro y cuerpo de La Roche-Posay.jpg",
       "description": "Anthelios Melt-In Milk Sunscreen de La Roche-Posay es un protector solar para rostro y cuerpo con textura tipo leche de rápida absorción que deja la piel hidratada y suave, con protección de amplio espectro UVA/UVB y antioxidantes.",
       "id": "anthelios-melt-in-milk-sunscreen-rostro-cuerpo-de-la-roche-posay",
       "variants": [
@@ -4306,7 +4327,7 @@
       "brand": "Eucerin",
       "category": "Hidratantes faciales",
       "presentation": "1.7 oz",
-      "image": null,
+      "image": "assets/products/Q10 Revitalize Daily Cream de Eucerin.png",
       "description": "Q10 Revitalize Daily Cream de Eucerin es una crema facial hidratante para piel sensible y con signos de edad, enriquecida con coenzima Q10, vitamina E y beta-caroteno para suavizar la piel y ayudar a reducir la apariencia de líneas finas y arrugas.",
       "id": "q10-revitalize-daily-cream-de-eucerin",
       "variants": [
@@ -4327,7 +4348,7 @@
       "brand": "L’Oréal Paris",
       "category": "Labiales",
       "presentation": "0.16 oz",
-      "image": null,
+      "image": "assets/products/Paradise Hyaluron Tint Lip Stain Serum de L’Oréal.png",
       "description": "Paradise Hyaluron Tint Lip Stain Serum de L’Oréal combina sérum y tinta labial con ácido hialurónico para hidratar y aportar color ligero modulable; comienza con brillo y se fija como una tinta hidratante de larga duración.",
       "id": "paradise-hyaluron-tint-lip-stain-serum-de-loreal",
       "variants": [
@@ -4398,7 +4419,7 @@
       "brand": "e.l.f.",
       "category": "Labiales",
       "presentation": "0.25 oz",
-      "image": null,
+      "image": "assets/products/Glow Reviver Lip Oil de e.l.f..avif",
       "description": "Glow Reviver Lip Oil de e.l.f. es un aceite labial hidratante de alto brillo y textura no pegajosa, con color translúcido y aceites nutritivos de albaricoque, aguacate, jojoba y granada, además de escualano y un aroma fresco a menta.",
       "id": "glow-reviver-lip-oil-de-e-l-f",
       "variants": [
@@ -4479,7 +4500,7 @@
       "brand": "Eucerin",
       "category": "Limpiadores faciales",
       "presentation": "6.8 oz",
-      "image": null,
+      "image": "assets/products/Radiant Tone Cleansing Gel de Eucerin.webp",
       "description": "Radiant Tone Cleansing Gel de Eucerin es un gel limpiador facial exfoliante con complejo de 2% AHA que combina ácido láctico y glicólico para retirar células muertas acumuladas, mejorar la claridad y dejar la piel con una apariencia más suave y luminosa.",
       "id": "radiant-tone-cleansing-gel-de-eucerin",
       "variants": [
@@ -4500,7 +4521,7 @@
       "brand": "Eucerin",
       "category": "Sérums faciales",
       "presentation": "1 oz",
-      "image": null,
+      "image": "assets/products/Radiant Tone Dual Serum de Eucerin.webp",
       "description": "Radiant Tone Dual Serum de Eucerin es un sérum facial para manchas oscuras formulado con Thiamidol y ácido hialurónico; ayuda a reducir visiblemente la apariencia de manchas persistentes mientras hidrata y favorece una piel más uniforme y luminosa.",
       "id": "radiant-tone-dual-serum-de-eucerin",
       "variants": [
@@ -4521,7 +4542,7 @@
       "brand": "Eucerin",
       "category": "Contorno de ojos",
       "presentation": "0.5 oz",
-      "image": null,
+      "image": "assets/products/Radiant Tone Eye Cream de Eucerin.webp",
       "description": "Radiant Tone Eye Cream de Eucerin es una crema para el contorno de ojos formulada con Thiamidol y ácido hialurónico para ayudar a reducir la apariencia de ojeras y bolsas; incorpora pigmentos reflectores de luz y un aplicador metálico refrescante.",
       "id": "radiant-tone-eye-cream-de-eucerin",
       "variants": [
@@ -4532,27 +4553,6 @@
           "stock": 2,
           "sourceRows": [
             429
-          ],
-          "status": "active"
-        }
-      ]
-    },
-    {
-      "name": "Shea Better 24H Moisture Body Lotion Vanilla Cashmere de EOS",
-      "brand": "EOS",
-      "category": "Hidratantes corporales",
-      "presentation": "16 oz",
-      "image": null,
-      "description": "Shea Better 24H Moisture Body Lotion Vanilla Cashmere de EOS es una loción corporal ligera de absorción rápida que brinda hidratación prolongada con manteca y aceite de karité, vitamina E y glicerina, y deja notas de vainilla batida, almizcle suave y caramelo.",
-      "id": "shea-better-24h-moisture-body-lotion-vanilla-cashmere-de-eos-16-oz",
-      "variants": [
-        {
-          "sku": "FARA00074006",
-          "tone": "Sin Tono",
-          "price": 495,
-          "stock": 3,
-          "sourceRows": [
-            446
           ],
           "status": "active"
         }
