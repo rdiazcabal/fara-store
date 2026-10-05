@@ -2954,7 +2954,7 @@
           "tone": "7",
           "price": 350,
           "stock": 1,
-          "status": "active"
+          "status": "out_of_stock"
         }
       ],
       "description": "Lipstick Avenue Matte de Maybelline es un labial de acabado mate pensado para aportar color definido a los labios. Presentación: 0.18 oz."
@@ -3004,6 +3004,13 @@
           "tone": "006",
           "price": 350,
           "stock": 4,
+          "status": "active"
+        },
+        {
+          "sku": "FARA00055007",
+          "tone": "007",
+          "price": 350,
+          "stock": 1,
           "status": "active"
         }
       ],
