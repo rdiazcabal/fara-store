@@ -2958,7 +2958,7 @@
             "brand": "Maybelline",
             "category": "Labiales",
             "presentation": "0.12 oz",
-            "image": null,
+            "image": "assets/products/Lipstick scuse me matte de Maybelline.avif",
             "variants": [
                 {
                     "sku": "FARA00055008",
@@ -2990,7 +2990,7 @@
             "brand": "Maybelline",
             "category": "Cejas",
             "presentation": "0.169 oz",
-            "image": null,
+            "image": "assets/products/Máscara de cejas superfluff de Maybelline.jpg",
             "variants": [
                 {
                     "sku": "FARA00081255",
@@ -3015,7 +3015,7 @@
             "brand": "NYX",
             "category": "Cejas",
             "presentation": "0.17 oz",
-            "image": null,
+            "image": "assets/products/Máscara de cejas the brow glue de NYX.webp",
             "variants": [
                 {
                     "sku": "FARA00086001",
@@ -3115,7 +3115,7 @@
             "brand": "L’Oréal Paris",
             "category": "Máscaras de pestañas",
             "presentation": "0.33 oz",
-            "image": null,
+            "image": "assets/products/Máscara de pestañas paradise big deal de L’Oréal Paris.png",
             "variants": [
                 {
                     "sku": "FARA00075775",
@@ -3147,7 +3147,7 @@
             "brand": "Maybelline",
             "category": "Máscaras de pestañas",
             "presentation": "0.2 oz",
-            "image": null,
+            "image": "assets/products/Máscara de pestañas sky high de Maybelline.jpg",
             "variants": [
                 {
                     "sku": "FARA00079801",
@@ -3172,7 +3172,7 @@
             "brand": "Maybelline",
             "category": "Máscaras de pestañas",
             "presentation": "0.2 oz",
-            "image": null,
+            "image": "assets/products/Máscara de pestañas sky high waterproof de Maybelline.jpg",
             "variants": [
                 {
                     "sku": "FARA00079803",
@@ -3319,7 +3319,7 @@
             "brand": "Garnier",
             "category": "Agua micelar",
             "presentation": "23.7 oz",
-            "image": null,
+            "image": "assets/products/Micellar cleansing water rose water glycerin de Garnier 23.7 onzas.jpg",
             "variants": [
                 {
                     "sku": "FARA00065004",
@@ -3337,7 +3337,7 @@
             "brand": "Garnier",
             "category": "Agua micelar",
             "presentation": "13.5 oz",
-            "image": null,
+            "image": "assets/products/Micellar cleansing water rose water+ glycerin de Garnier.avif",
             "variants": [
                 {
                     "sku": "FARA00065005",
@@ -3355,7 +3355,7 @@
             "brand": "Garnier",
             "category": "Agua micelar",
             "presentation": "23.7 oz",
-            "image": null,
+            "image": "assets/products/Micellar cleansing water + vitamin c de Garnier.jpg",
             "variants": [
                 {
                     "sku": "FARA00065003",
