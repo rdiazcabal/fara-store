@@ -1,4 +1,5 @@
 'use strict';
+// Snapshot expectations correspond to the reconciled FARA catalog from 2026-10-05.
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
