@@ -2,12 +2,12 @@
   "schemaVersion": 3,
   "source": {
     "kind": "inventory-reconciliation",
-    "file": "inventario-avanzado-20261005-135545.xlsx",
+    "file": "inventario-avanzado-20261005-213452.xlsx",
     "receivedDate": "2026-10-05",
-    "cutoff": "2026-10-05 13:55:45 CST",
+    "cutoff": "2026-10-05 21:34:52 CST",
     "stockIsSnapshot": true,
     "timezone": "America/Tegucigalpa",
-    "notes": "Catálogo reconciliado con el corte del 5 de octubre de 2026 a las 13:55:45; se conservaron las 455 referencias, se actualizaron cuatro precios y la presentación de Avenue Matte, se consolidó Scuse Me Matte dentro de Avenue Matte y se agruparon labiales y tintas para el orden de navegación."
+    "notes": "Catálogo reconciliado con el corte del 5 de octubre de 2026 a las 21:34:52; se actualizaron las existencias del mismo JSON, se mantuvo Scuse Me Matte consolidado dentro de Avenue Matte y se conservaron las imágenes y descripciones actuales."
   },
   "currency": "HNL",
   "products": [
@@ -225,8 +225,8 @@
           "sku": "FARA00006220",
           "tone": "220",
           "price": 480,
-          "stock": 1,
-          "status": "active"
+          "stock": 0,
+          "status": "out_of_stock"
         },
         {
           "sku": "FARA00006225",
@@ -517,8 +517,8 @@
           "sku": "FARA00002435",
           "tone": "435",
           "price": 480,
-          "stock": 1,
-          "status": "active"
+          "stock": 0,
+          "status": "out_of_stock"
         },
         {
           "sku": "FARA00002440",
@@ -576,15 +576,15 @@
           "sku": "FARA000031015",
           "tone": "101.5",
           "price": 480,
-          "stock": 4,
+          "stock": 3,
           "status": "active"
         },
         {
           "sku": "FARA00003102",
           "tone": "102",
           "price": 480,
-          "stock": 1,
-          "status": "active",
+          "stock": 0,
+          "status": "out_of_stock",
           "sourceRows": [
             71
           ]
@@ -600,7 +600,7 @@
           "sku": "FARA00003103",
           "tone": "103",
           "price": 480,
-          "stock": 4,
+          "stock": 3,
           "status": "active"
         },
         {
@@ -628,8 +628,8 @@
           "sku": "FARA00003106",
           "tone": "106",
           "price": 480,
-          "stock": 2,
-          "status": "active"
+          "stock": 0,
+          "status": "out_of_stock"
         },
         {
           "sku": "FARA00003107",
@@ -835,15 +835,15 @@
           "sku": "FARA00008312",
           "tone": "312",
           "price": 480,
-          "stock": 2,
+          "stock": 1,
           "status": "active"
         },
         {
           "sku": "FARA00008322",
           "tone": "322",
           "price": 480,
-          "stock": 1,
-          "status": "active"
+          "stock": 0,
+          "status": "out_of_stock"
         }
       ],
       "description": "Base Lumi-Matte de Maybelline es una base facial de acabado mate diseñada para unificar visualmente el tono y aportar cobertura. Presentación: 1 oz."
@@ -1363,7 +1363,7 @@
           "sku": "FARA00021370",
           "tone": "370",
           "price": 360,
-          "stock": 3,
+          "stock": 2,
           "status": "active"
         },
         {
@@ -1430,29 +1430,29 @@
           "sku": "FARA00082000",
           "tone": "Hydrating camo light sand",
           "price": 360,
-          "stock": 3,
+          "stock": 1,
           "status": "active"
         },
         {
           "sku": "FARA00082001",
           "tone": "Hydrating camo light beige",
           "price": 360,
-          "stock": 5,
+          "stock": 3,
           "status": "active"
         },
         {
           "sku": "FARA00082002",
           "tone": "Hydrating camo medium neutral",
           "price": 360,
-          "stock": 3,
+          "stock": 2,
           "status": "active"
         },
         {
           "sku": "FARA00082003",
           "tone": "Hydrating camo medium beige",
           "price": 360,
-          "stock": 1,
-          "status": "active"
+          "stock": 0,
+          "status": "out_of_stock"
         },
         {
           "sku": "FARA00082004",
@@ -1845,8 +1845,8 @@
           "sku": "FARA00085006",
           "tone": "Transparente",
           "price": 550,
-          "stock": 1,
-          "status": "active",
+          "stock": 0,
+          "status": "out_of_stock",
           "sourceSku": "FAR00085006",
           "reason": "SKU de origen normalizado al prefijo FARA requerido por el catálogo."
         }
@@ -1903,8 +1903,8 @@
           "sku": "FARA00076002",
           "tone": "Sin Tono",
           "price": 550,
-          "stock": 1,
-          "status": "active"
+          "stock": 0,
+          "status": "out_of_stock"
         }
       ],
       "description": "Fijador infallible 3-second setting mist de L’Oréal Paris es un fijador en spray para aplicar al finalizar el maquillaje y ayudar a mantener el look durante el uso. Presentación: 1.76 oz."
@@ -1921,7 +1921,7 @@
           "sku": "FARA00076001",
           "tone": "Sin Tono",
           "price": 850,
-          "stock": 7,
+          "stock": 5,
           "status": "active",
           "sourceRows": [
             210
@@ -2635,7 +2635,7 @@
           "sku": "FARA00030020",
           "tone": "20",
           "price": 350,
-          "stock": 9,
+          "stock": 7,
           "status": "active"
         },
         {
@@ -3136,17 +3136,17 @@
           "sku": "FARA00032006",
           "tone": "Burgun-did That",
           "price": 350,
-          "stock": 1,
+          "stock": 0,
           "sourceRows": [
             458
           ],
-          "status": "active"
+          "status": "out_of_stock"
         },
         {
           "sku": "FARA00032007",
           "tone": "Mauve Actually",
           "price": 350,
-          "stock": 2,
+          "stock": 1,
           "sourceRows": [
             459
           ],
@@ -3388,7 +3388,7 @@
           "sku": "FARA00079801",
           "tone": "801 very black sky high",
           "price": 390,
-          "stock": 4,
+          "stock": 3,
           "status": "active"
         },
         {
@@ -3413,7 +3413,7 @@
           "sku": "FARA00079803",
           "tone": "Sin Tono",
           "price": 390,
-          "stock": 2,
+          "stock": 1,
           "status": "active"
         }
       ],
@@ -3717,7 +3717,7 @@
           "sku": "FARA00016230",
           "tone": "230",
           "price": 480,
-          "stock": 5,
+          "stock": 4,
           "status": "active"
         },
         {
@@ -3819,21 +3819,21 @@
           "sku": "FARA00014010",
           "tone": "10",
           "price": 480,
-          "stock": 2,
+          "stock": 1,
           "status": "active"
         },
         {
           "sku": "FARA00014130",
           "tone": "130",
           "price": 480,
-          "stock": 2,
+          "stock": 1,
           "status": "active"
         },
         {
           "sku": "FARA00014220",
           "tone": "220",
           "price": 480,
-          "stock": 2,
+          "stock": 1,
           "status": "active"
         },
         {
@@ -3847,8 +3847,8 @@
           "sku": "FARA00014250",
           "tone": "250",
           "price": 480,
-          "stock": 1,
-          "status": "active"
+          "stock": 0,
+          "status": "out_of_stock"
         }
       ],
       "description": "Polvo compacto Infallible Fresh Wear de L’Oréal es un polvo compacto para sellar o retocar el maquillaje y ayudar a dejar el rostro con una apariencia más uniforme. Presentación: 1 oz."
@@ -3996,7 +3996,7 @@
           "sku": "FARA00002",
           "tone": "Naturally neutral airspun",
           "price": 500,
-          "stock": 5,
+          "stock": 2,
           "status": "active"
         },
         {
@@ -4035,14 +4035,14 @@
           "sku": "FARA00078015",
           "tone": "15",
           "price": 480,
-          "stock": 6,
+          "stock": 5,
           "status": "active"
         },
         {
           "sku": "FARA00078020",
           "tone": "20",
           "price": 480,
-          "stock": 2,
+          "stock": 1,
           "status": "active"
         },
         {
@@ -4581,7 +4581,7 @@
           "sku": "FARA00070004",
           "tone": "Sin Tono",
           "price": 700,
-          "stock": 3,
+          "stock": 2,
           "sourceRows": [
             460
           ],

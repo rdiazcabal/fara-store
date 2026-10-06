@@ -14,10 +14,10 @@ const variant=sku=>inspection.allBySku.get(sku);
 
 test('The canonical JSON matches the current reconciled catalog',()=>{
   assert.equal(data.schemaVersion,3);
-  assert.equal(data.source.file,'inventario-avanzado-20261005-135545.xlsx');
+  assert.equal(data.source.file,'inventario-avanzado-20261005-213452.xlsx');
   assert.deepEqual(
     [inspection.stats.products,inspection.stats.skus,inspection.stats.activeSkus,inspection.stats.activeUnits,inspection.stats.archivedSkus],
-    [117,455,388,888,67]
+    [117,455,378,851,77]
   );
   assert.equal(new Set(data.products.flatMap(p=>p.variants.map(v=>v.sku))).size,455);
   assert.equal(inspection.allBySku.has('FARA00068001'),true);
@@ -42,8 +42,8 @@ test('Changing only status to out_of_stock never takes down the whole catalog',(
 
 test('Every non-active reference stays outside shopping',()=>{
   const archived=data.products.flatMap(p=>p.variants).filter(v=>v.status!=='active');
-  assert.equal(archived.length,67);
-  assert.equal(archived.filter(v=>v.status==='out_of_stock').length,66);
+  assert.equal(archived.length,77);
+  assert.equal(archived.filter(v=>v.status==='out_of_stock').length,76);
   assert.equal(archived.filter(v=>v.status==='review').length,1);
   for(const item of archived){
     assert.equal(catalog.bySku.has(item.sku),false,item.sku);
