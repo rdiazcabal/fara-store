@@ -1,0 +1,108 @@
+name: Reconcile FARA inventory 2026-10-05 21:34
+
+on:
+  push:
+    branches:
+      - inventory-20261005-213452
+
+permissions:
+  contents: write
+
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Apply 21:34 inventory snapshot
+        shell: bash
+        run: |
+          node - <<'NODE'
+          const fs = require('node:fs');
+          const inventoryPath = 'assets/inventory.json';
+          const data = JSON.parse(fs.readFileSync(inventoryPath, 'utf8'));
+          const changes = {"FARA00002":2,"FARA00002435":0,"FARA000031015":3,"FARA00003102":0,"FARA00003103":3,"FARA00003106":0,"FARA00006220":0,"FARA00008312":1,"FARA00008322":0,"FARA00014010":1,"FARA00014130":1,"FARA00014220":1,"FARA00014250":0,"FARA00016230":4,"FARA00021370":2,"FARA00030020":7,"FARA00032006":0,"FARA00032007":1,"FARA00070004":2,"FARA00076001":5,"FARA00076002":0,"FARA00078015":5,"FARA00078020":1,"FARA00079801":3,"FARA00079803":1,"FARA00082000":1,"FARA00082001":3,"FARA00082002":2,"FARA00082003":0,"FARA00085006":0};
+          const all = new Map();
+          for (const product of data.products) for (const variant of product.variants) all.set(variant.sku, variant);
+          if (all.size !== 455) throw new Error(`Expected 455 SKU, got ${all.size}`);
+          for (const [sku, stock] of Object.entries(changes)) {
+            const variant = all.get(sku);
+            if (!variant) throw new Error(`Missing SKU ${sku}`);
+            variant.stock = stock;
+            variant.status = stock > 0 ? 'active' : 'out_of_stock';
+            if (stock > 0 && variant.reason && !variant.sourceSku) delete variant.reason;
+          }
+          data.source = {
+            ...data.source,
+            kind: 'inventory-reconciliation',
+            file: 'inventario-avanzado-20261005-213452.xlsx',
+            receivedDate: '2026-10-05',
+            cutoff: '2026-10-05 21:34:52 CST',
+            stockIsSnapshot: true,
+            timezone: 'America/Tegucigalpa',
+            notes: 'Catálogo reconciliado con el corte del 5 de octubre de 2026 a las 21:34:52; se actualizaron las existencias del mismo JSON, se mantuvo Scuse Me Matte consolidado dentro de Avenue Matte y se conservaron las imágenes y descripciones actuales.'
+          };
+          const avenue = data.products.find(p => p.id === 'lipstick-avenue-matte-de-maybelline');
+          if (!avenue) throw new Error('Falta Lipstick Avenue Matte');
+          if (data.products.some(p => p.id === 'lipstick-scuse-me-matte-de-maybelline' || /scuse me/i.test(p.name))) throw new Error('Scuse Me Matte volvió a aparecer como familia independiente');
+          const expectedAvenue = ['FARA00055002','FARA00055006','FARA00055007','FARA00055008'];
+          if (JSON.stringify(avenue.variants.map(v=>v.sku).sort()) !== JSON.stringify(expectedAvenue)) throw new Error('Avenue Matte no conserva los cuatro SKU');
+          fs.writeFileSync(inventoryPath, JSON.stringify(data, null, 2) + '\n');
+
+          for (const file of ['tests/unified-inventory.test.js','tests/category-filter.test.js']) {
+            let text = fs.readFileSync(file, 'utf8');
+            text = text.replaceAll('inventario-avanzado-20261005-135545.xlsx', 'inventario-avanzado-20261005-213452.xlsx');
+            text = text.replaceAll('[117,455,388,888,67]', '[117,455,378,851,77]');
+            text = text.replaceAll('[455,388,888,67]', '[455,378,851,77]');
+            text = text.replace('archived.length,67', 'archived.length,77');
+            text = text.replace("archived.filter(v=>v.status==='out_of_stock').length,66", "archived.filter(v=>v.status==='out_of_stock').length,76");
+            fs.writeFileSync(file, text);
+          }
+          NODE
+
+      - name: Validate catalog and tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          node scripts/inventory.js validate
+          node --test tests/*.test.js
+          node - <<'NODE'
+          const fs = require('node:fs');
+          const api = require('./assets/inventory-document.js');
+          const data = JSON.parse(fs.readFileSync('assets/inventory.json','utf8'));
+          const checked = api.inspectInventory(data);
+          const actual = [checked.stats.products,checked.stats.skus,checked.stats.activeSkus,checked.stats.activeUnits,checked.stats.archivedSkus];
+          const expected = [117,455,378,851,77];
+          if (JSON.stringify(actual) !== JSON.stringify(expected)) throw new Error(`Stats inesperadas: ${JSON.stringify(actual)}`);
+          const zeroSkus = ['FARA00085006','FARA00002435','FARA00003102','FARA00003106','FARA00006220','FARA00008322','FARA00014250','FARA00032006','FARA00076002','FARA00082003'];
+          for (const sku of zeroSkus) {
+            const item = checked.allBySku.get(sku);
+            if (!item || item.stock !== 0 || item.status !== 'out_of_stock') throw new Error(`SKU no quedó agotado: ${sku}`);
+            if (checked.catalog.bySku.has(sku)) throw new Error(`SKU agotado visible en tienda: ${sku}`);
+          }
+          const duplicate = checked.allBySku.get('FARA000280100');
+          const canonical = checked.allBySku.get('FARA00028100');
+          if (!duplicate || duplicate.stock !== 0 || duplicate.status !== 'review') throw new Error('Duplicado Vinyl Ink 100 no quedó en review');
+          if (!canonical || canonical.stock !== 2 || canonical.status !== 'active') throw new Error('Vinyl Ink 100 canónico no conserva 2 unidades');
+          console.log(JSON.stringify({stats:checked.stats,source:data.source},null,2));
+          NODE
+
+      - name: Commit reconciled catalog to main
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          rm -f .github/workflows/apply-inventory-20261005.yml
+          rm -f .github/workflows/hotfix-deploy-fara.yml
+          rm -f .github/workflows/reconcile-inventory-20261005-213452.yml
+          rm -f .github/inventory-213452.trigger
+          git add -A
+          git commit -m "Update FARA inventory to 2026-10-05 21:34 snapshot"
+          git push origin HEAD:main
